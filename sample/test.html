@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample
-        </title>
-        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-        <link rel="icon" type="image/x-icon" href="../../web.jpg">
-        <link rel="stylesheet" href="../../style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="left-selection">
-                <img src="../../web.jpg" alt="Ảnh đại diện" width="40" height="40">
-                <a href="../../home.html">oce</a>
-            </div>
-            <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="../introduce/introduce.html">Giới thiệu</a></li>
-                    <li><a href="../game/game.html">Game</a></li>
-                    <li><a href="../media/media.html">Đa phương tiện</a></li>
-                    <li><a href="../anime/anime.html">Anime</a></li>
-                    <li><a href="../links/links.html">Link</a></li>
-                    <li><a href="../project/project.html">Project</a></li>
-                </ul>
-                <ul>
-                    <li class="hideOnMobile"><a href="../introduce/introduce.html">Giới thiệu</a></li>
-                    <li class="hideOnMobile"><a href="../game/game.html">Game</a></li>
-                    <li class="hideOnMobile"><a href="../media/media.html">Đa phương tiện</a></li>
-                    <li class="hideOnMobile"><a href="../anime/anime.html">Anime</a></li>
-                    <li class="hideOnMobile"><a href="../links/links.html">Link</a></li>
-                    <li class="hideOnMobile"><a href="../project/project.html">Project</a></li>
-                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="heading">
-            Nội dung chính của trang
-        </div>
-        <div class="banner">
-            Thanh nội dung
-        </div>
-        <footer>
-            &copy; oce - Do not Reup - Released in 2024
-        </footer>
-        <script src="script.js"></script>
-        <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    </body>
+        <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet" />
+      
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+      </head>
+      
+      <body>
+        <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="640"
+          height="264"
+          poster="MY_VIDEO_POSTER.jpg"
+          data-setup="{}"
+        >
+          <source src="https://cvws.icloud-content.com/B/Ae9-I52_V6mEuELeclg8MIDR94UEAQoDRernAhuzwVbAoSFtyMNn5cF8/%5BVietsub%5D+eill+-+Finale.MP4?o=AmFuiwUIJ2Bfo32v7ppG6JvBqqMjPODzF8pFFAPbuYth&v=1&x=3&a=CAogkaDCLfs-bt0lya6N-Fzj_6E6QUWdK0xHUEc4wOBzxG0SbxD4pNTvhzIY-IGw8YcyIgEAUgTR94UEWgRn5cF8aifRUjxo5Umo7q-LV89mUfxxznEWZfS7-Q47lSGHwnhzoV6Dqlc-aJByJ3yg7euTu6Qrpg3ncytO9aXqcxHI_WAK857fBusRXLCjvzoLNK2JSQ&e=1720103731&fl=&r=0ce9983f-e99c-4524-bfca-08391893486f-1&k=P_I0mLwlD7WHEDswWZ4h0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=49&s=aHFpFWuDmvWiU-lL36Bun35jrS4" type="video/mp4" />
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+      
+        <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
+      </body>
 </html>

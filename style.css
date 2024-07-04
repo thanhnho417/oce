@@ -397,8 +397,8 @@ th,td{
     text-align: left;
     color: black;
 }
-td svg{
-    color: black;
+#dateTable td svg{
+    padding-right: 20px;
 }
 @media(max-width:750px){
     .row{
