@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet" />
-      
-        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-        <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-      </head>
-      
-      <body>
-        <video
-          id="my-video"
-          class="video-js"
-          controls
-          preload="auto"
-          width="640"
-          height="264"
-          poster="MY_VIDEO_POSTER.jpg"
-          data-setup="{}"
-        >
-          <source src="https://cvws.icloud-content.com/B/Ae9-I52_V6mEuELeclg8MIDR94UEAQoDRernAhuzwVbAoSFtyMNn5cF8/%5BVietsub%5D+eill+-+Finale.MP4?o=AmFuiwUIJ2Bfo32v7ppG6JvBqqMjPODzF8pFFAPbuYth&v=1&x=3&a=CAogkaDCLfs-bt0lya6N-Fzj_6E6QUWdK0xHUEc4wOBzxG0SbxD4pNTvhzIY-IGw8YcyIgEAUgTR94UEWgRn5cF8aifRUjxo5Umo7q-LV89mUfxxznEWZfS7-Q47lSGHwnhzoV6Dqlc-aJByJ3yg7euTu6Qrpg3ncytO9aXqcxHI_WAK857fBusRXLCjvzoLNK2JSQ&e=1720103731&fl=&r=0ce9983f-e99c-4524-bfca-08391893486f-1&k=P_I0mLwlD7WHEDswWZ4h0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=49&s=aHFpFWuDmvWiU-lL36Bun35jrS4" type="video/mp4" />
-            To view this video please enable JavaScript, and consider upgrading to a
-            web browser that
-            <a href="https://videojs.com/html5-video-support/" target="_blank"
-              >supports HTML5 video</a
-            >
-          </p>
-        </video>
-      
-        <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
-      </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+    <source src="https://fgh5.biananset.net/_v7/199ab82271cbc57a42793a5de1a3c0e8eb7f07bcb7aec997c6b41b5850ad841d889ca6ee416d2b91e4ff2cbb61406a400ffd4202ddee8fe965308bbc7b38d4131bdd576af738919b3abd407ad81c9cf12755aca3b9e21f79a14b8f31fb83b329a164716a4462d9048229357cf913c024cef2c702edeb770c3f3015ceb7a702fa/index-f2-v1-a1.m3u8" type="application/x-mpegURL" />
+    <track kind="captions" label="Tiếng Việt" src="[Ioroid] Shikanoko Nokonoko Koshitantan - 01 [ABEMA WEB-DL 1080p AVC AAC].vtt" srclang="vi" default/>
+  
+    <!-- Captions are optional -->
+    <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+  </video>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    var video = document.getElementById('video');
+    if(Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+    }
+   // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+   // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+   // This is using the built-in support of the plain video element, without using hls.js.
+    else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+      video.addEventListener('canplay',function() {
+        video.play();
+      });
+    }
+  </script>
+</body>
 </html>
