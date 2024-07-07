@@ -432,7 +432,6 @@ th,td{
     padding: 5px;
 }
 video::cue {
-    font-size: 22px; /* Kích cỡ chữ */
     font-family:'Times New Roman', Times, serif; /* Font chữ */
     color: white; /* Màu chữ */
     background: rgba(0, 0, 0, 0.75); /* Nền chữ */
@@ -484,32 +483,7 @@ video::cue {
     margin-right: 10px;
     border-radius: 5px;
 }
-@media (min-width: 768px) {
-    video:fullscreen::cue {
-        font-size: 30px; /* Tăng kích cỡ chữ khi ở toàn màn hình */
-    }
-    video:-webkit-full-screen::cue {
-        font-size: 30px;
-    }
-    video:-moz-full-screen::cue {
-        font-size: 30px;
-    }
-    video:-ms-fullscreen::cue {
-        font-size: 30px;
-    }
-    .playlist{
-        height: 400px;
-    }
-}
-@media (max-width: 500px) {
-    video::cue {
-        font-size: 18px; /* Kích cỡ chữ */
-        font-family:'Times New Roman', Times, serif; /* Font chữ */
-        color: white; /* Màu chữ */
-        background: rgba(0, 0, 0, 0.75); /* Nền chữ */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); /* Đổ bóng chữ */
-    }
-}
+
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
