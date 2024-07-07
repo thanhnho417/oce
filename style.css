@@ -431,12 +431,6 @@ th,td{
     flex: 3;
     padding: 5px;
 }
-video::cue {
-    font-family:'Times New Roman', Times, serif; /* Font chữ */
-    color: white; /* Màu chữ */
-    background: rgba(0, 0, 0, 0.75); /* Nền chữ */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); /* Đổ bóng chữ */
-}
 .playlist {
     flex: 1;
 }
