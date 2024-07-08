@@ -411,7 +411,7 @@ th,td{
 .container .video-player video{
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 .container .video-player #video-title{
@@ -422,9 +422,10 @@ th,td{
 }
 .container .video-player #video-description{
     font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    margin-left: 10px;
-    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 .video-player {
@@ -436,11 +437,11 @@ th,td{
 }
 .container .playlist{
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 8px;
     margin:  5px 10px 5px 10px;
     padding: 0 10px 0 10px;
-    height: 900px;
-    overflow-y: scroll;
+    height: 830px;
+    overflow-y: auto;
 }
 .container .playlist h4{
     padding: 10px 5px 5px 10px;
