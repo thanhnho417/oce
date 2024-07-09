@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function loadVideo(videoData) {
         videoTitle.textContent = videoData.title;
-        videoDescription.textContent = videoData.description;
+        videoDescription.innerHTML = videoData.description.replace(/\n/g, '<br>');
 
         if (hls) {
             hls.destroy();
