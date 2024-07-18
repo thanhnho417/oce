@@ -1,8 +1,8 @@
 [
     {
-        "title": "Tập 1: Girl Meet Shika",
+        "title": "Tập 1: Gái gặp nai",
         "src": "https://mmd.biananset.net/_v7/199ab82271cbc57a42793a5de1a3c0e8eb7f07bcb7aec997c6b41b5850ad841d889ca6ee416d2b91e4ff2cbb61406a400ffd4202ddee8fe965308bbc7b38d4131bdd576af738919b3abd407ad81c9cf12755aca3b9e21f79a14b8f31fb83b329a164716a4462d9048229357cf913c024cef2c702edeb770c3f3015ceb7a702fa/index-f1-v1-a1.m3u8",
-        "description": "Koshi Torako, cô học sinh gương mẫu từng là nữ quái, tình cờ gặp một cô gái có sừng bị treo lơ lửng trên cột điện. Cô gái bí ẩn này là Nokotan, người sẽ làm xáo trộn cuộc sống học đường của Torako.",
+        "description": "Koshi Torako, cô học sinh gương mẫu từng là nữ quái, tình cờ gặp một cô gái có sừng bị treo lơ lửng trên cột điện. Cô gái bí ẩn này là Nokotan, người sẽ làm xáo trộn cuộc sống học đường của Torako.\n Bản dịch: ",
         "subtitles": [
             {
                 "label": "Vietnamese",
@@ -19,26 +19,21 @@
     },
     {
         "title": "Tập 2",
-        "src": "link-to-video-2.m3u8",
-        "description": "This is the description for Video 2.",
+        "src": "https://g4fv.biananset.net/_v7/0e93e45f60441c1bd64f89a58a56a711b2112b148b02f9da781cc4c79e9a3e37a0cf296dc52736497829645ee5b2fbb540fe9f85c4cf650af4bb995656bf4a612694c508397d33020d973dd3453758562aee4e9a24062eb029df8d554eee3b788ab705548bcfc4cde973c739a352605e8f9286dcfb53e40dc34143434c4d4acd/index-f1-v1-a1.m3u8",
+        "description": "",
         "subtitles": [
             {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
+                "label": "Vietnamese",
+                "src": "ep2.vtt",
+                "srclang": "vi"
             }
         ],
-        "thumbnail": "vna.png"
+        "thumbnail": "img2.png"
     },
     {
         "title": "Tập 3",
-        "src": "link-to-video-2.m3u8",
-        "description": "This is the description for Video 2.",
+        "src": "https://mmd.biananset.net/_v7/99eb8b8c78e546ff4859e2bc8926f6906e19c7109ad5a8fa60ff4156e205138194446397a763a4224cf7656b0f7d57b61ec0b9c52cc6e169695753adb5bde41e2f55249b58a2453609fdd4839d16aa83b26982c626f03d8ba29a5cfbb5503bfb10cc2b192ca82cdee78db64f1c5004924db4a1e4bb9a4db29aa9108b0c81e2e4/index-f1-v1-a1.m3u8",
+        "description": "",
         "subtitles": [
             {
                 "label": "English",
@@ -51,7 +46,7 @@
                 "srclang": "fr"
             }
         ],
-        "thumbnail": "vna.png"
+        "thumbnail": "img3.png"
     },
     {
         "title": "Tập 4",

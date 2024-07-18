@@ -1,0 +1,379 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+Collisions: Normal
+PlayResX: 1920
+PlayResY: 1080
+Scroll Position: 338
+Active Line: 348
+Video Zoom Percent: 0.5
+Video File: [Ioroid] Shikanoko Nokonoko Koshitantan - 02 [ABEMA WEB-DL 1080p AVC AAC].mkv
+Video Aspect Ratio: c1.77778
+Video Position: 31704
+Audio URI: [Ioroid] Shikanoko Nokonoko Koshitantan - 02 [ABEMA WEB-DL 1080p AVC AAC].mkv
+Last Style Storage: Shikanoko
+YCbCr Matrix: TV.601
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,times new roman,68,&H00FFFFFF,&H000000FF,&H00781E32,&H00000000,-1,0,0,0,100,100,0,0,1,1.6,0,2,20,20,18,0
+Style: OS,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,1,1,15,0
+Style: On Top,times new roman,26,&H00FFFFFF,&H000000FF,&H00781E32,&H00000000,-1,0,0,0,100,100,0,0,1,1.3,0,8,20,20,19,0
+Style: Italics,times new roman,26,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,-1,0,0,100,100,0,0,1,1.3,0,2,20,20,19,0
+Style: On Top Italic,times new roman,26,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,-1,0,0,100,100,0,0,1,1.3,0,8,20,20,23,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:19.86,0:00:21.91,Default,,0,0,0,,Tới rồi.
+Dialogue: 0,0:00:24.80,0:00:26.06,Default,,0,0,0,,Shika!
+Dialogue: 0,0:00:26.06,0:00:27.31,Default,,0,0,0,,Shika! Shika! Shika!
+Dialogue: 0,0:00:27.31,0:00:29.06,Default,,0,0,0,,Shika?
+Dialogue: 0,0:02:10.31,0:02:12.17,Default,,0,0,0,,Tôi xin phép giới thiệu lại:
+Dialogue: 0,0:02:12.17,0:02:17.04,Default,,0,0,0,,Tên cô ấy là Koshi Torako.\N Từng là một cựu du côn.
+Dialogue: 0,0:02:17.04,0:02:21.80,Default,,0,0,0,,Giấu đi cái quá khứ đó và tạo hình tượng mới.
+Dialogue: 0,0:02:21.80,0:02:26.46,Default,,0,0,0,,Hiện tại là một nữ sinh hoàn hảo,\N làm việc trong hội học sinh nhưng…
+Dialogue: 0,0:02:26.46,0:02:31.62,Default,,0,0,0,,Một học sinh mới chuyển đến tên là\N Shikanoko đã nhìn thấu được quá khứ đó.
+Dialogue: 0,0:02:31.62,0:02:33.71,Default,,0,0,0,,Và thêm cả phần còn trinh.
+Dialogue: 0,0:02:33.71,0:02:39.73,Default,,0,0,0,,Sau đó thì dễ dàng bị dụ dỗ làm hội trưởng CLB Nai bí ẩn.
+Dialogue: 0,0:02:39.73,0:02:43.06,Default,,0,0,0,,Và hôm nay là ngày hoạt động CLB.
+Dialogue: 0,0:02:43.06,0:02:45.88,Default,,0,0,0,,Đến giờ sinh hoạt CLB rồi!
+Dialogue: 0,0:02:45.88,0:02:48.20,Default,,0,0,0,,Cũng không hẳn là không thích.
+Dialogue: 0,0:02:48.20,0:02:51.77,Default,,0,0,0,,Dĩ nhiên là không thích rồi.
+Dialogue: 0,0:02:51.77,0:02:53.62,Default,,0,0,0,,Hả? Vậy tại sao?
+Dialogue: 0,0:02:53.62,0:02:57.26,Default,,0,0,0,,Sáng nay có ghé qua CLB mang ít đồ.
+Dialogue: 0,0:02:57.26,0:03:00.00,Default,,0,0,0,,Và trang trí căn phòng khá tuyệt.
+Dialogue: 0,0:03:00.00,0:03:04.48,Default,,0,0,0,,Nên có lẽ sinh hoạt CLB hôm nay sẽ rất vui.
+Dialogue: 0,0:03:04.48,0:03:07.68,Default,,0,0,0,,Chẳng phải là thích thú gì đâu đó.
+Dialogue: 0,0:03:07.68,0:03:09.04,Default,,0,0,0,,Thế à.
+Dialogue: 0,0:03:09.04,0:03:12.91,Default,,0,0,0,,Dù gì mình cũng là hội trưởng CLB mà.
+Dialogue: 0,0:03:12.91,0:03:15.37,Default,,0,0,0,,Tò mò phản ứng của cậu ta quá đi.
+Dialogue: 0,0:03:15.37,0:03:17.97,Default,,0,0,0,,Koshi-tan đỉnh quá. Tớ phục cậu ghê.
+Dialogue: 0,0:03:17.97,0:03:19.66,Default,,0,0,0,,Dĩ nhiên.
+Dialogue: 0,0:03:19.66,0:03:23.71,Default,,0,0,0,,Tiếp theo là giấy dán tường, và mang thêm kệ sách nữa.
+Dialogue: 0,0:03:23.71,0:03:26.97,Default,,0,0,0,,Còn nhiều thứ cần làm quá.
+Dialogue: 0,0:03:26.97,0:03:30.22,Default,,0,0,0,,Chờ đó, Utopia của chị!
+Dialogue: 0,0:03:41.31,0:03:43.64,Default,,0,0,0,,Utopia đã bị phá huỷ.
+Dialogue: 0,0:03:46.55,0:03:48.84,Default,,0,0,0,,Kumagoro!
+Dialogue: 0,0:03:48.84,0:03:52.95,Default,,0,0,0,,Chuyện này là sao? Utopia của mình…
+Dialogue: 0,0:03:52.95,0:03:59.35,Default,,0,0,0,,Utopia mất 4 tiếng xây dựng tâm huyết của mình…
+Dialogue: 0,0:03:59.35,0:04:01.64,Default,,0,0,0,,Koshi-tan dậy từ 3h sáng để làm.
+Dialogue: 0,0:04:01.64,0:04:03.80,Default,,0,0,0,,Koshi-tan cậu ổn chứ?
+Dialogue: 0,0:04:04.82,0:04:07.97,Default,,0,0,0,,Ở đó dễ chết lắm, mau vào đây.
+Dialogue: 0,0:04:07.97,0:04:10.51,Default,,0,0,0,,Là cậu phải không? Là cậu chứ gì?
+Dialogue: 0,0:04:10.51,0:04:14.04,Default,,0,0,0,,Biến Utpia của tớ thành thế này!
+Dialogue: 0,0:04:14.04,0:04:15.93,Default,,0,0,0,,Nói gì thế?
+Dialogue: 0,0:04:15.93,0:04:20.37,Default,,0,0,0,,Bé đến là đã thành thế này rồi.
+Dialogue: 0,0:04:20.93,0:04:23.64,Default,,0,0,0,,Căn phòng này nguy hiểm lắm.
+Dialogue: 0,0:04:23.64,0:04:25.11,Default,,0,0,0,,Là sao?
+Dialogue: 0,0:04:25.11,0:04:28.48,Default,,0,0,0,,Hôm nay có kẻ muốn ám sát bé.
+Dialogue: 0,0:04:28.48,0:04:30.33,Default,,0,0,0,,Ai? Tại sao?
+Dialogue: 0,0:04:30.33,0:04:35.31,Default,,0,0,0,,Không biết. Nhưng có lẽ cùng một kẻ phá hoại CLB.
+Dialogue: 0,0:04:35.31,0:04:38.35,Default,,0,0,0,,Khi vào CLB thì bị té xuống hố 5m.
+Dialogue: 0,0:04:38.35,0:04:40.55,Default,,0,0,0,,Đang đi trên đường thì bị giáo đâm vào đầu.
+Dialogue: 0,0:04:40.55,0:04:43.60,Default,,0,0,0,,Có kẻ để đầy bình nước cạnh cột điện.
+Dialogue: 0,0:04:43.60,0:04:46.77,Default,,0,0,0,,Sao còn sống hay vậy? Nguyên cây giáo vô đầu mà?
+Dialogue: 0,0:04:46.77,0:04:51.24,Default,,0,0,0,,Với cả bình nước để cột điện là doạ mèo mà?
+Dialogue: 0,0:04:51.24,0:04:54.31,Default,,0,0,0,,Và sừng lại bị kẹt khiến bé phải phá cửa!
+Dialogue: 0,0:04:54.31,0:04:56.42,Default,,0,0,0,,Rõ ràng cậu cố tình phá cửa!
+Dialogue: 0,0:04:56.42,0:04:58.97,Default,,0,0,0,,Tóm lại ở đây nguy hiểm lắm.
+Dialogue: 0,0:04:58.97,0:05:00.08,Default,,0,0,0,,Bình tĩnh lại.
+Dialogue: 0,0:05:00.08,0:05:03.40,Default,,0,0,0,,Chẳng ai rảnh nhắm đến cậu đâu.
+Dialogue: 0,0:05:03.40,0:05:04.51,Default,,0,0,0,,Vậy à?
+Dialogue: 0,0:05:04.51,0:05:08.24,Default,,0,0,0,,Phải, những lúc thế này nên ra ngoài hít thở.
+Dialogue: 0,0:05:08.24,0:05:10.55,Default,,0,0,0,,Bình tĩnh lại và suy nghĩ—
+Dialogue: 0,0:05:12.93,0:05:16.33,Default,,0,0,0,,Đừng có bất cẩn lao ra ngoài lúc này!
+Dialogue: 0,0:05:16.33,0:05:17.62,Default,,0,0,0,,Đây là vùng chiến tranh!
+Dialogue: 0,0:05:17.62,0:05:18.48,Default,,0,0,0,,Ai vậy?
+Dialogue: 0,0:05:18.48,0:05:21.97,Default,,0,0,0,,Đã dặn là đừng bất cẩn khi \Nđang chiến tranh rồi mà.
+Dialogue: 0,0:05:21.97,0:05:25.35,Default,,0,0,0,,Có dặn quái đâu!\N Với cả hiện tại đang là thời bình!
+Dialogue: 0,0:05:25.35,0:05:28.35,Default,,0,0,0,,Cơ mà cậu thực sự bị nhắm đến à?
+Dialogue: 0,0:05:28.35,0:05:29.97,Default,,0,0,0,,Hình như thế.
+Dialogue: 0,0:05:29.97,0:05:32.66,Default,,0,0,0,,Những lúc thế này chuồn là thượng sách.
+Dialogue: 0,0:05:32.66,0:05:35.60,Default,,0,0,0,,Đừng có bỏ chỉ huy lại chứ!
+Dialogue: 0,0:05:35.60,0:05:39.17,Default,,0,0,0,,Im đi! Ai thèm làm cấp dưới của cậu!
+Dialogue: 0,0:05:39.17,0:05:41.91,Default,,0,0,0,,Tớ không muốn dính vào rắc rối nữ--
+Dialogue: 0,0:05:44.97,0:05:47.04,Default,,0,0,0,,Koshi-tan, ổn chứ?
+Dialogue: 0,0:05:47.04,0:05:48.91,Default,,0,0,0,,Không có ý gì cả.
+Dialogue: 0,0:05:48.91,0:05:51.62,Default,,0,0,0,,Đứa nào? Mau trả lại…
+Dialogue: 0,0:05:52.08,0:05:54.53,Default,,0,0,0,,Utopia của ta đây!
+Dialogue: 0,0:05:54.53,0:05:56.33,Default,,0,0,0,,Hoàn toàn trở lại làm du côn.
+Dialogue: 0,0:05:56.33,0:05:58.31,Default,,0,0,0,,Mày thích thì chị chiều!
+Dialogue: 0,0:05:58.31,0:06:04.04,Default,,0,0,0,,Yên bình không muốn thích \Nchiến tranh thì bơi vào đây!
+Dialogue: 0,0:06:18.88,0:06:21.08,Default,,0,0,0,,Nguy hiểm! Là lựu đạn!
+Dialogue: 0,0:06:23.86,0:06:26.11,Default,,0,0,0,,Bánh gạo nai?
+Dialogue: 0,0:06:26.11,0:06:27.93,Default,,0,0,0,,Này, đừng có—
+Dialogue: 0,0:06:30.08,0:06:33.35,Default,,0,0,0,,Dừng lại! Đồ ngốc này!
+Dialogue: 0,0:06:33.35,0:06:34.88,Default,,0,0,0,,Cái gì nữa, Koshi-tan?
+Dialogue: 0,0:06:34.88,0:06:38.44,Default,,0,0,0,,Nhìn thế nào thì cũng là bẫy mà?
+Dialogue: 0,0:06:38.44,0:06:42.35,Default,,0,0,0,,Có đứa ngu nào chạy theo bẫy xong nhỏ dãi không?
+Dialogue: 0,0:06:42.35,0:06:43.31,Default,,0,0,0,,Bẫy…
+Dialogue: 0,0:06:43.31,0:06:45.20,Default,,0,0,0,,Shikanoko?
+Dialogue: 0,0:06:45.20,0:06:51.71,Default,,0,0,0,,Từ xa xưa, những chú nai không\N hiểu vì sao lại ăn bánh gạo nai…
+Dialogue: 0,0:06:51.71,0:06:54.28,Default,,0,0,0,,Câu trả lời rất đơn giản…
+Dialogue: 0,0:06:54.28,0:06:56.62,Default,,0,0,0,,Vì đó là bánh gạo nai!
+Dialogue: 0,0:07:07.68,0:07:09.82,Default,,0,0,0,,Shikanoko!
+Dialogue: 0,0:07:09.82,0:07:11.53,Default,,0,0,0,,Xin lỗi Koshi-tan!
+Dialogue: 0,0:07:11.53,0:07:15.35,Default,,0,0,0,,Nhưng bé thích bánh gạo nai!
+Dialogue: 0,0:07:27.80,0:07:29.33,Default,,0,0,0,,Bị tóm rồi.
+Dialogue: 0,0:07:29.33,0:07:31.20,Default,,0,0,0,,Đã nói là bẫy rồi!
+Dialogue: 0,0:07:31.20,0:07:35.66,Default,,0,0,0,,Khúc cuối tự nhiên giảm tốc độ nên không lấy được!
+Dialogue: 0,0:07:35.66,0:07:37.31,Default,,0,0,0,,Lo cái đó hả?
+Dialogue: 0,0:07:39.33,0:07:43.13,Default,,0,0,0,,Này, tên lén lút kia, ngươi đang ở đó nhỉ?
+Dialogue: 0,0:07:43.13,0:07:46.68,Default,,0,0,0,,Ta là Noko-tan! Có vấn đề gì thì ra mặt đi!
+Dialogue: 0,0:07:46.68,0:07:49.64,Default,,0,0,0,,Đường đường chính chính mà chiến đấu!
+Dialogue: 0,0:07:49.64,0:07:51.80,Default,,0,0,0,,Thua mẹ rồi còn đâu.
+Dialogue: 0,0:07:51.80,0:07:53.73,Default,,0,0,0,,Thua nhưng được cái mồm to.
+Dialogue: 0,0:07:53.73,0:07:56.28,Default,,0,0,0,,Và mang thêm bánh gạo đi!
+Dialogue: 0,0:07:56.28,0:07:58.62,Default,,0,0,0,,Nhìn lại vị trí của mình đi…
+Dialogue: 0,0:07:58.62,0:08:00.88,Default,,0,0,0,,Không biết xấu hổ nhỉ, thứ sâu bọ.
+Dialogue: 0,0:08:01.75,0:08:04.68,Default,,0,0,0,,Ta vẫn muốn hành hạ thêm nữa,
+Dialogue: 0,0:08:04.68,0:08:07.13,Default,,0,0,0,,Nhưng có vẻ tính toán sai rồi.
+Dialogue: 0,0:08:07.13,0:08:10.13,Default,,0,0,0,,Thi đấu à? Được thôi.
+Dialogue: 0,0:08:10.13,0:08:13.11,Default,,0,0,0,,Ta sẽ cho ngươi thấy địa ngục.
+Dialogue: 0,0:08:13.11,0:08:17.44,Default,,0,0,0,,Cậu ta không phải dạng tay mơ,\N Thậm chí còn dễ dàng…
+Dialogue: 0,0:08:17.44,0:08:20.82,Default,,0,0,0,,tóm được kẻ chuyên né thợ săn như mình…
+Dialogue: 0,0:08:20.82,0:08:22.53,Default,,0,0,0,,Ngươi là kẻ nào?
+Dialogue: 0,0:08:22.53,0:08:23.37,Default,,0,0,0,,Anko?
+Dialogue: 0,0:08:23.37,0:08:24.35,Default,,0,0,0,,Anko?
+Dialogue: 0,0:08:24.35,0:08:27.26,Default,,0,0,0,,Làm trò gì ở đây thế?
+Dialogue: 0,0:08:28.93,0:08:31.31,Default,,0,0,0,,Onee-chan!
+Dialogue: 0,0:08:31.31,0:08:32.93,Default,,0,0,0,,Em muốn gặp chị quá!
+Dialogue: 0,0:08:32.93,0:08:36.02,Default,,0,0,0,,Muốn gặp á? Về nhà là gặp mà?
+Dialogue: 0,0:08:36.02,0:08:41.51,Default,,0,0,0,,Em muốn gặp chị 24/7, 365 ngày cơ! \NTừng phút từng giây luôn!
+Dialogue: 0,0:08:42.08,0:08:44.91,Default,,0,0,0,,Muốn ngửi mãi thôi.
+Dialogue: 0,0:08:44.91,0:08:46.55,Default,,0,0,0,,Dừng lại đi!
+Dialogue: 0,0:08:46.55,0:08:49.22,Default,,0,0,0,,Với cả em không đi học à?
+Dialogue: 0,0:08:49.22,0:08:51.71,Default,,0,0,0,,Chị giận lên còn dễ thương hơn nữa, thích thích!
+Dialogue: 0,0:08:51.71,0:08:53.46,Default,,0,0,0,,Có nghe chị mày không?
+Dialogue: 0,0:08:53.46,0:08:55.13,Default,,0,0,0,,Koshi-tan, nhỏ nào đây?
+Dialogue: 0,0:08:55.13,0:08:58.28,Default,,0,0,0,,À, xin lỗi. Là Koshi Anko.
+Dialogue: 0,0:08:58.28,0:08:59.91,Default,,0,0,0,,Em gái tớ.
+Dialogue: 0,0:08:59.91,0:09:02.04,Default,,0,0,0,,Koshi Anko.
+Dialogue: 0,0:09:02.04,0:09:03.57,Default,,0,0,0,,Koshi An…
+Dialogue: 0,0:09:03.57,0:09:04.77,Default,,0,0,0,,…Ko!
+Dialogue: 0,0:09:04.77,0:09:09.55,Default,,0,0,0,,Đang nghĩ đến món gì ngon phải không?
+Dialogue: 0,0:09:09.55,0:09:12.75,Default,,0,0,0,,Chết con mẹ mày đi, con nai khốn kiếp!
+Dialogue: 0,0:09:13.77,0:09:17.64,Default,,0,0,0,,Shikanokonoko, ta sẽ không tha thứ cho ngươi.
+Dialogue: 0,0:09:17.64,0:09:20.40,Default,,0,0,0,,Sao em lại…
+Dialogue: 0,0:09:20.40,0:09:23.88,Default,,0,0,0,,Không lẽ tất cả là do em làm?
+Dialogue: 0,0:09:23.88,0:09:26.22,Default,,0,0,0,,Phải, là em.
+Dialogue: 0,0:09:26.22,0:09:27.77,Default,,0,0,0,,Tại sao em lại làm thế?
+Dialogue: 0,0:09:27.77,0:09:31.55,Default,,0,0,0,,Tất cả là tại nó!
+Dialogue: 0,0:09:31.55,0:09:35.04,Default,,0,0,0,,Nhờ ơn nó mà chị đã thay đổi.
+Dialogue: 0,0:09:35.04,0:09:39.71,Default,,0,0,0,,Đáng ra chị phải về nhà em sau khi tan học…
+Dialogue: 0,0:09:39.71,0:09:42.68,Default,,0,0,0,,Nhà em cũng là nhà chị đó.
+Dialogue: 0,0:09:42.68,0:09:44.86,Default,,0,0,0,,Gần đây chị cũng về trễ.
+Dialogue: 0,0:09:44.86,0:09:47.11,Default,,0,0,0,,7 giờ tối là về tới nhà rồi!
+Dialogue: 0,0:09:47.11,0:09:50.66,Default,,0,0,0,,Em tự hỏi chị làm gì và đã thử bám theo,
+Dialogue: 0,0:09:50.66,0:09:54.55,Default,,0,0,0,,Rồi thấy chị và con nai chết\N tiệt đó đang làm trò mờ ám!
+Dialogue: 0,0:09:54.55,0:09:57.55,Default,,0,0,0,,Tự em hiểu lầm việc mờ ám thôi!
+Dialogue: 0,0:09:57.55,0:10:01.53,Default,,0,0,0,,Và sáng nay chị ra khỏi nhà từ sớm…
+Dialogue: 0,0:10:01.53,0:10:04.44,Default,,0,0,0,,Hoá ra là chị xây tổ ấm tình yêu với nó.
+Dialogue: 0,0:10:04.44,0:10:09.73,Default,,0,0,0,,Chị định làm gì ở CLB khi mang cái sofa \Ndễ thương và mấy thứ đó đến CLB hả?
+Dialogue: 0,0:10:09.73,0:10:13.15,Default,,0,0,0,,Thật dâm dục! Chị tính làm gì hả?
+Dialogue: 0,0:10:13.15,0:10:14.86,Default,,0,0,0,,C-Chuyện đó…
+Dialogue: 0,0:10:14.86,0:10:17.75,Default,,0,0,0,,Koshi-tan muốn nói lắm nhưng không thể.
+Dialogue: 0,0:10:17.75,0:10:20.77,Default,,0,0,0,,Không thể trả lời tức là…
+Dialogue: 0,0:10:22.60,0:10:23.35,Default,,0,0,0,,Đã ngủ với nhau rồi à?
+Dialogue: 0,0:10:23.35,0:10:26.26,Default,,0,0,0,,Làm gì có! Em là yandere à?
+Dialogue: 0,0:10:26.26,0:10:27.80,Default,,0,0,0,,Với cả sao lại có phi tiêu?
+Dialogue: 0,0:10:27.80,0:10:30.46,Default,,0,0,0,,Iga? Koga? Hay Hokage?
+Dialogue: 0,0:10:30.46,0:10:33.68,Default,,0,0,0,,Cậu nói gì đó với Anko đi.
+Dialogue: 0,0:10:33.68,0:10:35.60,Default,,0,0,0,,Koshi-tan là người phụ nữ của ta!
+Dialogue: 0,0:10:35.60,0:10:37.11,Default,,0,0,0,,Tại sao?
+Dialogue: 0,0:10:37.11,0:10:41.51,Default,,0,0,0,,Sao cậu lại hùa theo con bé? Không phải thế mà!
+Dialogue: 0,0:10:41.51,0:10:45.04,Default,,0,0,0,,Không biết ngươi theo trường phái đậu đỏ nghiền\N hay đậu đỏ hạt nhưng Koshitan là của ta!
+Dialogue: 0,0:10:45.04,0:10:47.31,Default,,0,0,0,,Cậu mà nói nữa là—
+Dialogue: 0,0:10:47.31,0:10:50.75,Default,,0,0,0,,Quả nhiên ngươi đã cướp đi màng trinh của chị ấy!
+Dialogue: 0,0:10:50.75,0:10:52.88,Default,,0,0,0,,Không có bị cướp gì cả!
+Dialogue: 0,0:10:52.88,0:10:57.26,Default,,0,0,0,,Ta đã bảo vệ màng trinh của chị ấy suốt bao năm qua!
+Dialogue: 0,0:10:57.26,0:11:00.02,Default,,0,0,0,,Chị không cần ai bảo vệ nó cả!
+Dialogue: 0,0:11:00.02,0:11:01.37,Default,,0,0,0,,Không thể tha thứ…
+Dialogue: 0,0:11:01.37,0:11:06.53,Default,,0,0,0,,…cho kẻ đã vượt qua giới hạn và cướp đi\N màng trinh của chị lại là một con nai…
+Dialogue: 0,0:11:06.53,0:11:09.57,Default,,0,0,0,,Chị vẫn chưa vượt qua gì cả!
+Dialogue: 0,0:11:09.57,0:11:12.57,Default,,0,0,0,,Người được phép đứng cạnh chị là ta.
+Dialogue: 0,0:11:12.57,0:11:15.48,Default,,0,0,0,,Kẻ nào cản trở sẽ là kẻ thù.
+Dialogue: 0,0:11:15.48,0:11:19.06,Default,,0,0,0,,Thế nên ta sẽ phá huỷ mọi thứ.
+Dialogue: 0,0:11:19.06,0:11:20.48,Default,,0,0,0,,Anko.
+Dialogue: 0,0:11:20.48,0:11:25.62,Default,,0,0,0,,CLB Nai là thứ vớ vẩn. Ta sẽ xoá bỏ nó.
+Dialogue: 0,0:11:25.62,0:11:28.93,Default,,0,0,0,,Rồi chị ấy sẽ quay về với ta.
+Dialogue: 0,0:11:28.93,0:11:31.08,Default,,0,0,0,,Nhưng ta đổi ý rồi.
+Dialogue: 0,0:11:32.93,0:11:36.44,Default,,0,0,0,,Ngươi nói muốn đấu một cách công bằng nhỉ?
+Dialogue: 0,0:11:36.44,0:11:37.82,Default,,0,0,0,,Thú vị lắm.
+Dialogue: 0,0:11:37.82,0:11:40.02,Default,,0,0,0,,Ta sẽ chấp nhận lời thách đấu.
+Dialogue: 0,0:11:40.02,0:11:42.46,Default,,0,0,0,,Nếu ta thắng,
+Dialogue: 0,0:11:42.46,0:11:47.00,Default,,0,0,0,,Thì ngươi hãy sống ở công viên Nara đến suốt đời!
+Dialogue: 0,0:11:47.00,0:11:48.11,Default,,0,0,0,,Nara…
+Dialogue: 0,0:11:48.11,0:11:50.02,Default,,0,0,0,,Ngược lại, nếu ngươi thắng,
+Dialogue: 0,0:11:50.02,0:11:52.66,Default,,0,0,0,,Ta sẽ thừa nhận mối quan hệ của ngươi và chị ấy.
+Dialogue: 0,0:11:52.66,0:11:54.57,Default,,0,0,0,,Và lùi bước về sau.
+Dialogue: 0,0:11:54.57,0:11:56.80,Default,,0,0,0,,Sao càng ngày càng hiểu lầm vậy?
+Dialogue: 0,0:11:56.80,0:11:59.26,Default,,0,0,0,,Em cũng đủ rồi đó, Anko.
+Dialogue: 0,0:11:59.26,0:12:00.77,Default,,0,0,0,,Làm ba cái trò vớ vẩn này làm gì.
+Dialogue: 0,0:12:00.77,0:12:03.44,Default,,0,0,0,,Thi đấu để làm gì chứ?
+Dialogue: 0,0:12:03.44,0:12:07.35,Default,,0,0,0,,Chẳng phải con nai đó đòi thi đấu à?
+Dialogue: 0,0:12:07.35,0:12:10.06,Default,,0,0,0,,À thì…
+Dialogue: 0,0:12:10.06,0:12:12.35,Default,,0,0,0,,Được thôi, thích thì chiều
+Dialogue: 0,0:12:13.60,0:12:16.13,Default,,0,0,0,,Khoan đã, cậu nghiêm túc hả?
+Dialogue: 0,0:12:16.13,0:12:20.28,Default,,0,0,0,,Cậu mà ra công viên Nara \Nsống thì CLB này sẽ thế nào?
+Dialogue: 0,0:12:20.28,0:12:21.93,Default,,0,0,0,,Không sao cả, Koshi-tan.
+Dialogue: 0,0:12:23.26,0:12:25.44,Default,,0,0,0,,Tin tưởng vào bé đi.
+Dialogue: 0,0:12:25.44,0:12:30.11,Default,,0,0,0,,Thành viên CLB Nai sẽ luôn có \Nsợi dây liên kết bánh gạo vô hình.
+Dialogue: 0,0:12:30.11,0:12:31.35,Default,,0,0,0,,Shikanoko…
+Dialogue: 0,0:12:32.13,0:12:34.08,Default,,0,0,0,,Không. Nãy giờ nói nhảm gì vậy?
+Dialogue: 0,0:12:34.08,0:12:37.08,Default,,0,0,0,,Bánh gạo dễ vỡ lắm đó!
+Dialogue: 0,0:12:37.08,0:12:39.73,Default,,0,0,0,,Nhưng bé đây cũng có điều kiện.
+Dialogue: 0,0:12:39.73,0:12:40.66,Default,,0,0,0,,Là gì?
+Dialogue: 0,0:12:40.66,0:12:43.31,Default,,0,0,0,,Nếu bé thắng trận này,
+Dialogue: 0,0:12:46.86,0:12:48.82,Default,,0,0,0,,Đưa bánh gạo nai đây.
+Dialogue: 0,0:12:48.82,0:12:50.37,Default,,0,0,0,,Thế thì đến công viên Nara cho nhanh!
+Dialogue: 0,0:12:50.37,0:12:53.04,Default,,0,0,0,,CLB Nai đang gặp khó khăn!
+Dialogue: 0,0:12:53.04,0:12:54.26,Default,,0,0,0,,Phải làm sao đây CLB Nai?
+Dialogue: 0,0:12:54.26,0:12:55.68,Default,,0,0,0,,Phải làm sao đây Noko-tan?
+Dialogue: 0,0:12:55.68,0:12:58.68,Default,,0,0,0,,Lần đầu tiên CLB phải đối mặt với tình huống sống còn!
+Dialogue: 0,0:12:58.68,0:13:00.13,Default,,0,0,0,,Trận chiến sẽ bắt đầu!
+Dialogue: 0,0:13:00.13,0:13:03.77,Default,,0,0,0,,Ta sẽ cho ngươi đến công viên Nara ngay!
+Dialogue: 0,0:13:03.77,0:13:06.48,Default,,0,0,0,,Ăn bánh gạo miễn phí…
+Dialogue: 0,0:13:06.48,0:13:08.64,Default,,0,0,0,,Về được không…
+Dialogue: 0,0:13:16.13,0:13:22.46,Default,,0,0,0,,Cuộc chiến giành Koshi Torako\N cao trung Hino Minami lần thứ 1!
+Dialogue: 0,0:13:23.26,0:13:25.82,Default,,0,0,0,,Xin mời 2 tuyển thủ giới thiệu.
+Dialogue: 0,0:13:25.82,0:13:27.73,Default,,0,0,0,,Cái cuộc thi gì vậy?
+Dialogue: 0,0:13:27.73,0:13:31.37,Default,,0,0,0,,Em gái của Koshi Torako, một con bé siscon đích thực,
+Dialogue: 0,0:13:31.37,0:13:32.95,Default,,0,0,0,,Koshi Anko!
+Dialogue: 0,0:13:32.95,0:13:36.35,Default,,0,0,0,,Thế giới này chỉ cần tôi và chị gái là đủ.
+Dialogue: 0,0:13:36.35,0:13:38.17,Default,,0,0,0,,Nè, vậy là sao hả?
+Dialogue: 0,0:13:38.17,0:13:39.86,Default,,0,0,0,,Và con nai CLB Nai,
+Dialogue: 0,0:13:39.86,0:13:41.17,Default,,0,0,0,,Shikanokonoko.
+Dialogue: 0,0:13:41.17,0:13:43.42,Default,,0,0,0,,Vì bánh gạo, bán cả lương tâm!
+Dialogue: 0,0:13:43.42,0:13:45.13,Default,,0,0,0,,Không thèm nghe luôn...
+Dialogue: 0,0:13:45.13,0:13:49.51,Default,,0,0,0,,Và người đang được bọn họ tranh giành, \Ncảm xúc của em thế nào?
+Dialogue: 0,0:13:49.51,0:13:51.55,Default,,0,0,0,,E-Em chẳng hiểu gì cả…
+Dialogue: 0,0:13:51.55,0:13:53.71,Default,,0,0,0,,Em đang rất háo hức nhỉ?
+Dialogue: 0,0:13:53.71,0:13:56.13,Default,,0,0,0,,Có nói gì đâu mà tự biên vậy?
+Dialogue: 0,0:13:56.13,0:13:58.88,Default,,0,0,0,,Và về phần thưởng lần này…
+Dialogue: 0,0:13:58.88,0:14:03.33,Default,,0,0,0,,Anko sẽ là quyền tiễn Shikanoko về công viên Nara.
+Dialogue: 0,0:14:03.33,0:14:06.60,Default,,0,0,0,,Còn Shikanoko là một đống bánh gạo.
+Dialogue: 0,0:14:06.60,0:14:08.86,Default,,0,0,0,,Chuẩn bi đầy đủ ghê vậy.
+Dialogue: 0,0:14:08.86,0:14:13.95,Default,,0,0,0,,Tiện đây thì tôi là cố vấn CLB Nai \Nkiêm MC cho cuộc thi hôm nay, Ukai.
+Dialogue: 0,0:14:13.95,0:14:15.95,Default,,0,0,0,,Giáo viên cũng rảnh nhỉ.
+Dialogue: 0,0:14:15.95,0:14:18.28,Default,,0,0,0,,Và hãy bắt đầu thôi nào!
+Dialogue: 0,0:14:18.28,0:14:20.88,Default,,0,0,0,,Sao cái chương trình này có vẻ nghiêm túc thế...
+Dialogue: 0,0:14:20.88,0:14:24.44,Default,,0,0,0,,Câu thứ 1: Mỗi tối Koshi-tan…
+Dialogue: 0,0:14:24.44,0:14:28.22,Default,,0,0,0,,Mỗi tối trước khi ngủ thì Koshi-tan làm gì phải chứ?
+Dialogue: 0,0:14:28.22,0:14:33.48,Default,,0,0,0,,Đáp án: Nằm trong phòng trò chuyện với\N thú bông và hôn nó trước khi ngủ!
+Dialogue: 0,0:14:33.48,0:14:34.20,Default,,0,0,0,,Chính xác!
+Dialogue: 0,0:14:34.20,0:14:35.57,Default,,0,0,0,,Dừng lại!
+Dialogue: 0,0:14:35.57,0:14:39.53,Default,,0,0,0,,Câu hỏi gì kì vậy? Xâm phạm quyền tự do cá nhân hả?
+Dialogue: 0,0:14:39.53,0:14:40.62,Default,,0,0,0,,Không được hả?
+Dialogue: 0,0:14:40.62,0:14:42.66,Default,,0,0,0,,Dĩ nhiên là không rồi!
+Dialogue: 0,0:14:42.66,0:14:46.31,Default,,0,0,0,,Nhưng độ nổi tiếng của cậu tăng lên kìa.
+Dialogue: 0,0:14:46.31,0:14:48.42,Default,,0,0,0,,Koshi… thích thú bông kìa.
+Dialogue: 0,0:14:48.42,0:14:49.57,Default,,0,0,0,,Dễ thương ghê.
+Dialogue: 0,0:14:49.57,0:14:50.37,Default,,0,0,0,,Thích mất thôi.
+Dialogue: 0,0:14:50.37,0:14:52.62,Default,,0,0,0,,Vấn đề không phải ở đó!
+Dialogue: 0,0:14:52.62,0:14:55.77,Default,,0,0,0,,À, đây là ảnh bằng chứng.
+Dialogue: 0,0:14:57.48,0:15:00.22,Default,,0,0,0,,Thông tin cá nhân! Thông tin cá nhân!
+Dialogue: 0,0:15:00.22,0:15:02.44,Default,,0,0,0,,Dừng lại đi mà!
+Dialogue: 0,0:15:02.44,0:15:03.80,Default,,0,0,0,,Câu thứ 2.
+Dialogue: 0,0:15:03.80,0:15:05.26,Default,,0,0,0,,Vẫn tiếp tục à?
+Dialogue: 0,0:15:05.26,0:15:07.64,Default,,0,0,0,,Koshi-tan hiện tại…
+Dialogue: 0,0:15:08.20,0:15:12.02,Default,,0,0,0,,Noko-tan lần này đã nhanh hơn rồi. Câu trả lời là…
+Dialogue: 0,0:15:12.02,0:15:14.37,Default,,0,0,0,,Noko-tan hiện đang không mặc áo vú?
+Dialogue: 0,0:15:14.37,0:15:17.82,Default,,0,0,0,,Câu trả lời là bra top nên cũng có thể xem là không mặc.
+Dialogue: 0,0:15:17.82,0:15:19.80,Default,,0,0,0,,Câu hỏi gì vậy?
+Dialogue: 0,0:15:24.55,0:15:25.53,Default,,0,0,0,,Chính xác!
+Dialogue: 0,0:15:25.53,0:15:28.46,Default,,0,0,0,,Chưa xem sao mà biết được?
+Dialogue: 0,0:15:28.46,0:15:30.17,Default,,0,0,0,,Schrodinger bra.
+Dialogue: 0,0:15:30.17,0:15:32.60,Default,,0,0,0,,Xin mời chiếu đoạn phim.
+Dialogue: 0,0:15:32.60,0:15:33.97,Default,,0,0,0,,Hả?
+Dialogue: 0,0:15:35.80,0:15:41.35,Default,,0,0,0,,Dừng lại đi! Tại sao lại có đoạn phim này vậy?
+Dialogue: 0,0:15:41.35,0:15:42.44,Default,,0,0,0,,Tiếp theo!
+Dialogue: 0,0:15:42.44,0:15:44.42,Default,,0,0,0,,Về được chưa?
+Dialogue: 0,0:15:44.42,0:15:47.00,Default,,0,0,0,,Koshi-tan cho đến bây giờ…
+Dialogue: 0,0:15:47.00,0:15:51.55,Default,,0,0,0,,Đã hẹn hò với bao nhiêu chàng trai hoặc cô gái?
+Dialogue: 0,0:15:51.55,0:15:53.24,Default,,0,0,0,,Câu trả lời là 0.
+Dialogue: 0,0:15:53.24,0:15:55.55,Default,,0,0,0,,Biết đâu là có…
+Dialogue: 0,0:15:55.55,0:15:57.33,Default,,0,0,0,,Làm gì có.
+Dialogue: 0,0:15:57.97,0:16:00.64,Default,,0,0,0,,Đáng tiếc. Sai.
+Dialogue: 0,0:16:00.64,0:16:08.08,Default,,0,0,0,,Cho đến bây giờ, Koshi-tan chưa\N hẹn hò với ai cả, lý do tại sao?
+Dialogue: 0,0:16:08.08,0:16:10.77,Default,,0,0,0,,Hãy giải thích trong vòng 60 từ.
+Dialogue: 0,0:16:10.77,0:16:13.66,Default,,0,0,0,,Có cần thiết phải vậy không?
+Dialogue: 0,0:16:14.91,0:16:17.48,Default,,0,0,0,,Xin mời Anko trả lời.
+Dialogue: 0,0:16:18.24,0:16:24.91,Default,,0,0,0,,Dù xung quanh chị ấy ai cũng yêu nhau, \Nnhưng chị vẫn chưa có mảnh tình vắt vai.
+Dialogue: 0,0:16:24.91,0:16:29.53,Default,,0,0,0,,Đó là do chị ấy đọc manga shoujo từ cấp 2 nên\N muốn tình yêu của mình phải giống trên manga.
+Dialogue: 0,0:16:29.53,0:16:31.28,Default,,0,0,0,,Vừa đủ 60 từ.
+Dialogue: 0,0:16:32.77,0:16:34.11,Default,,0,0,0,,Chính xác.
+Dialogue: 0,0:16:34.11,0:16:35.84,Default,,0,0,0,,Đừng hạ nhục tôi thêm nữa…
+Dialogue: 0,0:16:35.84,0:16:38.57,Default,,0,0,0,,Tiện đây thì manga yêu thích là Bessatsu friend.
+Dialogue: 0,0:16:38.57,0:16:44.13,Default,,0,0,0,,Câu thứ 4: Bí mật hồi nhỏ của Koshi là gì?
+Dialogue: 0,0:16:44.13,0:16:46.91,Default,,0,0,0,,10 tuổi vẫn đái dầm.
+Dialogue: 0,0:16:46.91,0:16:47.57,Default,,0,0,0,,Đúng.
+Dialogue: 0,0:16:47.57,0:16:49.08,Default,,0,0,0,,Đừng nói nữa!
+Dialogue: 0,0:16:49.08,0:16:51.91,Default,,0,0,0,,Thứ Koshi-tan thích làm?
+Dialogue: 0,0:16:51.91,0:16:53.46,Default,,0,0,0,,Xem anime cho con nít.
+Dialogue: 0,0:16:53.46,0:16:54.22,Default,,0,0,0,,Chính xác.
+Dialogue: 0,0:16:54.22,0:16:57.28,Default,,0,0,0,,Thích thì sao chứ, có sao đâu!
+Dialogue: 0,0:16:57.28,0:16:59.26,Default,,0,0,0,,Câu thứ 5: Koshi-tan…
+Dialogue: 0,0:16:59.26,0:17:00.91,Default,,0,0,0,,Cơm trộn trứng sống.
+Dialogue: 0,0:17:00.91,0:17:01.68,Default,,0,0,0,,Chính xác!
+Dialogue: 0,0:17:01.68,0:17:04.66,Default,,0,0,0,,Sao biết đến cả cái đó vậy?
+Dialogue: 0,0:17:09.91,0:17:14.73,Default,,0,0,0,,Thật kinh khủng. Kết quả hiện tại vẫn\N là hoà! Không ai chịu nhường ai!
+Dialogue: 0,0:17:16.06,0:17:19.33,Default,,0,0,0,,Toàn bộ bản thân mình đã bị phơi bày…
+Dialogue: 0,0:17:21.04,0:17:23.40,Default,,0,0,0,,Chuyện này thật quá kì lạ!
+Dialogue: 0,0:17:23.40,0:17:26.64,Default,,0,0,0,,Tại sao một con nai lại biết thông tin về chị tôi?
+Dialogue: 0,0:17:26.64,0:17:29.15,Default,,0,0,0,,Chắc chắn là gian lận!
+Dialogue: 0,0:17:29.15,0:17:32.66,Default,,0,0,0,,Không lẽ là mạng lưới thông tin nai rộng khắp đất nước?
+Dialogue: 0,0:17:32.66,0:17:42.08,Default,,0,0,0,,Nó đã thu thập thông tin về chị, tổng hợp lại ở cơ quan\N đầu não, sau đó phân tích và gửi qua cái sừng đó!
+Dialogue: 0,0:17:42.08,0:17:44.97,Default,,0,0,0,,Đã vậy thì phải dùng biện pháp mạnh!
+Dialogue: 0,0:17:49.46,0:17:53.31,Default,,0,0,0,,Ngươi đã lơ là nhỉ, vẫn còn nhiều lắm đó!
+Dialogue: 0,0:17:53.31,0:17:56.31,Default,,0,0,0,,Rốt cuộc thi để làm gì…
+Dialogue: 0,0:17:56.31,0:17:59.95,Default,,0,0,0,,Cuối cùng người tổn thương là Koshi-tan.
+Dialogue: 0,0:17:59.95,0:18:04.71,Default,,0,0,0,,Ta sẽ gửi ngươi về công viên Nara!
+Dialogue: 0,0:18:07.88,0:18:10.02,Default,,0,0,0,,Né được à?
+Dialogue: 0,0:18:10.02,0:18:11.73,Default,,0,0,0,,Con nai quái quỷ gì thế này?
+Dialogue: 0,0:18:11.73,0:18:13.53,Default,,0,0,0,,Đứng yên xem nào!
+Dialogue: 0,0:18:13.53,0:18:16.13,Default,,0,0,0,,Chết tiệt! Chết tiệt!
+Dialogue: 0,0:18:16.13,0:18:17.31,Default,,0,0,0,,Mệt quá đi.
+Dialogue: 0,0:18:17.31,0:18:20.51,Default,,0,0,0,,Thôi trốn về nhà cho rồi.
+Dialogue: 0,0:18:20.51,0:18:22.95,Default,,0,0,0,,Con nai chết tiệt!
+Dialogue: 0,0:18:24.84,0:18:26.77,Default,,0,0,0,,Onee-chan!
+Dialogue: 0,0:18:40.13,0:18:41.64,Default,,0,0,0,,Shikanoko!
+Dialogue: 0,0:18:41.64,0:18:43.60,Default,,0,0,0,,Này, Shikanoko!
+Dialogue: 0,0:18:45.44,0:18:49.75,Default,,0,0,0,,Koshi-tan… tự nhiên thấy buồn ngủ quá…
+Dialogue: 0,0:18:49.75,0:18:53.55,Default,,0,0,0,,Nói nhảm gì vậy, tỉnh lại đi!
+Dialogue: 0,0:18:53.55,0:18:57.28,Default,,0,0,0,,Mở mắt ra đi, Shikanoko! Shikanoko!
+Dialogue: 0,0:18:58.91,0:19:02.22,Default,,0,0,0,,Tại sao? Tự ý kéo tớ vào chuyện này…
+Dialogue: 0,0:19:01.80,0:19:04.26,Default,,0,0,0,,Tự ý thành lập CLB…
+Dialogue: 0,0:19:04.26,0:19:07.24,Default,,0,0,0,,Tự ý lôi kéo tớ tham gia…
+Dialogue: 0,0:19:07.24,0:19:12.95,Default,,0,0,0,,Và giờ thì tự ý biến mất trước mặt tớ!
+Dialogue: 0,0:20:09.57,0:20:11.95,Default,,0,0,0,,Shikanoko, vẫn còn sống hả?
+Dialogue: 0,0:20:15.00,0:20:19.71,Default,,0,0,0,,Còn sống thì tốt nhưng tại sao…
+Dialogue: 0,0:20:22.88,0:20:24.97,Default,,0,0,0,,Lúc đó…
+Dialogue: 0,0:20:30.75,0:20:33.68,Default,,0,0,0,,Ai ngờ nhặt bánh gạo lại cứu được một mạng chứ.
+Dialogue: 0,0:20:33.68,0:20:35.40,Default,,0,0,0,,Làm như mấy bộ phim ngày xưa ấy!
+Dialogue: 0,0:20:35.42,0:20:38.71,Default,,0,0,0,,Với cả bánh gạo có cứng quái đâu?
+Dialogue: 0,0:20:40.02,0:20:41.24,Default,,0,0,0,,Shikanoko.
+Dialogue: 0,0:20:42.62,0:20:45.62,Default,,0,0,0,,Cảm ơn vì đã cứu chị tôi.
+Dialogue: 0,0:20:45.62,0:20:47.37,Default,,0,0,0,,Tôi đã thua rồi.
+Dialogue: 0,0:20:48.15,0:20:53.80,Default,,0,0,0,,Chỉ vì lòng thù hận làm mờ mắt mà tổn thương chị ấy.
+Dialogue: 0,0:20:53.80,0:20:56.11,Default,,0,0,0,,Tôi là một đứa em thất bại.
+Dialogue: 0,0:20:56.11,0:20:58.80,Default,,0,0,0,,Không đủ tư cách bên cạnh chị ấy—
+Dialogue: 0,0:20:58.80,0:21:01.33,Default,,0,0,0,,Không có chuyện đó đâu!
+Dialogue: 0,0:21:01.33,0:21:03.11,Default,,0,0,0,,Không có đâu…
+Dialogue: 0,0:21:03.11,0:21:07.86,Default,,0,0,0,,Cậu--, không, nhờ có Koshian Ko bỏ lại bánh gạo đó
+Dialogue: 0,0:21:07.86,0:21:10.15,Default,,0,0,0,,Mà có thể bảo vệ Koshi-tan và vẫn sống.
+Dialogue: 0,0:21:10.15,0:21:13.28,Default,,0,0,0,,Cậu là ân nhân của bé.
+Dialogue: 0,0:21:13.28,0:21:16.40,Default,,0,0,0,,Chúng ta có vẻ sẽ trở thành bạn tốt đó.
+Dialogue: 0,0:21:18.86,0:21:21.51,Default,,0,0,0,,Tớ gọi cậu là Noko-tan nhé?
+Dialogue: 0,0:21:23.24,0:21:25.66,Default,,0,0,0,,Dĩ nhiên.
+Dialogue: 0,0:21:25.66,0:21:29.20,Default,,0,0,0,,Từ giờ mong cậu giúp đỡ cho chị tớ, Noko-tan.
+Dialogue: 0,0:21:29.20,0:21:31.28,Default,,0,0,0,,Ừ, cứ để bé. Koshian.
+Dialogue: 0,0:21:39.82,0:21:44.62,Default,,0,0,0,,Noko-tan! Koshian! Noko-tan! Koshian!
+Dialogue: 0,0:21:44.62,0:21:47.64,Default,,0,0,0,,Tình bạn thật tuyệt vời!
+Dialogue: 0,0:21:47.64,0:21:54.17,Default,,0,0,0,,Cuối cùng chỉ có Koshi-tan và người xem\N là đéo hiểu chuyện gì đang xảy ra.
+Dialogue: 0,0:21:54.17,0:21:59.37,Default,,0,0,0,,Thôi thì từ ngày mai... mỗi ngày đều mặc áo vú vậy.
+Dialogue: 0,0:22:02.31,0:22:03.64,Default,,0,0,0,,Hôm nay màu trắng.
+Dialogue: 0,0:22:03.64,0:22:05.11,Default,,0,0,0,,Nhìn xuyến thấu à?
+Dialogue: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,,
