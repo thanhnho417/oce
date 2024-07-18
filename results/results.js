@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Hiển thị từ khóa tìm kiếm đã nhập trước đó
-    searchQueryContainer.textContent = `Search results for: "${query}"`;
+    searchQueryContainer.textContent = `Thông tin được tìm kiếm với từ khóa: "${query}"`;
 
     fetch('data.json')
         .then(response => response.json())
@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     resultsContainer.appendChild(categoryContainer);
                 }
             } else {
-                resultsContainer.innerHTML = '<p>No results found</p>';
+                resultsContainer.innerHTML = '<p>Không có dữ liệu</p>';
             }
         })
-        .catch(error => console.error('Error loading data:', error));
+        .catch(error => console.error('Lỗi:', error));
 });
