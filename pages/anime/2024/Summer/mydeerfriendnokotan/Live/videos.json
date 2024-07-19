@@ -227,5 +227,19 @@
             }
         ],
         "thumbnail": "vna.png"
+    },
+    {
+        "title": "OP",
+        "src": "https://www.googleapis.com/drive/v3/files/1AhrhFiNqtSc54d9tyhxxE6gqZoDwMoAB?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw",
+        "description": "Nhạc mở đầu phim My Deer Friend Nokotan",
+        "subtitles": "",
+        "thumbnail": "op.png"
+    },
+    {
+        "title": "ED",
+        "src": "https://www.googleapis.com/drive/v3/files/1rGSK9edLhOellVeTh3d01sAG4jhPXtef?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw",
+        "description": "Nhạc kết thúc phim My Deer Friend Nokotan",
+        "subtitles": "",
+        "thumbnail": "ed.png"
     }
 ]

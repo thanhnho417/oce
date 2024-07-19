@@ -535,7 +535,7 @@ video::cue{
     border-radius: 8px;
     margin:  5px 10px 5px 10px;
     padding: 0 10px 0 10px;
-    height: 770px;
+    height: 430px;
     overflow-y: auto;
 }
 .container .playlist h4{

@@ -36,14 +36,21 @@ document.addEventListener('DOMContentLoaded', function() {
             hls.destroy();
         }
 
-        if (Hls.isSupported()) {
-            hls = new Hls();
-            hls.loadSource(videoData.src);
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                video.play();
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        if (videoData.src.endsWith('.m3u8')) {
+            if (Hls.isSupported()) {
+                hls = new Hls();
+                hls.loadSource(videoData.src);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    video.play();
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoData.src;
+                video.addEventListener('loadedmetadata', function() {
+                    video.play();
+                });
+            }
+        } else {
             video.src = videoData.src;
             video.addEventListener('loadedmetadata', function() {
                 video.play();
