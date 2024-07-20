@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
         <link rel="icon" type="image/x-icon" href="../../../../../../web.jpg">
         <link rel="stylesheet" href="../../../../../../style.css">
-        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -59,8 +59,8 @@
         </div>
         <div class="container">
             <div class="video-player">
-                <video id="player" controls preload="auto" >
-                    <track kind="subtitles" label="English" srclang="en" src="" default>
+                <video id="player" controls preload="auto" crossorigin playsinline>
+
                 </video>
                 <h3 id="video-title"></h3>
                 <p id="video-description"></p>
@@ -73,6 +73,7 @@
             &copy; oce - Do not Reup - Released in 2024
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
         <script src="app.js"></script>
         <script src="../../../../../../script.js"></script>
     </body>

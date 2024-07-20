@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoDescription = document.getElementById('video-description');
     const playlistElement = document.getElementById('playlist');
     let hls;
+    const player = new Plyr(video);
 
     fetch('videos.json')
         .then(response => response.json())
@@ -22,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Load the first video by default
                 if (index === 0) {
-                    loadVideo(videoData);
+                    loadVideo(videoData, true);
                 }
             });
         })
         .catch(error => console.error('Error fetching video data:', error));
 
-    function loadVideo(videoData) {
+    function loadVideo(videoData, autoPlay = false) {
         videoTitle.textContent = videoData.title;
         videoDescription.innerHTML = videoData.description.replace(/\n/g, '<br>');
 
@@ -42,18 +43,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 hls.loadSource(videoData.src);
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                    video.play();
+                    if (autoPlay) {
+                        player.play();
+                    }
                 });
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                 video.src = videoData.src;
                 video.addEventListener('loadedmetadata', function() {
-                    video.play();
+                    if (autoPlay) {
+                        player.play();
+                    }
                 });
             }
         } else {
             video.src = videoData.src;
             video.addEventListener('loadedmetadata', function() {
-                video.play();
+                if (autoPlay) {
+                    player.play();
+                }
             });
         }
 
@@ -71,6 +78,23 @@ document.addEventListener('DOMContentLoaded', function() {
             track.src = subtitle.src;
             track.default = subtitle.default || false;
             video.appendChild(track);
+        });
+
+        // Reinitialize Plyr to recognize new tracks
+        player.restart();
+
+        // Ensure the default track is enabled
+        video.addEventListener('loadedmetadata', () => {
+            const tracks = video.textTracks;
+            for (let i = 0; i < tracks.length; i++) {
+                if (tracks[i].mode === 'disabled') {
+                    tracks[i].mode = 'showing';
+                }
+            }
+        });
+
+        player.on('languagechange', () => {
+            // Handle language change event if needed
         });
     }
 });

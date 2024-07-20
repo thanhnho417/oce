@@ -7,12 +7,7 @@
             {
                 "label": "Vietnamese",
                 "src": "[Ioroid] Shikanoko Nokonoko Koshitantan - 01 [ABEMA WEB-DL 1080p AVC AAC].vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "Spanish",
-                "src": "link-to-subtitle-1-es.vtt",
-                "srclang": "es"
+                "srclang": "vi"
             }
         ],
         "thumbnail": "img1.png"
@@ -31,19 +26,14 @@
         "thumbnail": "img2.png"
     },
     {
-        "title": "Tập 3",
+        "title": "Tập 3: Bashame nhập học",
         "src": "https://mmd.biananset.net/_v7/99eb8b8c78e546ff4859e2bc8926f6906e19c7109ad5a8fa60ff4156e205138194446397a763a4224cf7656b0f7d57b61ec0b9c52cc6e169695753adb5bde41e2f55249b58a2453609fdd4839d16aa83b26982c626f03d8ba29a5cfbb5503bfb10cc2b192ca82cdee78db64f1c5004924db4a1e4bb9a4db29aa9108b0c81e2e4/index-f1-v1-a1.m3u8",
         "description": "",
         "subtitles": [
             {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
+                "label": "Vietnamese",
+                "src": "ep3.vtt",
+                "srclang": "vi"
             }
         ],
         "thumbnail": "img3.png"
