@@ -542,14 +542,14 @@ th,td{
 }
 .container .video-player #video-description{
     font-family: "Quicksand Semibold",sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 15px;
     height: fit-content;
-    min-height: 80px;
+    min-height: 100px;
 }
 video::cue{
     font-family: "Merriweather", serif;
