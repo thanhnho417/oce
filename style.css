@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Quicksand Regular";
+    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Quicksand Bold";
+    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Quicksand Light";
+    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Quicksand Medium";
+    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "Quicksand SemiBold";
+    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-SemiBold.woff") format("woff");
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +28,11 @@ html{
 }
 body{
     min-height: 100%;
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Quicksand Regular",sans-serif;
+    font-size: 1.1em;
+}
+img{
+    border-radius: 7px;
 }
 nav ul{
     width: 100%;
@@ -19,6 +43,7 @@ nav ul{
 }
 nav{
     margin-right: 10px;
+    font-family: "Quicksand Semibold",sans-serif;
 }
 nav li{
     height: 50px;
@@ -330,7 +355,7 @@ footer{
     width: 100%;
     height: 10px;
     font-size: 15px;
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Quicksand Semibold",sans-serif;
     
 }
 .wrapper{
@@ -383,6 +408,7 @@ footer{
     border-radius: 20px;
     text-align: center;
     padding: 10px 15px 10px 15px;
+    font-family: "Quicksand Semibold",sans-serif;
 }
 .box:hover img{
     transform: scale(1.1);
@@ -515,14 +541,15 @@ th,td{
     text-align: justify;
 }
 .container .video-player #video-description{
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand Semibold",sans-serif;
     font-size: 15px;
     text-align: justify;
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 15px;
-    height: 60px;
+    height: fit-content;
+    min-height: 80px;
 }
 video::cue{
     font-family: "Merriweather", serif;
@@ -549,7 +576,7 @@ video::cue{
 .container .playlist h4{
     padding: 10px 5px 5px 10px;
     margin: 0 0 10px 0;
-    font-family: "Merriweather", serif;
+    font-family: "Quicksand Bold", sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
@@ -557,7 +584,7 @@ video::cue{
 .playlist-item {
     display: flex;
     align-items: center;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Quicksand Semibold",sans-serif;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 10px;
