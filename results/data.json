@@ -85,7 +85,7 @@
     },
     {
         "title": "Blend S",
-        "id":"anime",
+        "id": "anime",
         "src": "../pages/anime/2017/autumn/blends/",
         "description": "Mùa thu - 2017\n Số tập: 12",
         "category": "Anime",
@@ -185,14 +185,14 @@
     },
     {
         "title": "Ảnh hưởng của ánh sáng đối với quá trình quang hợp",
-        "src": "..pages/project/presentation/",
+        "src": "../pages/project/presentation/",
         "description": "Môn: Sinh học",
         "category": "Presentation, PowerPoint",
         "image": "biology.png"
     },
     {
         "title": "Tìm hiểu về các nguồn cung cấp thực phẩm sạch tại Gia Lộc",
-        "src": "..pages/project/presentation/",
+        "src": "../pages/project/presentation/",
         "description": "Môn: Sinh học",
         "category": "Presentation, PowerPoint",
         "image": "biology.png"
