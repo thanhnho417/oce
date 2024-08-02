@@ -299,11 +299,8 @@ footer{
 }
 .banner a{
     margin-left: 10px;
-    margin-top: 5px;
     text-decoration: none;
-    color: black;
-    border: 1pc solid white;
-    background: white;
+    color: white;
     height: fit-content;
 }
 .banner a:hover{
