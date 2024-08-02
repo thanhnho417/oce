@@ -1,0 +1,27 @@
+[
+  {
+      "title": "Ngôn ngữ yêu thương",
+      "image_url": "images/asignofaffectionkeyvisual.webp",
+      "url": "asignofaffection/"
+  },
+  {
+      "title": "Sasaki và P-chan",
+      "image_url": "images/sasakiandpeepskeyvisual.jpg",
+      "url": "sasakiandpeeps/"
+  },
+  {
+      "title": "Câu chuyện nhẫn cưới",
+      "image_url": "images/tales-of-wedding-rings-key-visual.webp",
+      "url": "talesofweddingrings/"
+  },
+  {
+    "title": "Dược Sư Tự Sự",
+    "image_url": "images/the-apothecary-diaries-new-key-visual.webp",
+    "url": "theapothecarydiaries/"
+  },
+  {
+    "title": "Kẻ thuần phục yếu nhất bắt đầu hành trình nhặt rác",
+    "image_url": "images/theweakesttamerkeyvisual.jpg",
+    "url": "theweakesttamerbeginsajourneytopickuptrash/"
+  }
+]

@@ -297,6 +297,18 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.banner a{
+    margin-left: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    border: 1pc solid white;
+    background: white;
+    height: fit-content;
+}
+.banner a:hover{
+    color: #172b26;
+}
 
 .image-wrapper{
     padding: 10px 20%;
