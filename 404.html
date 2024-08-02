@@ -4,50 +4,148 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Error</title>
-        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-        <link rel="icon" type="image/x-icon" href="web.jpg">
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="https://www.googleapis.com/drive/v3/files/1HwWCtuEOinGd20HDJtlI3RjPOGOP7fdN?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family: "Quicksand Regular";
+                src: url("https://raw.githubusercontent.com/thanhnho417/editfiles/main/uploads/fonts/Quicksand-Regular.woff") format("woff");
+            }
+            @font-face {
+                font-family: "Quicksand Bold";
+                src: url("https://raw.githubusercontent.com/thanhnho417/editfiles/main/uploads/fonts/Quicksand-Bold.woff") format("woff");
+            }
+            @font-face {
+                font-family: "Quicksand Light";
+                src: url("https://raw.githubusercontent.com/thanhnho417/editfiles/main/uploads/fonts/Quicksand-Light.woff") format("woff");
+            }
+            @font-face {
+                font-family: "Quicksand Medium";
+                src: url("https://raw.githubusercontent.com/thanhnho417/editfiles/main/uploads/fonts/Quicksand-Medium.woff") format("woff");
+            }
+            @font-face {
+                font-family: "Quicksand SemiBold";
+                src: url("https://raw.githubusercontent.com/thanhnho417/editfiles/main/uploads/fonts/Quicksand-SemiBold.woff") format("woff");
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            ::-webkit-scrollbar{
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track{
+                background: white;
+            }
+            ::-webkit-scrollbar-thumb{
+                background: #386e61;
+            }
+            ::-webkit-scrollbar-thumb:hover{
+                background: #254941;
+            }
+            html{
+                height: 100%;
+            }
+            body{
+                min-height: 100%;
+                font-family: "Quicksand Regular",sans-serif;
+                font-size: 1.1em;
+            }
+            img{
+                border-radius: 7px;
+            }
+            .left-selection{
+                display: flex;
+                align-items: center;
+            }
+            .left-selection img{
+                padding: 5px;
+                margin-left: 5px;
+            }
+            .left-selection a{
+                font-family: "Comfortaa", sans-serif;
+                text-decoration: none;
+                margin-left: 10px;
+                color: white;
+                font-size: 18px;
+            }
+            nav{
+                margin-right: 10px;
+                font-family: "Quicksand Semibold",sans-serif;
+            }
+            footer{
+                position: sticky;
+                top: 100%;
+                height: 50px;
+                background-color: #386e61;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: auto;
+                color: white;
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+                background-color: #386e61;
+            }
+            .notfound{
+                display: flex;
+                padding: 5%;
+                justify-content: center;
+            }
+            .notfound p{
+                margin: 5px;
+                padding: 10px;
+                font-size: 30px;
+                font-family: "Quicksand Bold",sans-serif;
+                font-weight: bold;
+            }
+            .notfound a{
+                border: 1px solid #386e61;
+                margin: 5px;
+                padding: 5px 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                background: #386e61;
+                color: white;
+            }
+            .notfound .buttonerror{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            @media(max-width:950px){
+                .notfound{
+                    flex-direction: column;
+                }
+                .notfound .button p{
+                    font-size: 20px;
+                }
+                .notfound .buttonerror{
+                    align-items: center;
+                    flex-direction: row;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
             <div class="left-selection">
-                <img src="web.jpg" alt="Ảnh đại diện" width="40" height="40">
+                <img src="https://www.googleapis.com/drive/v3/files/1HwWCtuEOinGd20HDJtlI3RjPOGOP7fdN?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw" alt="Ảnh đại diện" width="40" height="40">
                 <a href="#">oce</a>
             </div>
-            <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="pages/introduce/">Giới thiệu</a></li>
-                    <li><a href="pages/game/">Game</a></li>
-                    <li><a href="pages/media/">Đa phương tiện</a></li>
-                    <li><a href="pages/anime/">Anime</a></li>
-                    <li><a href="pages/links/">Link</a></li>
-                    <li><a href="pages/project/">Project</a></li>
-                </ul>
-                <ul>
-                    <li class="hideOnMobile"><a href="pages/introduce/">Giới thiệu</a></li>
-                    <li class="hideOnMobile"><a href="pages/game/">Game</a></li>
-                    <li class="hideOnMobile"><a href="pages/media/">Đa phương tiện</a></li>
-                    <li class="hideOnMobile"><a href="pages/anime/">Anime</a></li>
-                    <li class="hideOnMobile"><a href="pages/links/">Link</a></li>
-                    <li class="hideOnMobile"><a href="pages/project/">Project</a></li>
-                    <form id="searchForm" action="results/">
-                        <input type="text" id="searchInput" name="query" placeholder="Tìm...">
-                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
-                    </form>
-                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </nav>
         </header>
         <div class="notfound">
             <img src="404.jpg" alt="404 not found" width="300" height="300">
             
             <div class="buttonerror">
                 <p>Hmm, có vẻ như không có nội dung đó rồi 😒😒😒</p>
-                <a href="#" onclick="history.back()">Quay lại trang trước</a>
+                <a href="javascript:history.back()">Quay lại trang trước</a>
                 <a href="/">Trang chủ</a>
             </div>
             
