@@ -145,8 +145,8 @@
             
             <div class="buttonerror">
                 <p>Hmm, có vẻ như không có nội dung đó rồi 😒😒😒</p>
-                <a href="javascript:history.back()">Quay lại trang trước</a>
-                <a href="/">Trang chủ</a>
+                <a href="#" onclick="goBack()">Quay lại trang trước</a>
+                <a href="https://thanhnho417.github.io/oce/">Trang chủ</a>
             </div>
             
 
@@ -154,6 +154,14 @@
         <footer>
             &copy; oce - Do not Reup - Released in 2024
         </footer>
+        <script>
+            function goBack() {
+                if (document.referrer) {
+                    window.history.back();
+                } else {
+                    window.close();
+                }
+            }
         </script>
         <script src="script.js"></script>
         <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
