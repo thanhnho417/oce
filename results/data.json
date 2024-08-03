@@ -7,6 +7,83 @@
         "image": "../pages/anime/2024/summer/images/my-deer-friend-nokotan-key-visual.jpg"
     },
     {
+        "title": "Nhật kí sống chậm tại dị giới - Nuôi con trong lúc làm mạo hiểm giả",
+        "src": "../pages/anime/2024/summer/ajourneythroughanotherworldraisingkidswhileadventuring/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/a-journey-through-another-world-raising-kids-while-adventuring-key-visual.webp"
+    },
+    {
+        "title": "Arya bàn bên thỉnh thoảng hay trêu ghẹo tôi bằng tiếng Nga",
+        "src": "../pages/anime/2024/summer/alyasometimeshidesherfeelingsinrussian/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/alya-sometimes-hides-her-feelings-in-russian-key-visual.jpg"
+    },
+    {
+        "title": "Egumi Legacy",
+        "src": "../pages/anime/2024/summer/egumilegacy/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/egumi-legacy-key-visual.webp"
+    },
+    {
+        "title": "Failure Frame",
+        "src": "../pages/anime/2024/summer/failureframe/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/failure-frame-i-became-the-strongest-and-annihilated-key-visual.webp"
+    },
+    {
+        "title": "Tôi sẽ \"đỡ\" hết mọi thứ",
+        "src": "../pages/anime/2024/summer/iwillparryeverything/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/i-parry-everything-what-do-you-mean-im-the-strongest-im-not-key-visual.webp"
+    },
+    {
+        "title": "Thế giới này thật không hoàn hảo",
+        "src": "../pages/anime/2024/summer/qualityassuranceinanotherworld/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/Kono.Sekai.wa.Fukanzen.Sugiru.600.4199674.jpg"
+    },
+    {
+        "title": "Câu chuyện về anh hùng thám hiểm băt đầu từ một kẻ tầm thường",
+        "src": "../pages/anime/2024/summer/anobody'swayuptoanexplorationhero/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/mob-kara-hajimaru-tansaku-eiyuutan-teaser-visual.webp"
+    },
+    {
+        "title": "Ma thuật sư mạnh nhất quân đội ma vương là con người",
+        "src": "../pages/anime/2024/summer/thestrongestmagicaninthedemonlordsarmywasahuman/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/the-strongest-magician-in-the-demon-lords-army-was-a-human-key-visual.webp"
+    },
+    {
+        "title": "Huyền thoại Vtuber",
+        "src": "../pages/anime/2024/summer/vtuberlegendhowiwentviralafterforgettingtoturnoff/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/vtuber-legend-how-i-went-viral-after-forgetting-to-turn-off-key-visual.webp"
+    },
+    {
+        "title": "Tại sao không ai nhớ đến thế giới của tôi",
+        "src": "../pages/anime/2024/summer/whdoesnobyremembermeinthisworld/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/why-does-noby-remember-me-in-this-world-key-visual.webp"
+    },
+    {
+        "title": "Wistoria: Trượng và Kiếm",
+        "src": "../pages/anime/2024/summer/wistoriawandandsword/",
+        "description": "Mùa hạ - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/summer/images/wistoria-wand-and-sword-key-visual.webp"
+    },
+    {
         "title": "Blue Archive The Animation",
         "src": "../pages/anime/2024/spring/bluearchivetheanimation/",
         "description": "Mùa xuân - 2024",
@@ -82,6 +159,41 @@
         "description": "Mùa xuân - 2024",
         "category": "Anime",
         "image": "../pages/anime/2024/spring/images/yuru-camp-season-3-new-key-visual.webp"
+    },
+    {
+        "title": "Ngôn ngữ yêu thương",
+        "src": "../pages/anime/2024/winter/asignofaffection/",
+        "description": "Mùa đông - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/winter/images/asignofaffectionkeyvisual.webp"
+    },
+    {
+        "title": "Sasaki và P-chan",
+        "src": "../pages/anime/2024/winter/sasakiandpeeps/",
+        "description": "Mùa đông - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/winter/images/sasakiandpeepskeyvisual.jpg"
+    },
+    {
+        "title": "Câu chuyện nhẫn cưới",
+        "src": "../pages/anime/2024/winter/talesofweddingrings/",
+        "description": "Mùa đông - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/winter/images/tales-of-wedding-rings-key-visual.webp"
+    },
+    {
+        "title": "Dược sư tự sự cour 2",
+        "src": "../pages/anime/2024/winter/theapothecarydiaries/",
+        "description": "Mùa đông - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/winter/images/the-apothecary-diaries-new-key-visual.webp"
+    },
+    {
+        "title": "Kẻ thuần phục yếu nhất bắt đầu hành trình nhặt rác",
+        "src": "../pages/anime/2024/winter/theweakesttamerbeginsajourneytopickuptrash/",
+        "description": "Mùa đông - 2024",
+        "category": "Anime",
+        "image": "../pages/anime/2024/winter/images/theweakesttamerkeyvisual.jpg"
     },
     {
         "title": "Blend S",

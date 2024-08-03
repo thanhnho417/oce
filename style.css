@@ -25,6 +25,7 @@
 }
 ::-webkit-scrollbar{
     width: 10px;
+    height: 10px;
 }
 ::-webkit-scrollbar-track{
     background: white;
@@ -112,7 +113,7 @@ header{
     box-shadow: 3px 3px 3px rgb(146, 145, 145);
 }
 #results{
-    padding: 10px;
+    padding: 10px 5%;
 }
 .category-container {
     margin-bottom: 20px;
@@ -134,6 +135,7 @@ header{
 .result-items {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .result-item {
     margin: 10px;
@@ -150,6 +152,7 @@ header{
     border-radius: 10px 10px 0 0;
     position: relative;
     top: 0;
+    align-self: start;
 }
 .result-item a{
     text-decoration: none;
@@ -283,6 +286,7 @@ footer{
     margin: 20px;
 }
 .banner{
+    width: 100%;
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 17px;
     font-weight: 550;
@@ -296,18 +300,40 @@ footer{
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    white-space: nowrap;
 }
-.banner a{
+.notification{
+    background-color: white; /* Màu nền */
+    border: 1px solid white; /* Đường viền */
+    padding: 10px; /* Khoảng cách bên trong */
+    white-space: nowrap; /* Ngăn chặn xuống dòng */
+    overflow: auto; /* Ẩn phần thừa nếu có */
+    text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung quá dài */
+    position: relative; /* Định vị tương đối */
+    text-align: center; /* Căn giữa nội dung */
+    display: inline-block; /* Đảm bảo phần tử tự điều chỉnh kích thước */
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.notification::-webkit-scrollbar{
+    height: 8px;
+}
+.notification p{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+.notification a{
     margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 4px 20px;
+    border-radius: 40px;
     text-decoration: none;
     color: white;
-    height: fit-content;
+    background: #386e61;
 }
-.banner a:hover{
-    color: #172b26;
-}
-
 .image-wrapper{
     padding: 10px 20%;
 }
@@ -354,7 +380,8 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex: 0 0 33.33%;
+    flex-direction: column;
+    padding: 5px 15%;
 }
 .option-bar .option{
     width: 300px;
@@ -389,8 +416,8 @@ footer{
 }
 .option-button{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .option-button .button button{
@@ -400,6 +427,11 @@ footer{
     margin: 10px;
     border-radius: 15px;
     width: 170px;
+}
+.option-button .button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .option-button .button button a{
     color: white;
