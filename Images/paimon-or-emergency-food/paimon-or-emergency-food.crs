@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=Paimon Normal Select.cur
+
+[Help]
+Path=Paimon Help.cur
+
+[AppStarting]
+Path=Paimon Working in Background.cur
+
+[Wait]
+Path=Paimon Busy.cur
+
+[Crosshair]
+Path=Paimon Precision Select.cur
+
+[IBeam]
+Path=Paimon Text Select.cur
+
+[NWPen]
+Path=Paimon Handwriting.cur
+
+[No]
+Path=Paimon Unavailable.cur
+
+[SizeNS]
+Path=Paimon Vertical Resize.cur
+
+[SizeWE]
+Path=Paimon Horizontal Resize.cur
+
+[SizeNWSE]
+Path=Paimon Diagonal Resize 1.cur
+
+[SizeNESW]
+Path=Paimon Diagonal Resize 2.cur
+
+[SizeAll]
+Path=Paimon Move.cur
+
+[UpArrow]
+Path=Paimon Alternate Select.cur
+
+[Hand]
+Path=Paimon Link Select.cur
+

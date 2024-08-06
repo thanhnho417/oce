@@ -38,11 +38,22 @@
 }
 html{
     height: 100%;
+    cursor: url(Images/mouse.svg),auto;
+    margin: 0;
+}
+a{
+    cursor: url(Images/click.svg), auto;
+}
+button{
+    cursor: url(Images/click.svg), auto;
 }
 body{
-    min-height: 100%;
+    height: 100%;
     font-family: "Quicksand Regular",sans-serif;
     font-size: 1.1em;
+}
+embed{
+    cursor: url(Images/mouse.svg),auto;
 }
 img{
     border-radius: 7px;
@@ -565,16 +576,24 @@ footer{
 .row .right .content:active a{
     background-color: green;
 }
-
-.game-wrapper {
-    padding: 10px 20%;
-}
-.game-wrapper embed{
+ruffle-player {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
+    border-radius: 25px;
+}
+#flash-content{
+    padding: 10px 5%;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+#flash-content #player{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 #dataTable{
     padding: 10px 10%;
@@ -777,6 +796,9 @@ video::cue{
         padding: 10px;
     }
     .image-wrapper {
+        padding: 10px;
+    }
+    #flash-content{
         padding: 10px;
     }
 }

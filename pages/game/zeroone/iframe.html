@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Flash Player</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        #flash-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ruffle-player {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", () => {
+            const ruffle = window.RufflePlayer.newest();
+            const container = document.getElementById("flash-container");
+            const player = ruffle.createPlayer();
+            player.style.width = '100%';
+            player.style.height = '100%';
+            container.appendChild(player);
+            player.load("../../../Games/Flash Belt Zero One.swf");
+        });
+    </script>
+
+    <div id="flash-container"></div>
+</body>
+</html>

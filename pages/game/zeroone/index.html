@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kamen Rider Zero One Flash Belt by CometComics</title>
-        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
         <link rel="icon" type="image/x-icon" href="../../../../web.jpg">
         <link rel="stylesheet" href="../../../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            
+        </style>
     </head>
     <body>
         <header>
@@ -53,12 +54,26 @@
         <div class="banner">
             Kamen Rider Zero One Flash Belt by CometComics
         </div>
-        <div class="game-wrapper">
-                <embed src="../../../Games/Flash Belt Zero One.swf" type="application/x-shockwave-flash" height="auto" width="100%">
-        </div>
+        <script src="../../../ruffle-nightly-2024_08_04-web-selfhosted/ruffle.js"></script>
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", () => {
+                const ruffle = window.RufflePlayer.newest();
+                const container = document.getElementById("flash-content");
+                const player = ruffle.createPlayer();
+                player.style.width = '100%';
+                player.style.height = '100%';
+                container.appendChild(player);
+                player.load("../../../Games/Flash Belt Zero One.swf");
+            });
+        </script>
+
+        <div id="flash-content"></div>
+           
         <footer>
             &copy; oce - Do not Reup - Released in 2024
         </footer>
+        <script src="../../../ruffle-nightly-2024_08_04-web-selfhosted/ruffle.js"></script>
         <script src="../../../script.js"></script>
     </body>
 </html>
