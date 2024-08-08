@@ -404,12 +404,10 @@ footer{
 .option-image-text .option-click .image{
     padding: 10px;
     margin: 10px;
-    border: 1px solid;
 }
 .option-image-text .option-click .text{
     padding: 5px 10px;
     margin: 10px;
-    border: 1px solid;
     text-align: center;
 }
 .option-image-text .option-click .text a{
