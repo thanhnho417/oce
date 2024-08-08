@@ -25,19 +25,8 @@
 </head>
 <body>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", () => {
-            const ruffle = window.RufflePlayer.newest();
-            const container = document.getElementById("flash-container");
-            const player = ruffle.createPlayer();
-            player.style.width = '100%';
-            player.style.height = '100%';
-            container.appendChild(player);
-            player.load("../../../Games/Flash Belt Zero One.swf");
-        });
-    </script>
-
-    <div id="flash-container"></div>
+    <div id="flash-container">
+        <embed src="https://www.googleapis.com/drive/v3/files/1LkxFpcUTGoB_dBIXzwT-TQ8T4_4tCjmX?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw">
+    </div>
 </body>
 </html>
