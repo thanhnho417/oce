@@ -91,7 +91,7 @@ nav a{
     border-radius: 15px;
     padding-left: 13px;
     padding-right: 13px;
-    width: 150px;
+    width: 140px;
 }
 #searchForm input::placeholder{
     font-family: "Noto Sans", sans-serif;

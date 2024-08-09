@@ -52,7 +52,7 @@
         "thumbnail": "img4.png"
     },
     {
-        "title": "Tập 5",
+        "title": "Tập 5: Nắm lấy điểm yếu",
         "src": "https://vd2.biananset.net/_v7/79a4211c6b1337bae87dbe9f0ec385100a49457db595781010f41a4da75c4089490c47d7d4bab8e04aa3034f2cfa7366991560e1c3556bc5267c77d65e3e71d6d9f24245c9ad7b3280e12d448580c673db2194e4ab358be8d23c786322f5cda990d8ab4b12b6cb37a16ffe8bffa9e1c05fd73fa4028febb3e5a413dfebc613a7/index-f1-v1-a1.m3u8",
         "description": "",
         "subtitles": [
@@ -65,22 +65,17 @@
         "thumbnail": "img5.png"
     },
     {
-        "title": "Tập 6",
-        "src": "link-to-video-2.m3u8",
-        "description": "This is the description for Video 2.",
+        "title": "Tập 6: Lễ hội nai mùa hè",
+        "src": "https://w2r.biananset.net/_v7/5f345b97c4d836ca66ca46a76e43fabc434549cb6e7f5d8fa3a2875196e6b33d97b9f2530902f3007308a9c8f4f6ba02b194ee4e74ec54f6dc18b8aa448d178585086e3ac6f52a149a87c6c4e618c92f9cc555c863678ec53fbffa3879ddfe8d695c7d2047f77dcf6f9d1a8fb7af5e8330555d845fae7cd7fbbeeed37d1b4f6b/index-f1-v1-a1.m3u8",
+        "description": "",
         "subtitles": [
             {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
+                "label": "Vietnamese",
+                "src": "ep6.vtt",
+                "srclang": "vi"
             }
         ],
-        "thumbnail": "vna.png"
+        "thumbnail": "img6.png"
     },
     {
         "title": "Tập 7",
