@@ -9,6 +9,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            #html:hover{background: #039be5;}
+            #pdf:hover{background: #eb342b;}
+            #word:hover{background: #103e93;}
+            #presentation:hover{background: #ff906b;}
+            #python:hover{background: #34668c;}
+        </style>
     </head>
     <body>
         <header>
@@ -52,38 +59,56 @@
         <div class="banner">
             Chọn dự án
         </div>
-        <div class="option-bar">
-            <div class="option">
-                <div class="image-detail">
-                    <img src="../../Images/html-icon.png" alt="python" height="50" width="50">
-                </div>
-                <div class="detail">
-                    Html
-                </div>
+        <div class="option-image-text">
+            <div class="option-click">
+                <a href="#" id="html">
+                    <div class="image">
+                        <img src="../../Images/html-icon.png" alt="html" width="auto" height="50">
+                    </div>
+                    <div class="text">
+                        Html
+                    </div>
+                </a>    
             </div>
-            <div class="option">
-                <div class="image-detail">
-                    <img src="../../Images/python-icon.jpg" alt="python" height="50" width="50">
-                </div>
-                <div class="detail">
-                    Python
-                </div>
+            <div class="option-click">
+                <a href="#" id="pdf">
+                    <div class="image">
+                        <img src="../../Images/pdf.svg" alt="pdf" width="auto" height="50">
+                    </div>
+                    <div class="text">
+                        PDF
+                    </div>
+                </a>
             </div>
-            <div class="option">
-                <div class="image-detail">
-                    <img src="../../Images/word.jpg" alt="python" height="50" width="50">
-                </div>
-                <div class="detail">
-                    Tài liệu
-                </div>
+            <div class="option-click">
+                <a href="#" id="word">
+                    <div class="image">
+                        <img src="../../Images/word.jpg" alt="Word" width="auto" height="50">
+                    </div>
+                    <div class="text">
+                        Tài liệu
+                    </div>
+                </a>    
             </div>
-            <div class="option">
-                <div class="image-detail">
-                    <img src="../../Images/microsoft-powerpoint.jpg" alt="powerpoint" height="50" width="50">
-                </div>
-                <div class="detail">
-                    <a href="presentation/">Presentation</a>
-                </div>
+            <div class="option-click">
+                <a href="presentation/" id="presentation">
+                    <div class="image">
+                        <img src="../../Images/microsoft-powerpoint.jpg" alt="powerpoint" width="auto" height="50">
+                    </div>
+                    <div class="text">
+                        Presentation
+                    </div>
+                </a>    
+            </div>
+            <div class="option-click">
+                <a href="#" id="python">
+                    <div class="image">
+                        <img src="../../Images/python-icon.jpg" alt="python" width="auto" height="50">
+                    </div>
+                    <div class="text">
+                        Python
+                    </div>
+                </a>    
             </div>
         </div>
         <footer>
