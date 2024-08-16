@@ -1,34 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-  fetch('data.json')
-      .then(response => response.json())
-      .then(data => {
-          const cardArea = document.querySelector('.card-area');
-          cardArea.innerHTML = '';
-          const wrapper = document.createElement('div');
-          wrapper.classList.add('wrapper');
-          const boxArea = document.createElement('div');
-          boxArea.classList.add('box-area');
-          data.forEach(anime => {
-              const box = document.createElement('div');
-              box.classList.add('box');
-              const link = document.createElement('a');
-              link.href = anime.url;
-              const img = document.createElement('img');
-              img.src = anime.image_url;
-              img.alt = anime.title;
-              link.appendChild(img);
-              const overlay = document.createElement('div');
-              overlay.classList.add('overlay');
-              const overlayLink = document.createElement('a');
-              overlayLink.href = anime.url;
-              overlayLink.textContent = anime.title;
-              overlay.appendChild(overlayLink);
-              box.appendChild(link);
-              box.appendChild(overlay);
-              boxArea.appendChild(box);
-          });
-          wrapper.appendChild(boxArea);
-          cardArea.appendChild(wrapper);
-      })
-      .catch(error => console.error('Error fetching data:', error));
-});
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video => {
+    video.onclick = () =>{
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+            let src = video.children[0].getAttribute('src');
+            mainVideo.src = src;
+            let text = video.children[1].innerHTML;
+            title.innerHTML = text;
+        }
+    }
+})
+const player = new Plyr('#player');
