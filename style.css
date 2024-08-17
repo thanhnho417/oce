@@ -866,6 +866,9 @@ video::cue{
     .image-wrapper {
         padding: 10px;
     }
+    .article-area p{
+        padding: 10px;
+    }
     #flash-content{
         padding: 10px;
     }
