@@ -51,6 +51,7 @@ body{
     height: 100%;
     font-family: "Quicksand Regular",sans-serif;
     font-size: 1.1em;
+    font-weight: 500;
 }
 embed{
     cursor: url(Images/mouse.svg),auto;
@@ -186,7 +187,7 @@ header{
     margin-left: 5px;
 }
 .left-selection a{
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Quicksand SemiBold", sans-serif;
     text-decoration: none;
     margin-left: 10px;
     color: white;
@@ -204,7 +205,7 @@ nav a:hover{
     margin: 5px;
     padding: 10px;
     font-size: 30px;
-    font-family: "Quicksand Bold",sans-serif;
+    font-family: "Quicksand",sans-serif;
     font-weight: bold;
 }
 .notfound a{
@@ -553,6 +554,33 @@ footer{
     display: grid;
     place-items: center;
 }
+.article-area iframe{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10%;
+    margin-bottom: 10px;
+}
+.article-area p{
+    margin: 10px;
+    padding: 10px 10%;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: justify;
+}
+.article-area ul{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 10%;
+    font-family: "Quicksand SemiBold",sans-serif;
+    font-size: 1.1em;
+    list-style: none;
+}
 .row{
     width: 90%;
     max-width: 1155px;
@@ -610,7 +638,7 @@ footer{
     background-color: rgb(104, 104, 219);
     color: white;
 }
-.row .right .content:active a{
+.row .right .content a:active{
     background-color: green;
 }
 ruffle-player {
@@ -780,7 +808,9 @@ video::cue{
     .table-wrapper{
         width: 90%;
     }
-    
+    .article-area iframe{
+        padding: 10px;
+    }
 }
 @media(max-width:950px){
     .hideOnMobile{
