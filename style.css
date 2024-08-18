@@ -561,13 +561,7 @@ footer{
     padding: 10px 10%;
     margin-bottom: 10px;
 }
-.article-area p{
-    margin: 10px;
-    padding: 10px 10%;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: justify;
-}
+
 .article-area ul{
     text-align: left;
     display: flex;
@@ -864,9 +858,6 @@ video::cue{
         padding: 10px;
     }
     .image-wrapper {
-        padding: 10px;
-    }
-    .article-area p{
         padding: 10px;
     }
     #flash-content{
