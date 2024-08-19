@@ -479,18 +479,119 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
+.option-button a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+}
 .option-button .button a button{
     font-family: "Quicksand Semibold",sans-serif;
-    width: 200px;
+    width: 210px;
     background: #386e61;
     color: white;
     padding: 5px 10px;
     border: 1px solid #386e61;
     border-radius: 50px;
     box-shadow: none;
-    margin: 10px;
-    padding: 5px 10px;
+    margin: 5px;
     font-size: 1.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.option-button .button a button img{
+    margin-right: 10px;
+}
+#muse{
+    background: white;
+    color: black;
+    border: 1px solid #ba3b38;
+}
+#muse:hover{
+    background: #ba3b38;
+    color: white;
+}
+#fptplay{
+    background: white;
+    color: black;
+    border: 1px solid #f26f21;
+}
+#fptplay:hover{
+    background: #f26f21;
+    color: white;
+}
+#anionevn{
+    color: black;
+    background: white;
+    border: 1px solid #30c9bc;
+}
+#anionevn:hover{
+    color: white;
+    background: #30c9bc;
+}
+#vieon{
+    color: black;
+    background: white;
+    border: 1px solid #00ff01;
+}
+#vieon:hover{
+    color: white;
+    background-color: #00ff01;
+}
+#iqiyi{
+    color: black;
+    background: white;
+    border: 1px solid #11de63;
+}
+#iqiyi:hover{
+    background: #11de63;
+    color: white;
+}
+#itsanime{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+#itsanime:hover{
+    color: white;
+    background: black;
+}
+#netflix{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+#netflix:hover{
+    color: white;
+    background: black;
+}
+#anione{
+    color: black;
+    background: white;
+    border: 1px solid #9e9c9e;
+}
+#anione:hover{
+    color: white;
+    background-color: #9e9c9c;
+}
+#tv360{
+    color: black;
+    background: white;
+    border: 1px solid #d32332;
+}
+#tv360:hover{
+    color: white;
+    background: #d32332;
+}
+#hlouis{
+    color: black;
+    background: white;
+    border: 1px solid #c2bbc7;
+}
+#hlouis:hover{
+    color: white;
+    background: #c2bbc7;
 }
 .wrapper{
     padding: 15px 15%;
@@ -561,7 +662,9 @@ footer{
     padding: 10px 10%;
     margin-bottom: 10px;
 }
-
+#info{
+    padding: 10px;
+}
 .article-area ul{
     text-align: left;
     display: flex;
@@ -576,16 +679,13 @@ footer{
     list-style: none;
 }
 .row{
-    width: 90%;
-    max-width: 1155px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 15px 10px;
-    padding: 10px;
+    display: flex;
+    padding: 10px 10%;
 }
 .row .left{
     overflow: hidden;
     padding: 10px 40px 10px 40px;
+    flex: 1;
 }
 .row .left img{
     width: 100%;
@@ -597,9 +697,13 @@ footer{
 .row .right{
     display: flex;
     align-items: start;
+    flex: 2.5;
+    text-align: center;
 }
 .row .right .content{
     padding: 5px;
+    justify-content: center;
+    text-align: center;
 }
 .row .right .content p{
     font-size: 16px;
@@ -618,15 +722,17 @@ footer{
 }
 .row .right .content a{
     font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
+    display: inline-block;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
     font-weight: 700;
     text-decoration: none;
     color: black;
     border: 1px solid;
     padding: 10px 20px 10px 20px;
     border-radius: 25px;
-    width: 100%;
+    width: 170px;
 }
 .row .right .content a:hover{
     background-color: rgb(104, 104, 219);
@@ -793,12 +899,8 @@ video::cue{
 }
 @media(max-width:750px){
     .row{
-        width: 85%;
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
-    .row .left{
-        padding: 10px 40px 10px 40px;
-    };
     .table-wrapper{
         width: 90%;
     }
