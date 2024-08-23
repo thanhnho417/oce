@@ -78,9 +78,9 @@
         "thumbnail": "img6.png"
     },
     {
-        "title": "Tập 7: ShikaColle, Streaming, nhập viện và vân vân",
+        "title": "Tập 7: Shikacole, tiếp đãi, phát sóng các thứ",
         "src": "https://wf1.biananset.net/_v7/4588db521c5a7a58f0cc96d1844d97a68c885d24e5b2d571a73e5cc5a81afe3b47d8b29d6c1f0a6945f9edeb9611734f3e1f8967f59ef97b17ec59dbdb6603caab292068d6c5ff830329bbe96a22b6b5f391afe6bb7c903c7d9cdfe5793fff31b8143141e0e5be99277137a2ddcd72df953fab0126b6e92ef6f2bc6d7e4aec30/index-f1-v1-a1.m3u8",
-        "description": "",
+        "description": "Koshitan và Nokotan đã ghé thăm quán cà phê Tsubame. Chủ quán, Tsubameya Yoshiharu (anh trai của Chiharu), với tinh thần tiếp đãi hoàn hảo, đã rất bối rối với vị khách nai đầu tiên của mình và bị cuốn vào guồng của Nokotan.",
         "subtitles": [
             {
                 "label": "Vietnamese",
@@ -91,22 +91,17 @@
         "thumbnail": "img7.png"
     },
     {
-        "title": "Tập 8",
-        "src": "link-to-video-2.m3u8",
+        "title": "Tập 8: Nai đến, nai đi",
+        "src": "https://w2r.biananset.net/_v7/8b74a2ed2cb51afd97c3c56eae4ece7fef8dee4305eba65f4143895b0928ea7bb2b057478043834294c5e2bcc4d01c8ba9369f2d3382085c0ba1fe45c44c4ba4d366c3b044a17dfbcccbee4706d619e64a1b0f9b8e0c07f07a44f9c9a99d4e9083d0acd476d8f44f8f7b64f24747093a330e56409f5cc3b9fcfd04da11a058a0/index-f1-v1-a1.m3u8",
         "description": "",
         "subtitles": [
             {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
+                "label": "Vietnamese",
+                "src": "ep8.vtt",
+                "srclang": "vi"
             }
         ],
-        "thumbnail": "vna.png"
+        "thumbnail": "img8.png"
     },
     {
         "title": "Tập 9",
