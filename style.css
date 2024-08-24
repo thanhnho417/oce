@@ -42,12 +42,9 @@
     position: fixed;
     align-items: center;
     justify-content: center;
-    top: 0;
+    top: 50px;
     left: 0;
-    bottom: 10px;
-    right: 0;
     background-color: #fff ;
-    z-index: 2000;
 }
 .loader {
   position: relative;
@@ -126,7 +123,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10%;
+  padding:17%;
 }
 html{
     height: 100%;
@@ -144,6 +141,7 @@ body{
     font-family: "Quicksand Regular",sans-serif;
     font-size: 1.1em;
     font-weight: 500;
+    background: white;
 }
 embed{
     cursor: url(Images/mouse.svg),auto;
@@ -161,6 +159,7 @@ nav ul{
 nav{
     margin-right: 10px;
     font-family: "Quicksand Semibold",sans-serif;
+    z-index: 1100;
 }
 nav li{
     height: 50px;
@@ -214,7 +213,10 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #386e61;
-    box-shadow: 3px 3px 3px rgb(146, 145, 145);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 #results{
     padding: 10px 5%;
@@ -342,7 +344,6 @@ nav a:hover{
 .menu-button:hover{
     background-color: rgb(39, 82, 57);
 }
-
 .navigation{
     background-color: black;
     width: 100%;
@@ -746,6 +747,7 @@ footer{
 .article-area{
     display: grid;
     place-items: center;
+    z-index: 2000;
 }
 .article-area iframe{
     display: grid;
