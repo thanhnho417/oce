@@ -42,7 +42,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #fff;
+    bottom: 10px;
+    right: 0;
+    background-color: #fff ;
+    z-index: 2000;
 }
 .loader {
   position: relative;
@@ -65,7 +68,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .path {
@@ -116,12 +119,12 @@ body {
   background-color: #eee;
 }
 .showbox {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 5%;
+  padding: 0;
 }
 html{
     height: 100%;
@@ -748,6 +751,10 @@ footer{
     align-items: center;
     padding: 10px 15%;
     margin-bottom: 10px;
+}
+.article-area p{
+    margin: 10px 10px 0 10px;
+    text-align: center;
 }
 #info{
     padding: 10px;
