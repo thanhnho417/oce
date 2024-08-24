@@ -51,6 +51,15 @@
                         </svg></a></li>
             </ul>
         </nav>
+        <div class="loading-area">
+            <div class="showbox">
+                <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+                </div>
+            </div>
+        </div> 
     </header>
     <div class="navigation">
         <a href="../../../"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960"
@@ -85,6 +94,12 @@
     <footer>
         &copy; oce - Do not Reup - Released in 2024
     </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(window).on("load", function(){
+                $(".loading-area").fadeOut("slow");
+            });
+        </script>
     <script src="../../../script.js"></script>
     <script src="script.js"></script>
 </body>
