@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="loading-area">
+            <div class="showbox">
+                <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+                </div>
+            </div>
+        </div> 
         <header>
             <div class="left-selection">
                 <img src="web.jpg" alt="Ảnh đại diện" width="40" height="40">
@@ -42,6 +51,7 @@
                 </ul>
             </nav>
         </header>
+           
         <div class="navigation">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
@@ -76,7 +86,7 @@
                 Video
             </div>
             <div class="video-wrapper">
-                <video class="player" playsinline controls data-poster="Images/f1.png" height="540" width="960">
+                <video id="player1" playsinline controls data-poster="Images/f1.png" height="540" width="960">
                     <source src="Video/Genshin Impact 2024.07.24 - 14.48.33.00.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -85,7 +95,7 @@
             </div>
 
             <div class="video-wrapper">
-                <video class="player2" playsinline controls data-poster="Images/thumb1.png" height="540" width="960">
+                <video id="player2" playsinline controls data-poster="Images/thumb1.png" height="540" width="960">
                     <source src="Video/tonikawass2ed.mp4" type="video/mp4" />
                   
                     <!-- Captions are optional -->
@@ -99,13 +109,19 @@
         </footer>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const player = new Plyr('.player');
+                const player = new Plyr('#player1');
             });
             document.addEventListener('DOMContentLoaded', () => {
-                const player = new Plyr('.player2');
+                const player = new Plyr('#player2');
             });
         </script>
         <script src="script.js"></script>
         <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(window).on("load", function(){
+                $(".loading-area").fadeOut("slow");
+            });
+        </script>
     </body>
 </html>
