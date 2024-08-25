@@ -224,6 +224,48 @@
         "image": "../pages/anime/2024/winter/images/theweakesttamerkeyvisual.jpg"
     },
     {
+        "title": "Công chúa ma cà rồng tầm thường",
+        "src": "../pages/anime/2023/fall/thevexationsofashutinvampireprincess/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/the-vexations-of-a-shut-in-vampire-princess-new-key-visual.webp"
+    },
+    {
+        "title": "Cuộc sống gia đình của phù thủy bất thường",
+        "src": "../pages/anime/2023/fall/thefamilyircumstancesoftheirregularwitch/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/dekoboko-majo-no-oyako-jijou-new-key-visual.webp"
+    },
+    {
+        "title": "Kẻ ngây thơ, người từng trải và câu chuyện tình của chúng ta",
+        "src": "../pages/anime/2023/fall/ourdatingstorytheexperiencedyouandtheinexperienced/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/our-dating-story-the-experienced-you-and-the-inexperienced-key-visual.webp"
+    },
+    {
+        "title": "SPYxFAMILY S2",
+        "src": "../pages/anime/2023/fall/spyxfamilys2/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/spy-x-family-s2-key-visual.webp"
+    },
+    {
+        "title": "100 cô bạn gái yêu bạn rất rất rất rất rất nhiều",
+        "src": "../pages/anime/2023/fall/the100girlfriendswhoreallyreallyreallyreallyreallyloveyou/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/the-100-girlfriends-who-really-really-really-really-really-love-you-key-visual.webp"
+    },
+    {
+        "title": "Học viện Thánh Kiếm",
+        "src": "../pages/anime/2023/fall/thedemonswordmasterofexcaliburacademy/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/the-demon-sword-master-of-excalibur-academy-new-key-visual.webp"
+    },
+    {
         "title": "Blend S",
         "id": "anime",
         "src": "../pages/anime/2017/autumn/blends/",
