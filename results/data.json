@@ -266,6 +266,76 @@
         "image": "../pages/anime/2023/fall/images/the-demon-sword-master-of-excalibur-academy-new-key-visual.webp"
     },
     {
+        "title": "Dark Gathering",
+        "src": "../pages/anime/2023/summer/darkgathering/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/dark-gathering-new-key-visual.webp"
+    },
+    {
+        "title": "Chúa Quỷ Cấp 1 Và Anh Hùng Một Phòng",
+        "src": "../pages/anime/2023/summer/level1demonlordandoneroomhero/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/level-1-demon-lord-and-one-room-hero-new-key-visual.webp"
+    },
+    {
+        "title": "Thất nghiệp chuyển sinh S2",
+        "src": "../pages/anime/2023/summer/musshokutenseijoblessreincarnations2/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/mushoku-tensei-jobless-reincarnation-season-2-key-visual.webp"
+    },
+    {
+        "title": "Mặc dù chỉ cấp độ 1 nhưng vì có kỹ năng độc nhất nên tôi là người mạnh nhất",
+        "src": "../pages/anime/2023/summer/myuniqueskillmakesmeopevenatlevel1/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/my-unique-skill-makes-me-op-even-at-lv-1-key-visual.webp"
+    },
+    {
+        "title": "Tenpuru: Không ai có thể sống trong cô đơn",
+        "src": "../pages/anime/2023/summer/tenpurunoonecanliveonloneliness/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/tenpuru-no-one-can-live-on-loneliness-new-key-visual.webp"
+    },
+    {
+        "title": "Ma vương đi làm S2 - Cour 2",
+        "src": "../pages/anime/2023/summer/thedevilisapart-timers2p2/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/the-girl-i-like-forgot-her-glasses-new-key-visual.webp"
+    },
+    {
+        "title": "Cô gái tôi thầm thích lại quên mang kính rồi",
+        "src": "../pages/anime/2023/summer/thegirlilikeforgotherglasses/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/dark-gathering-new-key-visual.webp"
+    },
+    {
+        "title": "Chú mèo giỏi giang hôm nay lại sầu",
+        "src": "../pages/anime/2023/summer/themasterfulcatisdepressedagaintoday/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/the-masterful-cat-is-depressed-again-today-key-visual.webp"
+    },
+    {
+        "title": "Trò hề sát nhân xác sống",
+        "src": "../pages/anime/2023/summer/undeadgirlmurderfarce/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/undead-murder-farce-new-key-visual.webp"
+    },
+    {
+        "title": "100 điều tôi muốn làm trước khi trở thành xác sống",
+        "src": "../pages/anime/2023/summer/zom100bucketlistofthedead/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/summer/images/zom-100-bucket-list-of-the-dead-anime-key-visual.webp"
+    },
+    {
         "title": "Blend S",
         "id": "anime",
         "src": "../pages/anime/2017/autumn/blends/",

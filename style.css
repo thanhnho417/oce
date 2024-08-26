@@ -831,6 +831,7 @@ footer{
     text-align: center;
     font-family: "Noto Sans", sans-serif;
     font-weight: bolder;
+    margin-bottom: 10px;
 }
 .row .right .content a{
     font-size: 16px;
