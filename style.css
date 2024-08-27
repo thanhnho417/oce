@@ -1021,7 +1021,7 @@ video::cue{
         padding: 10px;
     }
 }
-@media(max-width:950px){
+@media(max-width:1010px){
     .hideOnMobile{
         display: none;
     }

@@ -336,6 +336,90 @@
         "image": "../pages/anime/2023/summer/images/zom-100-bucket-list-of-the-dead-anime-key-visual.webp"
     },
     {
+        "title": "Thiên hà láng giềng",
+        "src": "../pages/anime/2023/spring/agalaxynextdoor/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/a-galaxy-next-door-new-key-visual.webp"
+    },
+    {
+        "title": "Dead Mount Death Play",
+        "src": "../pages/anime/2023/spring/deadmountdeathplay/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/dead-mount-death-play-key-visual.webp"
+    },
+    {
+        "title": "Thanh gươm diệt quỷ: Phần Làng rèn kiếm",
+        "src": "../pages/anime/2023/spring/demonslayerswordsmithvillagearc/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc-new-key-visual.webp"
+    },
+    {
+        "title": "Sau khi có được năng lực bá đạo ở dị giới, tôi cũng vô đối ở thế giới thực",
+        "src": "../pages/anime/2023/spring/igotacheatskillinanotherworldandbecameunrivaledintherealworldtoo/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/i-got-a-cheat-skill-in-another-world-and-became-unrivaled-in-the-real-world-too-key-visual.webp"
+    },
+    {
+        "title": "Chuyển sinh cùng Smartphone 2",
+        "src": "../pages/anime/2023/spring/inanotherworldwithmysmartphone2/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/in-another-world-with-my-smartphone-season-2-new-visual.webp"
+    },
+    {
+        "title": "Kuma Kuma Kuma Bear - Punch",
+        "src": "../pages/anime/2023/spring/kumakumakumabearpunch/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/kuma-kuma-kuma-bear-punch-s2-key-visual.webp"
+    },
+    {
+        "title": "Mashle",
+        "src": "../pages/anime/2023/spring/mashle/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/mashle-magic-and-muscles-new-key-visual.webp"
+    },
+    {
+        "title": "Pháp Sư Đến Từ Sao Thủy S2",
+        "src": "../pages/anime/2023/spring/mobilesuitgundamthewitchfrommercurys2/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/mobile-suit-gundam-the-witch-from-mercury-season-2-key--visual.webp"
+    },
+    {
+        "title": "Đứa con của thần tượng",
+        "src": "../pages/anime/2023/spring/oshinoko/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/oshi-no-ko-new-key-visual.webp"
+    },
+    {
+        "title": "Edomae Elf",
+        "src": "../pages/anime/2023/spring/otakuelf/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/otaku-elf-new-key-visual.webp"
+    },
+    {
+        "title": "Dũng sĩ đã chết",
+        "src": "../pages/anime/2023/spring/thelegendaryheroisdead/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/the-legendary-hero-is-dead-new-key-visual.webp"
+    },
+    {
+        "title": "Tóm lại vì em dễ thương S2",
+        "src": "../pages/anime/2023/spring/tonikawaoverthemoonforyous2/",
+        "description": "Mùa hè - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/spring/images/tonikawa-s2-kv.webp"
+    },
+    {
         "title": "Blend S",
         "id": "anime",
         "src": "../pages/anime/2017/autumn/blends/",
