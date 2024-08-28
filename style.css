@@ -875,10 +875,9 @@ ruffle-player {
 }
 #dataTable{
     padding: 10px 10%;
-    overflow-x: auto;
+    height: auto;
     font-family: "Noto Sans", sans-serif;
     overflow-x: auto;
-    white-space: inherit;
 }
 table {
     border-collapse: collapse;
