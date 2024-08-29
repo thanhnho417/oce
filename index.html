@@ -82,14 +82,14 @@
                 Nhạc
             </div>
             <div class="music-wrapper">
-                <audio id="player" src="Musics/nhacthai.mp3" controls></audio>
-                <audio id="player" src="Musics/Over The Horizon 2015.mp3" controls></audio>
+                <audio id="player1" src="Musics/nhacthai.mp3" controls></audio>
+                <audio id="player1" src="Musics/Over The Horizon 2015.mp3" controls></audio>
             </div>
             <div class="banner">
                 Video
             </div>
             <div class="video-wrapper">
-                <video id="player1" playsinline controls data-poster="Images/f1.png" height="540" width="960">
+                <video id="player" playsinline controls data-poster="Images/f1.png" height="540" width="960">
                     <source src="Video/Genshin Impact 2024.07.24 - 14.48.33.00.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -112,7 +112,7 @@
         </footer>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const player = new Plyr('#player1');
+                const player = new Plyr('#player');
             });
             document.addEventListener('DOMContentLoaded', () => {
                 const player = new Plyr('#player2');
@@ -120,6 +120,8 @@
         </script>
         <script src="script.js"></script>
         <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+        <script src="https://unpkg.com/plyr@3"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script>
             $(window).on("load", function(){
