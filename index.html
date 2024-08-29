@@ -83,7 +83,7 @@
             </div>
             <div class="music-wrapper">
                 <audio id="player1" src="Musics/nhacthai.mp3" controls></audio>
-                <audio id="player1" src="Musics/Over The Horizon 2015.mp3" controls></audio>
+                <audio id="player3" src="Musics/Over The Horizon 2015.mp3" controls></audio>
             </div>
             <div class="banner">
                 Video
@@ -117,10 +117,15 @@
             document.addEventListener('DOMContentLoaded', () => {
                 const player = new Plyr('#player2');
             });
+            document.addEventListener('DOMContentLoaded', () => {
+                const player = new Plyr('#player1');
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+                const player = new Plyr('#player3');
+            });
         </script>
         <script src="script.js"></script>
-        <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+        <script src="plyr.js"></script>
         <script src="https://unpkg.com/plyr@3"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script>
