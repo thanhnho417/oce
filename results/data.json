@@ -581,6 +581,20 @@
         "image": "../pages/anime/2022/spring/images/the-greatest-demon-lord-is-reborn-as-a-typical-nobody-key-visual.webp"
     },
     {
+        "title": "Thanh gươm diệt quỷ: Phần Kĩ viện trấn",
+        "src": "../pages/anime/2022/winter/demonslayerentertainmentdistrictarc/",
+        "description": "Mùa đông - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/winter/images/demon-slayer-entertainment-district-arc-key-visual.webp"
+    },
+    {
+        "title": "Fantasy Bishoujo Juniku Ojisan to",
+        "src": "../pages/anime/2022/winter/lifewithanordinaryguywhoreincarnatedintoatotalfantasyknockout/",
+        "description": "Mùa đông - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/winter/images/fantasy-bishoujo-juniku-ojisan-to-key-visual.webp"
+    },
+    {
         "title": "Blend S",
         "id": "anime",
         "src": "../pages/anime/2017/autumn/blends/",
