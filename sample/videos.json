@@ -1,0 +1,14 @@
+{
+    "videos":[
+        {
+            "title": "video 1",
+            "src": "https://raw.githubusercontent.com/thanhnho417/oce/main/Video/bluearchivetheanimationop(S).mp4",
+            "type": "video/mp4"
+        },
+        {
+            "title": "video 2",
+            "src": "https://raw.githubusercontent.com/thanhnho417/oce/main/Video/bluearchivetheanimationed(S).mp4",
+            "type": "video/mp4"
+        }
+    ]
+}

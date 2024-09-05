@@ -231,6 +231,13 @@
         "image": "../pages/anime/2024/winter/images/theweakesttamerkeyvisual.jpg"
     },
     {
+        "title": "Goblin Slayer II",
+        "src": "../pages/anime/2023/fall/goblinslayer2/",
+        "description": "Mùa thu - 2023",
+        "category": "Anime",
+        "image": "../pages/anime/2023/fall/images/goblin-slayer-season-2-new-key-visual.webp"
+    },
+    {
         "title": "Công chúa ma cà rồng tầm thường",
         "src": "../pages/anime/2023/fall/thevexationsofashutinvampireprincess/",
         "description": "Mùa thu - 2023",
@@ -488,6 +495,90 @@
         "description": "Mùa đông - 2023",
         "category": "Anime",
         "image": "../pages/anime/2023/winter/images/the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady-key-visual.webp"
+    },
+    {
+        "title": "Luyện thú sư sau khi bị đuổi khỏi đội dũng sĩ, gặp được miêu nữ của chủng tộc mạnh nhất",
+        "src": "../pages/anime/2022/fall/beasttamer/",
+        "description": "Mùa thu - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/fall/images/beast-tamer-key-visual.webp"
+    },
+    {
+        "title": "Nữ phản diện bao nuôi trùm cuối",
+        "src": "../pages/anime/2022/fall/i'mthevillainesssoi'mtamingthefinalboss/",
+        "description": "Mùa thu - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/fall/images/i'm-the-villainess-so-i'm-taming-the-final-boss-key-visual.webp"
+    },
+    {
+        "title": "Love Flops (Cú ngã ái tình)",
+        "src": "../pages/anime/2022/fall/loveflops/",
+        "description": "Mùa thu - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/fall/images/love-flops-key-visual.webp"
+    },
+    {
+        "title": "Hơn vợ chồng, dưới tình nhân",
+        "src": "../pages/anime/2022/fall/morethanacouplelessthanlovers/",
+        "description": "Mùa thu - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/fall/images/more-than-a-couple-less-than-lovers-new-key-visual.webp"
+    },
+    {
+        "title": "Chuyển sinh thành kiếm",
+        "src": "../pages/anime/2022/fall/reincarnatedasasword/",
+        "description": "Mùa thu - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/fall/images/reincarnated-as-a-sword-new-key-visual.webp"
+    },
+    {
+        "title": "Lycoris Recoil",
+        "src": "../pages/anime/2022/summer/lycorisrecoil/",
+        "description": "Mùa hè - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/summer/images/lycoris-recoil-key-visual.webp"
+    },
+    {
+        "title": "Đứa con mà mẹ kế dẫn về từng là bạn gái cũ",
+        "src": "../pages/anime/2022/summer/mystepmom'sdaughterismyex/",
+        "description": "Mùa hè - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/summer/images/my-stepmom's-daughter-is-my-ex-key-visual.webp"
+    },
+    {
+        "title": "Con gái ông trùm và người giám hộ",
+        "src": "../pages/anime/2022/summer/theyakuza'sguidetobabysetting/",
+        "description": "Mùa hè - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/summer/images/the-yakuza's-guide-to-babysitting-key-visual.webp"
+    },
+    {
+        "title": "Tôi từ bỏ tư cách là một anh hùng",
+        "src": "../pages/anime/2022/spring/i'mquittingheroing/",
+        "description": "Mùa xuân - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/spring/images/i'm-quiting-heroing-key-visual.webp"
+    },
+    {
+        "title": "Shikimori-san của tôi không chỉ dễ thương",
+        "src": "../pages/anime/2022/spring/shikimori'snotjustacutie/",
+        "description": "Mùa xuân - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/spring/images/shikimori's-not-just-a-cutie-key-visual.webp"
+    },
+    {
+        "title": "SPY x FAMILY",
+        "src": "../pages/anime/2022/spring/spyxfamily/",
+        "description": "Mùa xuân - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/spring/images/spy-x-family-key-visual.webp"
+    },
+    {
+        "title": "Đại ma vương mạnh nhất lịch sử chuyển sinh thành dân làng A",
+        "src": "../pages/anime/2022/spring/thegreatestdemonlordisrebornasatypicalnobody/",
+        "description": "Mùa xuân - 2022",
+        "category": "Anime",
+        "image": "../pages/anime/2022/spring/images/the-greatest-demon-lord-is-reborn-as-a-typical-nobody-key-visual.webp"
     },
     {
         "title": "Blend S",

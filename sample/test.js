@@ -1,17 +1,17 @@
-let listVideo = document.querySelectorAll('.video-list .vid');
-let mainVideo = document.querySelector('.main-video video');
-let title = document.querySelector('.main-video .title');
+// Khởi tạo player Video.js
+var player = videojs('my-video');
 
-listVideo.forEach(video => {
-    video.onclick = () =>{
-        listVideo.forEach(vid => vid.classList.remove('active'));
-        video.classList.add('active');
-        if(video.classList.contains('active')){
-            let src = video.children[0].getAttribute('src');
-            mainVideo.src = src;
-            let text = video.children[1].innerHTML;
-            title.innerHTML = text;
-        }
-    }
-})
-const player = new Plyr('#player');
+// Bước 1: Đọc file JSON
+fetch('videos.json')
+    .then(response => response.json()) // Chuyển đổi phản hồi thành JSON
+    .then(data => {
+        // Bước 2: Lấy đối tượng video đầu tiên trong file JSON
+        const video = data.videos[0];
+
+        // Bước 3: Thay đổi src và type của video
+        player.src({ src: video.src, type: video.type });
+
+        // Bước 4: Phát video
+        player.play();
+    })
+    .catch(error => console.error('Error:', error));

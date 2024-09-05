@@ -93,7 +93,7 @@
     {
         "title": "Tập 8: Nai đến, nai đi",
         "src": "https://w2r.biananset.net/_v7/8b74a2ed2cb51afd97c3c56eae4ece7fef8dee4305eba65f4143895b0928ea7bb2b057478043834294c5e2bcc4d01c8ba9369f2d3382085c0ba1fe45c44c4ba4d366c3b044a17dfbcccbee4706d619e64a1b0f9b8e0c07f07a44f9c9a99d4e9083d0acd476d8f44f8f7b64f24747093a330e56409f5cc3b9fcfd04da11a058a0/index-f1-v1-a1.m3u8",
-        "description": "",
+        "description": "Bây giờ là mùa đông và CLB Nai quyết định đi lễ đầu năm. Tại đó, Nokotan dường như được thờ phụng như một vị thần. Vậy là mới đầu năm mà Koshitan đã bị quay cho như chong chóng.",
         "subtitles": [
             {
                 "label": "Tiếng Việt",
@@ -106,7 +106,7 @@
     {
         "title": "Tập 9: Hội thao",
         "src": "https://fgh5.biananset.net/_v7/15d2948a1b0fb6e23184c1a54da3fbb8458f92a717d8156301badff303dcd5f980f5c8c40629796a25f8c59cbce671351bf8f30dcca2701de9290cd2f2f4a274c22a23a6a6b8ab5816c24c2309d98cd0796c63d994e3b95428da2ad29e06499859baaf5b92ec3dd5b7e661698c019abb29e3786a0e15ae635cd0c52440b40d52/index-f1-v1-a1.m3u8",
-        "description": "",
+        "description": "Trung học Hino Minami sẽ tổ chức đại hội thể thao. Là hội trưởng hội học sinh, Koshitan muốn sự kiện diễn ra một cách êm đẹp, nhưng tai nạn cứ liên tiếp xảy ra. \nLiệu đại hội thể thao có thể kết thúc một cách an toàn hay không đây?",
         "subtitles": [
             {
                 "label": "Tiếng Việt",
@@ -117,40 +117,17 @@
         "thumbnail": "img9.png"
     },
     {
-        "title": "Tập 10",
-        "src": "link-to-video-2.m3u8",
+        "title": "Tập 10: Tất cả tại mùa xuân",
+        "src": "https://g4fv.biananset.net/_v7/78e0f7c951ed89c43a8862a9a68f3a23dd92059e98a8ce9191bb6e4065190645ebb6f3ee90fc645fd64e1ee88d21d06019da20bc6575976e0fe6acbd774ccaa9dfab1f8be3d569de043a848f5ad87359fc9f75216ab5b7179a62023945404a419e51bcbbac7ef20327e075ee877d04a97146a0c078cf4c412d709c95059345c4/index-f1-v1-a1.m3u8",
         "description": "",
         "subtitles": [
             {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
+                "label": "Tiếng Việt",
+                "src": "ep10.vtt",
+                "srclang": "vi"
             }
         ],
-        "thumbnail": "vna.png"
-    },
-    {
-        "title": "Tập 10",
-        "src": "link-to-video-2.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
-            }
-        ],
-        "thumbnail": "vna.png"
+        "thumbnail": "img10.png"
     },
     {
         "title": "Tập 11",
