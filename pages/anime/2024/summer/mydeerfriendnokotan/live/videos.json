@@ -131,21 +131,16 @@
     },
     {
         "title": "Tập 11",
-        "src": "link-to-video-2.m3u8",
+        "src": "https://fds.biananset.net/_v7/a7c7e91aa302ef77866b7fb2d07c7383b2e31284220c78f05b742eae86f0acc75e24779daab2f31e3f3db1724075200f93a739f1b4ce01d252c1ed32bfcca276a222b2472f92c2147812aa0cca6a07208d1dd115ae1108bb23f5954fc769712d63533259c1d6ce5a1f7af9affa3edc88edc1d34ebedefa653243ddee2aa42842/index-f1-v1-a1.m3u8",
         "description": "",
         "subtitles": [
             {
-                "label": "English",
-                "src": "link-to-subtitle-2-en.vtt",
-                "srclang": "en"
-            },
-            {
-                "label": "French",
-                "src": "link-to-subtitle-2-fr.vtt",
-                "srclang": "fr"
+                "label": "Tiếng Việt",
+                "src": "ep11.vtt",
+                "srclang": "vi"
             }
         ],
-        "thumbnail": "vna.png"
+        "thumbnail": "img11.png"
     },
     {
         "title": "Tập 12",
