@@ -1,0 +1,54 @@
+[
+    {
+        "title": "OP - Blue Archive The Animation",
+        "src": "../../../Video/bluearchivetheanimationop(S).mp4",
+        "description": "Nhạc mở đầu TV Anime Blue Archive The Animation",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "blop.png"
+    },
+    {
+        "title": "[Made by AI] Hoạt hình Rùa và Thỏ",
+        "src": "../../../Video/cartoon/index.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "cartoon.png"
+    },
+    {
+        "title": "Miku",
+        "src": "../../../Video/Anamanaguchi - Miku ft. Hatsune Miku.mp4",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Tiếng Anh",
+                "src": "Anamanaguchi - Miku ft. Hatsune Miku.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "miku.png"
+    },
+    {
+        "title": "eill - Finale",
+        "src": "../../../Video/[Vietsub] eill - Finale.mp4",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "finale.png"
+    }
+]

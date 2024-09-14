@@ -412,6 +412,26 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.banner a{
+    text-decoration: none;
+    width: 150px;
+    border: 1px solid black;
+    background-color: white;
+    display: inline-block;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+.banner a button{
+    border: none;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: black;
+    box-shadow: none;
+    background: white;
+    font-family: "Quicksand Bold";
+    font-size: 15px;
+}
 .notification{
     background-color: white; /* Màu nền */
     border: 1px solid white; /* Đường viền */
@@ -913,6 +933,9 @@ th,td{
 .container .video-player video{
     width: 100%;
     height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    background-color: black;
 }
 .container .video-player #video-title{
     font-family: "Noto Sans", sans-serif;
@@ -952,7 +975,7 @@ video::cue{
     border-radius: 8px;
     margin:  5px 5px 5px 5px;
     padding: 0 10px 0 10px;
-    height: 400px;
+    height: 650px;
     overflow-y: auto;
 }
 .container .playlist::-webkit-scrollbar-thumb{
@@ -994,6 +1017,9 @@ video::cue{
     height: auto;
     margin-right: 10px;
     border-radius: 5px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    background-color: black;
 }
 
 @media (max-width: 1080px) {
@@ -1044,7 +1070,7 @@ video::cue{
         flex-direction: row;
     }
 }
-@media(max-width:413px){
+@media(max-width:374px){
     .sidebar{
         width: 100%;
     }
