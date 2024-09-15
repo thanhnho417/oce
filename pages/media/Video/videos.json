@@ -1,18 +1,5 @@
 [
     {
-        "title": "OP - Blue Archive The Animation",
-        "src": "../../../Video/bluearchivetheanimation/OP/S/index.m3u8",
-        "description": "Nhạc mở đầu TV Anime Blue Archive The Animation",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "abc.vtt",
-                "srclang": "vi"
-            }
-        ],
-        "thumbnail": "blop.png"
-    },
-    {
         "title": "[Made by AI] Hoạt hình Rùa và Thỏ",
         "src": "../../../Video/cartoon/index.m3u8",
         "description": "",
@@ -24,6 +11,19 @@
             }
         ],
         "thumbnail": "cartoon.png"
+    },
+    {
+        "title": "OP - Blue Archive The Animation",
+        "src": "../../../Video/bluearchivetheanimation/OP/S/index.m3u8",
+        "description": "Nhạc mở đầu TV Anime Blue Archive The Animation",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "blop.png"
     },
     {
         "title": "Miku",
