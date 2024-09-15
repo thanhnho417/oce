@@ -1,7 +1,7 @@
 [
     {
         "title": "OP - Blue Archive The Animation",
-        "src": "../../../Video/bluearchivetheanimationop(S).mp4",
+        "src": "../../../Video/bluearchivetheanimation/OP/S/index.m3u8",
         "description": "Nhạc mở đầu TV Anime Blue Archive The Animation",
         "subtitles": [
             {
@@ -14,7 +14,7 @@
     },
     {
         "title": "[Made by AI] Hoạt hình Rùa và Thỏ",
-        "src": "https://www.googleapis.com/drive/v3/files/1XEz3qwqAMxK6jb57NRHhfUPelFatIaeV?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw",
+        "src": "../../../Video/cartoon/index.m3u8",
         "description": "",
         "subtitles": [
             {
