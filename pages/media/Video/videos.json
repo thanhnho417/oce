@@ -14,7 +14,7 @@
     },
     {
         "title": "OP - The Most Notorious \"Talker\" Runs the World's Greatest Clan",
-        "src": "../../../Video/OP-The-Most-Notorious-Talker-Runs-the-World's-Greatest-Clan/the-most-notorious-Talkerr-runs-the-world's-greatest-clan.m3u8",
+        "src": "../../../Video/OP-The-Most-Notorious-Talker-Runs-the-World's-Greatest-Clan/the-most-notorious-Talker-runs-the-world's-greatest-clan.m3u8",
         "description": "",
         "subtitles": [
             {
@@ -107,6 +107,19 @@
             }
         ],
         "thumbnail": "cartoon.png"
+    },
+    {
+        "title": "OP - BATA",
+        "src": "https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/bluearchivetheanimation/OP/S/index.m3u8",
+        "description": "Nhạc mở đầu TV Anime Blue Archive The Animation",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "blop.png"
     },
     {
         "title": "Miku",
