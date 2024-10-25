@@ -1,0 +1,137 @@
+[
+    {
+        "title": "Gacha - GI - 20/10/2024",
+        "src": "../../../Video/genshin/gacha/gi-20-10-2024.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "gi-gacha.png"
+    },
+    {
+        "title": "OP - The Most Notorious \"Talker\" Runs the World's Greatest Clan",
+        "src": "../../../Video/OP-The-Most-Notorious-Talker-Runs-the-World's-Greatest-Clan/the-most-notorious-Talkerr-runs-the-world's-greatest-clan.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Tiếng Anh",
+                "src": "OP-The-Most-Notorious-Talker-Runs-the-World's-Greatest-Clan.vtt",
+                "srclang": "en"
+            },
+            {
+                "label": "Tiếng Việt",
+                "src": "OP-The-Most-Notorious-Talker-Runs-the-World's-Greatest-Clan(vi).vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "op-a.png"
+    },
+    {
+        "title": "Tách chiết DNA",
+        "src": "../../../Video/K62/12e-project/12e-projectsinh.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "12e-biology.png"
+    },
+    {
+        "title": "Tổ 2 - AI và ứng dụng",
+        "src": "../../../Video/K62/12E-to2/12e-to2-ai-va-ung-dung.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "12e-ai.png"
+    },
+    {
+        "title": "[Made by AI] Ronaldo Dances Go-Getters",
+        "src": "../../../Video/made-by-ai/ronaldo/index.m3u8",
+        "description": "Created by Viggle.ai",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "ronaldo.png"
+    },
+    {
+        "title": "10E - Liên hoan năm mới",
+        "src": "../../../Video/K62/10E-lien-hoan-nam-moi/10e-nam-moi.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "newyear.png"
+    },
+    {
+        "title": "11E - Thực hành Sinh",
+        "src": "../../../Video/K62/11E-project/11e-sinh.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "biology-11e-2.png"
+    },
+    {
+        "title": "[Made by AI] Hoạt hình Rùa và Thỏ",
+        "src": "../../../Video/cartoon/index.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "cartoon.png"
+    },
+    {
+        "title": "Miku",
+        "src": "../../../Video/miku/index.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Tiếng Anh",
+                "src": "Anamanaguchi - Miku ft. Hatsune Miku.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "miku.png"
+    },
+    {
+        "title": "eill - Finale",
+        "src": "../../../Video/eill-finale/index.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "vi"
+            }
+        ],
+        "thumbnail": "finale.png"
+    }
+]

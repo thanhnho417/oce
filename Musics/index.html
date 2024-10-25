@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player with Playlist</title>
+    <style>
+        .player {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .playlist ul {
+            list-style: none;
+        }
+
+        .playlist li {
+            margin: 25px;
+            border: 1px solid;
+            border-radius: 25px;
+            padding: 15px;
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .playlist li:hover {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            background-color: green;
+            transform: background-color 0.2s;
+        }
+
+        .playlist li.active {
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+        }
+
+        .playlist {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            border: 1px solid;
+            align-items: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            overflow-y: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="player">
+        <audio id="audio-player" controls>
+            <source src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="playlist">
+        <ul id="playlist">
+            <li data-src="https://audio.jukehost.co.uk/naBi3sC77CxyazJoPbYRR0Sb5fkk67uR">Adamas - LiSA</li>
+            <li data-src="https://audio.jukehost.co.uk/8Hs7ranu6JnOqzTCaqIkGB3zVgkbrKer">Alone [NCS Release] - BEAUZ & Heleen</li>
+            <li data-src="https://audio.jukehost.co.uk/M4PBw4WckiHOLxWgz6mTyOpNjg2jKLF4">Edaname - bbno__ Rich Brian</li>
+            <li data-src="https://audio.jukehost.co.uk/BGZ8XpwtiiDn3wSREp08TgkDZhMbRU0E">Sky High [NCS Release] - Elektronomia</li>
+            <li data-src="https://audio.jukehost.co.uk/5BJ2LwwyEGavvK7r3FGiuxttUQvgREMR">Unwelcome School (Blue Archive OST)</li>
+            <li data-src="https://audio.jukehost.co.uk/zjle2XL603YOWTGhve7EXiFUhriS4mUO">Brother Louie (New Version 2017)</li>
+            <li data-src="https://audio.jukehost.co.uk/IjjzXiSw1hlT58xN6jpFC5V4mJcA9vP3">Crossing Field - LiSA</li>
+            <li data-src="https://audio.jukehost.co.uk/tfosbtCadSgyA3olhBLE1Vp7ghNiNvqIO">The Spell - AiNA THE END</li>
+            <li data-src="https://audio.jukehost.co.uk/kkDTeNNUOLkSTlw62fu4ROkhh6ekXhL3">Himegoto_CriSisters - </li>
+            <li data-src="https://audio.jukehost.co.uk/SxTvf8lEHgIIuzO5nhpNDiEJ5HAWf5JK">Trust-Last - Koda Kumi, Shonan No Kaze</li>
+            <li data-src="https://audio.jukehost.co.uk/G5A5P7v6FBiTWOKrKvafhOOa6m2dwb8a">Waiting for you - MONO, Onionn</li>
+            <li data-src="https://audio.jukehost.co.uk/HH7zVTdkK1E99KyRzKPwJyWVNopWts1E">Nhạc phim "Ngôi đền kỳ quái 2</li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audioPlayer = document.getElementById('audio-player');
+            const playlist = document.getElementById('playlist');
+            const tracks = playlist.getElementsByTagName('li');
+
+            for (let track of tracks) {
+                track.addEventListener('click', function () {
+                    // Remove active class from all tracks
+                    for (let t of tracks) {
+                        t.classList.remove('active');
+                    }
+
+                    // Add active class to the clicked track
+                    this.classList.add('active');
+
+                    // Update the audio source and play
+                    audioPlayer.src = this.getAttribute('data-src');
+                    audioPlayer.play();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

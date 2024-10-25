@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>oce</title>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+        <link rel="icon" type="image/x-icon" href="web.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+        <header>
+            <div class="left-selection">
+                <a href="#">
+
+                </a>
+            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="pages/introduce/">Giới thiệu</a></li>
+                    <li><a href="pages/game/">Game</a></li>
+                    <li><a href="pages/media/">Đa phương tiện</a></li>
+                    <li><a href="pages/anime/">Anime</a></li>
+                    <li><a href="pages/links/">Link</a></li>
+                    <li><a href="pages/blog/">Blog</a></li>
+                    <li><a href="pages/project/">Project</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="pages/introduce/">Giới thiệu</a></li>
+                    <li class="hideOnMobile"><a href="pages/game/">Game</a></li>
+                    <li class="hideOnMobile"><a href="pages/media/">Đa phương tiện</a></li>
+                    <li class="hideOnMobile"><a href="pages/anime/">Anime</a></li>
+                    <li class="hideOnMobile"><a href="pages/links/">Link</a></li>
+                    <li class="hideOnMobile"><a href="pages/blog/">Blog</a></li>
+                    <li class="hideOnMobile"><a href="pages/project/">Project</a></li>
+                    <form id="searchForm" action="results/">
+                        <input type="text" id="searchInput" name="query" placeholder="Tìm...">
+                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+                    </form>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+          
+        <div class="navigation">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+        </div>
+        
+        <div class="banner">
+        </div>
+        <article class="cham-ngon">
+            <div class="clock">
+                <script src="https://cdn.logwork.com/widget/text.js"></script>
+                <a href="https://logwork.com/current-time-in-hanoi-vietnam-ha-noi" class="clock-widget-text" data-timezone="Asia/Phnom_Penh" data-language="vi" data-textcolor="#736c6c" data-digitscolor="#386e61">Hải Dương, Việt Nam</a>
+            </div>
+            
+            <div class="chamngon">
+                <p>“Some memories are unforgettable, remaining ever vivid and heartwarming!”
+                <br>Có những kỉ niệm không bao giờ quên được, luôn luôn in sâu trong tâm trí và làm ấm lòng người!</br>
+                <br>- Joseph B. Wirthlin -</br>
+            </div>
+        
+        </article>
+        <article class="content">
+            <div class="banner">
+                Hình ảnh
+            </div>
+            <div id="image-wrapper"></div>
+            <div id="dots-container" style="text-align: center;"></div>
+            <div class="banner">
+                Nhạc
+            </div>
+            <div class="music-wrapper">
+                <audio id="player1" src="Musics/nhacthai.mp3" controls></audio>
+                <audio id="player3" src="Musics/Over The Horizon 2015.mp3" controls></audio>
+            </div>
+            <div class="banner">
+                Video
+            </div>
+            <div class="video-wrapper">
+                <video id="player" playsinline controls data-poster="Images/f1.png" height="540" width="960"></video>
+            </div>
+            <div class="banner">
+                Sưu tầm
+            </div>
+
+            <div class="video-wrapper">
+                <video id="player2" playsinline controls data-poster="Images/thumb1.png" height="540" width="960">
+                </video>
+            </div>
+        </article>
+        <footer>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const player = new Plyr('#player1');
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+                const player = new Plyr('#player3');
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const videoSources = [
+                    { id: 'player', source: 'Video/genshin/index.m3u8' },
+                    { id: 'player2', source: 'Video/tonikawa/OP/index.m3u8', subtitle: 'Video/tonikawass2ed(vi).vtt'}
+                ];
+                videoSources.forEach(videoData => {
+                    const video = document.getElementById(videoData.id);
+                    if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                        video.src = videoData.source;
+                    } else if (Hls.isSupported()) {
+                        const hls = new Hls();
+                        hls.loadSource(videoData.source);
+                        hls.attachMedia(video);
+                    } else {
+                        console.error(`Trình duyệt này không hỗ trợ phát video m3u8 cho ${videoData.id}.`);
+                    }
+                    new Plyr(video, {
+                        captions: {active: true, update: true},
+                    });
+                    if (!video.querySelector('track')) {
+                        const track = document.createElement('track');
+                        track.kind = 'subtitles';
+                        track.label = 'Tiếng Việt';
+                        track.srclang = 'vi';
+                        track.src = videoData.subtitle;
+                        track.default = true;
+                        video.appendChild(track);
+                    }
+                });
+            });
+        </script>
+        <script src="script.js"></script>
+        <script src="images.js"></script>
+        <script src="plyr.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    </body>
+</html>
