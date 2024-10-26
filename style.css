@@ -46,6 +46,10 @@ nav a:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 .sidebar{position: fixed; top: 0; right: 0; height: 100vh; width: 200px; z-index: 999; background-color: #386e61; box-shadow: -5px 0 5px 0 #386e61; display: none; flex-direction: column; align-items: flex-start; justify-content: flex-start; transition: left 0.3s ease-out; border-radius: 5px 0 0 5px;}
 .sidebar li{width: 100%;}
 .sidebar a{width: 100%;}
+.loading-area{position: fixed; top: 50px; right: 0; bottom: 0; right: 0; background-color: white; width: 100%; height: 100%; z-index: 1110;  display: flex; justify-content: center; align-items: center;flex-direction: column;}
+.loader{border: 16px solid #a2a2a2; border-top: 16px solid #386e61; border-radius: 50%; width: 120px; height: 120px; animation: spin 1.5s linear infinite;}
+@keyframes spin{0%{transform: rotate(0deg);} 100%{transform: rotate(360deg);;}}
+#loading-content{margin: 20px; font-weight: bold;}
 .menu-button{display: none;}
 .menu-button:hover{background-color: rgb(39, 82, 57);}
 .navigation{background-color: black; width: 100%; height: auto; display: flex; justify-content: flex-start; align-items: center; overflow-x: auto; white-space: nowrap;}
