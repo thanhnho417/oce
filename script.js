@@ -56,44 +56,6 @@ const handlePopup = (status) => {
 setInterval(checkNetwork, 7000);
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Tạo nút
-    var button = document.createElement("button");
-    button.id = 'clearDataButton'; // Thêm ID cho nút
-    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" style="display: block; margin: auto;"><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/></svg>';
-    button.style.padding = "5px 10px";
-    button.style.fontSize = "16px";
-    button.style.backgroundColor = "#ffffff";
-    button.style.color = "black";
-    button.style.border = "none";
-    button.style.borderRadius = "10px";
-    button.style.cursor = "pointer";
-    button.style.margin = "5px 10px"; 
-
-    // Gắn nút vào thẻ footer
-    document.getElementsByTagName('footer')[0].appendChild(button); // Gắn nút vào thẻ footer
-
-    // Thêm sự kiện click cho nút
-    button.addEventListener('click', function() {
-        // Xóa dữ liệu trang (localStorage, sessionStorage, cookies, v.v.)
-        localStorage.clear();  // Xóa dữ liệu trong localStorage
-        sessionStorage.clear(); // Xóa dữ liệu trong sessionStorage
-
-        // Nếu bạn cần xóa cookies, bạn có thể sử dụng hàm như sau:
-        function deleteAllCookies() {
-            const cookies = document.cookie.split("; ");
-            for (let cookie of cookies) {
-                const eqPos = cookie.indexOf("=");
-                const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-            }
-        }
-        deleteAllCookies();
-
-        // Tải lại trang
-        location.reload();
-    });
-});
-document.addEventListener("DOMContentLoaded", function() {
     const loading = document.createElement('div');
     loading.classList.add("loading-area");
     loading.innerHTML = '<div class="loader"></div><p id="loading-content">Đang tải...</p>';
