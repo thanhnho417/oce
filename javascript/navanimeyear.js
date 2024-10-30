@@ -4,13 +4,13 @@ const sidebar = document.createElement("ul");
 sidebar.className = "sidebar";
 const sidebarItems = [
     { href: "#", icon: "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z", onclick: "hideSidebar()" },
-    { href: "../../introduce/", text: "Giới thiệu" },
-    { href: "../../game/", text: "Game" },
-    { href: "../../media/", text: "Đa phương tiện" },
-    { href: "../../anime/", text: "Anime" },
-    { href: "../../links/", text: "Link" },
-    { href: "../../blog/", text: "Blog" },
-    { href: "../../project/", text: "Project" }
+    { href: "../../../introduce/", text: "Giới thiệu" },
+    { href: "../../../game/", text: "Game" },
+    { href: "../../../media/", text: "Đa phương tiện" },
+    { href: "../../../anime/", text: "Anime" },
+    { href: "../../../links/", text: "Link" },
+    { href: "../../../blog/", text: "Blog" },
+    { href: "../../../project/", text: "Project" }
 ];
 sidebarItems.forEach(item => {
     const li = document.createElement("li");
@@ -35,13 +35,13 @@ sidebarItems.forEach(item => {
 });
 const secondaryUl = document.createElement("ul");
 const secondaryItems = [
-    { href: "../../introduce/", text: "Giới thiệu" },
-    { href: "../../game/", text: "Game" },
-    { href: "../../media/", text: "Đa phương tiện" },
-    { href: "../../anime/", text: "Anime" },
-    { href: "../../links/", text: "Link" },
-    { href: "../../blog/", text: "Blog" },
-    { href: "../../project/", text: "Project" },
+    { href: "../../../introduce/", text: "Giới thiệu" },
+    { href: "../../../game/", text: "Game" },
+    { href: "../../../media/", text: "Đa phương tiện" },
+    { href: "../../../anime/", text: "Anime" },
+    { href: "../../../links/", text: "Link" },
+    { href: "../../../blog/", text: "Blog" },
+    { href: "../../../project/", text: "Project" },
 ];
 secondaryItems.forEach(item => {
     const li = document.createElement("li");
@@ -54,7 +54,7 @@ secondaryItems.forEach(item => {
 });
 const searchForm = document.createElement("form");
 searchForm.id = "searchForm";
-searchForm.action = "../../../../results/";
+searchForm.action = "../../../../../results/";
 const searchInput = document.createElement("input");
 searchInput.type = "text";
 searchInput.id = "searchInput";
