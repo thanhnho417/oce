@@ -80,3 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.body.appendChild(scriptTag);
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+    const addtitle = " | oce";
+    document.title += addtitle;
+});
