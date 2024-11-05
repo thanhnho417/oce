@@ -51,8 +51,8 @@ nav a:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 .loader{border: 16px solid #a2a2a2; border-top: 16px solid #386e61; border-radius: 50%; width: 120px; height: 120px; animation: spin 1.5s linear infinite;}
 @keyframes spin{0%{transform: rotate(0deg);} 100%{transform: rotate(360deg);;}}
 #loading-content{margin: 20px; font-weight: bold;}
-.menu-button{display: none;}
-.menu-button:hover{background-color: rgb(39, 82, 57);}
+.menu-button{display: none; border-radius: 50%;}
+.menu-button:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out; border-radius: 50%;}
 .navigation{background-color: black; width: 100%; height: auto; display: flex; justify-content: flex-start; align-items: center; overflow-x: auto; white-space: nowrap;}
 .navigation::-webkit-scrollbar{height: 7px;}
 .navigation a{padding: 5px; color: white; text-decoration: none; font-family: "Noto Sans", sans-serif; font-size: 13px;}

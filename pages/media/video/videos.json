@@ -1,5 +1,18 @@
 [
     {
+        "title": "Geforce Now - GI - 04/11/2024",
+        "src": "../../../Video/genshin/geforcenow-gi/geforcenow-gi-04112024-vid.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Không có sẵn",
+                "src": "abc.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "n-gi.png"
+    },
+    {
         "title": "Trailer - Dược sư tự sự S2",
         "src": "../../../Video/kusuriya/s2-trailer/kusuriya-no-hitorigoto-s2-trailer.m3u8",
         "description": "",
