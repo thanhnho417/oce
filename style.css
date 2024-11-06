@@ -194,9 +194,10 @@ video::cue{font-family: "Merriweather", serif;}
 .playlist-item img { width: 150px; height: auto; margin-right: 10px; border-radius: 5px; aspect-ratio: 16/9; object-fit: contain; background-color: black;}
 .watch-other{display: flex; justify-content: flex-start; align-items: center; overflow-x: auto; white-space: nowrap; border: 1px solid #386e61; border-radius: 8px; margin: 10px 10px 0 10px;}
 .watch-other p{padding: 5px 10px; font-size: 16px;}
-.plyr__video-wrapper::before {position: absolute; bottom: 2vw; right: 5.5vw; z-index: 10; content: ''; height: 1.7vw; width: 2.5vw; background: url(watermark.png) no-repeat; background-size: 100% auto, auto;;}
+.plyr__video-wrapper::before {position: absolute; bottom: 2vw; right: 5.5vw; z-index: 10; content: ''; height: 1.5vw; width: 2vw; background: url(watermark.png) no-repeat; background-size: 100% auto, auto;;}
+:fullscreen .plyr__video-wrapper::before {width: 2.5vw;}
 .watch-other a{margin: 5px 5px; padding: 5px 20px; border: 1px solid #386e61; text-decoration: none; border-radius: 20px; color: white; background-color: #386e61; font-size: 16px; font-family: "Quicksand SemiBold", sans-serif; display: inline-block;}
-.plyr__captions .plyr__caption {font-size: 1.1vw; line-height: 1.95; color: white; background-color: rgba(0, 0, 0, 0.686); padding: 10px 20px; font-family: "Noto Sans", sans-serif; font-weight: bold; border-radius: 8px; margin-bottom: 30px;}
+.plyr__captions .plyr__caption {font-size: 1vw; line-height: 1.95; color: white; background-color: rgba(0, 0, 0, 0.686); padding: 10px 20px; font-family: "Noto Sans", sans-serif; font-weight: bold; border-radius: 8px; margin-bottom: 30px;}
 @media(max-width:1920px){
     .plyr__captions .plyr__caption {font-size: 1.5vw; padding: 7px 15px; line-height: 2.0;}
 }
