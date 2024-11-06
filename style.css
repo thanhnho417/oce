@@ -230,7 +230,6 @@ video::cue{font-family: "Merriweather", serif;}
     #image-wrapper {padding: 10px;}
     #flash-content{padding: 10px;}
     .option-image-text{padding: 10px;}
-    .plyr__captions .plyr__caption {font-size: 3vw; padding: 8px 15px;line-height: 1.8;}
 }
 @media(max-width:750px){
     .row{flex-direction: column;}
