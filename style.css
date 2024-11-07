@@ -21,6 +21,7 @@ nav{margin-right: 10px; font-family: "Quicksand Semibold",sans-serif; z-index: 1
 nav li{height: 50px;}
 nav a{height: 100%; padding: 0 20px; text-decoration: none; display: flex; align-items: center; color: white;}
 #searchForm{display: flex; justify-content: center; align-items: center;}
+#searchForm input:hover{transform: scale(1.1); transition: 100ms ease-in-out;}
 #searchForm input{height: 30px; border: 1px solid #386e61; border-radius: 15px; padding-left: 13px; padding-right: 13px; width: 140px;}
 #searchForm input::placeholder{font-family: "Noto Sans", sans-serif;}
 #searchForm button{background: #34695d;; border: none; margin: 0 5px 0 10px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;}
@@ -82,7 +83,7 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 .video-wrapper{padding: 10px 19%; position: relative;}
 .video-wrapper video{display: block; text-align: center; align-items: center; font-family: "Noto Sans", sans-serif;}
 .watermark{width: 70px; z-index: 20; position: absolute; bottom: 30px; right: 10px;}
-.pop-up-network{position: fixed; bottom: 50px; right: -25%; visibility: hidden; background-color: #386e61; width: fit-content; margin: 10px; padding: 0 20px; border-right: 4px solid black; display: flex; justify-content: center; transition: all 100ms ease-in-out; z-index: 1500;}
+.pop-up-network{position: fixed; bottom: 50px; right: -25%; visibility: hidden; background-color: #386e61; width: fit-content; margin: 10px; padding: 0 20px; border-right: 4px solid black; display: flex; justify-content: center; transition: all 100ms ease-in-out; z-index: 3000; pointer-events: none;}
 .pop-up-network.show{
     right: 0; visibility: visible;
 }
@@ -194,14 +195,11 @@ video::cue{font-family: "Merriweather", serif;}
 .playlist-item img { width: 150px; height: auto; margin-right: 10px; border-radius: 5px; aspect-ratio: 16/9; object-fit: contain; background-color: black;}
 .watch-other{display: flex; justify-content: flex-start; align-items: center; overflow-x: auto; white-space: nowrap; border: 1px solid #386e61; border-radius: 8px; margin: 10px 10px 0 10px;}
 .watch-other p{padding: 5px 10px; font-size: 16px;}
-.plyr__video-wrapper::before {position: absolute; bottom: 2vw; right: 5.5vw; z-index: 10; content: ''; height: 1.5vw; width: 2vw; background: url(watermark.png) no-repeat; background-size: 100% auto, auto;;}
-:fullscreen .plyr__video-wrapper::before {width: 2.5vw;}
+.plyr__video-wrapper::before {position: absolute; bottom: 2vw; right: 5vw; z-index: 10; content: ''; height: 1.5vw; width: 2vw; background: url(watermark.png) no-repeat; background-size: 100% auto, auto;; aspect-ratio: 16/9; object-fit: contain;}
+:fullscreen .plyr__video-wrapper::before, .plyr__video-wrapper:fullscreen::before {width: 2.7vw; right: 6.2vw; bottom: 3vw; height: 1.7vw;}
 .watch-other a{margin: 5px 5px; padding: 5px 20px; border: 1px solid #386e61; text-decoration: none; border-radius: 20px; color: white; background-color: #386e61; font-size: 16px; font-family: "Quicksand SemiBold", sans-serif; display: inline-block;}
-.plyr__captions .plyr__caption {font-size: 1vw; line-height: 1.95; color: white; background-color: rgba(0, 0, 0, 0.686); padding: 10px 20px; font-family: "Noto Sans", sans-serif; font-weight: bold; border-radius: 8px; margin-bottom: 30px;}
-@media(max-width:1920px){
-    .plyr__captions .plyr__caption {font-size: 1.5vw; padding: 7px 15px; line-height: 2.0;}
-}
-
+.plyr__captions .plyr__caption {font-size: 1vw; padding: 7px 15px; line-height: 2.0; color: white; background-color: rgba(0, 0, 0, 0.686); font-family: "Noto Sans", sans-serif; font-weight: bold; border-radius: 8px; margin-bottom: 30px;}
+:fullscreen .plyr__captions .plyr__caption, .plyr__captions .plyr__caption:fullscreen  {font-size: 2vw; line-height: 1.95;}
 @media(max-width:1520px){
     .video-wrapper{padding: 10px 10%;}
     #image-wrapper{padding: 10px 10%;}
@@ -214,7 +212,7 @@ video::cue{font-family: "Merriweather", serif;}
     .container{margin: 10px;}
     .video-player {flex: 2.5;}
     .playlist-item img {width: 110px;}
-    .plyr__captions .plyr__caption {font-size: 1.8vw; padding: 8px 15px; line-height: 2.4;}
+    .plyr__captions .plyr__caption {font-size: 1.7vw; padding: 8px 15px; line-height: 2.4;}
 }
 @media(max-width:1010px){
     .hideOnMobile{display: none;}
@@ -236,14 +234,15 @@ video::cue{font-family: "Merriweather", serif;}
     .table-wrapper{width: 90%;}
     .article-area iframe{padding: 10px;}
     .container {flex-direction: column; padding: 0; margin: 0;}
-    .plyr__video-wrapper::before {position: absolute; bottom: 3.2vw; right: 7.5vw; z-index: 10; content: ''; height: 3vw; width: 4.5vw; background: url(watermark.png) no-repeat; background-size: 100% auto, auto;;}
+    .plyr__video-wrapper::before {position: absolute; bottom: 3.2vw; right: 7.8vw; z-index: 10; content: ''; height: 3vw; width: 3.8vw; background: url(watermark.png) no-repeat; background-size: 100% auto, auto;;}
     .playlist {order: 1;}
     .video-player #video-description{height: 50px;}
     .playlist-item img{width: 120px;}
-    .plyr__captions .plyr__caption {font-size: 2.3vw; padding: 5px 20px;}
+    .plyr__captions .plyr__caption {font-size: 2.5vw; padding: 5px 20px;}
+    :fullscreen .plyr__captions .plyr__caption, .plyr__captions .plyr__caption:fullscreen  {font-size: 3vw; line-height: 2;}
 }
 @media(max-width:390px){
     .sidebar{width: 100%;}
     #dataTable{width: 100%; padding: 10px;}
-    .plyr__captions .plyr__caption {font-size: 4vw; padding: 7px 15px;}
+    .plyr__captions .plyr__caption {font-size: 3.5vw; padding: 7px 15px;}
 }
