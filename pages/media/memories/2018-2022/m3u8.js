@@ -1,40 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Lấy tất cả các thẻ <video> trong tài liệu
     const videoElements = document.querySelectorAll("video");
 
-    // Duyệt qua từng thẻ video
     videoElements.forEach(video => {
-        // Lấy thẻ <source> bên trong <video>
         const sourceElement = video.querySelector("source");
+
         if (sourceElement) {
             const videoSrc = sourceElement.getAttribute("src");
 
             if (videoSrc && videoSrc.endsWith(".m3u8")) {
-                // Nếu trình duyệt hỗ trợ Native HLS (như Safari)
+                // Kiểm tra nếu trình duyệt hỗ trợ HLS natively
                 if (video.canPlayType("application/vnd.apple.mpegurl")) {
-                    video.src = videoSrc; // Gán trực tiếp src vào <video>
-                    video.load(); // Tải lại video
+                    video.src = videoSrc;
+                    video.load();
                 } else if (Hls.isSupported()) {
-                    // Nếu không, sử dụng HLS.js
+                    // Sử dụng HLS.js nếu trình duyệt không hỗ trợ HLS
                     const hls = new Hls();
                     hls.loadSource(videoSrc);
                     hls.attachMedia(video);
 
+                    // Lắng nghe sự kiện thành công hoặc lỗi
                     hls.on(Hls.Events.MANIFEST_PARSED, () => {
                         console.log(`HLS Manifest loaded for ${videoSrc}`);
                     });
 
                     hls.on(Hls.Events.ERROR, (event, data) => {
-                        console.error("HLS Error:", data);
+                        console.error(`HLS.js Error: ${data.type}`, data);
                     });
                 } else {
-                    console.error("Trình duyệt không hỗ trợ HLS.");
+                    console.error("Trình duyệt không hỗ trợ HLS hoặc HLS.js.");
                 }
             } else {
-                console.warn("Source không phải định dạng m3u8 hoặc thiếu src:", sourceElement);
+                console.warn("URL không phải định dạng .m3u8:", videoSrc);
             }
         } else {
-            console.warn("Thẻ video không có thẻ source:", video);
+            console.warn("Thẻ <source> bị thiếu trong <video>:", video);
         }
     });
 });
