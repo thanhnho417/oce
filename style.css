@@ -12,16 +12,17 @@
 body {background-color: #eee;}
 button:hover{cursor: pointer;}
 html{height: 100%;}
+form, input{position: static; overflow: visible; transform: none;}
 body{height: 100%;font-family: "Quicksand Regular", sans-serif; font-size: 1.1em; font-weight: 500; background: white;}
 embed{cursor: url(Images/mouse.svg),auto;}
 img{border-radius: 7px;}
+input[list]{width: 100%;}
 .clock{max-width: 450px; padding-left: 10%;}
 nav ul{width: 100%; list-style: none; display: flex; justify-content: flex-end; align-items: center;;}
 nav{margin-right: 10px; font-family: "Quicksand Semibold",sans-serif; z-index: 1100;}
 nav li{height: 50px;}
 nav a{height: 100%; padding: 0 20px; text-decoration: none; display: flex; align-items: center; color: white;}
 #searchForm{display: flex; justify-content: center; align-items: center;}
-#searchForm input:hover{transform: scale(1.1); transition: 100ms ease-in-out;}
 #searchForm input{height: 30px; border: 1px solid #386e61; border-radius: 15px; padding-left: 13px; padding-right: 13px; width: 140px;}
 #searchForm input::placeholder{font-family: "Noto Sans", sans-serif;}
 #searchForm button{background: #34695d;; border: none; margin: 0 5px 0 10px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;}
@@ -135,6 +136,10 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 #hlouis:hover{color: white; background: #c2bbc7;}
 #bilibili{color: black; background: white;border: 1px solid #1f87e2;}
 #bilibili:hover{color: white; background: #1f87e2;}
+.masonry-grid{display: block;margin: auto; width: 90%; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease;}
+.masonry-grid.loaded {opacity: 1; transform: scale(1);}
+.masonry-grid img, .masonry-grid video{display: block; width: 300px; margin: 10px; border-radius: 10px; align-items: center;}
+.me-pho{width: 100%;}
 .wrapper{padding: 15px 15%;}
 .card-area{padding: 30px 0;}
 .box-area{display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr));grid-gap: 40px;}
@@ -167,6 +172,15 @@ table {border-collapse: collapse; margin: 0 auto; padding: 10px 0; margin-top: 1
 table,th,td{border: 1px solid black;}
 th,td{padding: 10px; text-align: left; color: black;}
 #dateTable td svg{padding-right: 20px;}
+#memories{display: flex;flex-basis: 1; flex-grow: 1; flex-shrink: 1; padding: 10px 10%; flex-wrap: wrap; justify-content: center; align-items: center;}
+#memories a{text-decoration: none; color: black;}
+#memories .m-container {margin: 10px; display: flex; justify-content: center; align-items: center; border: 1px dashed black; border-radius: 10px; cursor: pointer; max-width: 500px;}
+#memories .m-container #images img{width: 200px; aspect-ratio: 16/9; object-fit: cover; margin: 10px;}
+#memories .m-container #details {margin: 10px 30px 10px 21px;}
+#memories .m-container:hover {border: 1px solid black; color: white; background-color: #386e61; transform: scale(1.1); transition: 100ms ease-in-out; }
+#intd{display: flex; justify-content: center; align-items: center; width: 80%; margin: 10px auto;}
+#bann{flex: 1;}
+#conts{flex: 2.5; width: 100%; height: fit-content; position: relative;}
 .pop-up {visibility: hidden; opacity: 0; position: fixed; top: 5px; right: 5px; bottom: 5px; left: 5px; background-color: rgba(199, 199, 199, 0.9); padding: 5px; z-index: 1001; display: flex; flex-direction: column; justify-content: center; align-items: center;  transform: scale(0); transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;}
 
 .pop-up.show {visibility: visible; opacity: 1; transform: scale(1);}
@@ -228,6 +242,13 @@ video::cue{font-family: "Merriweather", serif;}
     #image-wrapper {padding: 10px;}
     #flash-content{padding: 10px;}
     .option-image-text{padding: 10px;}
+    .m-container {display: flex; flex-direction: column; height: auto
+;}
+    .m-container img{width: 100%;}
+    #intd{flex-direction: column;}
+    #bann{flex: 0;}
+    #conts{flex: 0;}
+    #conts p{font-size: 5vw;}
 }
 @media(max-width:750px){
     .row{flex-direction: column;}
