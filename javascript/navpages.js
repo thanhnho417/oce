@@ -60,6 +60,34 @@ searchInput.type = "text";
 searchInput.id = "searchInput";
 searchInput.name = "query";
 searchInput.placeholder = "Tìm...";
+searchInput.setAttribute("list", "browsers");
+searchInput.setAttribute("autocomplete", "off");
+const dataList = document.createElement("datalist");
+dataList.id = "browsers";
+const jsonFile = '../../results/data.json';
+function loadTitles() {
+  fetch(jsonFile)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Lỗi khi tải file JSON: ' + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      data.forEach(item => {
+        if (item.title) {
+          const opt = document.createElement("option");
+          opt.value = item.title; // Sửa đúng biến
+          dataList.appendChild(opt);
+        }
+      });
+    })
+    .catch(error => {
+      console.error('Lỗi khi tải tiêu đề:', error);
+    });
+}
+document.addEventListener('DOMContentLoaded', loadTitles);
+searchForm.appendChild(dataList);
 const searchButton = document.createElement("button");
 searchButton.type = "submit";
 const searchSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
