@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching video data:', error));
 
-    function loadVideo(videoData, autoPlay = false) {
+    function loadVideo(videoData) {
         videoTitle.textContent = videoData.title;
         videoDescription.innerHTML = videoData.description.replace(/\n/g, '<br>');
 

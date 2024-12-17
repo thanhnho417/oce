@@ -21,15 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 playlistElement.appendChild(item);
 
-                // Load the first video by default
+                // Load the first video by default without autoplay
                 if (index === 0) {
-                    loadVideo(videoData, true);
+                    loadVideo(videoData);
                 }
             });
         })
         .catch(error => console.error('Error fetching video data:', error));
 
-    function loadVideo(videoData, autoPlay = false) {
+    function loadVideo(videoData) {
         videoTitle.textContent = videoData.title;
         videoDescription.innerHTML = videoData.description.replace(/\n/g, '<br>');
 
@@ -42,26 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 hls = new Hls();
                 hls.loadSource(videoData.src);
                 hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                    if (autoPlay) {
-                        player.play();
-                    }
-                });
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                 video.src = videoData.src;
-                video.addEventListener('loadedmetadata', function() {
-                    if (autoPlay) {
-                        player.play();
-                    }
-                });
             }
         } else {
             video.src = videoData.src;
-            video.addEventListener('loadedmetadata', function() {
-                if (autoPlay) {
-                    player.play();
-                }
-            });
         }
 
         // Remove existing tracks
