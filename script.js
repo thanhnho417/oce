@@ -67,18 +67,11 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Phần tử header không tồn tại.");
     }
 
-    const scriptTag = document.createElement('script');
-    scriptTag.src = "https://code.jquery.com/jquery-3.7.1.min.js";
-    scriptTag.integrity = "sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=";
-    scriptTag.crossOrigin = "anonymous";
-    
-    scriptTag.onload = function() {
-        $(window).on("load", function(){
-            $(".loading-area").fadeOut("slow");
-        });
-    };
-
-    document.body.appendChild(scriptTag);
+    const fOut = () => {
+        const loadWrapper = document.querySelector(".loading-area");
+        loadWrapper.classList.add("sfade")
+    }
+    window.addEventListener('load', fOut);
 });
 
 document.addEventListener("DOMContentLoaded", function(){
