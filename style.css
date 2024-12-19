@@ -70,7 +70,7 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 .notification::-webkit-scrollbar{height: 8px;}
 .notification p{margin: 0; display: inline-block; width: 100%; text-align: left;}
 .notification a{margin-left: 10px; margin-right: 10px; border: 1px solid; padding: 4px 20px; border-radius: 40px; text-decoration: none; color: white; background: #386e61;}
-#image-wrapper{padding: 10px 20%; }
+#image-wrapper{padding: 10px 20%;}
 .slide {display: none;}
 .fade {animation-name: fade; animation-duration: 1.5s;}
 @keyframes fade {from {opacity: .4} to {opacity: 1}}
