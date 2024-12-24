@@ -18,8 +18,8 @@ embed{cursor: url(Images/mouse.svg),auto;}
 img{border-radius: 7px;}
 input[list]{width: 100%;}
 .clock{max-width: 450px; padding-left: 10%;}
-nav ul{width: 100%; list-style: none; display: flex; justify-content: flex-end; align-items: center;;}
-nav{margin-right: 10px; font-family: "Quicksand Semibold",sans-serif; z-index: 1100;}
+nav ul{width: 100%; list-style: none; display: flex; justify-content: flex-end; align-items: center;}
+nav{margin-right: 10px; font-family: "Quicksand Semibold",sans-serif; z-index: 2000; background-color: #34695d; width: 100%;}
 nav li{height: 50px;}
 nav a{height: 100%; padding: 0 20px; text-decoration: none; display: flex; align-items: center; color: white;}
 #searchForm{display: flex; justify-content: center; align-items: center;}
@@ -28,7 +28,7 @@ nav a{height: 100%; padding: 0 20px; text-decoration: none; display: flex; align
 #searchForm button{background: #34695d;; border: none; margin: 0 5px 0 10px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;}
 #searchForm button:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 .search-query{padding: 10px 5px 10px 5px; border: 1px solid #386e61; text-align: center; height: 45px; font-weight: 550; display: flex; justify-content: center; align-items: center; color: white; background: #386e61; font-family: "Be Vietnam Pro", sans-serif; font-size: 17px;}
-header{display: flex; justify-content: space-between; background-color: #34695d; z-index: 1000; position: sticky; top: 0; width: 100%;}
+header{display: flex; justify-content: space-between; background-color: #34695d; z-index: 2000; position: sticky; top: 0; width: 100%;}
 #results{padding: 10px 5%;}
 .category-container {margin-bottom: 20px; display: flex; flex-direction: row; overflow-y: auto;}
 .category-title {font-size: 18px; font-weight: 500; font-family: "Noto Sans", sans-serif; margin-top: 10px; padding: 10px 15px; background-color: #f0f0f0;border-radius: 5px; display: inline-block; width: fit-content;}
@@ -38,7 +38,7 @@ header{display: flex; justify-content: space-between; background-color: #34695d;
 .result-item a{text-decoration: none; color: black;}
 .result-item h4{padding: 5px 10px 5px 10px; text-align: center;}
 .result-item p{padding-left: 10px; padding-right: 10px;}
-.left-selection{display: flex;justify-content: center; align-items: center;}
+.left-selection{display: flex;justify-content: center; align-items: center; z-index: 2000; background-color: #34695d;}
 .left-selection img{padding: 5px; justify-content: center; align-items: center;}
 .left-selection a{text-decoration: none; margin-left: 5px; display: flex; justify-content: center; align-items: center;}
 nav a:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
@@ -49,7 +49,7 @@ nav a:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 .sidebar{position: fixed; top: 0; right: 0; height: 100vh; width: 200px; z-index: 999; background-color: #386e61; box-shadow: -5px 0 5px 0 #386e61; display: none; flex-direction: column; align-items: flex-start; justify-content: flex-start; transition: left 0.3s ease-out; border-radius: 5px 0 0 5px;}
 .sidebar li{width: 100%;}
 .sidebar a{width: 100%;}
-.loading-area{position: fixed; top: 50px; right: 0; bottom: 0; right: 0; background-color: white; width: 100%; height: 100%; z-index: 1000;  display: flex; justify-content: center; align-items: center;flex-direction: column; transition: opacity .50s, visibility 1s;}
+.loading-area{position: fixed; top: 0; right: 0; bottom: 0; right: 0; background-color: white; width: 100%; height: 100%; z-index: 1000;  display: flex; justify-content: center; align-items: center;flex-direction: column; transition: opacity .50s, visibility 1s;}
 .sfade {opacity: 0; visibility: hidden;}
 .loader{border: 16px solid #a2a2a2; border-top: 16px solid #386e61; border-radius: 50%; width: 120px; height: 120px; animation: spin 1.5s linear infinite;}
 @keyframes spin{0%{transform: rotate(0deg);} 100%{transform: rotate(360deg);;}}
