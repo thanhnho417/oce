@@ -137,10 +137,10 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 #hlouis:hover{color: white; background: #c2bbc7;}
 #bilibili{color: black; background: white;border: 1px solid #1f87e2;}
 #bilibili:hover{color: white; background: #1f87e2;}
-.masonry-grid{display: block;margin: auto; width: 90%; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease;}
+.masonry-grid{display: block; margin: 0 auto; width: 90%; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease;}
 .masonry-grid.loaded {opacity: 1; transform: scale(1);}
 .masonry-grid img, .masonry-grid video{display: block; width: 300px; margin: 10px; border-radius: 10px; align-items: center;}
-.masonry-grid video{aspect-ratio: 4/3; object-fit: contain;}
+.masonry-grid video{aspect-ratio: 4/3; object-fit: contain; background-color: #c0c0c0;}
 .me-pho{width: 100%;}
 .me-pho video{aspect-ratio: 16/10;}
 .wrapper{padding: 15px 15%;}
@@ -184,7 +184,7 @@ th,td{padding: 10px; text-align: left; color: black;}
 #intd{display: flex; justify-content: center; align-items: center; width: 80%; margin: 10px auto;}
 #bann{flex: 1;}
 #conts{flex: 2.5; width: 100%; height: fit-content; position: relative;}
-.pop-up {visibility: hidden; opacity: 0; position: fixed; top: 5px; right: 5px; bottom: 5px; left: 5px; background-color: rgba(199, 199, 199, 0.9); padding: 5px; z-index: 1001; display: flex; flex-direction: column; justify-content: center; align-items: center;  transform: scale(0); transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;}
+.pop-up {visibility: hidden; opacity: 0; position: fixed; top: 5px; right: 5px; bottom: 5px; left: 5px; background-color: rgba(199, 199, 199, 0.9); padding: 5px; z-index: 1001; display: flex; flex-direction: column; justify-content: center; align-items: center;  transform: scale(0); transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; z-index: 2001;}
 
 .pop-up.show {visibility: visible; opacity: 1; transform: scale(1);}
 .pop-up .head{width: 100%; background-color: #386e61; border: 1px solid black; height:30px;} 
