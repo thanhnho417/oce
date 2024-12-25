@@ -1,6 +1,7 @@
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
+    event.stopPropagation();
 }
 function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
@@ -10,6 +11,15 @@ function hideSearch(){
     const search = document.querySelector('.search')
     search.style.display = 'none'
 }
+document.addEventListener('click', () => {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+    if (sidebar) {
+        sidebar.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    }
+})
 const logo = document.querySelector(".left-selection a");
 logo.innerHTML = "";
 const leftse = document.querySelector(".left-selection")
