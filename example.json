@@ -1,0 +1,83 @@
+{
+    "oce":[
+        {
+            "title": "Xin chào",
+            "pages": [
+                {
+                    "title": "Anime",
+                    "year": [
+                        {
+                            "title": "2020",
+                            "season": [
+                                {
+                                    "title": "Spring",
+                                    "anime": [
+                                        {
+                                            "title": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+                                            "genre": "Action, Adventure, Drama, Fantasy, Magic, Psychological, Thriller",
+                                            "episodes": "13",
+                                            "status": "Ongoing",
+                                            "rating": "8.61"
+                                        },
+                                        {
+                                            "title": "Kanojo, Okarishimasu",
+                                            "genre": "Comedy, Romance, School, Shounen",
+                                            "episodes": "12",
+                                            "status": "Ongoing",
+                                            "rating": "7.31"
+                                        },
+                                        {
+                                            "title": "Sword Art Online: Alicization - War of Underworld 2nd Season",
+                                            "genre": "Action, Adventure, Fantasy, Game, Romance",
+                                            "episodes": "11",
+                                            "status": "Ongoing",
+                                            "rating": "7.77"
+                                        },
+                                        {
+                                            "title": "Enen no Shouboutai: Ni no Shou",
+                                            "genre": "Action, Supernatural, Shounen",
+                                            "episodes": "24",
+                                            "status": "Ongoing",
+                                            "rating": "7.92"
+                                        },
+                                        {
+                                            "title": "The God of High School",
+                                            "genre": "Action, Adventure, Comedy, Supernatural, Martial Arts, Fantasy",
+                                            "episodes": "13",
+                                            "status": "Ongoing",
+                                            "rating": "7.77"
+                                        },
+                                        {
+                                            "title": "Deca-Dence",
+                                            "genre": "Action, Adventure, Sci-Fi",
+                                            "episodes": "12",
+                                            "status": "Ongoing",
+                                            "rating": "7.61"
+                                        },
+                                        {
+                                            "title": "Great Pretender",
+                                            "genre": "Adventure, Comedy, Drama",
+                                            "episodes": "14",
+                                            "status": "Ongoing",
+                                            "rating": "8.33"
+                                        },
+                                        {
+                                            "title": "Monster Musume no Oishasan",
+                                            "genre": "Comedy, Ecchi, Fantasy, Harem, Romance",
+                                            "episodes": "12",
+                                            "status": "Ongoing",
+                                            "rating": "6.91"
+                                        },
+                                        {
+                                            "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

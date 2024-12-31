@@ -24,12 +24,23 @@ def ghiDL(fout,B):
 
 
 def xulinhapvanban():
-    print('Nhập văn bản')
-    n = str(input("Văn bản: "))
+    print('Bạn muốn gộp bao nhiêu câu/đoạn')
+    m = int(input('Nhập vào đây: '))   
+    i = 1
+    A = []
+    B = []
+    while i <= m:
+        print('Nhập câu/đoạn thứ', i)
+        n = str(input('Nhập vào đây: '))
+        A.append(n)
+        i += 1
     x = str(input("Kí tự cần tách để gộp: "))
-    y = n.split(x)
-    h = "".join(y)
-    return h
+    k = 0
+    while k < len(A):
+        u = A[k].split(x)
+        B.append("".join(u))
+        k += 1
+    return B
 
 
 print('CHƯƠNG TRÌNH GỘP VĂN BẢN')
@@ -46,6 +57,10 @@ while True:
             print('Thành công. Vui lòng xem file có tên output.txt')
         elif a == 2:
             h = xulinhapvanban()
-            print('Văn bản sau khi gộp: ', h)
+            print('________________________________________________')
+            print('Văn bản sau khi gộp:')
+            for i in h:
+                print(i)
+            print('________________________________________________')
     else:
         quit()
