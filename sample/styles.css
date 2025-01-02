@@ -112,5 +112,6 @@
     }
     .playlist{
         flex: 1;
+        margin: 10px 0;
     }
 }
