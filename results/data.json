@@ -897,5 +897,19 @@
         "description": "Tốt nghiệp THPT",
         "category": "Documents, PDF",
         "image": "totnghiep.jpg"
+    },
+    {
+        "title": "Video",
+        "src": "../pages/media/video/",
+        "description": "Video",
+        "category": "Media",
+        "image": "../Images/video-player-streaming.svg"
+    },
+    {
+        "title": "Kỉ niệm 2018 - 2022",
+        "src": "../pages/media/memories/2018-2022",
+        "description": "Kỉ niệm",
+        "category": "Memories",
+        "image": "../Images/20182022/20182022.jpg"
     }
 ]

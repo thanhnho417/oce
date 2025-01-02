@@ -3,98 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập với Microsoft</title>
-    <script src="https://alcdn.msauth.net/browser/2.16.1/js/msal-browser.min.js"></script>
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Biểu mẫu đăng nhập Microsoft</h1>
-
-    <!-- Biểu mẫu đăng nhập -->
-    <form id="login-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Nhập email" required>
-
-        <br><br>
-        
-        <button type="button" id="login-button">Đăng nhập</button>
-    </form>
-
-    <!-- Phần hiển thị thông tin người dùng -->
-    <div id="user-info"></div>
-
+    <div class="container">
+        <div class="main">
+            <div class="vid-play">
+                <video controls>
+                    <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                </video>
+            </div>
+            <div class="conts">
+                <p id="title">Video Thử Nghiệm</p>
+                <p id="description">Thông tin Lorem ipsum, udiandae molestiae quibusdam alias dolorum. Commodi hic asperiores rem, aspernatur dolores odio corrupti optio ea unde id animi officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, harum repudiandae molestias dolore, numquam quos expedita minima sed architecto non, esse blanditiis laudantium praesentium possimus? Quasi veniam dolorum ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, eius? Velit nesciunt, nobis aperiam iste aspernatur quia beatae corrupti autem obcaecati labore similique culpa atque, dignissimos distinctio totam, mollitia tenetur.</p>
+                <button id="toggle-btn">Hiện thêm</button>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-title">
+                Playlist
+            </div>
+            <hr>
+            <div class="playlist-video">
+                <img src="https://github.com/thanhnho417/oce/blob/main/pages/media/video/tb1.png?raw=true" alt="Thumbnail">
+                <p>Tiêu đề Thumbnail</p>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/m3u8.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0"></script>
     <script>
-        // Cấu hình MSAL.js
-        const msalConfig = {
-            auth: {
-                clientId: '1f2cf642-c78b-456b-a33b-ceaebd060d53', // Client ID của bạn
-                authority: 'https://login.microsoftonline.com/e252973a-cf1c-4739-8a64-6ab7df045012', // Tenant ID của bạn
-                redirectUri: window.location.href // Chuyển hướng về trang hiện tại sau khi đăng nhập
-            },
-            cache: {
-                cacheLocation: 'localStorage', // Lưu token trong localStorage
-                storeAuthStateInCookie: true // Lưu trạng thái xác thực vào cookie
+        function adjustPlaylistHeight() {
+            const main = document.querySelector('.main');
+            const playlist = document.querySelector('.playlist');
+
+            if (main && playlist) {
+            const mainHeight = main.offsetHeight;
+            playlist.style.height = mainHeight + 'px';
             }
-        };
-
-        const msalInstance = new msal.PublicClientApplication(msalConfig);
-
-        const loginButton = document.getElementById('login-button');
-
-        // Hàm xử lý đăng nhập
-        loginButton.addEventListener('click', function() {
-            const email = document.getElementById('email').value; // Lấy email từ input
-            
-            if (email) {
-                // Đăng nhập qua Microsoft với email người dùng
-                msalInstance.loginRedirect({
-                    loginHint: email, // Gợi ý email vào form đăng nhập Microsoft
-                    scopes: ["user.read"]
-                });
-            } else {
-                alert("Vui lòng nhập email để đăng nhập");
-            }
-        });
-
-        // Kiểm tra trạng thái đăng nhập
-        msalInstance.handleRedirectPromise().then(response => {
-            if (response && response.account) {
-                // Người dùng đã đăng nhập
-                localStorage.setItem('msalToken', response.accessToken);
-                displayUserInfo(response.account);
-            } else {
-                const token = localStorage.getItem('msalToken');
-                if (token) {
-                    getUserData(token);
-                }
-            }
-        }).catch(error => {
-            console.error('Error handling redirect:', error);
-        });
-
-        // Hiển thị thông tin người dùng
-        function displayUserInfo(account) {
-            document.getElementById('user-info').innerHTML = `
-                <h2>Welcome, ${account.name}</h2>
-                <p>Email: ${account.username}</p>
-            `;
         }
 
-        // Gọi Microsoft Graph API để lấy thông tin người dùng
-        function getUserData(token) {
-            fetch('https://graph.microsoft.com/v1.0/me', {
-                headers: {
-                    Authorization: `Bearer ${token}`
+        const description = document.getElementById('description');
+        const toggleBtn = document.getElementById('toggle-btn');
+
+        if (description && toggleBtn) {
+            toggleBtn.addEventListener('click', () => {
+                // Kiểm tra trạng thái hiện tại của phần tử và thay đổi hiển thị
+                if (description.style.display === 'block') {
+                    description.style.display = '-webkit-box'; // Thu gọn lại
+                    toggleBtn.textContent = 'Hiện thêm';
+                } else {
+                    description.style.display = 'block'; // Hiển thị toàn bộ nội dung
+                    toggleBtn.textContent = 'Ẩn bớt';
                 }
-            }).then(response => response.json())
-              .then(data => {
-                  document.getElementById('user-info').innerHTML = `
-                      <h2>Welcome, ${data.displayName}</h2>
-                      <p>Email: ${data.mail || data.userPrincipalName}</p>
-                  `;
-              }).catch(error => {
-                  console.error('Error fetching user data:', error);
-              });
+            });
         }
+        window.addEventListener('load', adjustPlaylistHeight);
+        window.addEventListener('resize', adjustPlaylistHeight);
     </script>
 </body>
 </html>

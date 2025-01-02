@@ -25,7 +25,7 @@ nav a{height: 100%; padding: 0 20px; text-decoration: none; display: flex; align
 #searchForm{display: flex; justify-content: center; align-items: center; background-color: #34695d;}
 #searchForm input{height: 30px; border: 1px solid #386e61; border-radius: 15px; padding-left: 13px; padding-right: 13px; width: 140px;}
 #searchForm input::placeholder{font-family: "Noto Sans", sans-serif;}
-#searchForm button{background: #34695d;; border: none; margin: 0 0 0 10px; padding-right: 10px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;}
+#searchForm button{background: #34695d; border: none; margin: 0 10px 0 10px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;}
 #searchForm button:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 .search-query{padding: 10px 5px 10px 5px; border: 1px solid #386e61; text-align: center; height: 45px; font-weight: 550; display: flex; justify-content: center; align-items: center; color: white; background: #386e61; font-family: "Be Vietnam Pro", sans-serif; font-size: 17px;}
 header{display: flex; justify-content: space-between; background-color: #34695d; z-index: 2000; position: sticky; top: 0; width: 100%;}
