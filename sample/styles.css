@@ -11,6 +11,10 @@
     padding: 10px 10%;
 
 }
+.plyr{
+    border-radius: 10px;
+    margin: 10px 0;
+}
 .main{
     flex: 3;
     border: 2px solid #000;
@@ -109,6 +113,7 @@
     }
     .main{
         flex: 1;
+        margin-right: 0;
     }
     .playlist{
         flex: 1;
