@@ -11,9 +11,14 @@
     <div class="container">
         <div class="main">
             <div class="vid-play">
-                <video playsinline controls id="player">
-                    <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
-                </video>
+                <div class="plyr_video-wrapper">
+                    <video playsinline controls id="player">
+                        <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                    </video>
+                    <div class="watermark">
+                        <img src="../watermark.png" alt="Thumbnail">
+                    </div>
+                </div>  
             </div>
             <div class="conts">
                 <p id="title">Video Thử Nghiệm</p>
@@ -26,7 +31,7 @@
                 Playlist
             </div>
             <hr>
-            <div class="playlist-video" data-src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8">
+            <div class="playlist-video" data-src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/bluearchivetheanimation/OP/S/index.m3u8">
                 <img src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/pages/media/video/tb1.png" alt="Thumbnail">
                 <p>Tiêu đề Thumbnail</p>
             </div>
@@ -36,45 +41,103 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script>
-        const player = new Plyr('#player')
-        function adjustPlaylistHeight() {
-            const main = document.querySelector('.main');
-            const playlist = document.querySelector('.playlist');
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = new Plyr('#player', { captions: { active: true } });
 
-            if (main && playlist) {
-            const mainHeight = main.offsetHeight;
-            playlist.style.height = mainHeight + 'px';
-            }
-        }
+            // HLS setup for m3u8 videos
+            const video = document.querySelector('#player');
+            let hls;
 
-        const description = document.getElementById('description');
-        const toggleBtn = document.getElementById('toggle-btn');
-
-        if (description && toggleBtn) {
-            toggleBtn.addEventListener('click', () => {
-                // Kiểm tra trạng thái hiện tại của phần tử và thay đổi hiển thị
-                if (description.style.display === 'block') {
-                    description.style.display = '-webkit-box'; // Thu gọn lại
-                    toggleBtn.textContent = 'Hiện thêm';
+            function loadVideo(sourceUrl) {
+                if (Hls.isSupported()) {
+                    if (hls) {
+                        hls.destroy(); // Hủy HLS nếu đã khởi tạo trước đó
+                    }
+                    hls = new Hls();
+                    hls.loadSource(sourceUrl);
+                    hls.attachMedia(video);
+                    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                        player.restart();
+                    });
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    video.src = sourceUrl;
+                    video.addEventListener('loadedmetadata', () => {
+                        player.restart();
+                        player.play();
+                    });
                 } else {
-                    description.style.display = 'block'; // Hiển thị toàn bộ nội dung
-                    toggleBtn.textContent = 'Ẩn bớt';
+                    console.error('HLS is not supported in this browser.');
                 }
-            });
-        }
-        const playlistVideos = document.querySelectorAll('.playlist-video');
-        playlistVideos.forEach(item => {
-            item.addEventListener('click', () => {
-                const vidsrc = item.getAttribute('data-src');
-                const playsource = document.querySelector('#player source');
-                if (vidsrc && playsource) {
-                    playsource.src = vidsrc;
-                    player.media.load();
+            }
+
+            // Adjust playlist height
+            function adjustPlaylistHeight() {
+                const main = document.querySelector('.main');
+                const playlist = document.querySelector('.playlist');
+
+                if (main && playlist) {
+                    const mainHeight = main.offsetHeight;
+                    playlist.style.height = `${mainHeight}px`;
                 }
+            }
+
+            window.addEventListener('load', adjustPlaylistHeight);
+            window.addEventListener('resize', adjustPlaylistHeight);
+
+            // Toggle description visibility
+            const description = document.getElementById('description');
+            const toggleBtn = document.getElementById('toggle-btn');
+
+            if (description && toggleBtn) {
+                toggleBtn.addEventListener('click', () => {
+                    if (description.style.display === 'block') {
+                        description.style.display = '-webkit-box'; // Collapse
+                        toggleBtn.textContent = 'Hiện thêm';
+                    } else {
+                        description.style.display = 'block'; // Expand
+                        toggleBtn.textContent = 'Ẩn bớt';
+                    }
+                });
+            }
+
+            // Playlist video switching
+            const playlistVideos = document.querySelectorAll('.playlist-video');
+            playlistVideos.forEach(item => {
+                item.addEventListener('click', () => {
+                    const vidsrc = item.getAttribute('data-src');
+                    const playsource = document.querySelector('#player source');
+                    if (vidsrc && playsource) {
+                        loadVideo(vidsrc);
+                        player.restart();
+                    }
+                });
             });
         });
-        window.addEventListener('load', adjustPlaylistHeight);
-        window.addEventListener('resize', adjustPlaylistHeight);
+            const player = new Plyr('#player');
+            const watermark = document.querySelector('.watermark');
+
+            // Lắng nghe sự kiện fullscreen
+            player.on('enterfullscreen', () => {
+                console.log('Vào chế độ toàn màn hình');
+                if (watermark) {
+                    watermark.style.display = 'block'; // Đảm bảo watermark hiển thị
+                }
+            });
+
+            player.on('exitfullscreen', () => {
+                console.log('Thoát chế độ toàn màn hình');
+                if (watermark) {
+                    watermark.style.display = 'block'; // Đảm bảo watermark hiển thị
+                }
+            });
+            player.on('exitfullscreen', () => {
+                if (watermark) {
+                    watermark.style.display = 'block'; // Đảm bảo watermark hiển thị
+                }
+            });
+
+
+
     </script>
 </body>
 </html>
