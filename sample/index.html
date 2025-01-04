@@ -11,14 +11,9 @@
     <div class="container">
         <div class="main">
             <div class="vid-play">
-                <div class="plyr_video-wrapper">
-                    <video playsinline controls id="player">
-                        <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
-                    </video>
-                    <div class="watermark">
-                        <img src="../watermark.png" alt="Thumbnail">
-                    </div>
-                </div>  
+                <video playsinline controls id="player">
+                    <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                </video>
             </div>
             <div class="conts">
                 <p id="title">Video Thử Nghiệm</p>
@@ -31,6 +26,10 @@
                 Playlist
             </div>
             <hr>
+            <div class="playlist-video" data-src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8">
+                <img src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/pages/media/video/tb1.png" alt="Thumbnail">
+                <p>Tiêu đề Thumbnail</p>
+            </div>
             <div class="playlist-video" data-src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/bluearchivetheanimation/OP/S/index.m3u8">
                 <img src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/pages/media/video/tb1.png" alt="Thumbnail">
                 <p>Tiêu đề Thumbnail</p>
@@ -112,29 +111,29 @@
                     }
                 });
             });
+
+            document.addEventListener("fullscreenchange", () => {
+                const videoWrapper = document.querySelector(".plyr__video-wrapper");
+                const beforeElement = window.getComputedStyle(videoWrapper, "::before");
+
+                if (document.fullscreenElement && videoWrapper) {
+                    // Lấy kích thước của video thực tế
+                    const videoElement = document.querySelector(".plyr__video-wrapper video");
+                    const videoRect = videoElement.getBoundingClientRect();
+
+                    // Điều chỉnh kích thước và vị trí của watermark theo video
+                    videoWrapper.style.setProperty("--watermark-width", `${videoRect.width * 0.1}px`); // 10% chiều rộng video
+                    videoWrapper.style.setProperty("--watermark-right", `${videoRect.width * 0.02}px`); // 2% từ phải
+                    videoWrapper.style.setProperty("--watermark-bottom", `${videoRect.height * 0.02}px`); // 2% từ dưới
+                } else {
+                    // Reset nếu không ở fullscreen
+                    videoWrapper.style.removeProperty("--watermark-width");
+                    videoWrapper.style.removeProperty("--watermark-right");
+                    videoWrapper.style.removeProperty("--watermark-bottom");
+                }
+            });
+            
         });
-            const player = new Plyr('#player');
-            const watermark = document.querySelector('.watermark');
-
-            // Lắng nghe sự kiện fullscreen
-            player.on('enterfullscreen', () => {
-                console.log('Vào chế độ toàn màn hình');
-                if (watermark) {
-                    watermark.style.display = 'block'; // Đảm bảo watermark hiển thị
-                }
-            });
-
-            player.on('exitfullscreen', () => {
-                console.log('Thoát chế độ toàn màn hình');
-                if (watermark) {
-                    watermark.style.display = 'block'; // Đảm bảo watermark hiển thị
-                }
-            });
-            player.on('exitfullscreen', () => {
-                if (watermark) {
-                    watermark.style.display = 'block'; // Đảm bảo watermark hiển thị
-                }
-            });
 
 
 
