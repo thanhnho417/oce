@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px 7%;
 
 }
 .plyr {
@@ -16,7 +16,7 @@
     margin: 10px 0;
 }
 .main{
-    flex: 3;
+    flex: 2;
     border: 2px solid #000;
     width: auto;
     border-radius: 10px;
@@ -28,6 +28,7 @@
     border-radius: 10px;
     width: 100%;
     margin: 10px 0 10px 5px;
+    overflow-y: auto;
 }
 .playlist > hr{
     border: 1.5px solid #000;
@@ -36,7 +37,7 @@
 .playlist > .playlist-title{
     padding: 10px;
     border-radius: 8px 8px 0 0;
-    width: 100%;
+    width: auto;
     font-weight: bold;
     font-size: 18px;
     margin: 0 10px;
@@ -46,17 +47,22 @@
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    width: auto;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: auto;
 }
 .playlist > .playlist-video:hover{
     background-color: #cccccc;
 }
 .playlist > .playlist-video > img{
     margin: 10px 5px 10px 10px;
-    width: 120px;
+    width: 130px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
 }
 .playlist > .playlist-video > p{
     margin: 10px;
-    padding: 5px 0;
 }
 .main > .vid-play{
     height: auto;
@@ -125,7 +131,7 @@
 }
 
 :fullscreen .plyr__video-wrapper::before, .plyr__video-wrapper:fullscreen::before{
-    width: 3.3vw;
+    width: 3vw;
     right: 6.5vw;
     bottom: 3.4vw;
 }
@@ -142,14 +148,14 @@
 .watermark:-webkit-full-screen,
 :-moz-full-screen .watermark, 
 .watermark:-moz-full-screen{
-    width: 2.7vw; right: 6.2vw; bottom: 3vw; height: 1.7vw;
+    width: 2.7vw; right: 6.2vw; bottom: 3vw; height: 1.7vw; max-width: 1200px;
 }
 .watermark img{
     width: 100%;
     display: block;
     align-items: center;
 }
-@media(max-width: 768px){
+@media(max-width: 1012px){
     .container{
         flex-direction: column;
         padding: 10px 5%;

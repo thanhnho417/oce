@@ -11,13 +11,14 @@
     <div class="container">
         <div class="main">
             <div class="vid-play">
-                <video playsinline controls id="player">
-                    <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                <video playsinline controls id="player" crossorigin>
+                    <source id="video-source" src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                    <track id="video-subtitles" kind="subtitles" label="Tiếng Việt" srclang="vi" src = "" default></track>
                 </video>
             </div>
             <div class="conts">
                 <p id="title">Video Thử Nghiệm</p>
-                <p id="description">Thông tin Lorem ipsum, udiandae molestiae quibusdam alias dolorum. Commodi hic asperiores rem, aspernatur dolores odio corrupti optio ea unde id animi officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, harum repudiandae molestias dolore, numquam quos expedita minima sed architecto non, esse blanditiis laudantium praesentium possimus? Quasi veniam dolorum ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, eius? Velit nesciunt, nobis aperiam iste aspernatur quia beatae corrupti autem obcaecati labore similique culpa atque, dignissimos distinctio totam, mollitia tenetur.</p>
+                <p id="description">Thông tin Lorem ipsum, <a href="#">Xin chào</a>udiandae molestiae quibusdam alias dolorum. Commodi hic asperiores rem, aspernatur dolores odio corrupti optio ea unde id animi officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, harum repudiandae molestias dolore, numquam quos expedita minima sed architecto non, esse blanditiis laudantium praesentium possimus? Quasi veniam dolorum ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, eius? Velit nesciunt, nobis aperiam iste aspernatur quia beatae corrupti autem obcaecati labore similique culpa atque, dignissimos distinctio totam, mollitia tenetur.</p>
                 <button id="toggle-btn">Hiện thêm</button>
             </div>
         </div>
@@ -25,118 +26,12 @@
             <div class="playlist-title">
                 Playlist
             </div>
-            <hr>
-            <div class="playlist-video" data-src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8">
-                <img src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/pages/media/video/tb1.png" alt="Thumbnail">
-                <p>Tiêu đề Thumbnail</p>
-            </div>
-            <div class="playlist-video" data-src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/bluearchivetheanimation/OP/S/index.m3u8">
-                <img src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/pages/media/video/tb1.png" alt="Thumbnail">
-                <p>Tiêu đề Thumbnail</p>
-            </div>
+            <hr class="playlist-hr">
         </div>
     </div>
     <script src="../javascript/m3u8.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const player = new Plyr('#player', { captions: { active: true } });
-
-            // HLS setup for m3u8 videos
-            const video = document.querySelector('#player');
-            let hls;
-
-            function loadVideo(sourceUrl) {
-                if (Hls.isSupported()) {
-                    if (hls) {
-                        hls.destroy(); // Hủy HLS nếu đã khởi tạo trước đó
-                    }
-                    hls = new Hls();
-                    hls.loadSource(sourceUrl);
-                    hls.attachMedia(video);
-                    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                        player.restart();
-                    });
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = sourceUrl;
-                    video.addEventListener('loadedmetadata', () => {
-                        player.restart();
-                        player.play();
-                    });
-                } else {
-                    console.error('HLS is not supported in this browser.');
-                }
-            }
-
-            // Adjust playlist height
-            function adjustPlaylistHeight() {
-                const main = document.querySelector('.main');
-                const playlist = document.querySelector('.playlist');
-
-                if (main && playlist) {
-                    const mainHeight = main.offsetHeight;
-                    playlist.style.height = `${mainHeight}px`;
-                }
-            }
-
-            window.addEventListener('load', adjustPlaylistHeight);
-            window.addEventListener('resize', adjustPlaylistHeight);
-
-            // Toggle description visibility
-            const description = document.getElementById('description');
-            const toggleBtn = document.getElementById('toggle-btn');
-
-            if (description && toggleBtn) {
-                toggleBtn.addEventListener('click', () => {
-                    if (description.style.display === 'block') {
-                        description.style.display = '-webkit-box'; // Collapse
-                        toggleBtn.textContent = 'Hiện thêm';
-                    } else {
-                        description.style.display = 'block'; // Expand
-                        toggleBtn.textContent = 'Ẩn bớt';
-                    }
-                });
-            }
-
-            // Playlist video switching
-            const playlistVideos = document.querySelectorAll('.playlist-video');
-            playlistVideos.forEach(item => {
-                item.addEventListener('click', () => {
-                    const vidsrc = item.getAttribute('data-src');
-                    const playsource = document.querySelector('#player source');
-                    if (vidsrc && playsource) {
-                        loadVideo(vidsrc);
-                        player.restart();
-                    }
-                });
-            });
-
-            document.addEventListener("fullscreenchange", () => {
-                const videoWrapper = document.querySelector(".plyr__video-wrapper");
-                const beforeElement = window.getComputedStyle(videoWrapper, "::before");
-
-                if (document.fullscreenElement && videoWrapper) {
-                    // Lấy kích thước của video thực tế
-                    const videoElement = document.querySelector(".plyr__video-wrapper video");
-                    const videoRect = videoElement.getBoundingClientRect();
-
-                    // Điều chỉnh kích thước và vị trí của watermark theo video
-                    videoWrapper.style.setProperty("--watermark-width", `${videoRect.width * 0.1}px`); // 10% chiều rộng video
-                    videoWrapper.style.setProperty("--watermark-right", `${videoRect.width * 0.02}px`); // 2% từ phải
-                    videoWrapper.style.setProperty("--watermark-bottom", `${videoRect.height * 0.02}px`); // 2% từ dưới
-                } else {
-                    // Reset nếu không ở fullscreen
-                    videoWrapper.style.removeProperty("--watermark-width");
-                    videoWrapper.style.removeProperty("--watermark-right");
-                    videoWrapper.style.removeProperty("--watermark-bottom");
-                }
-            });
-            
-        });
-
-
-
-    </script>
+    <script src="test1.js"></script>
 </body>
 </html>

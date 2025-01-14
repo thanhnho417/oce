@@ -36,15 +36,24 @@
             Live: Blend S
         </div>
         <div class="container">
-            <div class="video-player">
-                <video id="player" controls preload="auto" >
-                    <track kind="subtitles" label="English" srclang="en" src="" default>
-                </video>
-                <h3 id="video-title"></h3>
-                <p id="video-description"></p>
+            <div class="main">
+                <div class="vid-play">
+                    <video playsinline controls id="player" crossorigin>
+                        <source id="video-source" src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                        <track id="video-subtitles" kind="subtitles" label="Tiếng Việt" srclang="vi" src = "" default></track>
+                    </video>
+                </div>
+                <div class="conts">
+                    <p id="title">Video Thử Nghiệm</p>
+                    <p id="description">Thông tin Lorem ipsum, <a href="#">Xin chào</a>udiandae molestiae quibusdam alias dolorum. Commodi hic asperiores rem, aspernatur dolores odio corrupti optio ea unde id animi officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, harum repudiandae molestias dolore, numquam quos expedita minima sed architecto non, esse blanditiis laudantium praesentium possimus? Quasi veniam dolorum ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, eius? Velit nesciunt, nobis aperiam iste aspernatur quia beatae corrupti autem obcaecati labore similique culpa atque, dignissimos distinctio totam, mollitia tenetur.</p>
+                    <button id="toggle-btn">Hiện thêm</button>
+                </div>
             </div>
-            <div class="playlist" id="playlist">
-                <h4>Các tập</h4>
+            <div class="playlist">
+                <div class="playlist-title">
+                    Playlist
+                </div>
+                <hr class="playlist-hr">
             </div>
         </div>
         <footer>
@@ -52,7 +61,7 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
         <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-        <script src="app.js"></script>
+        <script src="../../../../../../javascript/app.js"></script>
         <script src="../../../../../../javascript/navanimeep.js"></script>
         <script src="../../../../../../script.js"></script>
     </body>

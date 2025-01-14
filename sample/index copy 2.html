@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="vid-play">
+                <video playsinline controls id="player">
+                    <source src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
+                </video>
+            </div>
+            <div class="conts">
+                <p id="title">Video Thử Nghiệm</p>
+                <p id="description">Thông tin Lorem ipsum, udiandae molestiae quibusdam alias dolorum. Commodi hic asperiores rem, aspernatur dolores odio corrupti optio ea unde id animi officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, harum repudiandae molestias dolore, numquam quos expedita minima sed architecto non, esse blanditiis laudantium praesentium possimus? Quasi veniam dolorum ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, eius? Velit nesciunt, nobis aperiam iste aspernatur quia beatae corrupti autem obcaecati labore similique culpa atque, dignissimos distinctio totam, mollitia tenetur.</p>
+                <button id="toggle-btn">Hiện thêm</button>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-title">
+                Playlist
+            </div>
+            <hr>
+            <div class="playlist-video" data-src="">
+                <img src="" alt="Thumbnail">
+                <p class="title-pl"></p>
+                <p class="description-pl" style="display: none;"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/m3u8.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const player = new Plyr('#player', { captions: { active: true } });
+    const video = document.querySelector('#player');
+    const titleElement = document.getElementById('title');
+    const descriptionElement = document.getElementById('description');
+    const toggleBtn = document.getElementById('toggle-btn');
+    const thumbnailElement = document.querySelector('.thumbnail');
+    let hls;
+
+    // Hàm tải video từ nguồn m3u8
+    function loadVideo(sourceUrl) {
+        if (Hls.isSupported()) {
+            if (hls) {
+                hls.destroy(); // Hủy HLS nếu đã khởi tạo trước đó
+            }
+            hls = new Hls();
+            hls.loadSource(sourceUrl);
+            hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = sourceUrl;
+        } else {
+            console.error('HLS is not supported in this browser.');
+        }
+    }
+
+    // Hàm cập nhật phụ đề cho video mới
+    function updateSubtitles(subtitles) {
+        // Tìm và xóa các thẻ track cũ
+        const existingTracks = video.querySelectorAll('track');
+        existingTracks.forEach(track => track.remove());
+
+        // Thêm phụ đề mới (nếu có)
+        if (subtitles && subtitles.length > 0) {
+            const subtitleTrack = document.createElement('track');
+            subtitleTrack.src = subtitles[0].src;
+            subtitleTrack.kind = 'subtitles';
+            subtitleTrack.label = subtitles[0].label;
+            subtitleTrack.srclang = subtitles[0].srclang;
+
+            // Thêm thẻ track vào video
+            video.appendChild(subtitleTrack);
+        }
+    }
+
+    // Hàm cập nhật thông tin video từ JSON
+    function updateVideoInfo(data) {
+        if (data.title) {
+            titleElement.textContent = data.title;
+        }
+
+        if (data.src) {
+            loadVideo(data.src); // Tải video từ URL
+        }
+
+        if (data.description) {
+            descriptionElement.innerHTML = data.description;
+        }
+
+        if (data.thumbnail) {
+            thumbnailElement.setAttribute('src', data.thumbnail);
+        }
+
+        // Cập nhật phụ đề
+        updateSubtitles(data.subtitles);
+    }
+
+    // Hàm cập nhật playlist với thông tin từ JSON
+    function updatePlaylist(data) {
+        const playlistContainer = document.querySelector('.playlist');
+
+        // Xóa các phần tử playlist cũ trước khi cập nhật
+        playlistContainer.innerHTML = '';
+
+        // Duyệt qua dữ liệu JSON và tạo các thẻ playlist-video mới
+        data.forEach(videoData => {
+            // Tạo một thẻ playlist-video mới
+            const playlistItem = document.createElement('div');
+            playlistItem.classList.add('playlist-video');
+            playlistItem.setAttribute('data-src', videoData.src);
+
+            // Tạo và thêm thẻ hình ảnh
+            const imgElement = document.createElement('img');
+            imgElement.setAttribute('src', videoData.thumbnail);
+            imgElement.setAttribute('alt', 'Thumbnail');
+            playlistItem.appendChild(imgElement);
+
+            // Tạo và thêm thẻ p cho tiêu đề
+            const titleElement = document.createElement('p');
+            titleElement.classList.add('title-pl');
+            titleElement.textContent = videoData.title;
+            playlistItem.appendChild(titleElement);
+
+            // Tạo và thêm thẻ p cho mô tả (ban đầu ẩn)
+            const descriptionElement = document.createElement('p');
+            descriptionElement.classList.add('description-pl');
+            descriptionElement.style.display = 'none';
+            descriptionElement.innerHTML = videoData.description;
+            playlistItem.appendChild(descriptionElement);
+
+            // Thêm thẻ playlist-item vào danh sách playlist
+            playlistContainer.appendChild(playlistItem);
+
+            // Thêm sự kiện click cho mỗi thẻ playlist-video
+            playlistItem.addEventListener('click', () => {
+                updateVideoInfo(videoData); // Cập nhật video và thông tin khi click vào playlist-item
+            });
+        });
+    }
+
+    // Hàm tải dữ liệu JSON và cập nhật các thẻ playlist-video
+    function loadPlaylistData() {
+        fetch('videos.json')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.length > 0) {
+                    updatePlaylist(data); // Cập nhật playlist với dữ liệu từ JSON
+
+                    // Cập nhật video đầu tiên trong danh sách
+                    updateVideoInfo(data[0]);
+                }
+            })
+            .catch(error => {
+                console.error('Không thể tải dữ liệu video:', error);
+            });
+    }
+
+    // Điều chỉnh chiều cao playlist
+    function adjustPlaylistHeight() {
+        const main = document.querySelector('.main');
+        const playlist = document.querySelector('.playlist');
+
+        if (main && playlist) {
+            const mainHeight = main.offsetHeight;
+            playlist.style.height = `${mainHeight}px`;
+        }
+    }
+
+    // Chức năng ToggleBtn
+    function toggleDescription() {
+        const isExpanded = toggleBtn.textContent === 'Ẩn bớt';
+        
+        if (isExpanded) {
+            descriptionElement.style.display = '-webkit-box'; // Thu gọn mô tả
+            toggleBtn.textContent = 'Hiện thêm'; // Đổi nội dung nút
+        } else {
+            descriptionElement.style.display = 'block'; // Mở rộng mô tả
+            toggleBtn.textContent = 'Ẩn bớt'; // Đổi nội dung nút
+        }
+
+        adjustPlaylistHeight(); // Cập nhật chiều cao playlist khi thay đổi mô tả
+    }
+
+    // Gắn sự kiện cho ToggleBtn
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', toggleDescription);
+    }
+
+    // Tải dữ liệu video và thiết lập video ban đầu
+    window.addEventListener('load', () => {
+        loadPlaylistData();
+        adjustPlaylistHeight();
+    });
+
+    window.addEventListener('resize', adjustPlaylistHeight);
+});
+
+
+
+    </script>
+</body>
+</html>
