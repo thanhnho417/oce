@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadVideo(viddata.src);
                     titleElement.textContent = viddata.title;
                     descriptionElement.innerHTML = viddata.description;
-                    video.setAttribute('data-poster', viddata.thumbnail);
                     // Xóa các track cũ
                     const existingTracks = video.querySelectorAll('track');
                     existingTracks.forEach(track => track.remove());
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadVideo(viddata.src);
                     titleElement.textContent = viddata.title;
                     descriptionElement.innerHTML = viddata.description;
-                    video.setAttribute('data-poster', viddata.thumbnail);
                 }
             });
         })
