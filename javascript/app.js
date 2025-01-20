@@ -109,19 +109,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lắng nghe sự kiện thay đổi kích thước cửa sổ
     window.addEventListener('resize', adjustPlaylistHeight);
     window.addEventListener('loadedmetadata', adjustPlaylistHeight);
-    function getwidthheightvid(){
-        const vid = document.getElementById('player');
-        const rect = vid.getBoundingClientRect();
-        const distances = {
-            top: Math.round(rect.top),
-            left: Math.round(rect.left),
-            right: Math.round(rect.right),
-            bottom: Math.round(rect.bottom)
-        }
-        console.log(`Player dimensions (display size): ${Math.round(rect.width)} x ${Math.round(rect.height)}`);
-        console.log(`Top: ${distances.top}, Left: ${distances.left}, Right: ${distances.right}, Bottom: ${distances.bottom}`);
-    }
-    
-    window.addEventListener('resize', getwidthheightvid);
-    getwidthheightvid();
+
 });
