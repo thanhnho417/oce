@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const player = new Plyr('#player', { captions: { active: true, language: 'vi' } });
+    const player = new Plyr('#player', { captions: { active: true} });
     const video = document.querySelector('#player');
     const titleElement = document.getElementById('title');
     const descriptionElement = document.getElementById('description');

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsContainer.innerHTML = '<p>Có nhập gì đâu mà tìm</p>';
         return;
     }
-    searchQueryContainer.textContent = `Thông tin được tìm kiếm với từ khóa: "${query}"`;
+    searchQueryContainer.textContent = `Tìm kiếm: "${query}"`;
 
     fetch('data.json')
         .then(response => response.json())
