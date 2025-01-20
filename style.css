@@ -350,7 +350,7 @@ th,td{padding: 10px; text-align: left; color: black;}
 @media(max-width: 1012px){
     .container{
         flex-direction: column;
-        padding: 10px 5%;
+        padding: 10px;
     }
     .main{
         flex: 1;
