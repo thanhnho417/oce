@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const player = new Plyr('#player', { captions: { active: true, language: 'vi' } });
     const video = document.querySelector('#player');
     const titleElement = document.getElementById('title');
     const descriptionElement = document.getElementById('description');
@@ -40,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         });
                     }
 
-                    player.restart(); // Khởi động lại player
                 });
 
                 // Append to playlist container
