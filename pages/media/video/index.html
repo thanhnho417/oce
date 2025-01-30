@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
         <link rel="icon" type="image/x-icon" href="../../../web.jpg">
         <link rel="stylesheet" href="../../../style.css">
-        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+        <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
         <div class="container">
             <div class="main">
                 <div class="vid-play">
-                    <video playsinline controls id="player" crossorigin>
+                    <video playsinline controls id="player" class="video-js vjs-fluid" preload="auto" data-setup="{}"  crossorigin>
                         <source id="video-source" src="https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
                     </video>
                 </div>
@@ -52,14 +52,11 @@
             </div>
         </div>
         <footer>
-            &copy; oce - Do not Reup - Released in 2024
         </footer>
         <script src="../../../javascript/navpages2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-        <script src="https://cdn.jsdelivr.net/npm/assjs@0.11.1/dist/ass.min.js"></script>
-        <script src="../../../javascript/plyr.js"></script>
+        <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
         <script src="../../../javascript/app.js"></script>
-        <script src="https://alcdn.msauth.net/browser/2.14.2/js/msal-browser.min.js"></script>
         <script src="../../../script.js"></script>
     </body>
 </html>
