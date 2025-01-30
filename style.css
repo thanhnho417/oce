@@ -259,6 +259,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     margin: 10px 0 10px 5px;
     overflow-y: auto;
 }
+.video-js{width: 100%;}
 .playlist > hr{
     border: 1.5px solid #000;
     margin: 0 20px

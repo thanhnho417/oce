@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="main">
             <div class="vid-play">
-                <video playsinline controls id="player" crossorigin>
+                <video playsinline controls id="player" class="video-js vjs-fluid" preload="auto" data-setup="{}" crossorigin>
                     <source id="video-source" src="../Video/kusuriya/s2-trailer-2/index.m3u8" type="application/x-mpegURL">
                     <track id="video-subtitles" kind="subtitles" label="Tiếng Việt" srclang="vi" src = "" default></track>
                 </video>
@@ -29,6 +30,7 @@
         </div>
     </div>
     <script src="../javascript/m3u8.js" async></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0"></script>
     <script src="test1.js"></script>
 </body>
