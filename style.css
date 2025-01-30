@@ -240,9 +240,10 @@ th,td{padding: 10px; text-align: left; color: black;}
     padding: 10px 7%;
 
 }
-.plyr {
-    border-radius: 10px;
-    margin: 10px 0;
+.video-js{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
 }
 .main{
     flex: 2.5;
@@ -342,13 +343,7 @@ th,td{padding: 10px; text-align: left; color: black;}
 }
 #toggle-btn:hover{
     text-decoration: underline;
-}
-.plyr__video-wrapper{
-    position: relative;
-    overflow: clip-path;
-    aspect-ratio: 16/9;
-    background-color: white;
-}
+} 
 @media(max-width: 1012px){
     .container{
         flex-direction: column;
@@ -357,6 +352,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     .main{
         flex: 1;
         margin-right: 0;
+        width: 100%;
     }
     .playlist{
         flex: 1;

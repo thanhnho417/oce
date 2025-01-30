@@ -95,4 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     adjustPlaylistHeight();
     window.addEventListener('loadeddata', adjustPlaylistHeight);
     window.addEventListener('resize', adjustPlaylistHeight);
+    window.addEventListener('scroll', adjustPlaylistHeight);
+    window.addEventListener('load', adjustPlaylistHeight);
 });
