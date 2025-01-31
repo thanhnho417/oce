@@ -374,7 +374,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     #toggle-btn{color: white;}
     .loading-area{background-color: rgb(43, 43, 43);}
     .option-click >a> .text{color: white;}
-    #searchForm input{background-color: rgb(100, 100, 100);}
+    #searchForm input{background-color: rgb(100, 100, 100); color: white;}
     #searchForm input::placeholder{color: white;}
     .category-title{background-color: rgb(100, 100, 100);}
     .result-item > a{color: white;}
