@@ -378,4 +378,5 @@ th,td{padding: 10px; text-align: left; color: black;}
     #searchForm input::placeholder{color: white;}
     .category-title{background-color: rgb(100, 100, 100);}
     .result-item > a{color: white;}
+    .article-area{color: black;}
 }
