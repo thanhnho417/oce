@@ -265,6 +265,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     border: 1.5px solid #000;
     margin: 0 20px
 }
+
 .playlist > .playlist-title{
     padding: 10px;
     border-radius: 8px 8px 0 0;
@@ -296,6 +297,8 @@ th,td{padding: 10px; text-align: left; color: black;}
     margin: 10px;
 }
 .main > .vid-play{
+    position: relative;
+    display: inline-block;
     height: auto;
     width: 100%;
     display: flex;
@@ -323,7 +326,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     border-radius: 10px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Số dòng tối đa */
+    -webkit-line-clamp: 2; /* Số dòng tối đa */
     line-clamp: 3;
     overflow: hidden;
 }
@@ -358,4 +361,21 @@ th,td{padding: 10px; text-align: left; color: black;}
         flex: 1;
         margin: 10px 0;
     }
+}
+@media(prefers-color-scheme: dark){
+    body{background-color: rgb(43, 43, 43); color: white;}
+    table {background-color: #222; color: white; border-color: white;}
+    th, td {border: 1px solid white; color: white;}
+    .notification{background-color: rgb(43, 43, 43); border: 1px solid rgb(43, 43, 43);}
+    .container{background-color: rgb(43, 43, 43);}
+    .container > .main, .container > .playlist{border: 2px solid white;}
+    .playlist > .playlist-video:hover{background-color: #636363;}
+    .main > .conts > #description {background-color: #4d4d4d;}
+    #toggle-btn{color: white;}
+    .loading-area{background-color: rgb(43, 43, 43);}
+    .option-click >a> .text{color: white;}
+    #searchForm input{background-color: rgb(100, 100, 100);}
+    #searchForm input::placeholder{color: white;}
+    .category-title{background-color: rgb(100, 100, 100);}
+    .result-item > a{color: white;}
 }

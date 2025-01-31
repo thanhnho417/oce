@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     let hls;
 
+
     fetch('videos.json')
         .then(response => response.json())
         .then(data => {
@@ -91,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleBtn.textContent = 'Hiện thêm';
         }
     });
-    
     adjustPlaylistHeight();
     window.addEventListener('loadeddata', adjustPlaylistHeight);
     window.addEventListener('resize', adjustPlaylistHeight);
