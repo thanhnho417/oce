@@ -51,24 +51,6 @@ const handlePopup = (status) => {
 }
 setInterval(checkNetwork, 7000);
 
-document.addEventListener("DOMContentLoaded", function() {
-    const loading = document.createElement('div');
-    loading.classList.add("loading-area");
-    loading.innerHTML = '<div class="loader"></div><p id="loading-content">Đang tải...</p>';
-
-    const header = document.querySelector('header');
-    if (header) {
-        header.appendChild(loading);
-    } else {
-        console.error("Phần tử header không tồn tại.");
-    }
-
-    const fOut = () => {
-        const loadWrapper = document.querySelector(".loading-area");
-        loadWrapper.classList.add("sfade")
-    }
-    window.addEventListener('load', fOut);
-});
 
 document.addEventListener("DOMContentLoaded", function(){
     const addtitle = " | oce";
