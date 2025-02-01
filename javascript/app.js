@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     let hls;
 
-
     fetch('videos.json')
         .then(response => response.json())
         .then(data => {

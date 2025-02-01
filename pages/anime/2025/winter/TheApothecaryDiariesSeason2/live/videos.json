@@ -52,6 +52,24 @@
         "thumbnail": "img27.jpg"
     },
     {
+        "title": "Tập 28: Tấm gương",
+        "src": "https://tt57.biananset.net/_v7/52f65f7b65444fbee660c7904dd0c52a32318cfa321bd0481083c0b8e4ba3c7aa7ddfe175d31638088760999040a22a39f2c91efddbc65cd977f823e1b1f6a1357a2d93a0df6bbbc40649054620be0224f50e3e7398d6bfec6d7adb4b37651014ced03caa4d2df2de91e797e7cb3b6bab27121e1e0db889213a7c021ec9e1323/master.m3u8",
+        "description": "Cao Thuận nhờ Miêu Miêu giúp giải quyết bí ẩn liên quan đến hai chị em gái bị giam lỏng tại nhà, một trong số họ đã mang thai mặc dù bị giám sát nghiêm ngặt.",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "ep28-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "ep28-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "img28.jpg"
+    },
+    {
         "title": "ED",
         "src": "../../../../../../Video/kusuriya/s2-ed1/index.m3u8",
         "description": "",
