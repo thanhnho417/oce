@@ -370,6 +370,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     .container{background-color: rgb(43, 43, 43);}
     .container > .main, .container > .playlist{border: 2px solid white;}
     .playlist > .playlist-video:hover{background-color: #636363;}
+    .container > .playlist > .playlist-hr {border: 1px solid white;}
     .main > .conts > #description {background-color: #4d4d4d;}
     #toggle-btn{color: white;}
     .loading-area{background-color: rgb(43, 43, 43);}
