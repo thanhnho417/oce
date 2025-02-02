@@ -2,7 +2,8 @@
     "images": [
       { "src": "Images/anhlop2.jpg", "alt": "Image 1" },
       { "src": "Images/anhlop1.jpg", "alt": "Image 2" },
-      { "src": "Images/anhlop.jpg", "alt": "Image 3" }
+      { "src": "Images/anhlop.jpg", "alt": "Image 3" },
+      { "src": "Images/20250202_125803.jpg", "alt": "Image 4"}
     ]
   }
   
