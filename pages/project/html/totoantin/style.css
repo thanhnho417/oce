@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+body{
+    background-color: rgb(236, 235, 235);
+    font-size: 1.2em;
+}
+.article {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 20%;
+}
+.banner{
+    background: url(img1.jpg) no-repeat center center/cover;
+    padding: 10rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 1.7rem;
+    
+    filter: brightness(0.7);
+}
+.banner > p{
+    color: rgb(63, 63, 63);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+}
+.slogan{
+    padding: 5rem 7rem ;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.block{
+    text-align: center;
+}
+.b-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+.image-land{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-land > img{
+    flex: 1;
+    width: 50%;
+    height: 50%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    align-items: center;
+}
+.s-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.s-img > img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.s-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.s2 {
+    width: fit-content;
+}
+ul, ol {
+    margin-left: 20px;
+  }
+.section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+.right{
+    text-align: right;
+}
+.s2{
+    padding: 1rem 3rem;
+}
+footer{
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+@media(max-width: 1460px){
+    .content{
+        padding: 0 7rem;
+    }
+    .slogan {
+        padding: 5rem 3rem;
+    }
+    .article {
+        margin: 10px 5%;
+    }
+}
+@media(max-width: 1050px){
+    .content{
+        padding: 0;
+    }
+    .slogan {
+        padding: 5rem 0.5rem;
+    }
+    .article {
+        margin: 10px;
+    }
+}
