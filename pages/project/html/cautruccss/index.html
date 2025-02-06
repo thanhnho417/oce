@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc CSS</title>
+    <style>
+        *{margin: 0; border: 0; box-sizing: border-box; font-family: "Arial", sans-serif; font-size: 1.1rem;}
+        footer{background-color: #f95060; padding: 10px; text-align: center; color: white;}
+        .container{width: 80%; margin: 10px auto; }
+        .header{background-color: #12c7f2; padding-bottom: 15px;}
+        .head{background-color: #cbebf1; border: 1px solid white; text-align: center; padding-top: 5px; padding-bottom: 10px; margin: 0 15px}
+        .content{background-color: #fea730;}
+        .align{display: flex; flex-wrap: wrap; width: 100%; padding: 5px 15px 15px 15px;}
+        .row {background-color: #ffeeaf; padding: 20px 0; text-align: center; border: 1px solid white; flex: 1 1 50%;}
+        p{text-align: center; color: white; padding-top: 10px; padding-bottom: 15px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Đầu trang (Header)</p>
+            <div class="head">Banner</div>
+            <div class="head">Khẩu hiệu - Slogan</div>
+        </div>
+        <div class="content">
+            <p>Phần nội dung chính</p>
+            <div class="align">
+                <div class="row">Ảnh minh họa/Nội dung</div>
+                <div class="row">Ảnh minh họa/Nội dung</div>
+                <div class="row">Ảnh minh họa/Nội dung</div>
+                <div class="row">Ảnh minh họa/Nội dung</div>
+            </div>
+        </div>
+        <footer>Cuối trang (Footer)</footer>
+    </div>
+</body>
+</html>

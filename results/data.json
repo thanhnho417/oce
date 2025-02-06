@@ -934,6 +934,13 @@
         "image": "van.png"
     },
     {
+        "title": "Html",
+        "src": "../pages/project/html/",
+        "description": "Mấy trang html",
+        "category": "html",
+        "image": "html-la-gi-khai-niem.webp"
+    },
+    {
         "title": "Minh họa tốt nghiệp THPTQG - T10/2025",
         "src": "../pages/project/documents/totnghiepthpt/minhhoa/T10-2024",
         "description": "Tốt nghiệp THPT",
