@@ -934,6 +934,13 @@
         "image": "van.png"
     },
     {
+        "title": "Vi hành - Nguyễn Ái Quốc",
+        "src": "../pages/project/presentation/",
+        "description": "Môn: Ngữ Văn",
+        "category": "Presentation, PowerPoint",
+        "image": "van.png"
+    },
+    {
         "title": "Html",
         "src": "../pages/project/html/",
         "description": "Mấy trang html",
