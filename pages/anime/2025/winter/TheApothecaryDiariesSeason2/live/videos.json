@@ -70,6 +70,24 @@
         "thumbnail": "img28.jpg"
     },
     {
+        "title": "Tập 29: Nguyệt thần",
+        "src": "https://fgh5.jonextugundu.net/_v7/2d74e82535152c878b100747b9eef23d9212d565fbe012ac62b20f0dc6c65a4e925c1bf59806d23254ee989eea465a8861565b819d948181f89e32ec7bdc89eb725f01657128ab063ca57a22aafe54604c4de581c4684582071af50c0353733078f211037235c27b0e8e1dbd2544c20f8717abf07734dd5dfdf3773fcde26e24/index-f1-v1-a1.m3u8",
+        "description": "Sau khi tình cờ gặp Tử Thuý trong vườn đào, Miêu Miêu nhận ra cách đáp ứng yêu cầu tưởng chừng bất khả thi của sứ thần ngoại quốc này là được thấy Nguyệt thần.",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "ep29-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "ep29-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "img29.jpg"
+    },
+    {
         "title": "ED",
         "src": "../../../../../../Video/kusuriya/s2-ed1/index.m3u8",
         "description": "",
