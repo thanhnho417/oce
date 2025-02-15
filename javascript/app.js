@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         titleElement.textContent = viddata.title;
-        descriptionElement.innerHTML = viddata.description;
+        descriptionElement.innerHTML = viddata.description ||'Không có nội dung';
         
         // Remove existing subtitles
         player.textTracks().tracks_.forEach(track => player.removeRemoteTextTrack(track));
