@@ -106,6 +106,24 @@
         "thumbnail": "img30.jpg"
     },
     {
+        "title": "Tập 31: Miếu Tuyển Trạch",
+        "src": "https://fgh5.jonextugundu.net/_v7/e10139cd21f29b7fa57fa6002145b318bc63614d3e73154e90b64c290bf5745ce7ab6791306657f790f2a91ac4d3a1a7709cd3dcd4f2eaadbeaffa5b8c6bc1f23f554bc8d4075b47f1546ef21711ec701540ff3d5270b76e558e7e0302422a1d0f10da26ab31f04d075b25a83e060d3cfcf146034e67c41ceb0603c2865fb673/index-f1-v1-a1.m3u8",
+        "description": "Sau khi theo Tiểu Lan đến học đường, Miêu Miêu gặp một thái giám lớn tuổi đang dạy ở đó và bị thu hút bởi cảnh tượng của một ngôi đền gần đó.",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "ep31-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "ep31-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "img31.jpg"
+    },
+    {
         "title": "ED",
         "src": "../../../../../../Video/kusuriya/s2-ed1/index.m3u8",
         "description": "",
