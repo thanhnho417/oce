@@ -13,7 +13,7 @@ const imgs = leftse.querySelectorAll("img");
 imgs.forEach(img => img.remove());
 const webtitle = document.createElement("img");
 // Thiết lập thuộc tính cho webtitle
-webtitle.src = "https://raw.githubusercontent.com/thanhnho417/oce/refs/heads/main/fileweb.svg";
+webtitle.src = "https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272";
 webtitle.alt = "web";
 webtitle.width = "97.8";
 // Thêm các phần tử vào thẻ a

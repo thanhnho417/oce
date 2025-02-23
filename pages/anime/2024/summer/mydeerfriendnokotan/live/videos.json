@@ -1,15 +1,8 @@
 [
     {
         "title": "OP",
-        "src": "https://www.googleapis.com/drive/v3/files/1AhrhFiNqtSc54d9tyhxxE6gqZoDwMoAB?alt=media&key=AIzaSyAYmV8PewXpdvIZbc52k1iyAToUaUAmmIw",
+        "src": "https://ik.imagekit.io/ocemedia/video/My%20deer%20friend%20Nokotan/mydeerfriendnokotanop.mp4?updatedAt=1740323024628",
         "description": "Nhạc mở đầu phim My Deer Friend Nokotan",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "abc.vtt",
-                "srclang": "vi"
-            }
-        ],
         "thumbnail": "op.png"
     },
     {
