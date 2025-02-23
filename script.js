@@ -17,13 +17,19 @@ webtitle.src = "https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170
 webtitle.alt = "web";
 webtitle.width = "97.8";
 // Thêm các phần tử vào thẻ a
-logo.appendChild(webtitle);
+logo.appendChild(webtitle);document.body.insertAdjacentHTML('beforeend', `
+    <div class="loading-area"><img src="https://ik.imagekit.io/ocemedia/loading-gif.gif" width="150" height="150" alt="loading"><p>Đang tải...</p></div>
+`);
 document.body.insertAdjacentHTML('beforeend', `
     <div class="pop-up-network">
         <div class="wifi-icon"></div>
         <div class="details"></div>
     </div>
 `);
+var loader = document.querySelector('.loading-area');
+window.addEventListener('load', function(){
+    loader.classList.add('sfade');
+});
 const footer = document.querySelector("footer");
 footer.innerHTML = "";
 
