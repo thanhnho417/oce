@@ -212,6 +212,15 @@
         "accesslink": "<iframe src=\"https://1drv.ms/p/s!ApdCJuBnWhE7iizqTydLu2QUwAIo?embed=1&em=\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\"></iframe>"
     },
     {
+        "name": "Tin học",
+        "info": "Hội thảo hướng nghệp",
+        "type": "PowerPoint",
+        "download": "download_24dp_FILL0_wght400_GRAD0_opsz24.svg",
+        "access": "chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg",
+        "downloadlink": "https://1drv.ms/p/s!ApdCJuBnWhE7kx6hOrVmS_uAS-fn?download=1",
+        "accesslink": "<iframe src=\"https://1drv.ms/p/s!ApdCJuBnWhE7kx6hOrVmS_uAS-fn?embed=1&em=2\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\"></iframe>"
+    },
+    {
         "name": "GDĐP",
         "info": "Việc làm và hướng giải quyết việc làm ở Hải Dương",
         "type": "PowerPoint",

@@ -787,6 +787,13 @@
         "image": "it.jpg"
     },
     {
+        "title": "Hội thảo hướng nghiệp",
+        "src": "../pages/project/presentation/",
+        "description": "Môn: Tin học",
+        "category": "Presentation, PowerPoint",
+        "image": "it.jpg"
+    },
+    {
         "title": "Chất bảo quản",
         "src": "../pages/project/presentation/",
         "description": "Môn: Hóa học",
