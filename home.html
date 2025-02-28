@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-sidebar{
+            margin: 10px;
+            padding: 10px 0;
+            min-width: 150px;
+        }
+        .main-sidebar > li{
+            padding: 15px 5px;
+            list-style-type: none;
+            width: 100%;
+        }
+        .main-sidebar > li > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+        }
+        .main-sidebar > li:hover{
+            background-color: #2e8b57;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            height: 100vh
+        }
+        .box-content{
+            width: 100%;
+        }
+        .box-sidebar{
+            background-color: #1e695f;
+        }
+        .left{
+            margin: 10px;
+            height: 38px;
+            background: url(https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272) no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box-sidebar">
+            <div class="left">
+                <a href="/"></a>
+            </div>
+            <div class="main-sidebar">
+                    <li><a href="/pages/introduce/" target="main-box">Giới thiệu</a></li>
+                    <li><a href="/pages/blog/" target="main-box">Blog</a></li>
+                    <li><a href="/pages/game/" target="main-box">Game</a></li>
+                    <li><a href="/pages/links/" target="main-box">Link</a></li>
+                    <li><a href="/pages/media/" target="main-box">Đa phương tiện</a></li>
+                    <li><a href="/pages/anime/" target="main-box">Anime</a></li>
+                    <li><a href="/pages/project/" target="main-box">Project</a></li>
+                
+            </div>
+        </div>
+        <div class="box-content"><iframe name="main-box" src="index.html" frameborder="0" width="100%" height="100%"></iframe></div>
+    </div>
+</body>
+</html>
