@@ -124,6 +124,24 @@
         "thumbnail": "img31.jpg"
     },
     {
+        "title": "Tập 32: Hoàng Thái Hậu",
+        "src": "https://owakshina.store/hls/mjzwpW16xz830tVxuQp7+shSEA7Kf53oorHpOBRWc8Ln+6iw-cge2Kay0RTgFXh7c-KpZ6-g7WlhvhSGCh7mXg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+        "description": "Khi Miêu Miêu nói chuyện với Tử Thúy để làm sáng tỏ tin đồn về một cung nữ chuyên bắt côn trùng, họ phát hiện ra thái hậu đang đi về phía ngự phòng.",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "ep32-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "ep32-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "img32.jpg"
+    },
+    {
         "title": "ED",
         "src": "../../../../../../Video/kusuriya/s2-ed1/index.m3u8",
         "description": "",
