@@ -1,7 +1,7 @@
 [
     {
         "title": "OP",
-        "src": "../../../../../../Video/kusuriya/op-2/kusuriya-op-2.m3u8",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op-2/kusuriya-op-2.m3u8",
         "description": "",
         "subtitles": [
             {
@@ -170,7 +170,7 @@
     },
     {
         "title": "ED",
-        "src": "../../../../../../Video/kusuriya/ed-2/kusuriya-ed-2.m3u8",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/ed-2/kusuriya-ed-2.m3u8",
         "description": "",
         "subtitles": [
             {
