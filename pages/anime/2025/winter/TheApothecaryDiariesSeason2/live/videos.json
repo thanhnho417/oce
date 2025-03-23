@@ -178,6 +178,24 @@
         "thumbnail": "img34.jpg"
     },
     {
+        "title": "Tập 35: Đi săn",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/theapothecarydairies/s2/ep11/tad-s2-ep11.m3u8",
+        "description": "Miêu Miêu đi cùng Nhâm Thị và tùy tùng đến vùng đất do gia tộc Tử Xương cai quản. Trong khi tham dự bữa tiệc ở đó, Nhâm Thị đeo mặt nạ và dùng tên giả.",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "ep35-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "ep35-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "img35.jpg"
+    },
+    {
         "title": "ED",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-ed1/index.m3u8",
         "description": "",
