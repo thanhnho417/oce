@@ -196,6 +196,24 @@
         "thumbnail": "img35.jpg"
     },
     {
+        "title": "Tập 36: Hoa Thụy Nguyệt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/theapothecarydairies/s2/ep12/tad-s2-ep12.m3u8",
+        "description": "Trong hang động, Miêu Miêu phát hiện ra bí mật giấu kín từ lâu của Nhâm Thị. Sau đó, cô lập ra kế hoạch ranh mãnh để dụ những kẻ đã bắn cô và Nhâm Thị ra khỏi nơi ẩn náu.",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "ep36-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "ep36-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "img36.jpg"
+    },
+    {
         "title": "ED",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-ed1/index.m3u8",
         "description": "",

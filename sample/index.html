@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video.js YouTube Quality Selector Example</title>
-  <!-- Video.js CSS -->
-  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
+    <title>SPA với URL động</title>
+    <style>
+        .page { display: none; }
+        .page.active { display: block; }
+        #sidebar { float: left; width: 200px; }
+        #content { margin-left: 210px; }
+    </style>
 </head>
 <body>
-  <!-- Video Player -->
-  <video
-    id="my-video"
-    class="video-js vjs-default-skin"
-    controls
-    preload="auto"
-    width="640"
-    height="360"
-    data-setup='{}'>
-    <source src="https://www.youtube.com/watch?v=LsWpwZ_04Pw" type="video/youtube">
-    <p class="vjs-no-js">
-      Để xem video này, vui lòng bật JavaScript và xem xét nâng cấp trình duyệt hỗ trợ
-      <a href="https://videojs.com/html5-video-support/" target="_blank">HTML5 video</a>
-    </p>
-  </video>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <a href="/" onclick="navigate('home'); return false;">🏠 Home</a>
+        <a href="/about" onclick="navigate('about'); return false;">📖 About</a>
+        <a href="/contact" onclick="navigate('contact'); return false;">✉️ Contact</a>
+    </div>
 
-  <!-- Video.js -->
-  <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
-  <!-- Video.js YouTube Plugin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
-  <!-- YouTube Quality Selector Plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/videojs-youtube-quality-selector@1.0.4/dist/videojs-youtube-quality-selector.min.js"></script>
+    <!-- Nội dung các trang -->
+    <div id="content">
+        <div id="home" class="page active"><h1>Home</h1><p>Welcome!</p></div>
+        <div id="about" class="page"><h1>About</h1><p>About us page.</p></div>
+        <div id="contact" class="page"><h1>Contact</h1><p>Email: test@example.com</p></div>
+    </div>
 
-  <script>
-    // Khởi tạo trình phát
-    var player = videojs('my-video');
+    <script>
+        // Hàm chuyển trang + thay đổi URL
+        function navigate(pageId) {
+            // Ẩn tất cả trang
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            // Hiện trang được chọn
+            document.getElementById(pageId).classList.add('active');
+            // Thay đổi URL (sử dụng pathname thay vì query param)
+            history.pushState({ page: pageId }, "", `/${pageId}`);
+        }
 
-    // Kích hoạt quality selector
-    player.youtubeQualitySelector();
+        // Xử lý sự kiện Back/Forward
+        window.onpopstate = function(event) {
+            const pageId = event.state?.page || getPageIdFromURL();
+            showPage(pageId);
+        };
 
-    player.ready(function() {
-      this.play();
-    });
-  </script>
+        // Lấy pageId từ URL (ví dụ: "/about" → "about")
+        function getPageIdFromURL() {
+            const path = window.location.pathname;
+            return path.split('/')[1] || 'home'; // Mặc định là 'home' nếu URL là "/"
+        }
+
+        // Hiển thị trang theo pageId
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.toggle('active', page.id === pageId);
+            });
+        }
+
+        // Khởi tạo trang khi tải lần đầu
+        document.addEventListener('DOMContentLoaded', () => {
+            const pageId = getPageIdFromURL();
+            showPage(pageId);
+        });
+    </script>
 </body>
 </html>
