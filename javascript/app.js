@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             data.forEach((viddata, index) => {
                 const vidplay = document.createElement('div');
                 vidplay.classList.add('playlist-video');
+                vidplay.id = viddata.id;
                 vidplay.innerHTML = `
                     <img src="${viddata.thumbnail}" alt="${viddata.title}">
                     <p>${viddata.title}</p>
