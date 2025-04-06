@@ -68,7 +68,7 @@ btt.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="
 document.body.appendChild(btt);
 if (btt){
     window.onscroll = function(){
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
             btt.style.visibility = 'visible';
             btt.style.opacity = '1';
         } else {
