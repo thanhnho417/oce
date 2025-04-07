@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Add click event to load the video
                 vidplay.addEventListener('click', () => {
                     loadVideo(viddata);
+                    window.scrollTo({
+                        top: 0, behavior: 'smooth'
+                    })
                 });
 
                 vidplaylist.appendChild(vidplay);
