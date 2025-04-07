@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             player.src({ src: viddata.src, type: 'application/x-mpegURL' });
         }
         
-        titleElement.textContent = viddata.title;
+        titleElement.textContent = viddata.title || 'Không có tiêu đề';
         descriptionElement.innerHTML = viddata.description ||'Không có nội dung';
         
         // Remove existing subtitles
