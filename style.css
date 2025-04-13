@@ -69,7 +69,7 @@ nav a:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: auto; color: white;}
 .cham-ngon{display: flex; align-items: center; justify-content: center; padding-right: 10%;}
 .chamngon{font-family: "Noto Sans", sans-serif; font-size: 18px; text-align: end; max-width: 850px; margin: 20px;}
-.banner{width: 100%; text-shadow: 1px 1px 1px rgb(0,0,0); font-family: "UVNVan_B", sans-serif; font-size: 18px; font-weight: bold; background-color: #386e61; color: white; height: 45px; text-align: center; display: flex; align-items: center; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;}
+.banner{width: 100%; text-shadow: 1px 1px 1px rgb(0,0,0); font-family: "UVNVan_B", sans-serif; font-size: 18px; font-weight: bold; background-color: #386e61; color: white; text-align: center; display: flex; align-items: center; padding: 10px 20px;}
 .banner a{text-decoration: none; width: 150px; border: 1px solid black; background-color: white; display: inline-block; border-radius: 25px; margin-left: 20px;}
 .banner a button{border: none; width: 100%; padding: 5px 10px; border-radius: 25px; color: black; box-shadow: none; background: white; font-family: "Quicksand Bold"; font-size: 15px;}
 .notification{background-color: white; border: 1px solid white; padding: 10px; white-space: nowrap; overflow: auto; text-overflow: ellipsis; position: relative; text-align: center; display: inline-block; max-width: 100%; flex-wrap: wrap; margin: 0 auto;}
