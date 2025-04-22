@@ -74,7 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-
+    player.ready(function() {
+        var watermark = document.createElement('div');
+        watermark.className = 'vjs-watermark';
+        watermark.innerHTML = '<img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/watermark.png" width="100%">';
+        player.el().appendChild(watermark);
+      });
     function adjustPlaylistHeight() {
         const main = document.querySelector('.main');
         const playlist = document.querySelector('.playlist');
