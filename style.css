@@ -252,20 +252,6 @@ th,td{padding: 10px; text-align: left; color: black;}
     border-radius: 10px;
     overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
-.video-js .vjs-watermark {
-    position: absolute;
-    right: 3.7vw;
-    bottom: 1.7vw;
-    width: 30px; /* Điều chỉnh kích thước */
-    height: auto;
-    opacity: 0.5;
-    z-index: 10;
-    pointer-events: none; /* Cho phép click xuyên qua watermark */
-  }
->>>>>>> 539e43f74156f17f9867e27aebc29b9d71c007e2
 .main{
     flex: 2.5;
     border: 2px solid #000;
