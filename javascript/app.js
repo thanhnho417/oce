@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: false,
         fluid: true,
     });
+    
     let hls;
 
     fetch('videos.json')
@@ -74,11 +75,78 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-    player.ready(function() {
+    function updateVideoSize() {
+        var videoEl = player.el().querySelector('video');
+        var currentWidth = videoEl.clientWidth;
+        var currentHeight = videoEl.clientHeight;
+        console.log('Kích thước hiển thị:', currentWidth, 'x', currentHeight);
+      }
+      
+      function updateWatermark() {
+        var videoEl = player.el().querySelector('video');
+        if (!videoEl) return;
+        
+        var watermark = player.el().querySelector('.vjs-watermark');
+        if (!watermark) return;
+        
+        var videoWidth = videoEl.clientWidth;
+        var watermarkWidth = videoWidth / 40;
+        var watermarkBottom = videoWidth / 30;
+        
+        watermark.style.bottom = `${watermarkBottom}px`;
+        watermark.style.width = `${watermarkWidth}px`;
+      }
+      
+      // Tạo ResizeObserver để theo dõi thay đổi kích thước
+      var resizeObserver = new ResizeObserver(function(entries) {
+        for (var entry of entries) {
+          updateVideoSize();
+          updateWatermark(); // Cập nhật watermark khi kích thước thay đổi
+        }
+      });
+      
+      player.ready(function() {
+        // Kiểm tra player tồn tại
+        if (!player || !player.el()) {
+          console.error('Player không tồn tại');
+          return;
+        }
+      
+        // Tạo watermark
         var watermark = document.createElement('div');
         watermark.className = 'vjs-watermark';
-        watermark.innerHTML = '<img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/watermark.png" width="100%">';
+        
+        // Lấy kích thước video
+        var videoEl = player.el().querySelector('video');
+        if (!videoEl) {
+          console.error('Không tìm thấy phần tử video');
+          return;
+        }
+        
+        var videoWidth = videoEl.clientWidth;
+        var videoHeight = videoEl.clientHeight;
+        var watermarkWidth = videoWidth / 10;
+        var watermarkBottom = (videoWidth / videoHeight)*1.8;
+        var watermarkRight = (videoWidth / videoHeight)*2.8;
+        // Tạo img với kích thước phù hợp
+        watermark.innerHTML = `<img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/watermark.png" width="100%">`;
+        
+        // Thêm style cho div watermark
+        watermark.style.position = 'absolute';
+        watermark.style.bottom = `${watermarkBottom}vw`;
+        watermark.style.right = `${watermarkRight}vw`;
+        watermark.style.width = `${watermarkWidth}px`;
+        watermark.style.zIndex = '10';
+        watermark.style.opacity = '0.5';
+        
         player.el().appendChild(watermark);
+        
+        // Bắt đầu theo dõi phần tử video để cập nhật kích thước
+        resizeObserver.observe(videoEl);
+        
+        // Cập nhật lần đầu
+        updateVideoSize();
+        updateWatermark();
       });
     function adjustPlaylistHeight() {
         const main = document.querySelector('.main');
@@ -89,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
             playlist.style.height = mainHeight + 'px';
         }
     }
-
     const toggleBtn = document.getElementById('toggle-btn');
     toggleBtn.addEventListener('click', () => {
         if (descriptionElement.style.display === '-webkit-box') {

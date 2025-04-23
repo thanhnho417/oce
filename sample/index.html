@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SPA với URL động</title>
-    <style>
-        .page { display: none; }
-        .page.active { display: block; }
-        #sidebar { float: left; width: 200px; }
-        #content { margin-left: 210px; }
-    </style>
+  <title>Video.js với Watermark Trên Video</title>
+  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
+  <style>
+    /* Container chính */
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* Custom Watermark Styles */
+    .vjs-watermark {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 80px;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+    
+    .vjs-watermark img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Đảm bảo video container có position relative */
+    .video-js {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-    <!-- Sidebar -->
-    <div id="sidebar">
-        <a href="/" onclick="navigate('home'); return false;">🏠 Home</a>
-        <a href="/about" onclick="navigate('about'); return false;">📖 About</a>
-        <a href="/contact" onclick="navigate('contact'); return false;">✉️ Contact</a>
-    </div>
+  <div class="video-container">
+    <video id="my-video" class="video-js vjs-16-9" controls preload="auto" data-setup='{}'>
+      <source src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/videos/s2/ep15/tad-s2-ep15.m3u8" type="application/x-mpegURL">
+      <p class="vjs-no-js">
+        Trình duyệt không hỗ trợ HTML5 video
+      </p>
+    </video>
+  </div>
 
-    <!-- Nội dung các trang -->
-    <div id="content">
-        <div id="home" class="page active"><h1>Home</h1><p>Welcome!</p></div>
-        <div id="about" class="page"><h1>About</h1><p>About us page.</p></div>
-        <div id="contact" class="page"><h1>Contact</h1><p>Email: test@example.com</p></div>
-    </div>
-
-    <script>
-        // Hàm chuyển trang + thay đổi URL
-        function navigate(pageId) {
-            // Ẩn tất cả trang
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.remove('active');
-            });
-            // Hiện trang được chọn
-            document.getElementById(pageId).classList.add('active');
-            // Thay đổi URL (sử dụng pathname thay vì query param)
-            history.pushState({ page: pageId }, "", `/${pageId}`);
+  <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const player = videojs('my-video');
+      
+      player.ready(function() {
+        // Tạo watermark
+        var watermark = document.createElement('div');
+        watermark.className = 'vjs-watermark';
+        watermark.innerHTML = '<img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/watermark.png">';
+        
+        // Thêm vào player
+        player.el().appendChild(watermark);
+        
+        // Hàm cập nhật vị trí
+        function updateWatermarkPosition() {
+          const tech = player.tech_.el();
+          if (!tech.videoWidth) return;
+          
+          const videoRatio = tech.videoWidth / tech.videoHeight;
+          const containerRatio = tech.offsetWidth / tech.offsetHeight;
+          const margin = 10;
+          
+          if (containerRatio > videoRatio) {
+            // Có viền đen trên dưới
+            const videoHeight = tech.offsetWidth / videoRatio;
+            const offset = (tech.offsetHeight - videoHeight) / 2;
+            watermark.style.bottom = offset + margin + 'px';
+          } else {
+            // Có viền đen trái phải hoặc vừa khít
+            watermark.style.bottom = margin + 'px';
+          }
+          
+          watermark.style.right = margin + 'px';
         }
-
-        // Xử lý sự kiện Back/Forward
-        window.onpopstate = function(event) {
-            const pageId = event.state?.page || getPageIdFromURL();
-            showPage(pageId);
-        };
-
-        // Lấy pageId từ URL (ví dụ: "/about" → "about")
-        function getPageIdFromURL() {
-            const path = window.location.pathname;
-            return path.split('/')[1] || 'home'; // Mặc định là 'home' nếu URL là "/"
-        }
-
-        // Hiển thị trang theo pageId
-        function showPage(pageId) {
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.toggle('active', page.id === pageId);
-            });
-        }
-
-        // Khởi tạo trang khi tải lần đầu
-        document.addEventListener('DOMContentLoaded', () => {
-            const pageId = getPageIdFromURL();
-            showPage(pageId);
+        
+        // Cập nhật vị trí ban đầu
+        updateWatermarkPosition();
+        
+        // Theo dõi các sự kiện thay đổi kích thước
+        player.on('resize', updateWatermarkPosition);
+        player.on('loadedmetadata', updateWatermarkPosition);
+        
+        // Kiểm tra khi fullscreen
+        player.on('fullscreenchange', function() {
+          setTimeout(updateWatermarkPosition, 100);
         });
-    </script>
+      });
+    });
+  </script>
 </body>
 </html>
