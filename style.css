@@ -246,12 +246,14 @@ th,td{padding: 10px; text-align: left; color: black;}
 
 }
 .video-js{
+    aspect-ratio: 16/9;
     width: 100%;
     height: auto;
     font-weight: bold;
     border-radius: 10px;
     overflow: hidden;
 }
+.vjs-watermark{pointer-events: none; aspect-ratio: 3/2; object-fit: contain; padding: 1px 1px;}
 .main{
     flex: 2.5;
     border: 2px solid #000;
@@ -313,6 +315,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     align-items: center;
     aspect-ratio: 16/9;
     padding: 0 10px;
+    object-fit: contain;
 }
 .main > .vid-play > video{
     width: 100%;

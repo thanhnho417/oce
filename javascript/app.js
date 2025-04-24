@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         controls: true,
         autoplay: false,
         fluid: true,
+        aspectRatio: '16/9'
     });
     
     let hls;
@@ -77,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function updateVideoSize() {
         var videoEl = player.el().querySelector('video');
+        if (!videoEl) return;
+        
         var currentWidth = videoEl.clientWidth;
         var currentHeight = videoEl.clientHeight;
         console.log('Kích thước hiển thị:', currentWidth, 'x', currentHeight);
@@ -90,18 +93,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!watermark) return;
         
         var videoWidth = videoEl.clientWidth;
-        var watermarkWidth = videoWidth / 40;
-        var watermarkBottom = videoWidth / 30;
+        var videoHeight = videoEl.clientHeight;
         
-        watermark.style.bottom = `${watermarkBottom}px`;
+        // Tính toán kích thước và vị trí mới
+        var watermarkWidth = videoWidth / 26;
+        var watermarkBottom = videoHeight / 15;
+        var watermarkRight = videoWidth / 12;
+        
+        // Cập nhật style
         watermark.style.width = `${watermarkWidth}px`;
+        watermark.style.bottom = `${watermarkBottom}px`;
+        watermark.style.right = `${watermarkRight}px`;
       }
       
       // Tạo ResizeObserver để theo dõi thay đổi kích thước
       var resizeObserver = new ResizeObserver(function(entries) {
         for (var entry of entries) {
           updateVideoSize();
-          updateWatermark(); // Cập nhật watermark khi kích thước thay đổi
+          updateWatermark(); // Thêm hàm cập nhật watermark
         }
       });
       
@@ -116,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         var watermark = document.createElement('div');
         watermark.className = 'vjs-watermark';
         
-        // Lấy kích thước video
         var videoEl = player.el().querySelector('video');
         if (!videoEl) {
           console.error('Không tìm thấy phần tử video');
@@ -125,24 +133,25 @@ document.addEventListener('DOMContentLoaded', () => {
         
         var videoWidth = videoEl.clientWidth;
         var videoHeight = videoEl.clientHeight;
-        var watermarkWidth = videoWidth / 10;
-        var watermarkBottom = (videoWidth / videoHeight)*1.8;
-        var watermarkRight = (videoWidth / videoHeight)*2.8;
-        // Tạo img với kích thước phù hợp
+        var watermarkWidth = videoWidth / 26;
+        var watermarkBottom = videoHeight / 15;
+        var watermarkRight = videoWidth / 12;
+        
         watermark.innerHTML = `<img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/watermark.png" width="100%">`;
         
-        // Thêm style cho div watermark
+        // Thêm style cho watermark
         watermark.style.position = 'absolute';
-        watermark.style.bottom = `${watermarkBottom}vw`;
-        watermark.style.right = `${watermarkRight}vw`;
+        watermark.style.bottom = `${watermarkBottom}px`;
+        watermark.style.right = `${watermarkRight}px`;
         watermark.style.width = `${watermarkWidth}px`;
         watermark.style.zIndex = '10';
-        watermark.style.opacity = '0.5';
+        watermark.style.opacity = '0.7';
         
         player.el().appendChild(watermark);
         
-        // Bắt đầu theo dõi phần tử video để cập nhật kích thước
+        // Bắt đầu theo dõi phần tử video và player
         resizeObserver.observe(videoEl);
+        resizeObserver.observe(player.el()); // Quan sát cả player container
         
         // Cập nhật lần đầu
         updateVideoSize();
