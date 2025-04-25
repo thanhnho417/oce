@@ -18,7 +18,7 @@ webtitle.alt = "web";
 webtitle.width = "97.8";
 // Thêm các phần tử vào thẻ a
 logo.appendChild(webtitle);document.body.insertAdjacentHTML('beforeend', `
-    <div class="loading-area"><img src="https://ik.imagekit.io/ocemedia/loading-gif.gif" width="150" height="150" alt="loading"><p>Đang tải...</p></div>
+    <div class="loading-area"><img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/1.gif" height="200" alt="loading"><p>Đang tải...</p></div>
 `);
 document.body.insertAdjacentHTML('beforeend', `
     <div class="pop-up-network">
