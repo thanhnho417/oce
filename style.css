@@ -302,6 +302,7 @@ video::cue{font-family: "Quicksand SemiBold";}
     width: 130px;
     aspect-ratio: 16/9;
     object-fit: contain;
+    pointer-events: none;
 }
 .playlist > .playlist-video > p{
     margin: 10px;
