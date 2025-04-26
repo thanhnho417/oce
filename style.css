@@ -252,7 +252,9 @@ th,td{padding: 10px; text-align: left; color: black;}
     font-weight: bold;
     border-radius: 10px;
     overflow: hidden;
+    font-family: "Quicksand Regular";
 }
+video::cue{font-family: "Quicksand SemiBold";}
 .vjs-watermark{pointer-events: none; aspect-ratio: 3/2; object-fit: contain; padding: 1px 1px;}
 .main{
     flex: 2.5;
@@ -269,7 +271,6 @@ th,td{padding: 10px; text-align: left; color: black;}
     margin: 10px 0 10px 5px;
     overflow-y: auto;
 }
-.video-js{width: 100%;}
 .playlist > hr{
     border: 1.5px solid #000;
     margin: 0 20px
