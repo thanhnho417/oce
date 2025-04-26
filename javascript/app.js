@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 vidplay.classList.add('playlist-video');
                 vidplay.id = viddata.id;
                 vidplay.innerHTML = `
-                    <img src="${viddata.thumbnail}" alt="${viddata.title}">
+                    <img src="${viddata.thumbnail}" alt="${viddata.title}" loading="lazy">
                     <p>${viddata.title}</p>
                 `;
 
@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.scrollTo({
                         top: 0, behavior: 'smooth'
                     })
+                    document.querySelectorAll('.playlist-video').forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    vidplay.classList.add('active');
                 });
 
                 vidplaylist.appendChild(vidplay);
@@ -63,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Remove existing subtitles
         player.textTracks().tracks_.forEach(track => player.removeRemoteTextTrack(track));
         
+        const tracks = player.remoteTextTracks();
+        for (let i = tracks.length - 1; i >= 0; i--) {
+            player.removeRemoteTextTrack(tracks[i]);
+        }
+
         // Add new subtitles
         if (viddata.subtitles) {
             viddata.subtitles.forEach(subtitle => {
@@ -77,12 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     function updateVideoSize() {
-        var videoEl = player.el().querySelector('video');
-        if (!videoEl) return;
-        
-        var currentWidth = videoEl.clientWidth;
-        var currentHeight = videoEl.clientHeight;
-        console.log('Kích thước hiển thị:', currentWidth, 'x', currentHeight);
       }
       
       function updateWatermark() {
