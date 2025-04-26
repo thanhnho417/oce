@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var videoHeight = videoEl.clientHeight;
         
         // Tính toán kích thước và vị trí mới
-        var watermarkWidth = videoWidth / 26;
+        var watermarkWidth = videoWidth / 22;
         var watermarkBottom = videoHeight / 15;
         var watermarkRight = videoWidth / 12;
         
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         var videoWidth = videoEl.clientWidth;
         var videoHeight = videoEl.clientHeight;
-        var watermarkWidth = videoWidth / 26;
+        var watermarkWidth = videoWidth / 22;
         var watermarkBottom = videoHeight / 15;
         var watermarkRight = videoWidth / 12;
         
