@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hls = new Hls();
             hls.loadSource(viddata.src);
             hls.attachMedia(videoElement);
-            player.src({ type: 'application/x-mpegURL', src: viddata.src });
+            player.src({ type: 'application/x-mpegURL', src: viddata.src, });
         } else {
             player.src({ src: viddata.src, type: 'application/x-mpegURL' });
         }

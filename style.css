@@ -293,6 +293,7 @@ video::cue{font-family: "Quicksand SemiBold";}
     align-items: center;
     box-sizing: border-box;
     overflow-x: auto;
+    transition: 0.3s ease-in-out;
 }
 .playlist > .playlist-video:hover{
     background-color: #cccccc;
