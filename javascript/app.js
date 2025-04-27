@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const videoElement = document.querySelector('#player');
+    const videoElement = document.getElementById('player');
     const titleElement = document.getElementById('title');
     const descriptionElement = document.getElementById('description');
     const vidplaylist = document.querySelector('.playlist');
@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const player = videojs(videoElement, {
         controls: true,
         autoplay: false,
-        fluid: true,
-        aspectRatio: '16/9'
+        fluid: true
     });
-
+    player.aspectRatio('16:9');
+    player.playbackRates([0.5,0.75,1,1.25,1.5,2])
     let hls;
 
     fetch('videos.json')
@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 vidplay.addEventListener('click', () => {
                     loadVideo(viddata);
+                    vidplay.classList.add('active');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                     document.querySelectorAll('.playlist-video').forEach(el => el.classList.remove('active'));
-                    vidplay.classList.add('active');
                 });
                 vidplaylist.appendChild(vidplay);
 
