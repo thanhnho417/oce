@@ -17,10 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('videos.json')
         .then(res => res.json())
         .then(data => {
-            if (!Array.isArray(data)) {
-                throw new Error('Dữ liệu trong videos.json không hợp lệ.');
-            }
-
+            if (!Array.isArray(data)) throw new Error('Dữ liệu trong videos.json không hợp lệ.');
             if (data.length === 0) {
                 vidplaylist.innerHTML = '<p>Không có video nào trong danh sách.</p>';
                 return;
@@ -55,6 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadVideo(viddata) {
         const isHLS = viddata.src.endsWith('.m3u8');
+
+        // 👉 Cập nhật ảnh poster
+        player.poster(viddata.thumbnail);
+
 
         if (isHLS && Hls.isSupported()) {
             hls?.destroy();
