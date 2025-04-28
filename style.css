@@ -254,7 +254,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     overflow: hidden;
     font-family: "Quicksand Regular";
 }
-video::cue{font-family: "Quicksand SemiBold";}
+video::cue{font-family: "Quicksand SemiBold"; font-weight: bold;}
 .vjs-watermark{pointer-events: none; aspect-ratio: 3/2; object-fit: contain; padding: 1px 1px;}
 .main{
     flex: 2.5;
