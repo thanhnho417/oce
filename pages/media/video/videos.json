@@ -1,5 +1,11 @@
 [
     {
+        "title": "OP - Miss Kobayashi's Maid Dragon S",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/Miss%20Kobayashi%20Maid%20Dragon%20S/OP-miss-kobayashi's-maid-dragon-S.m3u8",
+        "description": "",
+        "thumbnail": "S.png"
+    },
+    {
         "title": "08/03/2025 - Hậu trường",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/8-3-2025/index.m3u8",
         "description": "Behind the scenes...",
@@ -99,6 +105,13 @@
         "title": "Miku",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/miku/index.m3u8",
         "description": "",
+        "subtitles":[
+            {
+                "label": "Tiếng Anh",
+                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/Anamanaguchi%20-%20Miku%20ft.%20Hatsune%20Miku.vtt",
+                "srclang": "en"
+            }
+        ],
         "thumbnail": "miku.png"
     },
     {
