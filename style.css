@@ -38,7 +38,7 @@ header{display: flex; justify-content: space-between; background-color: #34695d;
 .category-title {font-size: 18px; font-weight: 500; font-family: "Noto Sans", sans-serif; margin-top: 10px; padding: 10px 15px; background-color: #f0f0f0;border-radius: 5px; display: inline-block; width: fit-content;}
 .result-items {display: flex; flex-wrap: wrap; flex-direction: column;}
 .result-item {margin: 10px; border: 1px solid #ccc; border-radius: 10px; width: 300px; height: auto; display: flex; align-items: center;}
-.result-item img{width: 100%; margin: 0 auto; border-radius: 10px 10px 0 0; position: relative;}
+.result-item img{width: 100%; margin: 0 auto; border-radius: 10px 10px 0 0; position: relative; pointer-events: none;}
 .result-item a{text-decoration: none; color: black;}
 .result-item h4{padding: 5px 10px 5px 10px; text-align: center;}
 .result-item p{padding-left: 10px; padding-right: 10px;}
