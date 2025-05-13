@@ -5,7 +5,7 @@
 @font-face {font-family: "Quicksand SemiBold"; src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-SemiBold.woff") format("woff");}
 @font-face {font-family: "UVNVan_B"; src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_B.woff") format("woff");}
 @font-face {font-family: "UVNVan_R"; src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_R.woff") format("woff");}
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box; transition: all 0.3s ease-in-out;}
 ::-webkit-scrollbar{width: 10px; height: 10px;}
 ::-webkit-scrollbar-track{background: white;}
 ::-webkit-scrollbar-thumb{background: #386e61;}
@@ -19,7 +19,7 @@ html{height: 100%;}
 form, input{position: static; overflow: visible; transform: none;}
 body{height: 100%;font-family: "Quicksand Regular", sans-serif; font-size: 1.1em; font-weight: 500; background: white;}
 embed{cursor: url(Images/mouse.svg),auto;}
-img{border-radius: 7px; pointer-events: none; transition: 0.2s ease-in-out;}
+img{border-radius: 7px; pointer-events: none; transition: all 0.2s ease-in-out;}
 a {transition: 0.2s ease-in-out;}
 input[list]{width: 100%;}
 .clock{max-width: 450px; padding-left: 10%;}
