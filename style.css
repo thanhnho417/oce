@@ -5,7 +5,7 @@
 @font-face {font-family: "Quicksand SemiBold"; src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-SemiBold.woff") format("woff");}
 @font-face {font-family: "UVNVan_B"; src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_B.woff") format("woff");}
 @font-face {font-family: "UVNVan_R"; src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_R.woff") format("woff");}
-*{margin: 0; padding: 0; box-sizing: border-box; transition: all 0.3s ease-in-out;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 ::-webkit-scrollbar{width: 10px; height: 10px;}
 ::-webkit-scrollbar-track{background: white;}
 ::-webkit-scrollbar-thumb{background: #386e61;}
@@ -236,7 +236,7 @@ th,td{padding: 10px; text-align: left; color: black;}
     #dataTable{width: 100%; padding: 10px;}
     .plyr__captions .plyr__caption {font-size: 3.5vw; padding: 7px 15px;}
 }
-.container{ display: flex; justify-content: center; align-items: center; padding: 10px 7%;}
+.container{ display: flex; justify-content: center; align-items: center; padding: 10px 7%; transition: all 0.2s ease-in-out;}
 .video-js{ aspect-ratio: 16/9; width: 100%; height: auto; font-weight: bold; border-radius: 10px; overflow: hidden; font-family: "Quicksand Regular";}
 video::cue{font-family: "Quicksand SemiBold"; font-weight: bold;}
 .vjs-watermark{pointer-events: none; aspect-ratio: 3/2; object-fit: contain; padding: 1px 1px;}
