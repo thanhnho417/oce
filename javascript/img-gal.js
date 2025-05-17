@@ -1,12 +1,45 @@
-const grid = document.querySelector('.masonry-grid');
-
-imagesLoaded(grid, function () {
-    new Masonry(grid, {
-        itemSelector: '.me-pho',
-        columnWidth: '.me-pho',
-        percentPosition: true,
-        gutter: 10,
-    });
-
-    grid.classList.add('loaded');
+document.addEventListener("DOMContentLoaded", function() {
+    const imggal = document.querySelector(".img-gal");
+    fetch('img-gal.json')
+        .then(response => response.json())
+        .then(data => {
+            data.media.forEach(item => {
+                if (item.type === 'image'){
+                    const image = document.createElement("img");
+                    image.src = item.src;
+                    image.alt = item.alt || 'Không có tiêu đề';
+                    image.className = item.class || 'Không có class';
+                    imggal.appendChild(image);
+                }
+                else if (item.type === 'video') {
+                    const video = document.createElement("video");
+                    video.controls = true;
+                    video.className = item.class || 'me-pho';
+                    const ishls = item.sources.some(source => source.src.endsWith('.m3u8'));
+                    if (ishls) {
+                        if(Hls.isSupported()) {
+                            const hls = new Hls();
+                            hls.loadSource(item.sources[0].src);
+                            hls.attachMedia(video);
+                            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                                video.autoplay = false;
+                            });
+                        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                            video.src = item.sources[0].src;
+                            video.addEventListener('loadedmetadata', function() {
+                                video.autoplay = false;
+                            });
+                        }
+                    }
+                    item.sources.forEach(source => {
+                        const sourcemedia = document.createElement("source");
+                        sourcemedia.src = source.src;
+                        sourcemedia.type = source.type;
+                        video.appendChild(sourcemedia);
+                    });
+                    imggal.appendChild(video);
+                }
+            });
+        })
+        .catch(error => console.error('Error loading image gallery:', error));
 });
