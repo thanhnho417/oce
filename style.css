@@ -71,7 +71,7 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 .cham-ngon{display: flex; align-items: center; justify-content: center;}
 .img-preview {border-radius: 10px; transition: all 0.1s ease; visibility: hidden; opacity: 0; position: fixed; top: 10px; left: 10px; right: 10px; bottom: 10px; background-color: rgb(24, 24, 24); z-index: 9999}
 .bar{position: sticky; top: 0; width: 100%; padding: 1px 0; background-color: #000000; display: flex; justify-content: space-between; align-items: center;}
-#img-title{color: #ffff; margin-left: 15px; pointer-events: none;}
+#img-title{font-size: 10px; color: #ffff; margin-left: 15px; pointer-events: none;}
 .img-preview.active {visibility: visible; opacity: 1; transition: all 0.1s linear;}
 .close{margin-right: 10px; width: 60px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: 0.1s all linear;}
 .close:hover{background-color: rgb(211, 6, 6);}
