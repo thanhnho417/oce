@@ -68,6 +68,7 @@
       },
       {
         "type": "video",
+        "poster": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/2018-2022/vid1.png",
         "sources": [
           {
             "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/2018-2022/assets/01/index.m3u8",
@@ -162,6 +163,7 @@
       },
       {
         "type": "video",
+        "poster": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/2018-2022/vid2.png",
         "sources": [
           {
             "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/2018-2022/assets/02/index.m3u8",

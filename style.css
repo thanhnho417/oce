@@ -147,9 +147,10 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 #bilibili{color: black; background: white;border: 1px solid #1f87e2;}
 #bilibili:hover{color: white; background: #1f87e2;}
 .masonry-grid.loaded {opacity: 1; transform: scale(1);}
-.img-gal{column-count: 4; gap: 10px; display: block; margin: 0 auto; width: 90%; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease;}
+.img-gal{column-count: 4; gap: 10px; display: block; margin: 0 auto; width: 90%; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease; transition: all 0.2s ease-in-out;}
 .img-gal.loaded{opacity: 1; transform: scale(1);}
 .img-gal video{border-radius: 10px;}
+.img-gal > img{cursor: pointer; pointer-events: painted;}
 .me-pho{width: 100%; break-inside: avoid; margin: 5px;} 
 .me-pho video{aspect-ratio: 16/10;}
 .wrapper{padding: 15px 15%;}
