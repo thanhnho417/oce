@@ -179,7 +179,7 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 .article-area ul{text-align: left; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-decoration: none; margin: 10px;padding: 10px 10%;font-family: "Quicksand SemiBold",sans-serif;font-size: 1.1em;list-style: none;}
 .row{display: flex; padding: 10px 10%;}
 .row .left{overflow: hidden; padding: 10px 40px 10px 40px; flex: 1;}
-.row .left img{width: 100%; height: auto; object-fit: cover; border-radius: 15px; margin: 0 auto; pointer-events: painted; cursor: pointer;}
+.row .left img{width: 100%; height: auto; object-fit: cover; border-radius: 15px; margin: 0 auto; pointer-events: none; cursor: pointer;}
 .row .left img:hover{transform: scale(1.1);}
 .row .right{display: flex; align-items: start;flex: 2.5; text-align: center;}
 .row .right .content{padding: 5px; justify-content: center; text-align: center;}
