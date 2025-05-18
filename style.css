@@ -69,6 +69,15 @@ nav a:hover{background-color: rgb(39, 82, 57); transition: 100ms ease-in-out;}
 .navigation a:hover{color: black; background-color: #cac4ca; border-radius: 8px; transition: 100ms ease-in;}
 footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: auto; color: white;}
 .cham-ngon{display: flex; align-items: center; justify-content: center;}
+.img-preview {border-radius: 10px; transition: all 0.1s ease; visibility: hidden; opacity: 0; position: fixed; top: 50px; left: 10px; right: 10px; bottom: 10px; background-color: rgb(24, 24, 24);}
+.bar{position: sticky; top: 0; width: 100%; padding: 1px 0; background-color: #000000; display: flex; justify-content: space-between; align-items: center;}
+#img-title{color: #ffff; margin-left: 15px; pointer-events: none; width: calc(100% - 50px);}
+.img-preview.active {visibility: visible; opacity: 1; transition: all 0.1s linear;}
+.close{margin-right: 10px; width: 60px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: 0.1s all linear;}
+.close:hover{background-color: rgb(211, 6, 6);}
+.close > svg{width: 80%; margin: 0 auto; z-index: 100;}
+.img-preview .pre{display: flex; justify-content: center; align-items: center; width: 100%; height: calc(100% - 50px); object-fit: contain; padding: 10px; }
+.pre >img {margin: 0 auto; max-width: 100%; max-height: 100%; object-fit: contain;}
 .chamngon{font-family: "Noto Sans", sans-serif; font-size: 18px; text-align: end; max-width: 850px; margin: 20px;}
 .banner{width: 100%; text-shadow: 1px 1px 1px rgb(0,0,0); font-family: "UVNVan_B", sans-serif; font-size: 18px; font-weight: bold; background-color: #386e61; color: white; text-align: center; display: flex; align-items: center; padding: 10px 20px;}
 .banner a{text-decoration: none; width: 150px; border: 1px solid black; background-color: white; display: inline-block; border-radius: 25px; margin-left: 20px;}
@@ -169,7 +178,7 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 .article-area ul{text-align: left; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-decoration: none; margin: 10px;padding: 10px 10%;font-family: "Quicksand SemiBold",sans-serif;font-size: 1.1em;list-style: none;}
 .row{display: flex; padding: 10px 10%;}
 .row .left{overflow: hidden; padding: 10px 40px 10px 40px; flex: 1;}
-.row .left img{width: 100%; height: auto; object-fit: cover; border-radius: 15px; margin: 0 auto; pointer-events: none;}
+.row .left img{width: 100%; height: auto; object-fit: cover; border-radius: 15px; margin: 0 auto; pointer-events: painted; cursor: pointer;}
 .row .left img:hover{transform: scale(1.1);}
 .row .right{display: flex; align-items: start;flex: 2.5; text-align: center;}
 .row .right .content{padding: 5px; justify-content: center; text-align: center;}
