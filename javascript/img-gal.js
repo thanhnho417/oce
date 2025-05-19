@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     image.alt = item.alt || 'Không có tiêu đề';
                     image.className = item.class || 'Không có class';
                     image.loading = 'lazy';
+                    image.title = item.alt || 'Không có tiêu đề';
                     imggal.appendChild(image);
                 }
                 else if (item.type === 'video') {

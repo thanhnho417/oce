@@ -23,6 +23,7 @@ function initLogo() {
     webtitle.src = "https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272";
     webtitle.alt = "web";
     webtitle.width = "97.8";
+    logo.title = 'Trở về trang chủ';
     logo.appendChild(webtitle);
 }
 
@@ -44,8 +45,8 @@ function createLoadingElements() {
             <div class="title">
               <p id="img-title" style="font-family: Quicksand Regular; font-weight: bold;">Không có tiêu đề</p>
             </div>
-            <div class="close">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            <div class="close" title="Đóng">
+              <svg xmlns="http://www.w3.org/2000/svg" title="Đóng" height="22px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             </div>
           </div>
           <div class="pre">
@@ -66,7 +67,7 @@ function initImagePreview() {
     document.addEventListener('click', function(e) {
         if (e.target.tagName === 'IMG' && !e.target.closest('.img-preview')) {
             imgpre.src = e.target.src;
-            imgtitle.textContent = e.target.src.split('/').pop() || 'Không có tiêu đề';
+            imgtitle.textContent = 'Trình xem ảnh - ' + e.target.src.split('/').pop()  || 'Không có tiêu đề';
             imgview.classList.add('active');
         }
     });
