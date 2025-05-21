@@ -28,9 +28,6 @@ function initLogo() {
 }
 
 function createLoadingElements() {
-    document.body.insertAdjacentHTML('beforeend', `
-        <div class="loading-area"><div class="loader"></div><p>Đang tải...</p></div>
-    `);
     
     document.body.insertAdjacentHTML('beforeend', `
         <div class="pop-up-network">
