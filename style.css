@@ -97,7 +97,7 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 .next {right: 0; border-radius: 3px 0 0 3px;}
 .prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
 .dot {cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
-.active, .dot:hover {background-color: #c4c2c2; transition: 0.3s ease-in-out;}
+.active, .dot:hover {background-color: #242424; transition: 0.3s ease-in-out;}
 #image-wrapper img{display: block; width: 100%; height: auto; margin: 0 auto; align-items: center; aspect-ratio: 16/9; object-fit: cover;}
 .music-wrapper{display: flex; flex-direction: row; justify-content: center; align-items: center;flex-wrap: wrap;}
 .music-wrapper audio{margin: 10px; color: #386e61;}
@@ -159,12 +159,11 @@ footer{position: sticky; top: 100%; height: 50px; background-color: #386e61; wid
 #bilibili{color: black; background: white;border: 1px solid #1f87e2;}
 #bilibili:hover{color: white; background: #1f87e2;}
 .masonry-grid.loaded {opacity: 1; transform: scale(1);}
-.img-gal{column-count: 4; gap: 10px; margin: 0 auto; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease; transition: all 0.2s ease-in-out;}
+.img-gal{column-count: 4; gap: 10px; margin: 0 auto; transform: scale(0.95); transition:  opacity 0.5s ease, transform 0.5s ease; transition: all 0.2s ease-in-out; padding-right: 10px;}
 .img-gal.loaded{opacity: 1; transform: scale(1);}
 .img-gal video{border-radius: 10px;}
 .img-gal > img{cursor: pointer; pointer-events: painted;}
-.me-pho{width: 100%; break-inside: avoid; margin: 5px;} 
-.me-pho video{aspect-ratio: 16/10;}
+.me-pho{width: 100%; break-inside: avoid; margin: 5px;}
 .wrapper{padding: 15px 15%;}
 .card-area{padding: 30px 0;}
 .box-area{display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr));grid-gap: 40px; object-fit: cover;}

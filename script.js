@@ -7,7 +7,12 @@ function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
     if (sidebar) sidebar.classList.remove('sidebar_load');
 }
-
+document.addEventListener('keydown', function(e) {
+    const sidebar = document.querySelector('.sidebar');
+        if (e.key === 'Escape' && sidebar.classList.contains('sidebar_load')) {
+            sidebar.classList.remove('sidebar_load');
+        }
+    });
 function initLogo() {
     const logo = document.querySelector(".left-selection a");
     if (!logo) return;
