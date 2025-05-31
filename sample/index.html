@@ -3,68 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img tes</title>
+    <title>banner and sidebar</title>
     <style>
       *{margin: 0; padding: 0; box-sizing: border-box;}
-      .img-preview {transition: all 0.1s ease; visibility: hidden; opacity: 0; position: fixed; top: 50px; left: 50px; right: 50px; bottom: 50px; background-color: rgb(34, 34, 34);}
-      .bar{position: sticky; top: 0; width: 100%; padding: 1px 0; background-color: #34695d; display: flex; justify-content: space-between; align-items: center;}
-      #img-title{color: #ffff; margin-left: 15px;}
-      .img-preview.active {visibility: visible; opacity: 1; transition: all 0.1s linear;}
-      .close{margin-right: 10px; width: 60px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: 0.1s all linear;}
-      .close:hover{background-color: rgb(211, 6, 6);}
-      .close > svg{width: 80%; margin: 0 auto;}
-      .img-preview .pre{display: flex; justify-content: center; align-items: center; width: 100%; height: calc(100% - 50px); object-fit: contain; padding: 10px;}
-      .pre >img {margin: 0 auto; max-width: 100%; max-height: 100%; object-fit: contain;}
+      body{font-family: 'Quicksand', sans-serif; background-color: #f4f4f4; color: #333; font-size: 16px;}
+      header {display: flex; justify-content: space-between; align-items: center; background-color: #34695d;}
+      .top-menu {list-style-type: none; display: flex; justify-content: center; align-items: center; padding: 0 20px;}
+      .top-menu > li{display: flex; }
+      .top-menu > li > a{padding: 15px 20px; color: white; font-weight: bold; text-decoration: none; transition: all 0.2s ease-in-out; font-size: 17px;}
+      .top-menu > li > a:hover{background-color: #2c4f4a; border-radius: 5px;}
+      .searchform {display: flex; justify-content: center; align-items: center; gap: 10px; background-color: #34695d;}
+      .searchform > input {padding: 5px 10px; border: none; border-radius: 25px}
+      .searchform > .search-button {border: none; border-radius:50%; background-color: #34695d; width: 40px; height: 40px;}
+      .search-button:hover {background-color: #2c4f4a; cursor: pointer;}
+      .weblogo {display: flex; justify-content: center; align-items: center; padding: 0 10px;}
+      .weblogo img {width: 90px;}
     </style>
   </head>
   <body>
-    <img src="Phan-tich-Thuong-nho-mua-xuan.jpg" alt="" width="300px">
-    <div class="img-preview">
-      <div class="bar">
-        <div class="title">
-          <p id="img-title" style="font-family: Quicksand; font-weight: bold;">Không có tiêu đề</p>
+    <header>
+      <a class="weblogo" href=""><img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt=""></a>
+      <nav class="top-menu">
+        <li>
+          <a href="" title="Giới thiệu">Giới thiệu</a>
+          <a href="">Game</a>
+          <a href="">Đa phương tiện</a>
+          <a href="">Anime</a>
+          <a href="">Blog</a>
+          <a href="">Project</a>
+        </li>
+        <div class="searchform">
+          <input type="text" placeholder="Tìm..." required submit="return false;">
+          <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
         </div>
-        <div class="close">
-          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </div>
-      </div>
-      <div class="pre">
-        <img id="img-pre" src="" alt="">
-      </div>
-    </div>
-    
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const imgview = document.querySelector('.img-preview');
-        const imgpre = document.querySelector('#img-pre');
-        const close = document.querySelector('.close');
-        const imgtitle = document.querySelector('#img-title');
-        document.addEventListener('click', function(e) {
-          if (e.target.tagName === 'IMG') {
-            const img = e.target;
-            if (!img.closest('.img-preview')) {
-              imgpre.src = img.src;
-              imgtitle.innerText = img.src.split('/').pop();
-              imgview.classList.add('active');
-            }
-          }
-        });
-
-        close.addEventListener('click', function() {
-          imgview.classList.remove('active');
-        });
-
-        imgview.addEventListener('click', function(e) {
-          if (e.target === this) {
-            this.classList.remove('active');
-          }
-        });
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && imgview.classList.contains('active')) {
-            imgview.classList.remove('active');
-          }
-        });
-      });
-    </script>
+      </nav>
+    </header>
   </body>
 </html>
