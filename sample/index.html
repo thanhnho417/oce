@@ -7,36 +7,86 @@
     <style>
       *{margin: 0; padding: 0; box-sizing: border-box;}
       body{font-family: 'Quicksand', sans-serif; background-color: #f4f4f4; color: #333; font-size: 16px;}
-      header {display: flex; justify-content: space-between; align-items: center; background-color: #34695d;}
-      .top-menu {list-style-type: none; display: flex; justify-content: center; align-items: center; padding: 0 20px;}
-      .top-menu > li{display: flex; }
-      .top-menu > li > a{padding: 15px 20px; color: white; font-weight: bold; text-decoration: none; transition: all 0.2s ease-in-out; font-size: 17px;}
-      .top-menu > li > a:hover{background-color: #2c4f4a; border-radius: 5px;}
+      header {display: flex; justify-content: space-between; align-items: center; background-color: #34695d; padding: 0 20px; transition: width 0.3s ease-in-out; z-index: 9999; position: sticky; top: 0; width: 100%; }
+      .top-menu {display: flex; justify-content: center; align-items: center; padding: 0;}
+      .top-menu ul {list-style: none; display: flex; margin: 0; padding: 0;}
+      .top-menu li a{padding: 15px 20px; color: white; font-weight: bold; text-decoration: none; transition: all 0.2s ease-in-out; font-size: 17px; display: block;}
+      .top-menu li a:hover{background-color: #2c4f4a; border-radius: 5px;}
       .searchform {display: flex; justify-content: center; align-items: center; gap: 10px; background-color: #34695d;}
-      .searchform > input {padding: 5px 10px; border: none; border-radius: 25px}
-      .searchform > .search-button {border: none; border-radius:50%; background-color: #34695d; width: 40px; height: 40px;}
-      .search-button:hover {background-color: #2c4f4a; cursor: pointer;}
-      .weblogo {display: flex; justify-content: center; align-items: center; padding: 0 10px;}
-      .weblogo img {width: 90px;}
+      .searchform input {padding: 8px 15px; border: none; border-radius: 25px; color: #333; background-color: #fff; width: 0; transition: width 0.3s ease, opacity 0.2s ease; opacity: 0;}
+      .searchform input.active-input {width: 175px; opacity: 1;}
+      .searchform button {border: none; border-radius:50%; background-color: #34695d; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: background-color 0.2s ease;}
+      #menu-top-button {margin-left: 10px; border: none; border-radius:50%; background-color: #34695d; width: 0; height: 40px; justify-content: center; align-items: center; cursor: pointer; transition: background-color 0.2s ease; display: none; opacity: 0;}
+      #menu-top-button:hover {background-color: #2c4f4a;}
+      .searchform button:hover {background-color: #2c4f4a;}
+      .searchform .close-button {display: none;}
+      .gray-screen {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: black; opacity: 0; z-index: 9998; display: block; visibility: hidden; transition: all 0.2s ease; pointer-events: none;}
+      .gray-screen.active-gray-screen {opacity: 0.5; visibility: visible;}
+      .weblogo {display: flex; justify-content: center; align-items: center; padding: 5px 0;}
+      .weblogo img {width: 90px; height: auto;}
+      @media (max-width: 1010px) {
+        .top-menu > ul {display: none;}
+        #menu-top-button {display: flex; opacity: 1; width: 40px;}
+      }
     </style>
   </head>
   <body>
+    <div class="gray-screen"></div>
     <header>
-      <a class="weblogo" href=""><img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt=""></a>
+      <a class="weblogo" href=""><img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt="Website Logo"></a>
       <nav class="top-menu">
-        <li>
-          <a href="" title="Giới thiệu">Giới thiệu</a>
-          <a href="">Game</a>
-          <a href="">Đa phương tiện</a>
-          <a href="">Anime</a>
-          <a href="">Blog</a>
-          <a href="">Project</a>
-        </li>
-        <div class="searchform">
-          <input type="text" placeholder="Tìm..." required submit="return false;">
-          <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
-        </div>
+        <ul>
+          <li><a href="" title="Giới thiệu">Giới thiệu</a></li>
+          <li><a href="">Game</a></li>
+          <li><a href="">Đa phương tiện</a></li>
+          <li><a href="">Anime</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project</a></li>
+        </ul>
+         <div class="searchform">
+              <input type="text" placeholder="Tìm..." required id="search-input">
+              <button onclick="closeSearch()" class="close-button" title="Thoát tìm kiếm"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+              <button onclick="searchbtt()" class="search-button" title="Nhấn để tìm kiếm"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+            </div>
+          <button id="menu-top-button">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
       </nav>
     </header>
+    òhowuhfwf
+    <script>
+      function searchbtt() {
+        const searchInput = document.getElementById('search-input');
+        const closebtt = document.querySelector('.close-button');
+        const searchButton = document.querySelector('.search-button');
+        const grayScreen = document.querySelector('.gray-screen');
+        searchInput.classList.add('active-input');
+        searchInput.focus();
+        closebtt.style.display = 'flex';
+        searchButton.style.display = 'none';
+        grayScreen.classList.add('active-gray-screen');
+      }
+      
+      function closeSearch() {
+        const searchInput = document.getElementById('search-input');
+        const closebtt = document.querySelector('.close-button');
+        const searchButton = document.querySelector('.search-button');
+        const grayScreen = document.querySelector('.gray-screen');
+        
+        searchInput.classList.remove('active-input');
+        closebtt.style.display = 'none';
+        searchButton.style.display = 'flex';
+        grayScreen.classList.remove('active-gray-screen');
+      }
+      
+      // Đóng tìm kiếm khi click ra ngoài
+      document.addEventListener('click', function(event) {
+        const searchForm = document.querySelector('.searchform');
+        const searchInput = document.getElementById('search-input');
+        
+        if (!searchForm.contains(event.target) && searchInput.classList.contains('active-input')) {
+          closeSearch();
+        }
+      });
+    </script>
   </body>
 </html>
