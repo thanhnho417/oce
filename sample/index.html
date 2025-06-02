@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>banner and sidebar</title>
     <style>
       *{margin: 0; padding: 0; box-sizing: border-box;}
@@ -21,9 +22,12 @@
       .searchform button:hover {background-color: #2c4f4a;}
       .searchform .close-button {display: none;}
       .input-place {position: relative; display: flex; align-items: center; width: 100%; max-width: 300px; margin-right: 10px; gap: 10px;}
-      .search-place {overflow-y: auto; display: none; position: absolute; right: 75px; top: 60px; border: 1px solid rgb(89, 89, 89); width: 300px; background-color: gray; height: 400px; transition: opacity 0.3s ease; opacity: 0;}
+      .search-place {overflow-y: auto; display: none; position: absolute; right: 75px; top: 60px; left: 75px; border: 1px solid rgb(89, 89, 89); background-color: white; height: 400px; transition: opacity 0.3s ease; opacity: 0;}
       .search-place > ul {list-style: none; padding: 0; margin: 0; max-height: 100%; overflow-y: auto;}
-      .search-place > ul > li {border-bottom: 1px solid #ccc; background-color: white;}
+      .search-place > ul > li {border-bottom: 1px solid #ccc; background-color: white; padding: 10px;}
+      
+      .search-place > ul > li:hover::before {background-color: #2c4f4a; }
+      .search-place > ul > li:hover {background-color: #f0f0f0; cursor: pointer;}
       .search-place > ul > li > a {text-decoration: none; color: #333; font-size: 16px; display: block; padding: 10px 10px;}
       .search-place > ul > li > a:hover {background-color: #f0f0f0;}
       .gray-screen {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: black; opacity: 0; z-index: 9998; display: block; visibility: hidden; transition: all 0.2s ease; pointer-events: none;}
@@ -33,7 +37,7 @@
       @media (max-width: 1010px) {
         .top-menu > ul {display: none;}
         #menu-top-button {display: flex; opacity: 1; width: 40px;}
-        .search-place {right: 20px;}
+        .search-place {right: 10px; left: 10px;}
       }
     </style>
   </head>
@@ -54,7 +58,7 @@
           <div class="input-place">
             <input type="text" placeholder="Tìm..." required id="search-input" autocomplete="off">
             <button onclick="closeSearch()" class="close-button" title="Thoát tìm kiếm"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
-            <button onclick="searchbtt()" class="search-button" title="Nhấn để tìm kiếm"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+            <button onclick="searchbtt()" class="search-button" title="Nhấn để tìm kiếm"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
           </div>
           <div class="search-place"></div>
           </div>
@@ -64,66 +68,6 @@
       </nav>
     </header>
     òhowuhfwf
-    <script>
-      function searchbtt() {
-        const searchInput = document.getElementById('search-input');
-        const closebtt = document.querySelector('.close-button');
-        const searchButton = document.querySelector('.search-button');
-        const grayScreen = document.querySelector('.gray-screen');
-        const searchPlace = document.querySelector('.search-place');
-        searchPlace.style.display = 'block'; // Hiển thị danh sách tìm kiếm
-        searchPlace.style.opacity = '1'; // Đảm bảo danh sách tìm kiếm hiển thị
-        searchPlace.style.transition = 'opacity 0.3s ease'; // Thêm hiệu ứng chuyển tiếp
-        searchInput.classList.add('active-input');
-        searchInput.focus();
-        closebtt.style.display = 'flex';
-        searchButton.style.display = 'none';
-        grayScreen.classList.add('active-gray-screen');
-      }
-      
-      function closeSearch() {
-        const searchInput = document.getElementById('search-input');
-        const closebtt = document.querySelector('.close-button');
-        const searchButton = document.querySelector('.search-button');
-        const grayScreen = document.querySelector('.gray-screen');
-        const searchPlace = document.querySelector('.search-place');
-        searchPlace.style.display = 'none'; // Ẩn danh sách tìm kiếm
-        searchInput.classList.remove('active-input');
-        closebtt.style.display = 'none';
-        searchButton.style.display = 'flex';
-        grayScreen.classList.remove('active-gray-screen');
-      }
-      
-      // Đóng tìm kiếm khi click ra ngoài
-      document.addEventListener('click', function(event) {
-        const searchForm = document.querySelector('.searchform');
-        const searchInput = document.getElementById('search-input');
-        
-        if (!searchForm.contains(event.target) && searchInput.classList.contains('active-input')) {
-          closeSearch();
-        }
-      });
-      document.addEventListener('DOMContentLoaded', function(){
-        fetch('https://oce.pages.dev/results/data.json')
-          .then(Response => Response.json())
-          .then(data => {
-            const searchPlace = document.querySelector('.search-place');
-            const createul = document.createElement('ul');
-            searchPlace.innerHTML = ''; // Xóa nội dung cũ
-            data.forEach(item => {
-              
-            const createli = document.createElement('li');
-              const searchlink = document.createElement('a');
-              searchlink.href = item.link;
-              searchlink.innerHTML = item.title;
-              searchlink.classList.add('search-link');
-              createli.appendChild(searchlink);
-              createul.appendChild(createli);
-            });
-            
-            searchPlace.appendChild(createul);
-          })
-      })
-    </script>
+    <script src="../sample/script.js"></script>
   </body>
 </html>
