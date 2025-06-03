@@ -40,41 +40,43 @@ function searchbtt() {
 function searchengine(){
     const resultbox = document.querySelector('.search-place');
     const inputbox = document.getElementById('search-input');
+
     inputbox.onkeyup = function(){
-        const input = inputbox.value;
-        if (input.length){
-            const key = window.availableKeywords.filter((keyword) => {
-                return keyword.toLowerCase().includes(input.toLowerCase());
+        const input = inputbox.value.toLowerCase();
+        resultbox.innerHTML = ''; // Xóa nội dung cũ
+        if (input.length > 0) {
+          const result = availableKeywords.filter(keyword => {
+            return keyword.category.toLowerCase().includes(input) ||
+                   keyword.title.toLowerCase().includes(input) ||
+                   keyword.description.toLowerCase().includes(input) ||
+                   keyword.src.toLowerCase().includes(input); 
+          });
+          const createul = document.createElement('ul');
+          if (result.length > 0) {
+            result.forEach(item => {
+              const createli = document.createElement('li');
+              createli.innerHTML = `${item.title}`;
+              createli.addEventListener('click', function() {
+                inputbox.value = item.title; 
+              });
+              createul.appendChild(createli);
             });
-            const createul = document.createElement('ul');
-            key.forEach((item) => {
-                const createli = document.createElement('li');
-                createli.textContent = item;
-                createul.appendChild(createli);
-            });
-            resultbox.innerHTML = ''; // Xóa nội dung cũ
-            resultbox.appendChild(createul);
-        } else {
-           
-            resultbox.innerHTML = '';
-            resultbox.textContent = 'Tìm tại đây'
+          } else {
+            const createli = document.createElement('li');
+            createli.innerHTML = 'Không tìm thấy kết quả';
+            createul.appendChild(createli);
+          }
+          resultbox.appendChild(createul);
         }
     }
-}
-
-
-
-
+  }
 
 document.addEventListener('DOMContentLoaded', function(){
         fetch('https://oce.pages.dev/results/data.json')
           .then(Response => Response.json())
           .then(data => {
-            const searchPlace = document.querySelector('.search-place');
-            const createul = document.createElement('ul');
-            searchPlace.innerHTML = ''; // Xóa nội dung cũ
-            window.availableKeywords = data.map(item => item.category + " | " + item.description + " | " +  item.title);
-            
+            window.availableKeywords = data
             searchengine(); // Gọi hàm tìm kiếm sau khi dữ liệu đã được tải
           })
-      })
+          .catch(error => console.error('Error fetching data:', error));
+      });
