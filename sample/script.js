@@ -5,7 +5,17 @@ cssicon.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/
 document.head.appendChild(cssicon);
 function closeSidebar(){
   const sidebar = document.querySelector('.sidebar');
-  sidebar.display = 'block';
+  sidebar.style.display = 'block';
+  sidebar.style.opacity = '1';
+  sidebar.style.right = '0';
+  sidebar.style.transition = 'right 0.3s ease, opacity 0.3s ease';
+}
+function openSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+  sidebar.style.opacity = '0';
+  sidebar.style.right = '-100%'; 
+  sidebar.style.transition = 'right 0.3s ease, opacity 0.3s ease';
 }
 
 function searchbtt() {
@@ -41,9 +51,10 @@ function searchbtt() {
         const searchForm = document.querySelector('.searchform');
         const searchInput = document.getElementById('search-input');
         const searchplace = document.querySelector('.search-place');
-        
-        if (!searchForm.contains(event.target) && !searchplace.contains(event.target) && searchInput.classList.contains('active-input')) {
+        const sidebar = document.querySelector('.sidebar');
+        if (!searchForm.contains(event.target) && !searchplace.contains(event.target) && searchInput.classList.contains('active-input') && !sidebar.contains(event.target)) {
           closeSearch();
+          closeSidebar();
         }
       });
 function searchengine(){
