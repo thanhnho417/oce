@@ -1,4 +1,13 @@
-window.availableKeywords = []; // Biến toàn cục để lưu trữ từ khóa tìm kiếm
+window.availableKeywords = []; // Biến toàn cục để lưu trữ từ khóa tìm 
+const cssicon = document.createElement('link');
+cssicon.rel = 'stylesheet';
+cssicon.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
+document.head.appendChild(cssicon);
+function closeSidebar(){
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.display = 'block';
+}
+
 function searchbtt() {
         const searchInput = document.getElementById('search-input');
         const closebtt = document.querySelector('.close-button');
@@ -42,7 +51,7 @@ function searchengine(){
     const inputbox = document.getElementById('search-input');
 
     inputbox.onkeyup = function(){
-        const input = inputbox.value.toLowerCase();
+        const input = inputbox.value.toLowerCase() ;
         resultbox.innerHTML = ''; // Xóa nội dung cũ
         if (input.length > 0) {
           const result = availableKeywords.filter(keyword => {
