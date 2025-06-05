@@ -47,7 +47,7 @@ function navweb() {
     searchbutton.className = 'submit-button';
     searchbutton.title = 'Nhấn để tìm kiếm';
     searchbutton.style.display = 'none';
-    searchbutton.innerHTML = '<i class="fa-solid fa-magnifying-glass fa-lg" style="color: white;">';
+    searchbutton.innerHTML = '<i class="fa-solid fa-magnifying-glass fa-lg" style="color: white;"></i>';
     const actsearch = document.createElement('button');
     actsearch.type = 'button';
     actsearch.className = 'search-button';
@@ -194,12 +194,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 navweb();
 
-
-
-
-
-
-
 document.addEventListener('keydown', function (e) {
     const sidebar = document.querySelector('.sidebar');
     if (e.key === 'Escape' && sidebar.classList.contains('sidebar_load')) {
@@ -338,15 +332,10 @@ function initBackToTopButton() {
         });
     });
 }
-
-// Khởi tạo tất cả khi DOM đã sẵn sàng
-document.addEventListener('DOMContentLoaded', function () {
-    initLogo();
-    createLoadingElements();
-    initImagePreview();
-    initLoader();
-    initFooter();
-    initNetworkStatus();
-    initPageTitle();
-    initBackToTopButton();
-});
+createLoadingElements();
+initImagePreview();
+initLoader();
+initFooter();
+initNetworkStatus();
+initPageTitle();
+initBackToTopButton();
