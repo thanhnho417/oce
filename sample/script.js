@@ -3,21 +3,20 @@ const cssicon = document.createElement('link');
 cssicon.rel = 'stylesheet';
 cssicon.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
 document.head.appendChild(cssicon);
-function closeSidebar(){
+function opensidebar(){
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'block';
   sidebar.style.opacity = '1';
   sidebar.style.right = '0';
   sidebar.style.transition = 'right 0.3s ease, opacity 0.3s ease';
 }
-function openSidebar() {
+function closesidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'none';
   sidebar.style.opacity = '0';
   sidebar.style.right = '-100%'; 
   sidebar.style.transition = 'right 0.3s ease, opacity 0.3s ease';
 }
-
 function searchbtt() {
         const searchInput = document.getElementById('search-input');
         const closebtt = document.querySelector('.close-button');
@@ -46,7 +45,6 @@ function searchbtt() {
         submitbtt.style.display = 'none'; // Ẩn nút submit
         searchPlace.style.display = 'none'; // Ẩn danh sách tìm kiếm
         searchInput.classList.remove('active-input');
-        searchInput.value = ''; // Xóa nội dung ô tìm kiếm
         closebtt.style.display = 'none';
         searchButton.style.display = 'flex';
         grayScreen.classList.remove('active-gray-screen');
@@ -57,9 +55,8 @@ function searchbtt() {
         const searchInput = document.getElementById('search-input');
         const searchplace = document.querySelector('.search-place');
         const sidebar = document.querySelector('.sidebar');
-        if (!searchForm.contains(event.target) && !searchplace.contains(event.target) && searchInput.classList.contains('active-input') && !sidebar.contains(event.target)) {
+        if (!searchForm.contains(event.target) && !searchplace.contains(event.target) && searchInput.classList.contains('active-input')) {
           closeSearch();
-          closeSidebar();
         }
       });
 function searchengine(){
