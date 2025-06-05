@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const filteredData = data.filter(item => 
                 item.title.toLowerCase().includes(query.toLowerCase()) || 
                 item.description.toLowerCase().includes(query.toLowerCase()) ||
-                item.category.toLowerCase().includes(query.toLowerCase())
+                item.category.toLowerCase().includes(query.toLowerCase()) ||
+                item.src.toLowerCase().includes(query.toLowerCase())
             );
 
             if (filteredData.length > 0) {

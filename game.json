@@ -1,0 +1,47 @@
+[
+  {
+      "title": "Build",
+      "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/build.png",
+      "url": "/game/build"
+  },
+  {
+      "title": "Geats",
+      "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/geats.png",
+      "url": "/game/geats"
+  },
+  {
+      "title": "Ghost",
+      "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/ghost.png",
+      "url": "/game/ghost"
+  },
+  {
+    "title": "OOO",
+    "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/ooo.png",
+    "url": "/game/ooo"
+  },
+  {
+    "title": "W",
+    "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/w.png",
+    "url": "/game/w"
+  },
+  {
+    "title": "Wizard",
+    "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/wizard.png",
+    "url": "/game/wizard"
+  },
+  {
+    "title": "Zero One",
+    "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/zeroone.png",
+    "url": "/game/zeroone"
+  },
+  {
+    "title": "Ex-Aid",
+    "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/exaid.png",
+    "url": "/game/exaid"
+  },
+  {
+    "title": "Zi-O",
+    "image_url": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/game/images/zio.png",
+    "url": "/game/zio"
+  }
+]
