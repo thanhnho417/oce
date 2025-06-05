@@ -24,6 +24,8 @@ function searchbtt() {
         const searchButton = document.querySelector('.search-button');
         const grayScreen = document.querySelector('.gray-screen');
         const searchPlace = document.querySelector('.search-place');
+        const submitbtt = document.querySelector('.submit-button');
+        submitbtt.style.display = 'block';
         searchPlace.style.display = 'block'; // Hiển thị danh sách tìm kiếm
         searchPlace.style.opacity = '1'; // Đảm bảo danh sách tìm kiếm hiển thị
         searchPlace.style.transition = 'opacity 0.3s ease'; // Thêm hiệu ứng chuyển tiếp
@@ -40,6 +42,8 @@ function searchbtt() {
         const searchButton = document.querySelector('.search-button');
         const grayScreen = document.querySelector('.gray-screen');
         const searchPlace = document.querySelector('.search-place');
+        const submitbtt = document.querySelector('.submit-button');
+        submitbtt.style.display = 'none'; // Ẩn nút submit
         searchPlace.style.display = 'none'; // Ẩn danh sách tìm kiếm
         searchInput.classList.remove('active-input');
         closebtt.style.display = 'none';
