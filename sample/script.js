@@ -46,6 +46,7 @@ function searchbtt() {
         submitbtt.style.display = 'none'; // Ẩn nút submit
         searchPlace.style.display = 'none'; // Ẩn danh sách tìm kiếm
         searchInput.classList.remove('active-input');
+        searchInput.value = ''; // Xóa nội dung ô tìm kiếm
         closebtt.style.display = 'none';
         searchButton.style.display = 'flex';
         grayScreen.classList.remove('active-gray-screen');
