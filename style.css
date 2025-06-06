@@ -284,6 +284,7 @@ header {
     border-bottom: 1px solid #ccc;
     background-color: white;
     padding: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 .search-place>ul>li:hover::before {
@@ -301,6 +302,7 @@ header {
     font-size: 16px;
     display: block;
     padding: 10px 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -1809,13 +1811,6 @@ video::cue {
     font-weight: bold;
 }
 
-.vjs-watermark {
-    pointer-events: none;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    padding: 1px 1px;
-}
-
 .main {
     flex: 2.5;
     border: 2px solid #000;
@@ -1896,6 +1891,10 @@ video::cue {
     border-radius: 10px;
     display: block;
     margin: 10px;
+}
+
+.video-js.vjs-fullscreen {
+    border-radius: 0 !important;
 }
 
 .main>.conts>#title {

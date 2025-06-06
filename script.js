@@ -254,7 +254,7 @@ function initImagePreview() {
     document.addEventListener('click', function (e) {
         if (e.target.tagName === 'IMG' && !e.target.closest('.img-preview')) {
             imgpre.src = e.target.src;
-            imgtitle.textContent = 'Trình xem ảnh - ' + e.target.src.split('/').pop() || 'Không có tiêu đề';
+            imgtitle.textContent = e.target.src.split('/').pop() || 'Không có tiêu đề';
             imgview.classList.add('active');
         }
     });

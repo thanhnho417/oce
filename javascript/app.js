@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fluid: true
     });
     player.aspectRatio('16:9');
-    player.playbackRates([0.5,0.75,1,1.25,1.5,2])
+    player.playbackRates([0.5, 0.75, 1, 1.25, 1.5, 2])
     let hls;
 
     fetch('videos.json')
@@ -87,44 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, false);
         });
     }
-
-    function updateWatermark() {
-        const videoEl = player.el().querySelector('video');
-        const watermark = player.el().querySelector('.vjs-watermark');
-        if (!videoEl || !watermark) return;
-
-        const { clientWidth: w, clientHeight: h } = videoEl;
-        watermark.style.width = `${w / 22}px`;
-        watermark.style.bottom = `${h / 15}px`;
-        watermark.style.right = `${w / 12}px`;
-    }
-
-    function createWatermark() {
-        const videoEl = player.el().querySelector('video');
-        if (!videoEl) return;
-
-        const watermark = document.createElement('div');
-        watermark.className = 'vjs-watermark';
-        watermark.innerHTML = `<img src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/images/watermark.png" width="100%">`;
-        Object.assign(watermark.style, {
-            position: 'absolute',
-            zIndex: '10',
-            opacity: '0.7'
-        });
-
-        player.el().appendChild(watermark);
-        updateWatermark();
-
-        const resizeObserver = new ResizeObserver(() => updateWatermark());
-        resizeObserver.observe(videoEl);
-        resizeObserver.observe(player.el());
-    }
-
-    player.ready(() => {
-        if (!player || !player.el()) return console.error('Player không tồn tại');
-        createWatermark();
-    });
-
     toggleBtn.addEventListener('click', () => {
         const collapsed = descriptionElement.style.display === '-webkit-box';
         descriptionElement.style.display = collapsed ? 'block' : '-webkit-box';
