@@ -10,7 +10,7 @@ function initLoader() {
     if (loader) {
         const timeout = setTimeout(() => {
             loader.classList.add('fade-out');
-        },5000);
+        },3000);
 
         window.addEventListener('load', function () {
             clearTimeout(timeout);
