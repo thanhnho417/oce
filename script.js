@@ -8,7 +8,12 @@ document.body.appendChild(loadingarea);
 function initLoader() {
     const loader = document.querySelector('.loading-area');
     if (loader) {
+        const timeout = setTimeout(() => {
+            loader.classList.add('fade-out');
+        },5000);
+
         window.addEventListener('load', function () {
+            clearTimeout(timeout);
             loader.classList.add('sfade');
         });
     }
