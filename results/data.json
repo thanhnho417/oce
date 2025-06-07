@@ -488,14 +488,14 @@
         "src": "/anime/2023/summer/thedevilisapart-timers2p2",
         "description": "Mùa hè - 2023",
         "category": "Anime",
-        "image": "/anime/2023/summer/images/the-girl-i-like-forgot-her-glasses-new-key-visual.webp"
+        "image": "/anime/2023/summer/images/the-devil-is-a-part-timer-2nd-season-sequel-key-visual.webp"
     },
     {
         "title": "Cô gái tôi thầm thích lại quên mang kính rồi",
         "src": "/anime/2023/summer/thegirlilikeforgotherglasses",
         "description": "Mùa hè - 2023",
         "category": "Anime",
-        "image": "/anime/2023/summer/images/dark-gathering-new-key-visual.webp"
+        "image": "/anime/2023/summer/images/the-girl-i-like-forgot-her-glasses-new-key-visual.webp"
     },
     {
         "title": "Chú mèo giỏi giang hôm nay lại sầu",
@@ -977,14 +977,14 @@
     },
     {
         "title": "Html",
-        "src": "/project/html/",
+        "src": "/project/html",
         "description": "Mấy trang html",
         "category": "html",
         "image": "html-la-gi-khai-niem.webp"
     },
     {
         "title": "Minh họa tốt nghiệp THPTQG - T10/2025",
-        "src": "/project/documents/totnghiepthpt/minhhoa/T10-2024",
+        "src": "/project/documents/totnghiepthpt/totnghiepthpt-102024.html",
         "description": "Tốt nghiệp THPT",
         "category": "Documents, PDF",
         "image": "totnghiep.jpg"

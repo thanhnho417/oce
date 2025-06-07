@@ -10,7 +10,7 @@ function initLoader() {
     if (loader) {
         const timeout = setTimeout(() => {
             loader.classList.add('fade-out');
-        },3000);
+        }, 3000);
 
         window.addEventListener('load', function () {
             clearTimeout(timeout);
@@ -18,6 +18,17 @@ function initLoader() {
         });
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    initLoader();
+    navweb();
+    createLoadingElements();
+    initImagePreview();
+    initFooter();
+    initNetworkStatus();
+    initPageTitle();
+    initBackToTopButton();
+});
 window.availableKeywords = []; // Biến toàn cục để lưu trữ từ khóa tìm 
 const cssicon = document.createElement('link');
 cssicon.rel = 'stylesheet';
@@ -214,7 +225,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error fetching data:', error));
 });
 
-navweb();
 
 document.addEventListener('keydown', function (e) {
     const sidebar = document.querySelector('.sidebar');
@@ -344,10 +354,3 @@ function initBackToTopButton() {
         });
     });
 }
-createLoadingElements();
-initImagePreview();
-initLoader();
-initFooter();
-initNetworkStatus();
-initPageTitle();
-initBackToTopButton();
