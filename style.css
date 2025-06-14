@@ -146,7 +146,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #34695d;
-    padding: 0 20px;
+    padding: 0 10px;
     transition: width 0.3s ease-in-out;
     z-index: 9999;
     position: sticky;
@@ -203,7 +203,7 @@ header {
 }
 
 .searchform input.active-input {
-    width: 140px;
+    width: 120px;
     opacity: 1;
 }
 
@@ -222,6 +222,7 @@ header {
 
 .menu-top-button {
     margin-left: 10px;
+    margin-right: 10px;
     border: none;
     border-radius: 50%;
     background-color: #34695d;
@@ -1773,9 +1774,6 @@ td {
 }
 
 @media(max-width:390px) {
-    .sidebar {
-        width: 100%;
-    }
 
     #dataTable {
         width: 100%;
