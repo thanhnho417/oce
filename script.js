@@ -1,10 +1,4 @@
-const loader = document.createElement('div');
-loader.className = 'loader';
-loader.innerHTML = `<i class="fa-solid fa-spinner fa-spin-pulse fa-2xl"></i>`;
-const loadingarea = document.createElement('div');
-loadingarea.className = 'loading-area';
-loadingarea.appendChild(loader);
-document.body.appendChild(loadingarea);
+
 function initLoader() {
     const loader = document.querySelector('.loading-area');
     if (loader) {
@@ -20,7 +14,7 @@ function initLoader() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    initLoader();
+    
     navweb();
     createLoadingElements();
     initImagePreview();
