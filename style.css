@@ -1799,9 +1799,9 @@ td {
     width: 100%;
     height: auto;
     font-weight: bold;
-    border-radius: 10px;
     overflow: hidden;
     font-family: "Quicksand Regular";
+    padding: 5px;
 }
 
 video::cue {
@@ -1811,7 +1811,6 @@ video::cue {
 
 .main {
     flex: 2.5;
-    border: 2px solid #000;
     width: auto;
     border-radius: 10px;
     margin-right: 5px;
@@ -1819,7 +1818,6 @@ video::cue {
 
 .playlist {
     flex: 1;
-    border: 2px solid #000;
     border-radius: 10px;
     width: 100%;
     margin: 10px 0 10px 5px;
@@ -1879,7 +1877,7 @@ video::cue {
     justify-content: center;
     align-items: center;
     aspect-ratio: 16/9;
-    padding: 0 10px;
+    padding: 0;
     object-fit: contain;
 }
 
@@ -1896,7 +1894,7 @@ video::cue {
 }
 
 .main>.conts>#title {
-    margin: 0 20px;
+    margin: 10px 20px;
     font-weight: bold;
     font-size: 20px;
 }
