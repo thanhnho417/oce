@@ -1,36 +1,36 @@
 @font-face {
     font-family: "Quicksand Regular";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Regular.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Quicksand Bold";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Bold.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Quicksand Light";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Light.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Light.woff") format("woff");
 }
 
 @font-face {
     font-family: "Quicksand Medium";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Medium.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Medium.woff") format("woff");
 }
 
 @font-face {
     font-family: "Quicksand SemiBold";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-SemiBold.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-SemiBold.woff") format("woff");
 }
 
 @font-face {
     font-family: "UVNVan_B";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_B.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_B.woff") format("woff");
 }
 
 @font-face {
     font-family: "UVNVan_R";
-    src: url("fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_R.woff") format("woff");
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_R.woff") format("woff");
 }
 
 * {
@@ -585,6 +585,7 @@ header {
     align-items: center;
     overflow-x: auto;
     white-space: nowrap;
+    gap: 5px;
 }
 
 .navigation::-webkit-scrollbar {
@@ -1794,6 +1795,39 @@ td {
     transition: all 0.2s ease-in-out;
 }
 
+.vjs-watermark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    aspect-ratio: 16/9;
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.vjs-watermark>img {
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    width: 5%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+
+}
+
+.video-js.vjs-fullscreen .vjs-watermark {
+    position: fixed;
+    z-index: 9990;
+}
+
+.video-js.vjs-fullscreen .vjs-watermark img {
+    bottom: 7%;
+    right: 8%;
+}
+
 .video-js {
     aspect-ratio: 16/9;
     width: 100%;
@@ -1870,20 +1904,15 @@ video::cue {
 
 .main>.vid-play {
     position: relative;
-    display: inline-block;
-    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     aspect-ratio: 16/9;
-    padding: 0;
-    object-fit: contain;
 }
 
 .main>.vid-play>video {
     width: 100%;
-    height: auto;
     border-radius: 10px;
     display: block;
     margin: 10px;
@@ -1894,13 +1923,13 @@ video::cue {
 }
 
 .main>.conts>#title {
-    margin: 10px 20px;
+    margin: 10px 15px;
     font-weight: bold;
     font-size: 20px;
 }
 
 .main>.conts>#description {
-    margin: 10px 10px 0 10px;
+    margin: 0;
     padding: 8px 15px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -1920,7 +1949,7 @@ video::cue {
     color: #585858;
     cursor: pointer;
     font-weight: bold;
-    margin: 0 0px 10px 20px;
+    margin: 0 0px 10px 10px;
     padding: 5px 10px;
     display: inline;
     background: none;
