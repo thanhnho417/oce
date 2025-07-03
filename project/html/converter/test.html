@@ -1,0 +1,49 @@
+<div class="file_converter_container">
+        <div class="file_converter_input">
+            <label
+                style="cursor: pointer;padding: 0 50px; display: flex; justify-content: center; align-items: center; aspect-ratio: 16/9;"
+                for="file_converter_spe"> Nhấn vào đây</label>
+            <input style="display: none; " type="file" id="file_converter_spe" multiple>
+        </div>
+        <div class="file_number"> </div>
+        <div class="file_type"></div>
+    </div>
+    <script>
+        document.getElementById('file_converter_spe').addEventListener('change', function (e) {
+            const file = e.target.files;
+            const count = file.length;
+
+            const filecount = document.querySelector('.file_number');
+            const file_type = document.querySelector('.file_type');
+
+            if (count === 0) {
+                filecount.innerHTML = 'Số lượng file: 0';
+                file_type.innerHTML = 'Loại file: N/A';
+            } else {
+                filecount.textContent = `Số lượng file: ${count}`;
+                const types = [];
+                for (let i = 0; i < file.length; i++) {
+                    const fname = file[i].name;
+                    const ext = fname.includes('.') ? fname.split('.').pop().toLowerCase() : 'không xác định';
+                    if (!types.includes(ext)) {
+                        types.push(ext);
+                    }
+                }
+                file_type.innerHTML = `Loại file: ${types.join(', ')}`;
+            }
+        });
+
+    </script>
+    .file_converter_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .file_converter_input {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
