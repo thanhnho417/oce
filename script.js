@@ -14,7 +14,7 @@ function initLoader() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    
+
     navweb();
     createLoadingElements();
     initImagePreview();
@@ -185,12 +185,15 @@ function searchengine() {
         const input = inputbox.value.toLowerCase();
         resultbox.innerHTML = ''; // Xóa nội dung cũ
         if (input.length > 0) {
+            const normalize = str => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
             const result = availableKeywords.filter(keyword => {
-                return keyword.category.toLowerCase().includes(input) ||
-                    keyword.title.toLowerCase().includes(input) ||
-                    keyword.description.toLowerCase().includes(input) ||
-                    keyword.src.toLowerCase().includes(input);
-            });
+                const inputNorm = normalize(input);
+                return normalize(keyword.category).includes(inputNorm) ||
+                    normalize(keyword.title).includes(inputNorm) ||
+                    normalize(keyword.description).includes(inputNorm) ||
+                    normalize(keyword.src).includes(inputNorm) ||
+                    (Array.isArray(keyword.hint) && keyword.hint.some(h => normalize(h).includes(inputNorm)))
+            })
             const createul = document.createElement('ul');
             if (result.length > 0) {
                 result.forEach(item => {
