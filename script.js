@@ -34,7 +34,7 @@ function navweb() {
     if (!header) return;
     const weblink = document.createElement('a');
     weblink.href = '/';
-    weblink.style.display = 'inline-block';
+    weblink.style.display = 'inline-flex';
     weblink.style.alignContent = 'center'
     weblink.innerHTML = '<img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt="web" width="90px" style="border-radius: 0 ">';
     header.appendChild(weblink);
