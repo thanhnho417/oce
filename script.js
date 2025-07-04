@@ -34,7 +34,9 @@ function navweb() {
     if (!header) return;
     const weblink = document.createElement('a');
     weblink.href = '/';
-    weblink.innerHTML = '<img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt="web" width="90px" style="border-radius: 0">';
+    weblink.style.display = 'inline-block';
+    weblink.style.alignContent = 'center'
+    weblink.innerHTML = '<img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt="web" width="90px" style="border-radius: 0 ">';
     header.appendChild(weblink);
     const webnav = document.createElement('nav');
     webnav.className = 'top-menu';

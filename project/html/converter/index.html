@@ -215,13 +215,16 @@
             text-align: start;
             padding: 5px 15px;
             background-color: rgb(82, 82, 82);
-            border-radius: 0 0 5px 5px;
+            border-radius: 0 0 10px 10px;
             font-size: 12px;
             display: none;
         }
+
         @media (max-width: 750px) {
-    
-            .media_convert_input>label{padding: 40px 20px;}
+
+            .media_convert_input>label {
+                padding: 40px 20px;
+            }
         }
     </style>
 </head>
@@ -247,7 +250,7 @@
         </svg>
         <a href="/project/html/converter/">Trình chuyển đổi file</a>
     </div>
-    
+
     <hr>
     <form class="media_convert_container" id="media_convert">
         <div class="media_convert_main">
@@ -261,7 +264,8 @@
 
         <div class="media_convert_input">
             <label for="mediauploaded">Nhấn vào đây để tải lên</label>
-            <input style="display: none;" type="file" id="mediauploaded" multiple accept=".mp3, .wav, .flac, .ogg, .mp4, .mkv, .3gv">
+            <input style="display: none;" type="file" id="mediauploaded" multiple
+                accept=".mp3, .wav, .flac, .ogg, .mp4, .mkv, .3gv">
         </div>
         <div class="file_type" style="width: 100%; text-align: left;">
 
@@ -348,46 +352,58 @@
                 formdata.append('files', file[i]);
             }
             formdata.append('format', format)
-            
+
             let typeselect = 'unknown';
-            for (const[type, formatlist] of Object.entries(appstate.supportedFormats)){
-                if(formatlist.includes(format.toLowerCase())){
+            for (const [type, formatlist] of Object.entries(appstate.supportedFormats)) {
+                if (formatlist.includes(format.toLowerCase())) {
                     typeselect = type;
                     break
                 }
             }
             appstate.currentMediaType = typeselect;
             formdata.append('type', typeselect)
-            try {
-                statusinfo('Đang gửi lên hệ thống', '📤')
-                const response = await fetch('https://file-converter-api-ugp0.onrender.com/convert', {
-                    method: 'POST',
-                    body: formdata
-                })
-
-
-
-                if (!response.ok) {
-                    const mediaerror = await response.json();
-                    statusinfo(`Lỗi gửi đi, mã lỗi: ${mediaerror.error}`, '❌')
-                    return
+            function upmediaprohress(formdata, format, fcount) {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://file-converter-api-ugp0.onrender.com/convert', true);
+                xhr.responseType = 'blob'
+                xhr.upload.onloadstart = function () {
+                    statusinfo('Đang gửi lên hệ thống', '📤')
+                };
+                xhr.upload.onload = function () {
+                    statusinfo('Đang xử lí', '⚙️');
                 }
-                statusinfo('Đang xử lí', '⚙️');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        statusinfo('Đang tải về...', '💾')
+                        const blob = xhr.response;
+                        const url = URL.createObjectURL(blob)
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = fcount > 1 ? 'media_converted_file.zip' : `media_converted.${format}`
+                        setTimeout(() => {
+                            a.click()
+                            URL.revokeObjectURL(url)
+                            statusinfo('Hoàn tất', '✅')
+                            hidestatus(4000)
+                        }, 200)
+                    } else {
+                        try {
+                            const err = JSON.parse(xhr.responseText)
+                            statusinfo(` Lỗi: ${err.error}`)
+                        } catch {
+                            statusinfo(' Lỗi không xác định')
+                        }
+                        hidestatus(5000)
+                    }
+                }
 
-                const blob = await response.blob();
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = file.length > 1 ? 'media_converted_file.zip' : `converted.${format}`;
-                a.click();
-                URL.revokeObjectURL(url)
-                statusinfo('Hoàn tất', '✅')
-                hidestatus(4000)
-            } catch (error) {
-            alert(`Lỗi khi chuyển đổi: ${error.message}`)
-            hidestatus(5000)
-        }
-            
+                xhr.onerror = function () {
+                    statusinfo('❌ Mất kết nối server')
+                    hidestatus(5000)
+                }
+                xhr.send(formdata)
+            }
+            upmediaprohress(formdata, format, file.length)
         })
     </script>
     <footer></footer>
