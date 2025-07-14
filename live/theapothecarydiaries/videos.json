@@ -19,6 +19,24 @@
         "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-4.png"
     },
     {
+        "title": "Tập 48: Khởi đầu",
+        "src": "https://hitmefirstcdn.store/hls/+sX0YZm7UhNLqGpFs2gDUXXMnI0AmFC-8f5dxrpIX5+98fzJ0JkIL+PGwND7lHvIX3nh6TJ3MyKMsYtPbYALxg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+        "description": "",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-vi.vtt",
+                "srclang": "vi"
+            },
+            {
+                "label": "Tiếng Anh",
+                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-en.vtt",
+                "srclang": "en"
+            }
+        ],
+        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img48.png"
+    },
+    {
         "title": "Tập 47: Tử gia",
         "src": "https://owakshina.store/hls/s2vG0bC8I8Jul3wUeBvaneIyiA91nKiFXUN3zin0D-GjBVV4mdbeN11xsvrPVQFv9I9sUPCcZF+3UB87ypIiiQ==/aW5kZXgtZjItdjEtYTEubTN1OA==.m3u8",
         "description": "",
