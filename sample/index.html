@@ -15,9 +15,8 @@
   <div class="vid-player-container">
     <div class="vid-main-video">
       <div class="vid-play">
-        <video class="vid-player" controls playsinline
-          data-plyr-config='{"fullscreen": {"enabled": true, "fallback": true, "iosNative": false, "target": ".vid-play"}}'>
-          <source src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/1.mp4"/>
+        <video class="vid-player" controls playsinline>
+          <source src="https://github.com/thanhnho417/up/raw/refs/heads/main/Video/1.mp4"/>
         </video>
       </div>
       <div class="vid-main-info">
@@ -58,7 +57,7 @@
             watermark.className = 'vid-watermark';
             watermark.innerHTML = `
               <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-              <p class="vid-age-watermark">T16</p>
+              <img class="vid-age-watermark" src="/sample/image.svg"></p>
             `;
             plyrcontainer.appendChild(watermark);
           }
