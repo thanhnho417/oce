@@ -119,3 +119,17 @@ body {
     aspect-ratio: 16/9;
     pointer-events: none;
 }
+@media (max-width: 800px) {
+    .vid-player-container {
+        flex-direction: column;
+    }
+
+    .vid-main-video {
+        width: 100%;
+    }
+
+    .vid-playlist {
+        width: 100%;
+    }
+
+}
