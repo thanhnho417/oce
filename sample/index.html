@@ -16,7 +16,7 @@
     <div class="vid-main-video">
       <div class="vid-play">
         <video class="vid-player" controls playsinline>
-          <source src="https://github.com/thanhnho417/up/raw/refs/heads/main/Video/1.mp4"/>
+
         </video>
       </div>
       <div class="vid-main-info">
@@ -25,65 +25,122 @@
       </div>
     </div>
     <div class="vid-playlist">
-      <p>Playlist</p>
-      <hr>
-      <div class="vid-playlist-item" data-src="">
-        <img src="/sample/op-a.png" alt="Test 1" class="vid-playlist-thumbnail">
-        <p class="vid-playlist-title">Test 1</p>
-      </div>
-      <div class="vid-playlist-item" data-src="">
-        <img src="/sample/op-a.png" alt="Test 2" class="vid-playlist-thumbnail">
-        <p class="vid-playlist-title">Test 2</p>
-      </div>
-      <div class="vid-playlist-item" data-src="">
-        <img src="/sample/op-a.png" alt="Test 3" class="vid-playlist-thumbnail">
-        <p class="vid-playlist-title">Test 3</p>
-      </div>
+
     </div>
   </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const vid = document.querySelector('.vid-player');
-      const vidsource = vid.querySelector('source');
-      const vidsrc = vidsource.src
-      function plyrset() {
-        const player = new Plyr(vid)
+      const vidplaylist = document.querySelector('.vid-playlist');
+      const viddescription = document.querySelector('.vid-description');
+      const vidtitle = document.querySelector('.vid-title');
+
+      let player = new Plyr(vid);  // Chỉ khởi tạo Plyr một lần
+      let hls = null;
+
+      function addWatermark() {
+        const wrapper = vid.closest('.vid-play');
+        const plyrcontainer = wrapper?.querySelector('.plyr');
+
         const interval = setInterval(() => {
-          const plyrcontainer = vid.closest('.vid-play').querySelector('.plyr');
+          const old = plyrcontainer?.querySelector('.vid-watermark');
+          if (old) old.remove();
           if (plyrcontainer) {
-            clearInterval(interval);
             const watermark = document.createElement('div');
             watermark.className = 'vid-watermark';
             watermark.innerHTML = `
               <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-              <img class="vid-age-watermark" src="/sample/image.svg"></p>
+              <img class="vid-age-watermark" src="/sample/image.svg">
             `;
             plyrcontainer.appendChild(watermark);
+            clearInterval(interval);
+
           }
         }, 100)
-      }
-      if (vidsrc.endsWith('.m3u8')) {
-        if (Hls.isSupported()) {
-          const hls = new Hls();
-          hls.loadSource(vid.querySelector('source').src);
-          hls.attachMedia(vid);
-          hls.on(Hls.Events.MANIFEST_PARSED, () => {
-            plyrset();
-          });
-        } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
-          vid.src = vid.querySelector('source').src;
-          plyrset();
-        } else {
-          console.error('HLS is not supported in this browser.');
-        }
-      } else {
-        vid.src = vidsrc;
-        plyrset();
+
       }
 
+      function loadVideoSourceFromElement(el) {
+        const vidsrc = el.getAttribute('data-src');
+        const title = el.querySelector('.vid-playlist-title')?.textContent || 'Video Title';
+        const desc = el.getAttribute('data-description') || 'No description available.';
+        const ext = vidsrc.split('.').pop().toLowerCase();
+
+        // Ngắt kết nối HLS cũ
+        if (hls) {
+          hls.destroy();
+          hls = null;
+        }
+
+        // Cập nhật UI
+        vid.pause();
+        vid.removeAttribute('src');
+        vid.load();
+
+        vidtitle.textContent = title;
+        viddescription.textContent = desc;
+
+        if (ext === 'm3u8') {
+          if (Hls.isSupported()) {
+            hls = new Hls();
+            hls.loadSource(vidsrc);
+            hls.attachMedia(vid);
+            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+              addWatermark(); // Plyr đã sẵn, chỉ thêm watermark
+            });
+          } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
+            vid.src = vidsrc;
+            vid.addEventListener('loadedmetadata', () => {
+              addWatermark();
+            }, { once: true });
+          } else {
+            console.error('HLS not supported');
+          }
+        } else {
+          // File MP4, MKV, WebM, etc.
+          vid.src = vidsrc;
+          vid.addEventListener('loadedmetadata', () => {
+            addWatermark();
+          }, { once: true });
+        }
+      }
+
+      function buildPlaylist(data) {
+        vidplaylist.innerHTML = "<p>Playlist</p><hr>";
+        data.forEach(item => {
+          const viditem = document.createElement('div');
+          viditem.className = 'vid-playlist-item';
+          viditem.setAttribute('data-src', item.src);
+          viditem.setAttribute('data-description', item.description || '');
+          viditem.innerHTML = `
+        <img src="${item.image}" alt="${item.title}" class="vid-playlist-thumbnail">
+        <p class="vid-playlist-title">${item.title}</p>
+      `;
+          viditem.addEventListener('click', () => loadVideoSourceFromElement(viditem));
+          vidplaylist.appendChild(viditem);
+        });
+      }
+
+      // Không gọi video đầu tiên
+      fetch('/sample/test.json')
+        .then(res => res.json())
+        .then(data => {
+          buildPlaylist(data);
+          if (data.length > 0) {
+            loadVideoSourceFromElement(vidplaylist.querySelector('.vid-playlist-item'));
+          }
+        })
+        .catch(err => console.error('Playlist error:', err));
     });
+
+
+
+
   </script>
+
+
+
 </body>
 
 </html>

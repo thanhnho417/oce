@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Video Test 1",
+        "image": "",
+        "src": "https://github.com/thanhnho417/up/raw/refs/heads/main/Video/1.mp4",
+        "age": "T16",
+        "description": "This is a test video for the new player layout."
+    },
+    {
+        "title": "Video Test 2",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "age": "T16",
+        "description": "This is another test video for the new player layout."
+    },
+    {
+        "title": "Video Test 3",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "age": "T16",
+        "description": "This is a third test video for the new player layout."
+    },
+    {
+        "title": "Video Test 4",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "age": "T16",
+        "description": "This is a fourth test video for the new player layout."
+    }
+]
