@@ -16,15 +16,69 @@
     {
         "title": "Video Test 3",
         "image": "",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/miku/index.m3u8",
         "age": "T16",
         "description": "This is a third test video for the new player layout."
     },
     {
         "title": "Video Test 4",
         "image": "",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op/kusuriya.m3u8",
         "age": "T16",
         "description": "This is a fourth test video for the new player layout."
+    },
+    {
+        "title": "Video Test 5",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/videos/s2/ep22/tad-s2-ep22.m3u8",
+        "age": "T16",
+        "description": "This is a test video for the new player layout.",
+        "subtitle": [
+            {
+                "label": "Tiếng Anh",
+                "lang": "en",
+                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-en.vtt"
+            },
+            {
+                "label": "Tiếng Việt",
+                "lang": "vi",
+                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-vi.vtt"
+            }
+        ]
+    },
+    {
+        "title": "Video Test 2",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "age": "T16",
+        "description": "This is another test video for the new player layout."
+    },
+    {
+        "title": "Video Test 1",
+        "image": "",
+        "src": "https://github.com/thanhnho417/up/raw/refs/heads/main/Video/1.mp4",
+        "age": "T16",
+        "description": "This is a test video for the new player layout."
+    },
+    {
+        "title": "Video Test 2",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "age": "T16",
+        "description": "This is another test video for the new player layout."
+    },
+    {
+        "title": "Video Test 1",
+        "image": "",
+        "src": "https://github.com/thanhnho417/up/raw/refs/heads/main/Video/1.mp4",
+        "age": "T16",
+        "description": "This is a test video for the new player layout."
+    },
+    {
+        "title": "Video Test 2",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
+        "age": "T16",
+        "description": "This is another test video for the new player layout."
     }
 ]

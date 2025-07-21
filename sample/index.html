@@ -39,7 +39,7 @@
       let player = new Plyr(vid);  // Chỉ khởi tạo Plyr một lần
       let hls = null;
 
-      function addWatermark() {
+      function plyrset() {
         const wrapper = vid.closest('.vid-play');
         const plyrcontainer = wrapper?.querySelector('.plyr');
 
@@ -51,7 +51,7 @@
             watermark.className = 'vid-watermark';
             watermark.innerHTML = `
               <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-              <img class="vid-age-watermark" src="/sample/image.svg">
+              <img class="vid-age-watermark" src="/sample/image.svg" alt="vid-age-watermark">
             `;
             plyrcontainer.appendChild(watermark);
             clearInterval(interval);
@@ -61,16 +61,33 @@
 
       }
 
-      function loadVideoSourceFromElement(el) {
-        const vidsrc = el.getAttribute('data-src');
-        const title = el.querySelector('.vid-playlist-title')?.textContent || 'Video Title';
-        const desc = el.getAttribute('data-description') || 'No description available.';
+      function loadvideosource(item) {
+        const vidsrc = item.getAttribute('data-src');
+        const title = item.querySelector('.vid-playlist-title')?.textContent || 'Video Title';
+        const desc = item.getAttribute('data-description') || 'No description available.';
         const ext = vidsrc.split('.').pop().toLowerCase();
+        const vidsubtitle = JSON.parse(item.getAttribute('subtitle') || '[]');
 
         // Ngắt kết nối HLS cũ
         if (hls) {
           hls.destroy();
           hls = null;
+        }
+
+        vid.querySelectorAll('track').forEach(track => track.remove())
+        if (vidsubtitle.length > 0) {
+          console.log('Subtitles:', vidsubtitle);
+          vidsubtitle.forEach(vidsub => {
+            const vidtrack = document.createElement('track');
+            vidtrack.kind = 'subtitles';
+            vidtrack.label = vidsub.label || 'Subtitles';
+            vidtrack.srclang = vidsub.lang || 'en';
+            vidtrack.src = vidsub.src || '';
+            vidtrack.default = vidsub.default || false;
+            vid.appendChild(vidtrack);
+          });
+        } else {
+          console.log('No subtitles found for this video.');
         }
 
         // Cập nhật UI
@@ -87,12 +104,12 @@
             hls.loadSource(vidsrc);
             hls.attachMedia(vid);
             hls.on(Hls.Events.MANIFEST_PARSED, () => {
-              addWatermark(); // Plyr đã sẵn, chỉ thêm watermark
+              plyrset(); // Plyr đã sẵn, chỉ thêm watermark
             });
           } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
             vid.src = vidsrc;
             vid.addEventListener('loadedmetadata', () => {
-              addWatermark();
+              plyrset();
             }, { once: true });
           } else {
             console.error('HLS not supported');
@@ -101,34 +118,35 @@
           // File MP4, MKV, WebM, etc.
           vid.src = vidsrc;
           vid.addEventListener('loadedmetadata', () => {
-            addWatermark();
+            plyrset();
           }, { once: true });
         }
       }
 
       function buildPlaylist(data) {
-        vidplaylist.innerHTML = "<p>Playlist</p><hr>";
+        vidplaylist.innerHTML = '<p class="vid-playlist-main-title">Playlist</p><hr>';
         data.forEach(item => {
           const viditem = document.createElement('div');
           viditem.className = 'vid-playlist-item';
           viditem.setAttribute('data-src', item.src);
           viditem.setAttribute('data-description', item.description || '');
+          viditem.setAttribute('subtitle', JSON.stringify(item.subtitle || []));
           viditem.innerHTML = `
-        <img src="${item.image}" alt="${item.title}" class="vid-playlist-thumbnail">
+        <img src="${item.image || '/sample/vna.png'}" alt="${item.title}" class="vid-playlist-thumbnail">
         <p class="vid-playlist-title">${item.title}</p>
       `;
-          viditem.addEventListener('click', () => loadVideoSourceFromElement(viditem));
+          viditem.addEventListener('click', () => loadvideosource(viditem));
           vidplaylist.appendChild(viditem);
         });
       }
-
-      // Không gọi video đầu tiên
       fetch('/sample/test.json')
         .then(res => res.json())
         .then(data => {
           buildPlaylist(data);
           if (data.length > 0) {
-            loadVideoSourceFromElement(vidplaylist.querySelector('.vid-playlist-item'));
+            const firstitem = vidplaylist.querySelector('.vid-playlist-item');
+            loadvideosource(firstitem);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         })
         .catch(err => console.error('Playlist error:', err));

@@ -12,11 +12,15 @@ body {
 .vid-player-container {
     width: 100%;
     display: flex;
-    padding: 0 8%;
+    padding: 10px 8%;
+    gap: 10px;
 }
 
 .vid-main-video {
-    flex: 2;
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .vid-play {
@@ -28,17 +32,18 @@ body {
 
 .plyr {
     aspect-ratio: 16/9;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .vid-watermark {
     position: absolute;
     display: block;
     z-index: 100;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16/9;
+    transform: translate(-50%, -50%);
     pointer-events: none;
 }
 
@@ -83,8 +88,8 @@ body {
     border-radius: 10px;
     padding: 10px;
     position: relative;
+    overflow: auto;
 }
-
 .vid-playlist-item {
     width: 100%;
     border: 1px solid black;
@@ -99,7 +104,9 @@ body {
     width: 30%;
     border-radius: 10px;
 }
-
+.vid-playlist-main-title {
+    font-weight: bold;
+}
 .vid-playlist-title {
     width: 100%;
     border: 1px solid black;
@@ -119,7 +126,7 @@ body {
     aspect-ratio: 16/9;
     pointer-events: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .vid-player-container {
         flex-direction: column;
     }
@@ -132,4 +139,9 @@ body {
         width: 100%;
     }
 
+}
+@media (max-width: 500px) {
+    .vid-player-container{
+        padding: 10px;
+    }
 }
