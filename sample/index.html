@@ -36,13 +36,12 @@
       const viddescription = document.querySelector('.vid-description');
       const vidtitle = document.querySelector('.vid-title');
 
-      let player = new Plyr(vid);  // Chỉ khởi tạo Plyr một lần
+      let player = new Plyr(vid);
       let hls = null;
 
       function plyrset() {
         const wrapper = vid.closest('.vid-play');
         const plyrcontainer = wrapper?.querySelector('.plyr');
-
         const interval = setInterval(() => {
           const old = plyrcontainer?.querySelector('.vid-watermark');
           if (old) old.remove();
@@ -50,15 +49,13 @@
             const watermark = document.createElement('div');
             watermark.className = 'vid-watermark';
             watermark.innerHTML = `
-              <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-              <img class="vid-age-watermark" src="/sample/image.svg" alt="vid-age-watermark">
-            `;
+          <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
+          <img class="vid-age-watermark" src="/sample/image.svg" alt="vid-age-watermark">
+        `;
             plyrcontainer.appendChild(watermark);
             clearInterval(interval);
-
           }
-        }, 100)
-
+        }, 100);
       }
 
       function loadvideosource(item) {
@@ -66,37 +63,55 @@
         const title = item.querySelector('.vid-playlist-title')?.textContent || 'Video Title';
         const desc = item.getAttribute('data-description') || 'No description available.';
         const ext = vidsrc.split('.').pop().toLowerCase();
-        const vidsubtitle = JSON.parse(item.getAttribute('subtitle') || '[]');
+        const vidsubtitle = JSON.parse(item.getAttribute('data-subtitle') || '[]');
 
-        // Ngắt kết nối HLS cũ
         if (hls) {
           hls.destroy();
           hls = null;
         }
 
-        vid.querySelectorAll('track').forEach(track => track.remove())
-        if (vidsubtitle.length > 0) {
-          console.log('Subtitles:', vidsubtitle);
-          vidsubtitle.forEach(vidsub => {
-            const vidtrack = document.createElement('track');
-            vidtrack.kind = 'subtitles';
-            vidtrack.label = vidsub.label || 'Subtitles';
-            vidtrack.srclang = vidsub.lang || 'en';
-            vidtrack.src = vidsub.src || '';
-            vidtrack.default = vidsub.default || false;
-            vid.appendChild(vidtrack);
-          });
-        } else {
-          console.log('No subtitles found for this video.');
-        }
-
-        // Cập nhật UI
         vid.pause();
         vid.removeAttribute('src');
+        vid.querySelectorAll('track').forEach(track => track.remove());
+
+        // GÁN PHỤ ĐỀ MỚI
+        if (vidsubtitle.length > 0) {
+          vidsubtitle.forEach((vidsub, i) => {
+            const track = document.createElement('track');
+            track.kind = 'subtitles';
+            track.label = vidsub.label || 'Subtitles';
+            track.srclang = vidsub.lang || 'en';
+            track.src = vidsub.src;
+            if (i === 0) {
+              track.setAttribute('default', '');
+            }
+            vid.appendChild(track);
+          });
+        }
+
+        // RESET VIDEO
         vid.load();
 
         vidtitle.textContent = title;
         viddescription.textContent = desc;
+
+        function enableSubtitles() {
+          if (vidsubtitle.length > 0) {
+            player.toggleCaptions(true);
+          } else {
+            player.toggleCaptions(false);
+          }
+        }
+
+        const onReady = () => {
+          plyrset();
+          // Bắt buộc đợi video `loadeddata`, để trình duyệt thật sự phân tích phụ đề
+          vid.addEventListener('loadeddata', () => {
+            setTimeout(() => {
+              enableSubtitles();
+            }, 100); // nhỏ thôi để chờ Plyr "bắt" được track
+          }, { once: true });
+        };
 
         if (ext === 'm3u8') {
           if (Hls.isSupported()) {
@@ -104,22 +119,17 @@
             hls.loadSource(vidsrc);
             hls.attachMedia(vid);
             hls.on(Hls.Events.MANIFEST_PARSED, () => {
-              plyrset(); // Plyr đã sẵn, chỉ thêm watermark
+              onReady();
             });
           } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
             vid.src = vidsrc;
-            vid.addEventListener('loadedmetadata', () => {
-              plyrset();
-            }, { once: true });
+            vid.addEventListener('loadedmetadata', onReady, { once: true });
           } else {
             console.error('HLS not supported');
           }
         } else {
-          // File MP4, MKV, WebM, etc.
           vid.src = vidsrc;
-          vid.addEventListener('loadedmetadata', () => {
-            plyrset();
-          }, { once: true });
+          vid.addEventListener('loadedmetadata', onReady, { once: true });
         }
       }
 
@@ -130,7 +140,7 @@
           viditem.className = 'vid-playlist-item';
           viditem.setAttribute('data-src', item.src);
           viditem.setAttribute('data-description', item.description || '');
-          viditem.setAttribute('subtitle', JSON.stringify(item.subtitle || []));
+          viditem.setAttribute('data-subtitle', JSON.stringify(item.subtitle || []));
           viditem.innerHTML = `
         <img src="${item.image || '/sample/vna.png'}" alt="${item.title}" class="vid-playlist-thumbnail">
         <p class="vid-playlist-title">${item.title}</p>
@@ -139,6 +149,7 @@
           vidplaylist.appendChild(viditem);
         });
       }
+
       fetch('/sample/test.json')
         .then(res => res.json())
         .then(data => {
@@ -151,6 +162,8 @@
         })
         .catch(err => console.error('Playlist error:', err));
     });
+
+
 
 
 

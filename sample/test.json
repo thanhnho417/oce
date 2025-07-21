@@ -37,12 +37,12 @@
             {
                 "label": "Tiếng Anh",
                 "lang": "en",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-en.vtt"
+                "src": "/sample/ep46-en.vtt"
             },
             {
                 "label": "Tiếng Việt",
                 "lang": "vi",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-vi.vtt"
+                "src": "/sample/ep46-vi.vtt"
             }
         ]
     },
