@@ -14,7 +14,7 @@
             {
                 "label": "Tiếng Việt",
                 "lang": "vi",
-                "src": "/sample/ep46-vi.vtt",
+                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-vi.vtt",
                 "default": true
             }
         ]
