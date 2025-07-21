@@ -107,6 +107,9 @@ body {
 .vid-playlist-main-title {
     font-weight: bold;
 }
+video::cue{
+    font-weight: bold;
+}
 .vid-playlist-title {
     width: 100%;
     border: 1px solid black;

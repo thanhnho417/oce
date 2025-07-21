@@ -1,5 +1,25 @@
 [
     {
+        "title": "Video Test 5",
+        "image": "",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/videos/s2/ep22/tad-s2-ep22.m3u8",
+        "age": "T16",
+        "description": "This is a test video for the new player layout.",
+        "subtitle": [
+            {
+                "label": "Tiếng Anh",
+                "lang": "en",
+                "src": "/sample/ep46-en.vtt"
+            },
+            {
+                "label": "Tiếng Việt",
+                "lang": "vi",
+                "src": "/sample/ep46-vi.vtt",
+                "default": true
+            }
+        ]
+    },
+    {
         "title": "Video Test 1",
         "image": "",
         "src": "https://github.com/thanhnho417/up/raw/refs/heads/main/Video/1.mp4",
@@ -42,7 +62,8 @@
             {
                 "label": "Tiếng Việt",
                 "lang": "vi",
-                "src": "/sample/ep46-vi.vtt"
+                "src": "/sample/ep46-vi.vtt",
+                "default": true
             }
         ]
     },
