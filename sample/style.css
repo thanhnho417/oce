@@ -59,10 +59,8 @@ body {
 .vid-play {
     position: relative;
     width: 100%;
-    max-width: 100%;
     overflow: hidden;
     aspect-ratio: 16/9;
-    contain: layout;
 }
 
 .plyr {
