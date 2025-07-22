@@ -3,9 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Quicksand Regular";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Regular.woff") format("woff");
+}
 
+@font-face {
+    font-family: "Quicksand Bold";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand Light";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand Medium";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand SemiBold";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/Quicksand-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "UVNVan_B";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_B.woff") format("woff");
+}
+
+@font-face {
+    font-family: "UVNVan_R";
+    src: url("/fonts/webfont_db7273f4bc1e475db6fd5541e6c5ca44/UVNVan_R.woff") format("woff");
+}
 body {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand Regular';
     background-color: #f4f4f4;
 }
 
