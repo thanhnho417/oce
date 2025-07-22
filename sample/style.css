@@ -68,16 +68,6 @@ body {
 .plyr {
     aspect-ratio: 16/9;
     border-radius: 10px;
-    width: 100%;
-    position: relative;
-}
-.plyr__menu__container {
-  position: absolute;     /* Đặt đúng vùng cha giới hạn */
-  right: 0;
-  bottom: 20px;
-  height: 100px;
-  overflow-y: auto;
-  z-index: 999;
 }
 .vid-watermark {
     position: absolute;
