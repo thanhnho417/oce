@@ -31,6 +31,7 @@
       const vidplaylist = document.querySelector('.vid-playlist');
       const vidmaintitle = document.querySelector('.vid-title');
       const vidmaindescription = document.querySelector('.vid-description');
+
       let hls = null;
       let vidfull = false
 
@@ -68,7 +69,9 @@
         captions: { active: true, update: true, language: 'auto' }
       });
 
-      function vidaddwatermark() {
+      function vidaddwatermark(video) {
+        const existing = document.querySelector('.vid-watermark')
+        if (existing) return
         const interval = setInterval(() => {
           const plyrcontainer = vid.closest('.vid-play').querySelector('.plyr');
           if (plyrcontainer && !plyrcontainer.querySelector('.vid-watermark')) {
@@ -76,9 +79,17 @@
             watermark.className = 'vid-watermark';
             watermark.innerHTML = `
         <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-        <img src="/sample/image.svg" class="vid-age-watermark">
+        <p class="vid-age-watermark">T18</p>
       `;
             plyrcontainer.appendChild(watermark);
+            const vidage = watermark.querySelector('.vid-age-watermark');
+            if (vidage && video.age) {
+              vidage.textContent = video.age;
+            }
+
+            setTimeout(() => {
+              vidupdate();
+            }, 100);
             setTimeout(() => {
               vidupdate(); // cập nhật kích thước watermark sau khi nó được thêm
             }, 100);
@@ -119,7 +130,7 @@
             hls.loadSource(item.src);
             hls.attachMedia(vid);
             hls.on(Hls.Events.MANIFEST_PARSED, function () {
-              vidaddwatermark()
+              vidaddwatermark(vid)
               addSubtitles(item);
               player.load();
             });
@@ -127,7 +138,7 @@
             vid.src = item.src;
             vid.addEventListener('loadedmetadata', () => {
               addSubtitles(item);
-              vidaddwatermark();
+              vidaddwatermark(vid);
               player.load();
             }, { once: true });
           }
@@ -138,7 +149,7 @@
           vid.appendChild(source);
           addSubtitles(item);
           vid.load();
-          vidaddwatermark()
+          vidaddwatermark(vid)
 
         }
       }
@@ -189,10 +200,10 @@
                 document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
                 item.classList.add('active');
                 loadMediaSource(video);
+                vidaddwatermark(item)
               });
 
               vidplaylist.appendChild(item);
-
               if (index === 0) {
                 item.classList.add('active');
                 loadMediaSource(video);
@@ -205,22 +216,32 @@
       loadPlaylist();
 
       function vidupdate() {
-        const vidwatermark = document.querySelector('.vid-watermark')
-        if (!vidwatermark) {
-          console.log('Không tìm thấy')
-          return
+        const vidwatermark = document.querySelector('.vid-watermark');
+        const vidage = document.querySelector('.vid-age-watermark')
+        if (!vidwatermark || !vid.videoWidth || !vid.videoHeight) {
+          console.log('Không tìm thấy watermark hoặc video chưa sẵn sàng');
+          return;
         }
-        if (vidfull && vidwatermark && vid.videoWidth && vid.videoHeight) {
-          const size = vidactualsize(vid);
-          vidwatermark.style.width = size.width + 'px'
-          vidwatermark.style.height = size.height + 'px'
+
+        const isFullscreen = document.fullscreenElement !== null;
+        const size = vidactualsize(vid);
+
+        if (isFullscreen) {
+          // Trong fullscreen, lấy kích thước thực của video và gán
+          vidwatermark.style.width = `${size.width}px`;
+          vidwatermark.style.height = `${size.height}px`;
+          vidage.style.fontSize = `${size.width / 60}px`
         } else {
-          vidwatermark.style.width = '100%';
-          vidwatermark.style.height = 'auto'
-          vidwatermark.style.aspectRatio = '16 / 9';
+          // Ngoài fullscreen, gán lại kích thước theo container
+          vidwatermark.style.width = `${vid.clientWidth}px`;
+          vidwatermark.style.height = `${vid.clientHeight}px`;
+          vidage.style.fontSize = `${vid.clientWidth / 60}px`
         }
+        vidwatermark.style.setProperty('aspect-ratio', '16 / 9');
+        vidwatermark.style.position = 'absolute';
       }
-      window.addEventListener('resize', vidupdate)
+      window.addEventListener('resize', vidupdate);
+      document.addEventListener('fullscreenchange', vidupdate);
     });
   </script>
 </body>
