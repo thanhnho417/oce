@@ -215,8 +215,9 @@
           vidwatermark.style.width = size.width + 'px'
           vidwatermark.style.height = size.height + 'px'
         } else {
-          vidwatermark.style.width = '100%'
-          vidwatermark.style.height = '100%'
+          vidwatermark.style.width = '100%';
+          vidwatermark.style.height = 'auto'
+          vidwatermark.style.aspectRatio = '16 / 9';
         }
       }
       window.addEventListener('resize', vidupdate)
