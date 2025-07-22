@@ -32,6 +32,37 @@
       const vidmaintitle = document.querySelector('.vid-title');
       const vidmaindescription = document.querySelector('.vid-description');
       let hls = null;
+      let vidfull = false
+
+      function vidactualsize(video) {
+        const vidwidth = video.videoWidth;
+        const vidheight = video.videoHeight;
+        const scrwidth = window.innerWidth;
+        const scrheight = window.innerHeight;
+        const vidasp = vidwidth / vidheight;
+        const scrasp = scrwidth / scrheight;
+        let diswidth, disheight;
+        if (scrasp > vidasp) {
+          diswidth = scrheight * vidasp;
+          disheight = scrheight;
+        } else {
+          diswidth = scrwidth;
+          disheight = scrwidth / vidasp;
+        }
+        return {
+          width: diswidth,
+          height: disheight
+        };
+      }
+
+
+
+      document.addEventListener('fullscreenchange', () => {
+        vidfull = document.fullscreenElement && document.fullscreenElement.contains(vid)
+        vidupdate()
+      })
+      window.addEventListener('resize', vidupdate)
+
 
       const player = new Plyr(vid, {
         captions: { active: true, update: true, language: 'auto' }
@@ -39,18 +70,21 @@
 
       function vidaddwatermark() {
         const interval = setInterval(() => {
-          const plyrcontainer = vid.closest('.vid-play').querySelector('.plyr')
-          if (plyrcontainer) {
-            clearInterval(interval);
+          const plyrcontainer = vid.closest('.vid-play').querySelector('.plyr');
+          if (plyrcontainer && !plyrcontainer.querySelector('.vid-watermark')) {
             const watermark = document.createElement('div');
             watermark.className = 'vid-watermark';
             watermark.innerHTML = `
-              <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-              <img src="/sample/image.svg" class="vid-age-watermark">
-            `
+        <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
+        <img src="/sample/image.svg" class="vid-age-watermark">
+      `;
             plyrcontainer.appendChild(watermark);
+            setTimeout(() => {
+              vidupdate(); // cập nhật kích thước watermark sau khi nó được thêm
+            }, 100);
           }
-        }, 100)
+          clearInterval(interval);
+        }, 100);
       }
 
       function resetPlayer() {
@@ -140,7 +174,7 @@
           .then(response => response.json())
           .then(data => {
             vidplaylist.innerHTML = `
-              <p class="vid-playlist-main-title">Playlist</p>
+            <p class="vid-playlist-main-title">Playlist</p>
               <hr>
             `
             data.forEach((video, index) => {
@@ -169,6 +203,23 @@
       }
 
       loadPlaylist();
+
+      function vidupdate() {
+        const vidwatermark = document.querySelector('.vid-watermark')
+        if (!vidwatermark) {
+          console.log('Không tìm thấy')
+          return
+        }
+        if (vidfull && vidwatermark && vid.videoWidth && vid.videoHeight) {
+          const size = vidactualsize(vid);
+          vidwatermark.style.width = size.width + 'px'
+          vidwatermark.style.height = size.height + 'px'
+        } else {
+          vidwatermark.style.width = '100%'
+          vidwatermark.style.height = '100%'
+        }
+      }
+      window.addEventListener('resize', vidupdate)
     });
   </script>
 </body>
