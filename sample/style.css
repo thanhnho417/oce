@@ -46,7 +46,6 @@ body {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    padding: 10px 8%;
     gap: 10px;
 }
 
@@ -184,6 +183,5 @@ video::cue{
 }
 @media (max-width: 500px) {
     .vid-player-container{
-        padding: 10px;
     }
 }
