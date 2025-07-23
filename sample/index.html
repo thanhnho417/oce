@@ -69,7 +69,7 @@
         captions: { active: true, update: true, language: 'auto' }
       });
 
-      function vidaddwatermark(video) {
+      function vidaddwatermark() {
         const existing = document.querySelector('.vid-watermark')
         if (existing) return
         const interval = setInterval(() => {
@@ -82,10 +82,7 @@
         <p class="vid-age-watermark">T18</p>
       `;
             plyrcontainer.appendChild(watermark);
-            const vidage = watermark.querySelector('.vid-age-watermark');
-            if (vidage && video.age) {
-              vidage.textContent = video.age;
-            }
+
 
             setTimeout(() => {
               vidupdate();
@@ -130,7 +127,6 @@
             hls.loadSource(item.src);
             hls.attachMedia(vid);
             hls.on(Hls.Events.MANIFEST_PARSED, function () {
-              vidaddwatermark(vid)
               addSubtitles(item);
               player.load();
             });
@@ -138,7 +134,6 @@
             vid.src = item.src;
             vid.addEventListener('loadedmetadata', () => {
               addSubtitles(item);
-              vidaddwatermark(vid);
               player.load();
             }, { once: true });
           }
@@ -149,7 +144,6 @@
           vid.appendChild(source);
           addSubtitles(item);
           vid.load();
-          vidaddwatermark(vid)
 
         }
       }
@@ -200,13 +194,29 @@
                 document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
                 item.classList.add('active');
                 loadMediaSource(video);
-                vidaddwatermark(item)
+                vidaddwatermark()
+                const viaagenor = setInterval(()=>{
+                  const vidagenormal = document.querySelector('.vid-age-watermark')
+                  if (vidagenormal){
+                    clearInterval(viaagenor)
+                    vidagenormal.innerHTML = `${video.age}`
+                  }
+                }, 200)
               });
 
               vidplaylist.appendChild(item);
               if (index === 0) {
                 item.classList.add('active');
                 loadMediaSource(video);
+                vidaddwatermark()
+                const viacheck = setInterval(() => {
+                  const vidagewa = document.querySelector('.vid-age-watermark')
+                  if (vidagewa) {
+                    clearInterval(viacheck)
+                    vidagewa.innerHTML = `${video.age}`
+                    vidagewa.style.fontSize = `${vid.clientWidth/60}px`
+                  }
+                }, 200)
               }
             });
           })
@@ -233,12 +243,10 @@
           vidage.style.fontSize = `${size.width / 60}px`
         } else {
           // Ngoài fullscreen, gán lại kích thước theo container
-          vidwatermark.style.width = `${vid.clientWidth}px`;
-          vidwatermark.style.height = `${vid.clientHeight}px`;
+          vidwatermark.style.width = `100%`;
+          vidwatermark.style.height = `100%`;
           vidage.style.fontSize = `${vid.clientWidth / 60}px`
         }
-        vidwatermark.style.setProperty('aspect-ratio', '16 / 9');
-        vidwatermark.style.position = 'absolute';
       }
       window.addEventListener('resize', vidupdate);
       document.addEventListener('fullscreenchange', vidupdate);

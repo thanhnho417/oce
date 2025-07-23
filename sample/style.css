@@ -91,9 +91,9 @@ body {
     position: absolute;
     top: 6%;
     left: 8%;
-    color: rgb(192, 189, 189);
+    color: rgb(202, 202, 202);
     font-weight: bold;
-    width: 3%;
+    text-shadow: 1px 1px 1px rgb(95, 95, 95);
 }
 
 .vid-main-info {
