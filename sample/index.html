@@ -214,7 +214,7 @@
                   if (vidagewa) {
                     clearInterval(viacheck)
                     vidagewa.innerHTML = `${video.age}`
-                    vidagewa.style.fontSize = `${vid.clientWidth/60}px`
+                    vidagewa.style.fontSize = `${vid.clientWidth/80}px`
                   }
                 }, 200)
               }
@@ -240,12 +240,12 @@
           // Trong fullscreen, lấy kích thước thực của video và gán
           vidwatermark.style.width = `${size.width}px`;
           vidwatermark.style.height = `${size.height}px`;
-          vidage.style.fontSize = `${size.width / 60}px`
+          vidage.style.fontSize = `${size.width / 80}px`
         } else {
           // Ngoài fullscreen, gán lại kích thước theo container
           vidwatermark.style.width = 'auto';
           vidwatermark.style.height = `${vid.clientHeight}px`;
-          vidage.style.fontSize = `${vid.clientWidth / 60}px`
+          vidage.style.fontSize = `${vid.clientWidth / 80}px`
         }
       }
       window.addEventListener('resize', vidupdate);
