@@ -45,7 +45,8 @@ body {
 .vid-player-container {
     width: 100%;
     display: flex;
-    padding: 10px 8%;
+    margin: 0 auto;
+    padding: 10px 10%;
     gap: 10px;
 }
 
@@ -89,8 +90,8 @@ body {
 
 .vid-age-watermark {
     position: absolute;
-    top: 6%;
-    left: 8%;
+    top: 5%;
+    left: 7%;
     color: rgb(202, 202, 202);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgb(95, 95, 95);
