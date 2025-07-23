@@ -1,905 +1,953 @@
 [
-    {
-        "title": "OP 4",
-        "id": "op4",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-op-2/tad-s2-op2.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/op4-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/op4-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-4.png"
-    },
-    {
-        "title": "Tập 48: Khởi đầu",
-        "src": "https://hitmefirstcdn.store/hls/+sX0YZm7UhNLqGpFs2gDUXXMnI0AmFC-8f5dxrpIX5+98fzJ0JkIL+PGwND7lHvIX3nh6TJ3MyKMsYtPbYALxg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img48.png"
-    },
-    {
-        "title": "Tập 47: Tử gia",
-        "src": "https://owakshina.store/hls/s2vG0bC8I8Jul3wUeBvaneIyiA91nKiFXUN3zin0D-GjBVV4mdbeN11xsvrPVQFv9I9sUPCcZF+3UB87ypIiiQ==/aW5kZXgtZjItdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep47-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep47-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img47.png"
-    },
-    {
-        "title": "Tập 46: Cấm quân",
-        "src": "https://sundaythekingplays.site/hls/ONwEh4n0whtwMFs+nZ5D0L6ucBvdGvi0RJMnPY46uWGMhp0Mo13X6pwxrTNMmMtnd-no8dtY2ie+LQ4kE7FWjg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img46.png"
-    },
-    {
-        "title": "Tập 45: Sái Bồn",
-        "src": "https://sundaythekingplays.xyz/hls/3xUbhoeSTNSOcFPrb3Tu9LRYrWxC5aROIvbVH8OD2RNn898kVl5C+jhcD14NlJ6wzoxLScH4lqsUg4Newy8wlw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep45-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep45-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img45.png"
-    },
-    {
-        "title": "Tập 44: Thành lũy",
-        "src": "https://sundaythekingplays.xyz/hls/SmUsex2VOpc+hQERuVY3GPt62zKQf9QP-JFy07Uw-eEoexV7r8ldvGpQAMWUwXdDwSSKvYHDtKYTkk5Pfipr2w==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep44-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep44-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img44.png"
-    },
-    {
-        "title": "Tập 43: Lễ hội",
-        "src": "https://sundaythekingplays.xyz/hls/0NIdgibjDFnAGcfZTKrITzx0pEjXOcH7cCvqw98L75EkCt2w-pBNvtxbQO53Sj1qx++MX6Y99uz3kRi0uePI4Q==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep43-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep43-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img43.png"
-    },
-    {
-        "title": "Tập 42: Quả lồng đèn",
-        "src": "https://hitmefirstcdn.store/hls/eEBoMTHE0388lN6doYxn9UjbwC5CeF1cu8KQfpfvl9anK+w9EAurjzgSbIowJ5QrBtwloMk4FC5wUFLWWtXrgg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep42-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep42-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img42.png"
-    },
-    {
-        "title": "Tập 41: Làng của những con cáo",
-        "src": "https://sundaythekingplays.xyz/hls/PH9IuNcaMqLZy+KegWvsW1+8q2ZEMtWdSbo-88LJKGPO7e9O8UcYJzOe2zQhocwygjjZQHF0+755LI4EqRa9Lw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep41-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep41-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img41.png"
-    },
-    {
-        "title": "Tập 40: Ác ý ẩn giấu",
-        "src": "https://hitmefirstcdn.store/hls/ypWkj0XAz0N7BdtcPxmmDNMmjafbEmfaapdlddyUh5TVZja1gWWYye6y8aymgGTlXPP0e82kqGLzbPtcV+IHog==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep40-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep40-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img40.png"
-    },
-    {
-        "title": "Tập 39: Tảng băng",
-        "src": "https://owakshina.store/hls/Nia8F+d28O24Oe342DE45kXTWN2xk2coTGWc0ZP4mXdgZ9N9svdYJDZ-E0oWbnRd8tE0R4f5RO7WtxD3Nfp6JA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep39-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep39-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img39.png"
-    },
-    {
-        "title": "Tập 38: Bóng ma nhảy múa",
-        "src": "https://owakshina.store/hls/qyi28PJvlJ7hFt2oSBipIq5oLRVeG3SkX+bvwl+uyzVJMw91JBT6R7OgDyfcaXnxtRViKYAJmFV9pufMZoAUJw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep38-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep38-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img38.png"
-    },
-    {
-        "title": "Tập 37: Phòng tắm",
-        "src": "https://owakshina.store/hls/fOYR4svDsF446tkGOf-1P+5pSoaOxSSjVYRcZ9Apx43QGkS-+Hp8C9PojPwQaqY4HCw0jqlSVq8YjNIdyt4f2Q==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep37-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep37-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img37.png"
-    },
-    {
-        "title": "ED 4",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-ed-2/tad-s2-op2.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ed4-en.vtt",
-                "srclang": "en",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-4.png"
-    },
-    {
-        "title": "OP 3",
-        "id": "op3",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-op1/index.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "abc.vtt",
-                "srclang": "vi"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-3.png"
-    },
-    {
-        "title": "Tập 36: Hoa Thụy Nguyệt",
-        "src": "https://owakshina.store/hls/GIja2gFk-3-kYgnZkv9trIOTf9oEiwuVnqAW-gUlLdx4P+XkMLHMU2IHCOhWgptew91+untxuq3wrQHXlHlTMA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Trong hang động, Miêu Miêu phát hiện ra bí mật giấu kín từ lâu của Nhâm Thị. Sau đó, cô lập ra kế hoạch ranh mãnh để dụ những kẻ đã bắn cô và Nhâm Thị ra khỏi nơi ẩn náu.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep36-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep36-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img36.jpg"
-    },
-    {
-        "title": "Tập 35: Đi săn",
-        "src": "https://sundaythekingplays.xyz/hls/PsFl+m8fVoGJxaEFoMfPDB7AOsIrGi4eq19-7s35EyNOk9QNdDM6qxDZ3uA88fUjy5ApWjVHDpCM9e4YG9jTvA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu đi cùng Nhâm Thị và tùy tùng đến vùng đất do gia tộc Tử Xương cai quản. Trong khi tham dự bữa tiệc ở đó, Nhâm Thị đeo mặt nạ và dùng tên giả.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep35-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep35-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img35.jpg"
-    },
-    {
-        "title": "Tập 34: Chuyện ma",
-        "src": "https://hitmefirstcdn.store/hls/9rwIXjaVgqXXQZqZjBoTTzPzLhnAU8fUgQ7Z8XZGQ8fDUGj7Qaiq7ZXYgSziEEKD0UBDSYBNAyusLXwvRgwpfQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Ba thị nữ mới vào Cung Phỉ Thúy. Sau đó, Anh Hoa đưa Miêu Miêu đến một gian nhà cũ, nơi các cung nữ tụ tập bàn tán về những câu chuyện đáng sợ.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep34-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep34-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img34.jpg"
-    },
-    {
-        "title": "Tập 33: Tiên Vương quá cố",
-        "src": "https://owakshina.store/hls/fjOVmQaIFXx4U8oMYLt5Lx8fjtEXyuT7Q6OamLn-b4tB3TrcuFy8dodHEE4kcVxZ6vBRS4jYYlCKfJrFnvBkxw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep33-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep33-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img33.jpg"
-    },
-    {
-        "title": "Tập 32: Hoàng Thái Hậu",
-        "src": "https://sundaythekingplays.site/hls/mjzwpW16xz830tVxuQp7+shSEA7Kf53oorHpOBRWc8Ln+6iw-cge2Kay0RTgFXh7c-KpZ6-g7WlhvhSGCh7mXg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Khi Miêu Miêu nói chuyện với Tử Thúy để làm sáng tỏ tin đồn về một cung nữ chuyên bắt côn trùng, họ phát hiện ra thái hậu đang đi về phía ngự phòng.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep32-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep32-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img32.jpg"
-    },
-    {
-        "title": "Tập 31: Miếu Tuyển Trạch",
-        "src": "https://sundaythekingplays.xyz/hls/7dVWuAHvn-ps7UP4WMs4SjWLn0C5pUAFRUAPDBoakYrQDipKfJHE9II2dAgU11Jl-H01N6qMXzYJLE7SQ4S-Nw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Sau khi theo Tiểu Lan đến học đường, Miêu Miêu gặp một thái giám lớn tuổi đang dạy ở đó và bị thu hút bởi cảnh tượng của một ngôi đền gần đó.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep31-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep31-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img31.jpg"
-    },
-    {
-        "title": "Tập 30: Cung thủy tinh, lại một lần nữa",
-        "src": "https://sundaythekingplays.site/hls/dgo5ElCdG8H2Gqh80LZIX0ANA2fM3uGKPocMX4hDWTNbfj0jvDpQ2gGjtnJ-X8y+2-TbjKeq2AtGOb8It0h5TA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Một vị cung nữ ở y phòng nhờ Miêu Miêu chế thuốc cho một thị nữ bị bệnh ở Cung Thuỷ Tinh, người đã ngừng làm việc vài tuần trước đó.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep30-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep30-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img30.jpg"
-    },
-    {
-        "title": "Tập 29: Nguyệt thần",
-        "src": "https://owakshina.store/hls/he4nVAdyi91H4D6lFRSM6A3iGPJ02RjmFxKConRBYVClRaktFu8i28LlWQvgoU2ccoDNlQwIl6DVKjcfWykRaQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Sau khi tình cờ gặp Tử Thuý trong vườn đào, Miêu Miêu nhận ra cách đáp ứng yêu cầu tưởng chừng bất khả thi của sứ thần ngoại quốc này là được thấy Nguyệt thần.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep29-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep29-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img29.jpg"
-    },
-    {
-        "title": "Tập 28: Tấm gương",
-        "src": "https://sundaythekingplays.site/hls/oNuhITgEceGm85ObCtLG6OT+tJNPlc3rmM+UEtzjhFjPKF8kRmvw7LyQfsTLP8jiW1KaVN15TO4rmbiVl8wirw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Cao Thuận nhờ Miêu Miêu giúp giải quyết bí ẩn liên quan đến hai chị em gái bị giam lỏng tại nhà, một trong số họ đã mang thai mặc dù bị giám sát nghiêm ngặt.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep28-vi.vtt",
-                "srclang": "vi",
-                "default": true
-            },
-            {
-                "label": "Tiếng Anh",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep28-en.vtt",
-                "srclang": "en"
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img28.jpg"
-    },
-    {
-        "title": "Tập 27: Nấm mọc trên xác",
-        "src": "https://sundaythekingplays.xyz/hls/NZt+dIKlWiWLtY7oeD+v9Ol+5aOjvhmxa1zU4Jkj8sZ4O0-OWWyKd-MFchq70SPjGPNVwz-cQuOGdGzPe2miJw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Theo yêu cầu của Nhâm Thị, Miêu Miêu điều tra nấm độc mọc gần hậu cung. Sau đó, cô biết rằng một phi tần trung cấp đã chết.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep27.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img27.jpg"
-    },
-    {
-        "title": "Tập 26: Đoàn thương nhân",
-        "src": "https://owakshina.store/hls/Avcy-7Hufu2Jm9URzNk5o+YxcLMK4prLqG0PtXcYIrNXfmlaEqRcsnCbW+rXuHxCmcApPDsiRq392syStpDBPA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Một đoàn thương nhân bán hàng ngoại quốc đến hậu cung. Sau đó, khi tinh dầu thơm trở nên thịnh hành, Miêu Miêu nhận thấy mùi hương của chúng có gì đó kỳ lạ.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep26.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img26.jpg"
-    },
-    {
-        "title": "Tập 25: Miêu Miêu và Miêu Miêu",
-        "src": "https://hitmefirstcdn.store/hls/qqwP41ZpVXIxRxJZ7Ps2kE1zpHhs2+eoatZI1ky55a29FY7crBruwmfdqeRnrRHI4D0K7WTGNdbDMCC1T-w0Ig==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Nữ nhân trong hậu cung ngày càng hứng thú với tiểu thuyết. Miêu Miêu cùng Ngọc Diệp Phi và con gái nàng là Linh Lệ đi dạo và kết bạn mới.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep25.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img25.jpg"
-    },
-    {
-        "title": "ED 3",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-ed1/index.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "abc.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-3.png"
-    },
-    {
-        "title": "OP 2",
-        "id": "op2",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op-2/kusuriya-op-2.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/abc.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-2.png"
-    },
-    {
-        "title": "Tập 24: Nhâm Thị và Miêu Miêu",
-        "src": "https://owakshina.store/hls/pMUjDVwNwWRHVk+q75xLvXt5gQeBnTON2ffm3GzR2sYNJZqYWuj42Lk7IYfIJ63ubhWMmWCI5b2h3XNge-djOA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Ngay khi La Hán quyết định chuộc Mai Mai, cô mở một cánh cửa dẫn ra sân để ngài nghe thấy âm thanh yếu ớt của một chất giọng quen thuộc.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep24.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img24.png"
-    },
-    {
-        "title": "Tập 23: Phượng Tiên Hoa và cây chua me đất",
-        "src": "https://sundaythekingplays.site/hls/z30l3rxCADNub8T90XJOJojEdn3tOOcd5iao25Ibzunj9RqTqfAKJBRi6u6bIrwpoYOkUiBHNoPD+7ZbVlafpw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu thách đấu La Hán tham gia một số ván cờ tướng. Nếu cô thắng, ngài phải chuộc một trong những kỹ nữ của Lục Thanh Quán.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep23.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img23.png"
-    },
-    {
-        "title": "Tập 22: Hoa hồng xanh",
-        "src": "https://owakshina.store/hls/n7vwe-Ppht5YXwhByoYrX3iMWtshD5H4k7hqlOSIa4LUdNO-ZmPPHQzpIzSca9k1nCeG2Ydrv9IXjPDLP33xbQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Nhâm Thị trăn trở nói với Miêu Miêu rằng ngài cần tìm hoa hồng xanh cho buổi yến tiệc tiếp theo. Nhận ra yêu cầu đó là của La Hán, Miêu Miêu đồng ý giúp đỡ.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt - GSGA",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep22-GSGA.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img22.png"
-    },
-    {
-        "title": "Tập 21: Chiến thuật chuộc thân",
-        "src": "https://owakshina.store/hls/i8hPF8wZDVH+Ak7Xz6AjAhajKQhwCaHx--1xaHlB5uMFBPBb2rxERqPan9mwzatcdrXHzgJHpVOBBX1MC30ORQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Khi Lí Bạch hỏi Miêu Miêu giá chuộc một kỹ nữ, cô nhận ra rằng anh lo lắng cho Bạch Linh và đưa ra một số lời khuyên.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep21.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img21.png"
-    },
-    {
-        "title": "Tập 20: Mạn Đà La",
-        "src": "https://sundaythekingplays.site/hls/YHP0n4oAu825lVBuzjaf9scv4lNA3Z0tPJ1vnAhV1N8tt34AmsCsv9080gUN4K9zgGQe3JfXaXqynOewv-mQsA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu giải thích mối liên hệ giữa các sự kiện dẫn đến nghi lễ. Sau đó, cô nghe được một điều về Thúy Linh khiến cô tò mò.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep20.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img20.png"
-    },
-    {
-        "title": "Tập 19: Trùng hợp hay tất yếu",
-        "src": "https://sundaythekingplays.site/hls/FB0wepFEBgS0cGuKl6O+H5KPuVz6M0fuzg5Ixlq2Zsk9gMDLUgeghvhpIksk0CbZJOKIbkCu-KgF2XV1Sq4DOQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Nghe tin một số món đồ dùng làm lễ đã bị đánh cắp trong vụ cháy nhà kho, Miêu Miêu nghi ngờ vụ trộm có thể liên quan đến các sự kiện khác diễn ra gần đây.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep19.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img19.png"
-    },
-    {
-        "title": "Tập 18: La Hán",
-        "src": "https://hitmefirstcdn.store/hls/BCtoc2VAs0eWwme31ZyCeui2H74hziISjyx7s4AyMRJqKZItYZPEXf2j+SMjm-4CS4qrCS+r9enoi9B89GfS4A==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu đến Lục Thanh Quán để chăm sóc cho một kỹ nữ ốm yếu có quá khứ không may. Nhâm Thị biết được một sự thật đáng kinh ngạc khi nói chuyện với La Hán.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep18.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img18.png"
-    },
-    {
-        "title": "Tập 17: Dạo phố",
-        "src": "https://hitmefirstcdn.store/hls/VsIjT-DeE-DmPkXlP+NADkqVWMcVGfrx6UAl2F2zddZ0tjO0tPnkNWn3kEE-fWY2RzH7evYMA9R54mcpvLcfLg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Sau khi Miêu Miêu giúp Nhâm Thị lột xác ấn tượng theo yêu cầu của ngài, chính cô cũng cải trang và đi cùng ngài vào thị trấn.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep17.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img17.png"
-    },
-    {
-        "title": "Tập 16: Chì",
-        "src": "https://hitmefirstcdn.store/hls/uOwJzvYoaMS8dGnOjaOmv20rJhEmZy946VQ4J6w+5+kE0s9lVRpE+4OA6P+PMaTi9jciFzhKYWMn18fiW+BcTA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Một thợ kim hoàn chuyên phục vụ hoàng cung qua đời, để lại ba người con trai và bản di chúc có phần khó hiểu. Miêu Miêu bắt đầu lật mở bí ẩn về việc thừa kế của họ.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep16.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img16.png"
-    },
-    {
-        "title": "Tập 15: Cá sống",
-        "src": "https://sundaythekingplays.xyz/hls/gxBpYchfEsjxF0T7UWlodDOqmQDivTyqNRGRWFU548KjvWx5Y-SMv9-f48FH9mHmSCYSlqgyBkYFOPeB-dVBbg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu nghe nói về vị quan bị hôn mê sau khi ăn cá nóc, mặc dù người đầu bếp khẳng định không dùng loại cá này trong món ăn.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep15.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img15.png"
-    },
-    {
-        "title": "Tập 14: Tân Thục Phi",
-        "src": "https://owakshina.store/hls/ZOnJrUAHy64+4p7trPu+fjsbOEqYplSgGGar8F06gmhHk46mLtCHl8EFqAdxMxX1dexaVCcsBB1HUT-2omVsHQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu được yêu cầu giảng dạy cho các phi tần thượng cấp, bao gồm cả Lâu Lan mới đến. Đêm sau buổi học đầu tiên, cô thức giấc vì một tiếng động lạ.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep14.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img14.png"
-    },
-    {
-        "title": "Tập 13: Công việc ở ngoại đình",
-        "src": "https://sundaythekingplays.site/hls/huUvIXJMw0-EXLwuerD4uctaeeU0JkrwfBiZosdZGhc13a3qKAyqmMIQaDQWBx5c6JCwVS7yFD8c6LKqk-lucQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Nhâm Thị đưa Miêu Miêu đến nơi làm việc mới của cô: biệt phủ của ngài ở ngoại đình. Trước khi cô quen việc, ngài bảo cô chuẩn bị làm bài khảo thí cho nữ quan.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep13.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img13.png"
-    },
-    {
-        "title": "ED 2",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/ed-2/kusuriya-ed-2.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "abc.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-2.png"
-    },
-    {
-        "title": "OP",
-        "id": "op1",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op/kusuriya.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt - GSGA",
-                "src": "https://raw.githubusercontent.com/thanhnho417/editfiles/refs/heads/main/uploads/%5BSubtitleTools.com%5D%20Kusuriya_OP1%20(1).vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op.png"
-    },
-    {
-        "title": "Tập 12: Thái giám và kĩ nữ",
-        "src": "https://owakshina.store/hls/l4MKjgT8NUcYgB5Nw7sbzICwsAMnsyd+HuvrtXHgNvYd4Ly3Z2HYYoe3ho64aYcX9v2VFq1p4EqhaHhheAeiAg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu trở lại Lục Thanh quán sau khi bị đuổi khỏi hậu cung. Khi đang phục vụ tại một bữa tiệc, cô nhìn thấy một khuôn mặt quen thuộc.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep12.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img12.png"
-    },
-    {
-        "title": "Tập 11: Biến hai thành một",
-        "src": "https://hitmefirstcdn.store/hls/1FPUJZlhZX0Rb6OxgkiGtAWcCwGDcgN2Ea3tSVCF+1mjmKGqnsxZgYoEyUSGj3lU2HxZuptMdIm-daATuO2CaQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Tại Cung Thạch Lựu, Miêu Miêu chất vấn Phong Minh về chuyện xảy ra với con của A Đa và biết được sự thật về vụ đầu độc.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep11.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img11.png"
-    },
-    {
-        "title": "Tập 10: Mật ong",
-        "src": "https://sundaythekingplays.site/hls/jto48Ycn8-PyXjVZQ-DiDnWbYT9UlCtGVW0bTNlvFkf8n+qs3a3ezxqdrD1f6RDzuptqm1EYx20qMFhlpDhaFw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Thắc mắc lý do người phụ nữ chết đuối đầu độc Lí Thụ Phi, Nhâm Thị nhờ Miêu Miêu đến phụ việc ở Cung Thạch Lựu – nơi người phụ nữ đó từng làm thị nữ.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep10.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img10.png"
-    },
-    {
-        "title": "Tập 9: Tự sát hay bị bị sát hại",
-        "src": "https://sundaythekingplays.site/hls/quWXLQ6m+-OpLWechTj9sIyeIBvxOKDY0jPffNvf4U+RfAzsLaWRsdr0jKd43+-BNWmpLrhhKtOfJBja5Yg0GQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Một vị quan cấp cao qua đời vì uống quá nhiều rượu nhưng Nhâm Thị nghi ngờ nguyên nhân gây tử vong. Sau đó, một thị nữ được phát hiện đã chết đuối trong một con hào.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep9.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img9.png"
-    },
-    {
-        "title": "Tập 8: Cây lúa mì",
-        "src": "https://hitmefirstcdn.store/hls/W6ygsg6V1qqNrRfEi4KblXc1VjE5iJE5iJf3c+Ps16B1OceRqA5SuJ49KWMavcPKlXato-2U5uOAucDvOzeBYA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Khi kỹ nữ nọ và khách hàng của cô ấy uống thuốc độc tại kỹ viện, một kỹ nữ tập sự tới nhà của Miêu Miêu để gấp rút đưa cô đến đó.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep8.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img8.png"
-    },
-    {
-        "title": "Tập 7: Về thăm nhà",
-        "src": "https://hitmefirstcdn.store/hls/jEymCmIETYhaH9-EZmuzODH91ryiKHSdGWEwJ-amsb9m7V6+9bTwnLRlLk77gwD59fv1qVqJdPTPCp7LwHIwfA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu cẩn thận kiểm tra bát canh có độc. Sau đó, cô biết được rằng có thể dùng những chiếc trâm cài tóc cô nhận được để rời hậu cung.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep7.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img7.png"
-    },
-    {
-        "title": "Tập 6: Yến tiệc",
-        "src": "https://sundaythekingplays.site/hls/ACTGVmpKi3DXvPKiOY4IOM4zziaIXhdePRK1vDWInI2ZTBP8g1QM4cxRnlOoVcXAVeimzV7U6HsZJ9QpHKTJCw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Trong yến tiệc, Miêu Miêu tự tin thực hiện nhiệm vụ nếm thức ăn nhưng nghi ngờ có điều không ổn khi thấy Lí Thụ có vẻ sợ hãi.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep6.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img6.png"
-    },
-    {
-        "title": "Tập 5: Hoạt động bí mật",
-        "src": "https://hitmefirstcdn.store/hls/6tm42yUtY0o1YyWPS5Kk0Jg5lXhw8M0voa2iTa+RNqcHKDdluCiAbJPVvVU+yUPsEM-m8cFQ5Ip-bE1uYVfLoA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu chữa trị vết phát ban bí ẩn trên tay của một thái giám đang kinh hãi. Sau đó, người hầu của Ngọc Diệp hào hứng chuẩn bị cho yến tiệc của hoàng đế.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep5.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img5.png"
-    },
-    {
-        "title": "Tập 4: Mối nguy",
-        "src": "https://sundaythekingplays.site/hls/6VwvuSTq8H5le4D-dmjV+1mEeIz3P6hX4w3K9CW05i+ZUSLeyAeM7ddy6EP3VQMWc8X8PJ74JUipGi2LhGBDdQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Được hoàng đế ra lệnh chữa khỏi bệnh cho Lê Hoa Phi, Miêu Miêu chuẩn bị những bữa ăn đặc biệt cho phi tần này nhưng các thị nữ của Lê Hoa Phi lại không để Miêu Miêu tiếp cận nàng.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep4.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img4.png"
-    },
-    {
-        "title": "Tập 3: Vấn đề đáng ngại về tinh thần",
-        "src": "https://owakshina.store/hls/sx5DDXrI1-og7MUNmoU5wRZiVGIfSpwzaefS2yokuMz2O9yT3fLcE0yoNtGyLArOJ0YOoDM4ECGlj-rLQBVr2A==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Hậu cung xôn xao trước tin đồn về người phụ nữ ma quái được nhìn thấy đang nhảy múa trên tường thành. Miêu Miêu, Nhâm Thị và phụ tá của ngài bắt đầu điều tra.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep3.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img3.png"
-    },
-    {
-        "title": "Tập 2: Dược sư khó gần",
-        "src": "https://hitmefirstcdn.store/hls/wcrwRaghYiAuZuC5vbqGfJvkwsf8p9+seTKFzEjgOZkEx2b4boDt-a50PU3umGN45G5iXUC4seLjcIlzXLZ8DA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Miêu Miêu trở thành người nếm thức ăn cho Ngọc Diệp Phi, song những thị nữ khác thấy cảm thông và không để cô làm việc khác. Nhâm Thị đề nghị cô điều chế một chất kích thích.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep2.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img2.png"
-    },
-    {
-        "title": "Tập 1: Miêu Miêu",
-        "id": "ep1",
-        "src": "https://sundaythekingplays.xyz/hls/g8P4x6rrZAKChI0YpIoozwaCtkpmLjZchrPgDsMbFf-vKh8Uvb8T4DW3eOt4kbQ9koJnTsYN3HTYipbfFQYyDA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
-        "description": "Một dược sư nọ ở phố đèn đỏ bị bắt cóc và buộc phải phụng sự trong hậu cung. Một ngày nọ, cô nghe về lời nguyền đối với những hậu duệ của hoàng đế.",
-        "subtitles": [
-            {
-                "label": "Tiếng Việt",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep1.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img1.png"
-    },
-    {
-        "title": "ED",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/ed/kusuriya-ed.m3u8",
-        "description": "",
-        "subtitles": [
-            {
-                "label": "Không có sẵn",
-                "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/abc.vtt",
-                "srclang": "vi",
-                "default": true
-            }
-        ],
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed.png"
-    },
-    {
-        "title": "Quái vật trong triều đình",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/videos/videocuts/short1/index.m3u8",
-        "description": "",
-        "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/short1.png"
-    }
+  {
+    "title": "OP 4",
+    "id": "op4",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-op-2/tad-s2-op2.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/op4-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/op4-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-4.png"
+  },
+  {
+    "title": "Tập 48: Khởi đầu",
+    "src": "https://hitmefirstcdn.store/hls/+sX0YZm7UhNLqGpFs2gDUXXMnI0AmFC-8f5dxrpIX5+98fzJ0JkIL+PGwND7lHvIX3nh6TJ3MyKMsYtPbYALxg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img48.png",
+    "age": "TẬP 48 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 47: Tử gia",
+    "src": "https://owakshina.store/hls/s2vG0bC8I8Jul3wUeBvaneIyiA91nKiFXUN3zin0D-GjBVV4mdbeN11xsvrPVQFv9I9sUPCcZF+3UB87ypIiiQ==/aW5kZXgtZjItdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep47-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep47-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img47.png",
+    "age": "TẬP 47 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 46: Cấm quân",
+    "src": "https://sundaythekingplays.site/hls/ONwEh4n0whtwMFs+nZ5D0L6ucBvdGvi0RJMnPY46uWGMhp0Mo13X6pwxrTNMmMtnd-no8dtY2ie+LQ4kE7FWjg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep46-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img46.png",
+    "age": "TẬP 46 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 45: Sái Bồn",
+    "src": "https://sundaythekingplays.xyz/hls/3xUbhoeSTNSOcFPrb3Tu9LRYrWxC5aROIvbVH8OD2RNn898kVl5C+jhcD14NlJ6wzoxLScH4lqsUg4Newy8wlw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep45-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep45-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img45.png",
+    "age": "TẬP 45 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 44: Thành lũy",
+    "src": "https://sundaythekingplays.xyz/hls/SmUsex2VOpc+hQERuVY3GPt62zKQf9QP-JFy07Uw-eEoexV7r8ldvGpQAMWUwXdDwSSKvYHDtKYTkk5Pfipr2w==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep44-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep44-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img44.png",
+    "age": "TẬP 44 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 43: Lễ hội",
+    "src": "https://sundaythekingplays.xyz/hls/0NIdgibjDFnAGcfZTKrITzx0pEjXOcH7cCvqw98L75EkCt2w-pBNvtxbQO53Sj1qx++MX6Y99uz3kRi0uePI4Q==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep43-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep43-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img43.png",
+    "age": "TẬP 43 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 42: Quả lồng đèn",
+    "src": "https://hitmefirstcdn.store/hls/eEBoMTHE0388lN6doYxn9UjbwC5CeF1cu8KQfpfvl9anK+w9EAurjzgSbIowJ5QrBtwloMk4FC5wUFLWWtXrgg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep42-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep42-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img42.png",
+    "age": "TẬP 42 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 41: Làng của những con cáo",
+    "src": "https://sundaythekingplays.xyz/hls/PH9IuNcaMqLZy+KegWvsW1+8q2ZEMtWdSbo-88LJKGPO7e9O8UcYJzOe2zQhocwygjjZQHF0+755LI4EqRa9Lw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep41-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep41-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img41.png",
+    "age": "TẬP 41 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 40: Ác ý ẩn giấu",
+    "src": "https://hitmefirstcdn.store/hls/ypWkj0XAz0N7BdtcPxmmDNMmjafbEmfaapdlddyUh5TVZja1gWWYye6y8aymgGTlXPP0e82kqGLzbPtcV+IHog==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep40-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep40-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img40.png",
+    "age": "TẬP 40 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 39: Tảng băng",
+    "src": "https://owakshina.store/hls/Nia8F+d28O24Oe342DE45kXTWN2xk2coTGWc0ZP4mXdgZ9N9svdYJDZ-E0oWbnRd8tE0R4f5RO7WtxD3Nfp6JA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep39-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep39-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img39.png",
+    "age": "TẬP 39 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 38: Bóng ma nhảy múa",
+    "src": "https://owakshina.store/hls/qyi28PJvlJ7hFt2oSBipIq5oLRVeG3SkX+bvwl+uyzVJMw91JBT6R7OgDyfcaXnxtRViKYAJmFV9pufMZoAUJw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep38-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep38-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img38.png",
+    "age": "TẬP 38 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 37: Phòng tắm",
+    "src": "https://owakshina.store/hls/fOYR4svDsF446tkGOf-1P+5pSoaOxSSjVYRcZ9Apx43QGkS-+Hp8C9PojPwQaqY4HCw0jqlSVq8YjNIdyt4f2Q==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep37-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep37-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img37.png",
+    "age": "TẬP 37 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "ED 4",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-ed-2/tad-s2-op2.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ed4-en.vtt",
+        "srclang": "en",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-4.png"
+  },
+  {
+    "title": "OP 3",
+    "id": "op3",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-op1/index.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Không có sẵn",
+        "src": "abc.vtt",
+        "srclang": "vi"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-3.png"
+  },
+  {
+    "title": "Tập 36: Hoa Thụy Nguyệt",
+    "src": "https://owakshina.store/hls/GIja2gFk-3-kYgnZkv9trIOTf9oEiwuVnqAW-gUlLdx4P+XkMLHMU2IHCOhWgptew91+untxuq3wrQHXlHlTMA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Trong hang động, Miêu Miêu phát hiện ra bí mật giấu kín từ lâu của Nhâm Thị. Sau đó, cô lập ra kế hoạch ranh mãnh để dụ những kẻ đã bắn cô và Nhâm Thị ra khỏi nơi ẩn náu.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep36-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep36-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img36.jpg",
+    "age": "TẬP 36 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 35: Đi săn",
+    "src": "https://sundaythekingplays.xyz/hls/PsFl+m8fVoGJxaEFoMfPDB7AOsIrGi4eq19-7s35EyNOk9QNdDM6qxDZ3uA88fUjy5ApWjVHDpCM9e4YG9jTvA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu đi cùng Nhâm Thị và tùy tùng đến vùng đất do gia tộc Tử Xương cai quản. Trong khi tham dự bữa tiệc ở đó, Nhâm Thị đeo mặt nạ và dùng tên giả.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep35-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep35-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img35.jpg",
+    "age": "TẬP 35 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 34: Chuyện ma",
+    "src": "https://hitmefirstcdn.store/hls/9rwIXjaVgqXXQZqZjBoTTzPzLhnAU8fUgQ7Z8XZGQ8fDUGj7Qaiq7ZXYgSziEEKD0UBDSYBNAyusLXwvRgwpfQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Ba thị nữ mới vào Cung Phỉ Thúy. Sau đó, Anh Hoa đưa Miêu Miêu đến một gian nhà cũ, nơi các cung nữ tụ tập bàn tán về những câu chuyện đáng sợ.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep34-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep34-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img34.jpg",
+    "age": "TẬP 34 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 33: Tiên Vương quá cố",
+    "src": "https://owakshina.store/hls/fjOVmQaIFXx4U8oMYLt5Lx8fjtEXyuT7Q6OamLn-b4tB3TrcuFy8dodHEE4kcVxZ6vBRS4jYYlCKfJrFnvBkxw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep33-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep33-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img33.jpg",
+    "age": "TẬP 33 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 32: Hoàng Thái Hậu",
+    "src": "https://sundaythekingplays.site/hls/mjzwpW16xz830tVxuQp7+shSEA7Kf53oorHpOBRWc8Ln+6iw-cge2Kay0RTgFXh7c-KpZ6-g7WlhvhSGCh7mXg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Khi Miêu Miêu nói chuyện với Tử Thúy để làm sáng tỏ tin đồn về một cung nữ chuyên bắt côn trùng, họ phát hiện ra thái hậu đang đi về phía ngự phòng.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep32-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep32-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img32.jpg",
+    "age": "TẬP 32 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 31: Miếu Tuyển Trạch",
+    "src": "https://sundaythekingplays.xyz/hls/7dVWuAHvn-ps7UP4WMs4SjWLn0C5pUAFRUAPDBoakYrQDipKfJHE9II2dAgU11Jl-H01N6qMXzYJLE7SQ4S-Nw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Sau khi theo Tiểu Lan đến học đường, Miêu Miêu gặp một thái giám lớn tuổi đang dạy ở đó và bị thu hút bởi cảnh tượng của một ngôi đền gần đó.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep31-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep31-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img31.jpg",
+    "age": "TẬP 31 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 30: Cung thủy tinh, lại một lần nữa",
+    "src": "https://sundaythekingplays.site/hls/dgo5ElCdG8H2Gqh80LZIX0ANA2fM3uGKPocMX4hDWTNbfj0jvDpQ2gGjtnJ-X8y+2-TbjKeq2AtGOb8It0h5TA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Một vị cung nữ ở y phòng nhờ Miêu Miêu chế thuốc cho một thị nữ bị bệnh ở Cung Thuỷ Tinh, người đã ngừng làm việc vài tuần trước đó.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep30-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep30-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img30.jpg",
+    "age": "TẬP 30 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 29: Nguyệt thần",
+    "src": "https://owakshina.store/hls/he4nVAdyi91H4D6lFRSM6A3iGPJ02RjmFxKConRBYVClRaktFu8i28LlWQvgoU2ccoDNlQwIl6DVKjcfWykRaQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Sau khi tình cờ gặp Tử Thuý trong vườn đào, Miêu Miêu nhận ra cách đáp ứng yêu cầu tưởng chừng bất khả thi của sứ thần ngoại quốc này là được thấy Nguyệt thần.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep29-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep29-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img29.jpg",
+    "age": "TẬP 29 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 28: Tấm gương",
+    "src": "https://sundaythekingplays.site/hls/oNuhITgEceGm85ObCtLG6OT+tJNPlc3rmM+UEtzjhFjPKF8kRmvw7LyQfsTLP8jiW1KaVN15TO4rmbiVl8wirw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Cao Thuận nhờ Miêu Miêu giúp giải quyết bí ẩn liên quan đến hai chị em gái bị giam lỏng tại nhà, một trong số họ đã mang thai mặc dù bị giám sát nghiêm ngặt.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep28-vi.vtt",
+        "srclang": "vi",
+        "default": true
+      },
+      {
+        "label": "Tiếng Anh",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep28-en.vtt",
+        "srclang": "en"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img28.jpg",
+    "age": "TẬP 28 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 27: Nấm mọc trên xác",
+    "src": "https://sundaythekingplays.xyz/hls/NZt+dIKlWiWLtY7oeD+v9Ol+5aOjvhmxa1zU4Jkj8sZ4O0-OWWyKd-MFchq70SPjGPNVwz-cQuOGdGzPe2miJw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Theo yêu cầu của Nhâm Thị, Miêu Miêu điều tra nấm độc mọc gần hậu cung. Sau đó, cô biết rằng một phi tần trung cấp đã chết.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep27.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img27.jpg",
+    "age": "TẬP 27 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 26: Đoàn thương nhân",
+    "src": "https://owakshina.store/hls/Avcy-7Hufu2Jm9URzNk5o+YxcLMK4prLqG0PtXcYIrNXfmlaEqRcsnCbW+rXuHxCmcApPDsiRq392syStpDBPA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Một đoàn thương nhân bán hàng ngoại quốc đến hậu cung. Sau đó, khi tinh dầu thơm trở nên thịnh hành, Miêu Miêu nhận thấy mùi hương của chúng có gì đó kỳ lạ.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep26.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img26.jpg",
+    "age": "TẬP 26 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 25: Miêu Miêu và Miêu Miêu",
+    "src": "https://hitmefirstcdn.store/hls/qqwP41ZpVXIxRxJZ7Ps2kE1zpHhs2+eoatZI1ky55a29FY7crBruwmfdqeRnrRHI4D0K7WTGNdbDMCC1T-w0Ig==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Nữ nhân trong hậu cung ngày càng hứng thú với tiểu thuyết. Miêu Miêu cùng Ngọc Diệp Phi và con gái nàng là Linh Lệ đi dạo và kết bạn mới.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep25.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img25.jpg",
+    "age": "TẬP 25 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "ED 3",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/s2-ed1/index.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Không có sẵn",
+        "src": "abc.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-3.png"
+  },
+  {
+    "title": "OP 2",
+    "id": "op2",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op-2/kusuriya-op-2.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Không có sẵn",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/abc.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op-2.png"
+  },
+  {
+    "title": "Tập 24: Nhâm Thị và Miêu Miêu",
+    "src": "https://owakshina.store/hls/pMUjDVwNwWRHVk+q75xLvXt5gQeBnTON2ffm3GzR2sYNJZqYWuj42Lk7IYfIJ63ubhWMmWCI5b2h3XNge-djOA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Ngay khi La Hán quyết định chuộc Mai Mai, cô mở một cánh cửa dẫn ra sân để ngài nghe thấy âm thanh yếu ớt của một chất giọng quen thuộc.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep24.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img24.png",
+    "age": "TẬP 24 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 23: Phượng Tiên Hoa và cây chua me đất",
+    "src": "https://sundaythekingplays.site/hls/z30l3rxCADNub8T90XJOJojEdn3tOOcd5iao25Ibzunj9RqTqfAKJBRi6u6bIrwpoYOkUiBHNoPD+7ZbVlafpw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu thách đấu La Hán tham gia một số ván cờ tướng. Nếu cô thắng, ngài phải chuộc một trong những kỹ nữ của Lục Thanh Quán.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep23.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img23.png",
+    "age": "TẬP 23 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 22: Hoa hồng xanh",
+    "src": "https://owakshina.store/hls/n7vwe-Ppht5YXwhByoYrX3iMWtshD5H4k7hqlOSIa4LUdNO-ZmPPHQzpIzSca9k1nCeG2Ydrv9IXjPDLP33xbQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Nhâm Thị trăn trở nói với Miêu Miêu rằng ngài cần tìm hoa hồng xanh cho buổi yến tiệc tiếp theo. Nhận ra yêu cầu đó là của La Hán, Miêu Miêu đồng ý giúp đỡ.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt - GSGA",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep22-GSGA.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img22.png",
+    "age": "TẬP 22 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 21: Chiến thuật chuộc thân",
+    "src": "https://owakshina.store/hls/i8hPF8wZDVH+Ak7Xz6AjAhajKQhwCaHx--1xaHlB5uMFBPBb2rxERqPan9mwzatcdrXHzgJHpVOBBX1MC30ORQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Khi Lí Bạch hỏi Miêu Miêu giá chuộc một kỹ nữ, cô nhận ra rằng anh lo lắng cho Bạch Linh và đưa ra một số lời khuyên.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep21.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img21.png",
+    "age": "TẬP 21 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 20: Mạn Đà La",
+    "src": "https://sundaythekingplays.site/hls/YHP0n4oAu825lVBuzjaf9scv4lNA3Z0tPJ1vnAhV1N8tt34AmsCsv9080gUN4K9zgGQe3JfXaXqynOewv-mQsA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu giải thích mối liên hệ giữa các sự kiện dẫn đến nghi lễ. Sau đó, cô nghe được một điều về Thúy Linh khiến cô tò mò.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep20.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img20.png",
+    "age": "TẬP 20 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 19: Trùng hợp hay tất yếu",
+    "src": "https://sundaythekingplays.site/hls/FB0wepFEBgS0cGuKl6O+H5KPuVz6M0fuzg5Ixlq2Zsk9gMDLUgeghvhpIksk0CbZJOKIbkCu-KgF2XV1Sq4DOQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Nghe tin một số món đồ dùng làm lễ đã bị đánh cắp trong vụ cháy nhà kho, Miêu Miêu nghi ngờ vụ trộm có thể liên quan đến các sự kiện khác diễn ra gần đây.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep19.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img19.png",
+    "age": "TẬP 19 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 18: La Hán",
+    "src": "https://hitmefirstcdn.store/hls/BCtoc2VAs0eWwme31ZyCeui2H74hziISjyx7s4AyMRJqKZItYZPEXf2j+SMjm-4CS4qrCS+r9enoi9B89GfS4A==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu đến Lục Thanh Quán để chăm sóc cho một kỹ nữ ốm yếu có quá khứ không may. Nhâm Thị biết được một sự thật đáng kinh ngạc khi nói chuyện với La Hán.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep18.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img18.png",
+    "age": "TẬP 18 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 17: Dạo phố",
+    "src": "https://hitmefirstcdn.store/hls/VsIjT-DeE-DmPkXlP+NADkqVWMcVGfrx6UAl2F2zddZ0tjO0tPnkNWn3kEE-fWY2RzH7evYMA9R54mcpvLcfLg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Sau khi Miêu Miêu giúp Nhâm Thị lột xác ấn tượng theo yêu cầu của ngài, chính cô cũng cải trang và đi cùng ngài vào thị trấn.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep17.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img17.png",
+    "age": "TẬP 17 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 16: Chì",
+    "src": "https://hitmefirstcdn.store/hls/uOwJzvYoaMS8dGnOjaOmv20rJhEmZy946VQ4J6w+5+kE0s9lVRpE+4OA6P+PMaTi9jciFzhKYWMn18fiW+BcTA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Một thợ kim hoàn chuyên phục vụ hoàng cung qua đời, để lại ba người con trai và bản di chúc có phần khó hiểu. Miêu Miêu bắt đầu lật mở bí ẩn về việc thừa kế của họ.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep16.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img16.png",
+    "age": "TẬP 16 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 15: Cá sống",
+    "src": "https://sundaythekingplays.xyz/hls/gxBpYchfEsjxF0T7UWlodDOqmQDivTyqNRGRWFU548KjvWx5Y-SMv9-f48FH9mHmSCYSlqgyBkYFOPeB-dVBbg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu nghe nói về vị quan bị hôn mê sau khi ăn cá nóc, mặc dù người đầu bếp khẳng định không dùng loại cá này trong món ăn.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep15.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img15.png",
+    "age": "TẬP 15 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 14: Tân Thục Phi",
+    "src": "https://owakshina.store/hls/ZOnJrUAHy64+4p7trPu+fjsbOEqYplSgGGar8F06gmhHk46mLtCHl8EFqAdxMxX1dexaVCcsBB1HUT-2omVsHQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu được yêu cầu giảng dạy cho các phi tần thượng cấp, bao gồm cả Lâu Lan mới đến. Đêm sau buổi học đầu tiên, cô thức giấc vì một tiếng động lạ.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep14.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img14.png",
+    "age": "TẬP 14 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 13: Công việc ở ngoại đình",
+    "src": "https://sundaythekingplays.site/hls/huUvIXJMw0-EXLwuerD4uctaeeU0JkrwfBiZosdZGhc13a3qKAyqmMIQaDQWBx5c6JCwVS7yFD8c6LKqk-lucQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Nhâm Thị đưa Miêu Miêu đến nơi làm việc mới của cô: biệt phủ của ngài ở ngoại đình. Trước khi cô quen việc, ngài bảo cô chuẩn bị làm bài khảo thí cho nữ quan.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep13.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img13.png",
+    "age": "TẬP 13 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "ED 2",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/ed-2/kusuriya-ed-2.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Không có sẵn",
+        "src": "abc.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-2.png"
+  },
+  {
+    "title": "OP",
+    "id": "op1",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op/kusuriya.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt - GSGA",
+        "src": "https://raw.githubusercontent.com/thanhnho417/editfiles/refs/heads/main/uploads/%5BSubtitleTools.com%5D%20Kusuriya_OP1%20(1).vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/op.png"
+  },
+  {
+    "title": "Tập 12: Thái giám và kĩ nữ",
+    "src": "https://owakshina.store/hls/l4MKjgT8NUcYgB5Nw7sbzICwsAMnsyd+HuvrtXHgNvYd4Ly3Z2HYYoe3ho64aYcX9v2VFq1p4EqhaHhheAeiAg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu trở lại Lục Thanh quán sau khi bị đuổi khỏi hậu cung. Khi đang phục vụ tại một bữa tiệc, cô nhìn thấy một khuôn mặt quen thuộc.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep12.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img12.png",
+    "age": "TẬP 12 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 11: Biến hai thành một",
+    "src": "https://hitmefirstcdn.store/hls/1FPUJZlhZX0Rb6OxgkiGtAWcCwGDcgN2Ea3tSVCF+1mjmKGqnsxZgYoEyUSGj3lU2HxZuptMdIm-daATuO2CaQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Tại Cung Thạch Lựu, Miêu Miêu chất vấn Phong Minh về chuyện xảy ra với con của A Đa và biết được sự thật về vụ đầu độc.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep11.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img11.png",
+    "age": "TẬP 11 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 10: Mật ong",
+    "src": "https://sundaythekingplays.site/hls/jto48Ycn8-PyXjVZQ-DiDnWbYT9UlCtGVW0bTNlvFkf8n+qs3a3ezxqdrD1f6RDzuptqm1EYx20qMFhlpDhaFw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Thắc mắc lý do người phụ nữ chết đuối đầu độc Lí Thụ Phi, Nhâm Thị nhờ Miêu Miêu đến phụ việc ở Cung Thạch Lựu – nơi người phụ nữ đó từng làm thị nữ.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep10.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img10.png",
+    "age": "TẬP 10 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 9: Tự sát hay bị bị sát hại",
+    "src": "https://sundaythekingplays.site/hls/quWXLQ6m+-OpLWechTj9sIyeIBvxOKDY0jPffNvf4U+RfAzsLaWRsdr0jKd43+-BNWmpLrhhKtOfJBja5Yg0GQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Một vị quan cấp cao qua đời vì uống quá nhiều rượu nhưng Nhâm Thị nghi ngờ nguyên nhân gây tử vong. Sau đó, một thị nữ được phát hiện đã chết đuối trong một con hào.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep9.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img9.png",
+    "age": "TẬP 09 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 8: Cây lúa mì",
+    "src": "https://hitmefirstcdn.store/hls/W6ygsg6V1qqNrRfEi4KblXc1VjE5iJE5iJf3c+Ps16B1OceRqA5SuJ49KWMavcPKlXato-2U5uOAucDvOzeBYA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Khi kỹ nữ nọ và khách hàng của cô ấy uống thuốc độc tại kỹ viện, một kỹ nữ tập sự tới nhà của Miêu Miêu để gấp rút đưa cô đến đó.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep8.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img8.png",
+    "age": "TẬP 08 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 7: Về thăm nhà",
+    "src": "https://hitmefirstcdn.store/hls/jEymCmIETYhaH9-EZmuzODH91ryiKHSdGWEwJ-amsb9m7V6+9bTwnLRlLk77gwD59fv1qVqJdPTPCp7LwHIwfA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu cẩn thận kiểm tra bát canh có độc. Sau đó, cô biết được rằng có thể dùng những chiếc trâm cài tóc cô nhận được để rời hậu cung.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep7.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img7.png",
+    "age": "TẬP 07 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 6: Yến tiệc",
+    "src": "https://sundaythekingplays.site/hls/ACTGVmpKi3DXvPKiOY4IOM4zziaIXhdePRK1vDWInI2ZTBP8g1QM4cxRnlOoVcXAVeimzV7U6HsZJ9QpHKTJCw==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Trong yến tiệc, Miêu Miêu tự tin thực hiện nhiệm vụ nếm thức ăn nhưng nghi ngờ có điều không ổn khi thấy Lí Thụ có vẻ sợ hãi.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep6.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img6.png",
+    "age": "TẬP 06 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 5: Hoạt động bí mật",
+    "src": "https://hitmefirstcdn.store/hls/6tm42yUtY0o1YyWPS5Kk0Jg5lXhw8M0voa2iTa+RNqcHKDdluCiAbJPVvVU+yUPsEM-m8cFQ5Ip-bE1uYVfLoA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu chữa trị vết phát ban bí ẩn trên tay của một thái giám đang kinh hãi. Sau đó, người hầu của Ngọc Diệp hào hứng chuẩn bị cho yến tiệc của hoàng đế.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep5.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img5.png",
+    "age": "TẬP 05 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 4: Mối nguy",
+    "src": "https://sundaythekingplays.site/hls/6VwvuSTq8H5le4D-dmjV+1mEeIz3P6hX4w3K9CW05i+ZUSLeyAeM7ddy6EP3VQMWc8X8PJ74JUipGi2LhGBDdQ==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Được hoàng đế ra lệnh chữa khỏi bệnh cho Lê Hoa Phi, Miêu Miêu chuẩn bị những bữa ăn đặc biệt cho phi tần này nhưng các thị nữ của Lê Hoa Phi lại không để Miêu Miêu tiếp cận nàng.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep4.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img4.png",
+    "age": "TẬP 04 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 3: Vấn đề đáng ngại về tinh thần",
+    "src": "https://owakshina.store/hls/sx5DDXrI1-og7MUNmoU5wRZiVGIfSpwzaefS2yokuMz2O9yT3fLcE0yoNtGyLArOJ0YOoDM4ECGlj-rLQBVr2A==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Hậu cung xôn xao trước tin đồn về người phụ nữ ma quái được nhìn thấy đang nhảy múa trên tường thành. Miêu Miêu, Nhâm Thị và phụ tá của ngài bắt đầu điều tra.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep3.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img3.png",
+    "age": "TẬP 03 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 2: Dược sư khó gần",
+    "src": "https://hitmefirstcdn.store/hls/wcrwRaghYiAuZuC5vbqGfJvkwsf8p9+seTKFzEjgOZkEx2b4boDt-a50PU3umGN45G5iXUC4seLjcIlzXLZ8DA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Miêu Miêu trở thành người nếm thức ăn cho Ngọc Diệp Phi, song những thị nữ khác thấy cảm thông và không để cô làm việc khác. Nhâm Thị đề nghị cô điều chế một chất kích thích.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep2.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img2.png",
+    "age": "TẬP 02 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "Tập 1: Miêu Miêu",
+    "id": "ep1",
+    "src": "https://sundaythekingplays.xyz/hls/g8P4x6rrZAKChI0YpIoozwaCtkpmLjZchrPgDsMbFf-vKh8Uvb8T4DW3eOt4kbQ9koJnTsYN3HTYipbfFQYyDA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
+    "description": "Một dược sư nọ ở phố đèn đỏ bị bắt cóc và buộc phải phụng sự trong hậu cung. Một ngày nọ, cô nghe về lời nguyền đối với những hậu duệ của hoàng đế.",
+    "subtitles": [
+      {
+        "label": "Tiếng Việt",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep1.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/img1.png",
+    "age": "TẬP 01 - DƯỢC SƯ TỰ SỰ"
+  },
+  {
+    "title": "ED",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/ed/kusuriya-ed.m3u8",
+    "description": "",
+    "subtitles": [
+      {
+        "label": "Không có sẵn",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/abc.vtt",
+        "srclang": "vi",
+        "default": true
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed.png"
+  },
+  {
+    "title": "Quái vật trong triều đình",
+    "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/videos/videocuts/short1/index.m3u8",
+    "description": "",
+    "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/short1.png"
+  }
 ]

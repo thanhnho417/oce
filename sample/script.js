@@ -3,6 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const vidplaylist = document.querySelector('.vid-playlist');
       const vidmaintitle = document.querySelector('.vid-title');
       const vidmaindescription = document.querySelector('.vid-description');
+      const vidmainsrc = document.querySelector('.vid-container');
+      let viddatasrc
+      if (vidmainsrc){
+        viddatasrc = vidmainsrc.getAttribute('data-src')
+      } else {
+        alert("Không phát hiện json")
+      }
+      
 
       let hls = null;
       let vidfull = false
@@ -147,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       function loadPlaylist() {
-        fetch('/sample/sieutest.json')
+        fetch(viddatasrc)
           .then(response => response.json())
           .then(data => {
             vidplaylist.innerHTML = `
@@ -156,9 +164,10 @@ document.addEventListener('DOMContentLoaded', function () {
             `
             data.forEach((video, index) => {
               const item = document.createElement('div');
+              item.title = `${video.title}`
               item.className = 'vid-playlist-item';
               item.innerHTML = `
-                <img src="${video.thumbnail || '/sample/vna.png'}" alt="${video.title}" class="vid-playlist-thumbnail">
+                <div class="vid-playlist-thumbnail"><img src="${video.thumbnail || '/sample/vna.png'}" alt="${video.title}" width="100%"></div>
                 <p class="vid-playlist-title">${video.title}</p>
               `;
 
@@ -166,12 +175,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
                 item.classList.add('active');
                 loadMediaSource(video);
+                window.scrollTo({top: 0, behavior: 'smooth'})
                 vidaddwatermark()
                 const viaagenor = setInterval(()=>{
                   const vidagenormal = document.querySelector('.vid-age-watermark')
                   if (vidagenormal){
                     clearInterval(viaagenor)
-                    vidagenormal.innerHTML = `${video.title}`
+                    vidagenormal.textContent = `${video.age || ''}`
                     vidupdate()
                   }
                 }, 200)
@@ -186,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   const vidagewa = document.querySelector('.vid-age-watermark')
                   if (vidagewa) {
                     clearInterval(viacheck)
-                    vidagewa.innerHTML = `${video.title}`
+                    vidagewa.textContent = `${video.age || ''}`
                     vidagewa.style.fontSize = `${vid.clientWidth/80}px`
                     vidupdate()
                   }

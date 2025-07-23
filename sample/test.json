@@ -1,11 +1,11 @@
 [
     {
         "title": "Video Test 5",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/videos/s2/ep22/tad-s2-ep22.m3u8",
         "age": "T10",
         "description": "This is a test video for the new player layout.",
-        "subtitle": [
+        "subtitles": [
             {
                 "label": "Tiếng Anh",
                 "lang": "en",
@@ -21,47 +21,47 @@
     },
     {
         "title": "Video Test 1",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/lotm/lodmop.m3u8",
         "age": "T18",
         "description": "This is a test video for the new player layout."
     },
     {
         "title": "Video Test 2",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
         "age": "T18",
         "description": "This is another test video for the new player layout."
     },
     {
         "title": "Video Test 3",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/miku/index.m3u8",
         "age": "Miku",
         "description": "This is a third test video for the new player layout."
     },
     {
         "title": "Video Test 4",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op/kusuriya.m3u8",
         "age": "OP - The Apothecary Diaries",
         "description": "This is a fourth test video for the new player layout."
     },
     {
         "title": "Video Test 5",
-        "image": "",
+        "thumbnail": "",
         "src": "https://hitmefirstcdn.store/hls/+sX0YZm7UhNLqGpFs2gDUXXMnI0AmFC-8f5dxrpIX5+98fzJ0JkIL+PGwND7lHvIX3nh6TJ3MyKMsYtPbYALxg==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
         "age": "Tập 48: Khởi đầu",
         "description": "This is a test video for the new player layout.",
-        "subtitle": [
+        "subtitles": [
             {
                 "label": "Tiếng Anh",
-                "lang": "en",
+                "srclang": "en",
                 "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-en.vtt"
             },
             {
                 "label": "Tiếng Việt",
-                "lang": "vi",
+                "srclang": "vi",
                 "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/subtitles/ep48-vi.vtt",
                 "default": true
             }
@@ -69,14 +69,14 @@
     },
     {
         "title": "Video Test 8",
-        "image": "",
+        "thumbnail": "",
         "src": "https://sundaythekingplays.xyz/hls/Mfw5fwBez3dfwDmfLtVWDQ-ilhzM8B1BaDwfwA4aw2Wkkv1fGdotN6gIPuLYIJFs9S--rbLRceLhvs-0KGp0ag==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
         "age": "DAN DA DAN S2 - TẬP 3",
         "description": "This is a test video for the new player layout.",
         "subtitle": [
             {
                 "label": "Tiếng Việt",
-                "lang": "vi",
+                "srclang": "vi",
                 "src": "/sample/test1.vtt",
                 "default": true
             }
@@ -84,14 +84,14 @@
     },
     {
         "title": "Video Test 9",
-        "image": "",
+        "thumbnail": "",
         "src": "https://reviewerstalk.xyz/hls/JgpbujAfq3ROq6PP7x-fuqs-nZiRFS0YpN-ri0FFC-yRPI5ZMgHIt5Q8nK6hEg1nOcSF8-gcyg3fqWBZh8SFYA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8",
         "age": "TẬP 4 - CHÚA TỂ HUYỀN BÍ: QUYỂN TÊN HỀ",
         "description": "This is a test video for the new player layout.",
-        "subtitle": [
+        "subtitles": [
             {
                 "label": "Tiếng Việt",
-                "lang": "vi",
+                "srclang": "vi",
                 "src": "/sample/test9.vtt",
                 "default": true
             }
@@ -99,35 +99,35 @@
     },
     {
         "title": "Video Test 2",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
         "age": "T18",
         "description": "This is another test video for the new player layout."
     },
     {
         "title": "Video Test 1",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/lotm/lodmop.m3u8",
         "age": "T18",
         "description": "This is a test video for the new player layout."
     },
     {
         "title": "Video Test 2",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
         "age": "T13",
         "description": "This is another test video for the new player layout."
     },
     {
         "title": "Video Test 1",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/lotm/lodmop.m3u8",
         "age": "T18",
         "description": "This is a test video for the new player layout."
     },
     {
         "title": "Video Test 2",
-        "image": "",
+        "thumbnail": "",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/8-3-2025/index.m3u8",
         "age": "8/3/2025 - HẬU TRƯỜNG",
         "description": "This is another test video for the new player layout."

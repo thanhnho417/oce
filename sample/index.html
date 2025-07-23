@@ -12,18 +12,21 @@
 </head>
 
 <body>
-  <div class="vid-player-container">
-    <div class="vid-main-video">
-      <div class="vid-play">
-        <video class="vid-player" controls playsinline crossorigin="anonymous"></video>
+  <div class="vid-container" data-src="/sample/test.json">
+    <div class="vid-player-container">
+      <div class="vid-main-video">
+        <div class="vid-play">
+          <video class="vid-player" controls playsinline crossorigin="anonymous"></video>
+        </div>
+        <div class="vid-main-info">
+          <h3 class="vid-title">Video Test</h3>
+          <p class="vid-description">A brief description of the video content goes here.</p>
+        </div>
       </div>
-      <div class="vid-main-info">
-        <h3 class="vid-title">Video Test</h3>
-        <p class="vid-description">A brief description of the video content goes here.</p>
-      </div>
+      <div class="vid-playlist"></div>
     </div>
-    <div class="vid-playlist"></div>
   </div>
+
 
   <script src="/sample/script.js"></script>
 </body>
