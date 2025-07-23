@@ -1,239 +1,254 @@
+const vidcreate = document.querySelector('.vid-container')
+vidcreate.innerHTML = `
+  <div class="vid-player-container">
+      <div class="vid-main-video">
+        <div class="vid-play">
+          <video class="vid-player" controls playsinline crossorigin="anonymous"></video>
+        </div>
+        <div class="vid-main-info">
+          <h3 class="vid-title">Video Test</h3>
+          <p class="vid-description">A brief description of the video content goes here.</p>
+        </div>
+      </div>
+      <div class="vid-playlist"></div>
+    </div>
+`
 document.addEventListener('DOMContentLoaded', function () {
-      const vid = document.querySelector('.vid-player');
-      const vidplaylist = document.querySelector('.vid-playlist');
-      const vidmaintitle = document.querySelector('.vid-title');
-      const vidmaindescription = document.querySelector('.vid-description');
-      const vidmainsrc = document.querySelector('.vid-container');
-      let viddatasrc
-      if (vidmainsrc){
-        viddatasrc = vidmainsrc.getAttribute('data-src')
-      } else {
-        alert("Không phát hiện json")
-      }
-      
-
-      let hls = null;
-      let vidfull = false
-
-      function vidactualsize(video) {
-        const vidwidth = video.videoWidth;
-        const vidheight = video.videoHeight;
-        const scrwidth = window.innerWidth;
-        const scrheight = window.innerHeight;
-        const vidasp = vidwidth / vidheight;
-        const scrasp = scrwidth / scrheight;
-        let diswidth, disheight;
-        if (scrasp > vidasp) {
-          diswidth = scrheight * vidasp;
-          disheight = scrheight;
-        } else {
-          diswidth = scrwidth;
-          disheight = scrwidth / vidasp;
-        }
-        return {
-          width: diswidth,
-          height: disheight
-        };
-      }
+  const vid = document.querySelector('.vid-player');
+  const vidplaylist = document.querySelector('.vid-playlist');
+  const vidmaintitle = document.querySelector('.vid-title');
+  const vidmaindescription = document.querySelector('.vid-description');
+  const vidmainsrc = document.querySelector('.vid-container');
+  let viddatasrc
+  if (vidmainsrc) {
+    viddatasrc = vidmainsrc.getAttribute('data-src')
+  } else {
+    alert("Không phát hiện json")
+  }
 
 
+  let hls = null;
+  let vidfull = false
 
-      document.addEventListener('fullscreenchange', () => {
-        vidfull = document.fullscreenElement && document.fullscreenElement.contains(vid)
-        vidupdate()
-      })
-      window.addEventListener('resize', vidupdate)
+  function vidactualsize(video) {
+    const vidwidth = video.videoWidth;
+    const vidheight = video.videoHeight;
+    const scrwidth = window.innerWidth;
+    const scrheight = window.innerHeight;
+    const vidasp = vidwidth / vidheight;
+    const scrasp = scrwidth / scrheight;
+    let diswidth, disheight;
+    if (scrasp > vidasp) {
+      diswidth = scrheight * vidasp;
+      disheight = scrheight;
+    } else {
+      diswidth = scrwidth;
+      disheight = scrwidth / vidasp;
+    }
+    return {
+      width: diswidth,
+      height: disheight
+    };
+  }
 
 
-      const player = new Plyr(vid, {
-        captions: { active: true, update: true, language: 'auto' }
-      });
 
-      function vidaddwatermark() {
-        const existing = document.querySelector('.vid-watermark')
-        if (existing) return
-        const interval = setInterval(() => {
-          const plyrcontainer = vid.closest('.vid-play').querySelector('.plyr');
-          if (plyrcontainer && !plyrcontainer.querySelector('.vid-watermark')) {
-            const watermark = document.createElement('div');
-            watermark.className = 'vid-watermark';
-            watermark.innerHTML = `
+  document.addEventListener('fullscreenchange', () => {
+    vidfull = document.fullscreenElement && document.fullscreenElement.contains(vid)
+    vidupdate()
+  })
+  window.addEventListener('resize', vidupdate)
+
+
+  const player = new Plyr(vid, {
+    captions: { active: true, update: true, language: 'auto' }
+  });
+
+  function vidaddwatermark() {
+    const existing = document.querySelector('.vid-watermark')
+    if (existing) return
+    const interval = setInterval(() => {
+      const plyrcontainer = vid.closest('.vid-play').querySelector('.plyr');
+      if (plyrcontainer && !plyrcontainer.querySelector('.vid-watermark')) {
+        const watermark = document.createElement('div');
+        watermark.className = 'vid-watermark';
+        watermark.innerHTML = `
         <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
         <p class="vid-age-watermark">T18</p>
       `;
-            plyrcontainer.appendChild(watermark);
+        plyrcontainer.appendChild(watermark);
 
 
-            setTimeout(() => {
-              vidupdate();
-            }, 100);
-            setTimeout(() => {
-              vidupdate(); // cập nhật kích thước watermark sau khi nó được thêm
-            }, 100);
-          }
-          clearInterval(interval);
+        setTimeout(() => {
+          vidupdate();
+        }, 100);
+        setTimeout(() => {
+          vidupdate(); // cập nhật kích thước watermark sau khi nó được thêm
         }, 100);
       }
+      clearInterval(interval);
+    }, 100);
+  }
 
-      function resetPlayer() {
-        if (hls) {
-          hls.destroy();
-          hls = null;
-        }
+  function resetPlayer() {
+    if (hls) {
+      hls.destroy();
+      hls = null;
+    }
 
-        // Remove all child nodes (sources, tracks)
-        while (vid.firstChild) {
-          vid.removeChild(vid.firstChild);
-        }
+    // Remove all child nodes (sources, tracks)
+    while (vid.firstChild) {
+      vid.removeChild(vid.firstChild);
+    }
 
-        // Reset video attributes
-        vid.removeAttribute('src');
-        vid.load();
-      }
+    // Reset video attributes
+    vid.removeAttribute('src');
+    vid.load();
+  }
 
-      function loadMediaSource(item) {
-        resetPlayer();
+  function loadMediaSource(item) {
+    resetPlayer();
 
-        const isHls = item.src.endsWith('.m3u8');
-        const mediaType = isHls ? 'application/x-mpegURL' : 'video/mp4';
+    const isHls = item.src.endsWith('.m3u8');
+    const mediaType = isHls ? 'application/x-mpegURL' : 'video/mp4';
 
-        // Update UI title/desc
-        vidmaintitle.textContent = item.title || 'Không có tiêu đề';
-        vidmaindescription.textContent = item.description || 'Không có nội dung';
+    // Update UI title/desc
+    vidmaintitle.textContent = item.title || 'Không có tiêu đề';
+    vidmaindescription.textContent = item.description || 'Không có nội dung';
 
-        if (isHls) {
-          if (Hls.isSupported()) {
-            hls = new Hls();
-            hls.loadSource(item.src);
-            hls.attachMedia(vid);
-            hls.on(Hls.Events.MANIFEST_PARSED, function () {
-              addSubtitles(item);
-              player.load();
-            });
-          } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
-            vid.src = item.src;
-            vid.addEventListener('loadedmetadata', () => {
-              addSubtitles(item);
-              player.load();
-            }, { once: true });
-          }
-        } else {
-          const source = document.createElement('source');
-          source.src = item.src;
-          source.type = mediaType;
-          vid.appendChild(source);
+    if (isHls) {
+      if (Hls.isSupported()) {
+        hls = new Hls();
+        hls.loadSource(item.src);
+        hls.attachMedia(vid);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
           addSubtitles(item);
-          vid.load();
-
-        }
+          player.load();
+        });
+      } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
+        vid.src = item.src;
+        vid.addEventListener('loadedmetadata', () => {
+          addSubtitles(item);
+          player.load();
+        }, { once: true });
       }
+    } else {
+      const source = document.createElement('source');
+      source.src = item.src;
+      source.type = mediaType;
+      vid.appendChild(source);
+      addSubtitles(item);
+      vid.load();
 
-      function addSubtitles(item) {
-        const exttrack = vid.querySelectorAll('track');
-        exttrack.forEach(track => track.remove()); // Remove existing tracks
-        let hasDefault = -1;
-        if (item.subtitles && item.subtitles.length > 0) {
-          item.subtitles.forEach((sub, index) => {
-            const track = document.createElement('track');
-            track.kind = 'subtitles';
-            track.label = sub.label || `Subtitle ${index + 1}`;
-            track.srclang = sub.srclang || 'en';
-            track.src = sub.src;
-            if (sub.default) {
-              track.default = true;
-              hasDefault = index;
-            }
-            vid.appendChild(track);
-          });
+    }
+  }
+
+  function addSubtitles(item) {
+    const exttrack = vid.querySelectorAll('track');
+    exttrack.forEach(track => track.remove()); // Remove existing tracks
+    let hasDefault = -1;
+    if (item.subtitles && item.subtitles.length > 0) {
+      item.subtitles.forEach((sub, index) => {
+        const track = document.createElement('track');
+        track.kind = 'subtitles';
+        track.label = sub.label || `Subtitle ${index + 1}`;
+        track.srclang = sub.srclang || 'en';
+        track.src = sub.src;
+        if (sub.default) {
+          track.default = true;
+          hasDefault = index;
         }
-        setTimeout(() => {
-          if (hasDefault !== -1) {
-            player.currentTrack = hasDefault;
-            player.toggleCaptions(true);
-          }
-        }, 500)
+        vid.appendChild(track);
+      });
+    }
+    setTimeout(() => {
+      if (hasDefault !== -1) {
+        player.currentTrack = hasDefault;
+        player.toggleCaptions(true);
       }
+    }, 500)
+  }
 
-      function loadPlaylist() {
-        fetch(viddatasrc)
-          .then(response => response.json())
-          .then(data => {
-            vidplaylist.innerHTML = `
+  function loadPlaylist() {
+    fetch(viddatasrc)
+      .then(response => response.json())
+      .then(data => {
+        vidplaylist.innerHTML = `
             <p class="vid-playlist-main-title">Playlist</p>
               <hr>
             `
-            data.forEach((video, index) => {
-              const item = document.createElement('div');
-              item.title = `${video.title}`
-              item.className = 'vid-playlist-item';
-              item.innerHTML = `
+        data.forEach((video, index) => {
+          const item = document.createElement('div');
+          item.title = `${video.title}`
+          item.className = 'vid-playlist-item';
+          item.innerHTML = `
                 <div class="vid-playlist-thumbnail"><img src="${video.thumbnail || '/sample/vna.png'}" alt="${video.title}" width="100%"></div>
                 <p class="vid-playlist-title">${video.title}</p>
               `;
 
-              item.addEventListener('click', () => {
-                document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
-                item.classList.add('active');
-                loadMediaSource(video);
-                window.scrollTo({top: 0, behavior: 'smooth'})
-                vidaddwatermark()
-                const viaagenor = setInterval(()=>{
-                  const vidagenormal = document.querySelector('.vid-age-watermark')
-                  if (vidagenormal){
-                    clearInterval(viaagenor)
-                    vidagenormal.textContent = `${video.age || ''}`
-                    vidupdate()
-                  }
-                }, 200)
-              });
-
-              vidplaylist.appendChild(item);
-              if (index === 0) {
-                item.classList.add('active');
-                loadMediaSource(video);
-                vidaddwatermark()
-                const viacheck = setInterval(() => {
-                  const vidagewa = document.querySelector('.vid-age-watermark')
-                  if (vidagewa) {
-                    clearInterval(viacheck)
-                    vidagewa.textContent = `${video.age || ''}`
-                    vidagewa.style.fontSize = `${vid.clientWidth/80}px`
-                    vidupdate()
-                  }
-                }, 200)
+          item.addEventListener('click', () => {
+            document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
+            item.classList.add('active');
+            loadMediaSource(video);
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            vidaddwatermark()
+            const viaagenor = setInterval(() => {
+              const vidagenormal = document.querySelector('.vid-age-watermark')
+              if (vidagenormal) {
+                clearInterval(viaagenor)
+                vidagenormal.textContent = `${video.age || ''}`
+                vidupdate()
               }
-            });
-          })
-          .catch(error => console.error('Error loading playlist:', error));
-      }
+            }, 200)
+          });
 
-      loadPlaylist();
+          vidplaylist.appendChild(item);
+          if (index === 0) {
+            item.classList.add('active');
+            loadMediaSource(video);
+            vidaddwatermark()
+            const viacheck = setInterval(() => {
+              const vidagewa = document.querySelector('.vid-age-watermark')
+              if (vidagewa) {
+                clearInterval(viacheck)
+                vidagewa.textContent = `${video.age || ''}`
+                vidagewa.style.fontSize = `${vid.clientWidth / 80}px`
+                vidupdate()
+              }
+            }, 200)
+          }
+        });
+      })
+      .catch(error => console.error('Error loading playlist:', error));
+  }
 
-      function vidupdate() {
-        const vidwatermark = document.querySelector('.vid-watermark');
-        const vidage = document.querySelector('.vid-age-watermark')
-        if (!vidwatermark || !vid.videoWidth || !vid.videoHeight) {
-          console.log('Không tìm thấy watermark hoặc video chưa sẵn sàng');
-          return;
-        }
+  loadPlaylist();
 
-        const isFullscreen = document.fullscreenElement !== null;
-        const size = vidactualsize(vid);
+  function vidupdate() {
+    const vidwatermark = document.querySelector('.vid-watermark');
+    const vidage = document.querySelector('.vid-age-watermark')
+    if (!vidwatermark || !vid.videoWidth || !vid.videoHeight) {
+      console.log('Không tìm thấy watermark hoặc video chưa sẵn sàng');
+      return;
+    }
 
-        if (isFullscreen) {
-          // Trong fullscreen, lấy kích thước thực của video và gán
-          vidwatermark.style.width = `${size.width}px`;
-          vidwatermark.style.height = `${size.height}px`;
-          vidage.style.fontSize = `${size.width / 80}px`
-        } else {
-          // Ngoài fullscreen, gán lại kích thước theo container
-          vidwatermark.style.width = 'auto';
-          vidwatermark.style.height = `${vid.clientHeight}px`;
-          vidage.style.fontSize = `${vid.clientWidth / 80}px`
-        }
-        vidwatermark.style.setProperty('aspect-ratio', '16 / 9');
+    const isFullscreen = document.fullscreenElement !== null;
+    const size = vidactualsize(vid);
 
-      }
-      window.addEventListener('resize', vidupdate);
-      document.addEventListener('fullscreenchange', vidupdate);
-    });
+    if (isFullscreen) {
+      // Trong fullscreen, lấy kích thước thực của video và gán
+      vidwatermark.style.width = `${size.width}px`;
+      vidwatermark.style.height = `${size.height}px`;
+      vidage.style.fontSize = `${size.width / 80}px`
+    } else {
+      // Ngoài fullscreen, gán lại kích thước theo container
+      vidwatermark.style.width = 'auto';
+      vidwatermark.style.height = `${vid.clientHeight}px`;
+      vidage.style.fontSize = `${vid.clientWidth / 80}px`
+    }
+    vidwatermark.style.setProperty('aspect-ratio', '16 / 9');
+
+  }
+  window.addEventListener('resize', vidupdate);
+  document.addEventListener('fullscreenchange', vidupdate);
+});
