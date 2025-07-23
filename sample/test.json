@@ -80,7 +80,7 @@
         "age": "DAN DA DAN S2 - TẬP 3",
         "description": "This is a test video for the new player layout.",
         "aspectratio": "16/9",
-        "subtitle": [
+        "subtitles": [
             {
                 "label": "Tiếng Việt",
                 "srclang": "vi",
