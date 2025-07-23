@@ -101,6 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    pointer-events: none;
 }
 
 .vid-description {
