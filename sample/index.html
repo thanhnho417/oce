@@ -247,6 +247,8 @@
           vidwatermark.style.height = `${vid.clientHeight}px`;
           vidage.style.fontSize = `${vid.clientWidth / 80}px`
         }
+        vidwatermark.style.setProperty('aspect-ratio', '16 / 9');
+
       }
       window.addEventListener('resize', vidupdate);
       document.addEventListener('fullscreenchange', vidupdate);
