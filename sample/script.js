@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="vid-playlist"></div>
       </div>
   `
-
   const vid = document.querySelector('.vid-player');
   const vidplaylist = document.querySelector('.vid-playlist');
   const vidmaintitle = document.querySelector('.vid-title');
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
   let hls = null;
   let vidfull = false;
   let currentVideo = null;
-
   function vidactualsize(video) {
     const vidwidth = video.videoWidth;
     const vidheight = video.videoHeight;
@@ -42,17 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return { width: diswidth, height: disheight };
   }
-
   document.addEventListener('fullscreenchange', () => {
     vidfull = document.fullscreenElement && document.fullscreenElement.contains(vid)
     vidupdate()
   })
   window.addEventListener('resize', vidupdate)
-
   const player = new Plyr(vid, {
     captions: { active: true, update: true, language: 'auto' }
   });
-
   function vidaddwatermark() {
     const existing = document.querySelector('.vid-watermark')
     if (existing) return
@@ -72,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, 100);
   }
-
   function resetPlayer() {
     if (hls) {
       hls.destroy();
@@ -84,23 +78,20 @@ document.addEventListener('DOMContentLoaded', function () {
     vid.removeAttribute('src');
     vid.load();
   }
-
   function loadMediaSource(item) {
     resetPlayer();
     currentVideo = item;
-
     const isHls = item.src.endsWith('.m3u8');
     const mediaType = isHls ? 'application/x-mpegURL' : 'video/mp4';
-
     vidmaintitle.textContent = item.title || 'Không có tiêu đề';
     vidmaindescription.innerHTML = item.description || 'Không có nội dung';
-
     if (isHls) {
       if (Hls.isSupported()) {
         hls = new Hls();
         hls.loadSource(item.src);
         hls.attachMedia(vid);
         hls.on(Hls.Events.MANIFEST_PARSED, function () {
+          
           addSubtitles(item);
           player.load();
         });
@@ -120,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
       vid.load();
     }
   }
-
   function addSubtitles(item) {
     const exttrack = vid.querySelectorAll('track');
     exttrack.forEach(track => track.remove());
@@ -147,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, 500);
   }
-
   function applyVideoAttributes(video) {
     const checker = setInterval(() => {
       const ageEl = document.querySelector('.vid-age-watermark');
@@ -156,25 +145,23 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(checker);
         ageEl.textContent = video.age || '';
         ageEl.style.fontSize = `${vid.clientWidth / 80}px`;
-        if (video.aspectratio) {
-          markEl.style.setProperty('aspect-ratio', video.aspectratio );
-          const [w, h] = video.aspectratio.split('/').map(Number)
-          if (w && h) {
-            const ratio = w / h
-            if (ratio >= 1) {
-              markEl.style.width = `${vid.clientWidth}px`
-              markEl.style.height = 'auto'
-            } else {
-              markEl.style.height = `${vid.clientHeight}px`
-              markEl.style.width = 'auto'
-            }
+        const ratiostr = video.aspectratio || '16/9'
+        markEl.style.setProperty('aspect-ratio', ratiostr);
+        const [w, h] = ratiostr.split('/').map(Number)
+        if (w && h) {
+          const ratio = w / h
+          if (ratio >= 1) {
+            markEl.style.width = `${vid.clientWidth}px`
+            markEl.style.height = 'auto'
+          } else {
+            markEl.style.height = `${vid.clientHeight}px`
+            markEl.style.width = 'auto'
           }
         }
         vidupdate();
       }
     }, 200);
   }
-
   function loadPlaylist() {
     fetch(viddatasrc)
       .then(response => response.json())
@@ -190,7 +177,6 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             <p class="vid-playlist-title">${video.title}</p>
           `;
-
           item.addEventListener('click', () => {
             document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
             item.classList.add('active');
@@ -199,20 +185,23 @@ document.addEventListener('DOMContentLoaded', function () {
             vidaddwatermark();
             applyVideoAttributes(video);
           });
-
           vidplaylist.appendChild(item);
-
           if (index === 0) {
             item.classList.add('active');
             loadMediaSource(video);
             vidaddwatermark();
             applyVideoAttributes(video);
+            const plyrtrack = setInterval(()=>{
+              if(document.querySelector('.plyr__captions')){
+                clearInterval(plyrtrack)
+                document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth)/55}px`
+              }
+            }, 100)
           }
         });
       })
       .catch(error => console.error('Error loading playlist:', error));
   }
-
   loadPlaylist();
 
   function vidupdate() {
@@ -228,28 +217,27 @@ document.addEventListener('DOMContentLoaded', function () {
       vidwatermark.style.width = `${size.width}px`;
       vidwatermark.style.height = `${size.height}px`;
       vidage.style.fontSize = `${size.width / 80}px`;
+      vidwatermark.style.removeProperty('aspect-ratio');
+      document.querySelector('.plyr__captions').style.fontSize = `${(size.width)/55}px`
+      return;
+    }
+    vidwatermark.style.width = '100%';
+    vidwatermark.style.height = 'auto';
+    vidage.style.fontSize = `${vid.clientWidth / 80}px`;
+    const ratiostr = currentVideo?.aspectratio || '16/9';
+    const [w, h] = ratiostr.split('/').map(Number);
+    if (!w || !h) return;
+    const ratio = w / h;
+    vidwatermark.style.setProperty('aspect-ratio', ratiostr);
+    if (ratio >= 1) {
+      vidwatermark.style.width = `${vid.clientWidth}px`;
+      vidwatermark.style.height = 'auto';
     } else {
-      vidwatermark.style.width = '100%';
-      vidwatermark.style.height = `auto`;
-      vidage.style.fontSize = `${vid.clientWidth / 80}px`;
+      vidwatermark.style.height = `${vid.clientHeight}px`;
+      vidwatermark.style.width = 'auto';
     }
-    if (currentVideo?.aspectratio) {
-      vidwatermark.style.setProperty('aspect-ratio', currentVideo.aspectratio || '16/9');
-      const [w, h] = currentVideo.aspectratio.split('/').map(Number);
-      const ratio = w / h;
-
-      if (ratio >= 1) {
-        // ngang
-        vidwatermark.style.width = `${vid.clientWidth}px`;
-        vidwatermark.style.height = 'auto';
-      } else {
-        // dọc
-        vidwatermark.style.height = `${vid.clientHeight}px`;
-        vidwatermark.style.width = 'auto';
-      }
-    }
+    document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth)/55}px`
   }
-
   window.addEventListener('resize', vidupdate);
   document.addEventListener('fullscreenchange', vidupdate);
 });

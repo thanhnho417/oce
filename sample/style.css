@@ -75,7 +75,6 @@ body {
     left: 50%;
     width: auto;
     height: 100%;
-    aspect-ratio: 16/9;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
@@ -94,7 +93,6 @@ body {
     color: rgb(190, 190, 190);
     font-weight: bold;
 }
-
 .vid-main-info {
     padding: 10px;
     border-radius: 10px;
@@ -103,7 +101,9 @@ body {
     gap: 10px;
     pointer-events: none;
 }
-
+.plyr__captions{
+    font-family: 'Quicksand Bold';
+}
 .vid-description {
     border: 1px solid gray;
     border-radius: 10px;
