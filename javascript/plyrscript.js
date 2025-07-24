@@ -166,14 +166,14 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(viddatasrc)
       .then(response => response.json())
       .then(data => {
-        vidplaylist.innerHTML = `<p class="vid-playlist-main-title">Playlist</p><hr>`
+        vidplaylist.innerHTML = `<p class="vid-playlist-main-title">Danh sách phát</p><hr>`
         data.forEach((video, index) => {
           const item = document.createElement('div');
           item.title = `${video.title}`;
           item.className = 'vid-playlist-item';
           item.innerHTML = `
             <div class="vid-playlist-thumbnail">
-              <img src="${video.thumbnail || '/sample/vna.png'}" alt="${video.title}" width="100%">
+              <img src="${video.thumbnail || '/sample/vna.png'}" alt="${video.title}" loading="lazy">
             </div>
             <p class="vid-playlist-title">${video.title}</p>
           `;
@@ -185,13 +185,13 @@ document.addEventListener('DOMContentLoaded', function () {
             loadMediaSource(video);
             window.scrollTo({ top: 0, behavior: 'smooth' });
             vidaddwatermark();
+            document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.5}px`;
             applyVideoAttributes(video);
           });
           vidplaylist.appendChild(item);
           if (index === 0) {
             item.classList.add('active');
             player.poster = video.thumbnail || '/sample/vna.png';
-
             loadMediaSource(video);
             vidaddwatermark();
             applyVideoAttributes(video);
@@ -200,7 +200,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 clearInterval(plyrtrack)
                 document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 41}px`
               }
-            }, 100)
+            }, 50)
+            document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.5}px`;
           }
         });
       })
@@ -223,11 +224,13 @@ document.addEventListener('DOMContentLoaded', function () {
       vidage.style.fontSize = `${size.width / 80}px`;
       vidwatermark.style.removeProperty('aspect-ratio');
       document.querySelector('.plyr__captions').style.fontSize = `${(size.width) / 41}px`
+      document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.5}px`;
       return;
     }
     vidwatermark.style.width = '100%';
     vidwatermark.style.height = 'auto';
     vidage.style.fontSize = `${vid.clientWidth / 80}px`;
+    document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.5}px`;
     const ratiostr = currentVideo?.aspectratio || '16/9';
     const [w, h] = ratiostr.split('/').map(Number);
     if (!w || !h) return;

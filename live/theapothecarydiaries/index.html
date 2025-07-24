@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xem phim Dược sư tự sự</title>
-    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="/javascript/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="/javascript/plyrscript.js"></script>
+    <script src="/script.js"></script>
     <link rel="icon" type="image/x-icon" href="/web.jpg">
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,49 +50,11 @@
         <a href="#op3">S2 - Cour 1</a>
         <a href="#op4">S2 - Cour 2</a>
     </div>
-    <div class="container">
-        <div class="main">
-            <div class="vid-play">
-                <video id="player" playsinline controls class="video-js vjs-16-9" controls preload="auto"
-                    data-setup="{}" crossorigin="anonymous">
-                    <source id="video-source"
-                        src="https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/op/kusuriya.m3u8"
-                        type="application/x-mpegURL">
-
-                    <track id="video-subtitles" kind="subtitles" label="Tiếng Việt" srclang="vi" src="" default>
-                    </track>
-                </video>
-                
-            </div>
-
-            <div class="conts">
-                <p id="title">Video Thử Nghiệm</p>
-                <p id="description">Thông tin Lorem ipsum, <a href="#">Xin chào</a>udiandae molestiae quibusdam alias
-                    dolorum. Commodi hic asperiores rem, aspernatur dolores odio corrupti optio ea unde id animi
-                    officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, harum
-                    repudiandae molestias dolore, numquam quos expedita minima sed architecto non, esse blanditiis
-                    laudantium praesentium possimus? Quasi veniam dolorum ab. Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Distinctio, eius? Velit nesciunt, nobis aperiam iste aspernatur quia beatae
-                    corrupti autem obcaecati labore similique culpa atque, dignissimos distinctio totam, mollitia
-                    tenetur.</p>
-                <button id="toggle-btn">Hiện thêm</button>
-            </div>
-        </div>
-        <div class="playlist">
-            <div class="playlist-title">
-                Các tập
-            </div>
-            <hr class="playlist-hr">
-        </div>
-    </div>
+    <div class="vid-container" data-src="/live/theapothecarydiaries/videos.json"></div>
 
     <footer>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
-    <script src="/javascript/app.js"></script>
-    <script src="https://alcdn.msauth.net/browser/2.14.2/js/msal-browser.min.js"></script>
-    <script src="/script.js"></script>
+    
 </body>
 
 </html>

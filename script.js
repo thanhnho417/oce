@@ -35,6 +35,8 @@ function navweb() {
     const weblink = document.createElement('a');
     weblink.href = '/';
     weblink.style.display = 'inline-flex';
+    weblink.style.padding = '5px 0';
+    weblink.title = 'Trang chủ'
     weblink.style.alignContent = 'center'
     weblink.innerHTML = '<img src="https://ik.imagekit.io/ocemedia/fileweb.svg?updatedAt=1740322170272" alt="web" width="90px" style="border-radius: 0 ">';
     header.appendChild(weblink);
