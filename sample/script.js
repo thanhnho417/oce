@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const plyrtrack = setInterval(()=>{
               if(document.querySelector('.plyr__captions')){
                 clearInterval(plyrtrack)
-                document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth)/55}px`
+                document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth)/45}px`
               }
             }, 100)
           }
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
       vidwatermark.style.height = `${size.height}px`;
       vidage.style.fontSize = `${size.width / 80}px`;
       vidwatermark.style.removeProperty('aspect-ratio');
-      document.querySelector('.plyr__captions').style.fontSize = `${(size.width)/55}px`
+      document.querySelector('.plyr__captions').style.fontSize = `${(size.width)/45}px`
       return;
     }
     vidwatermark.style.width = '100%';
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
       vidwatermark.style.height = `${vid.clientHeight}px`;
       vidwatermark.style.width = 'auto';
     }
-    document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth)/55}px`
+    document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth)/45}px`
   }
   window.addEventListener('resize', vidupdate);
   document.addEventListener('fullscreenchange', vidupdate);
