@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data.forEach((video, index) => {
           const item = document.createElement('div');
           item.title = `${video.title}`;
+          item.id = video.id
           item.className = 'vid-playlist-item';
           item.innerHTML = `
             <div class="vid-playlist-thumbnail">

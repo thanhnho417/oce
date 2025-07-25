@@ -729,6 +729,7 @@ footer {
 
 .banner {
     width: 100%;
+    pointer-events: none;
     font-family: "Quicksand Bold", sans-serif;
     font-size: 18px;
     background-color: #386e61;
@@ -1631,11 +1632,13 @@ td {
     border: 1px solid #386e61;
     border-radius: 8px;
     margin: 10px;
+    padding: 5px 10px;
 }
 
 .watch-other p {
     padding: 5px 10px;
     font-size: 16px;
+    pointer-events: none;
 }
 
 .watch-other a {
@@ -1649,8 +1652,12 @@ td {
     font-size: 16px;
     font-family: "Quicksand SemiBold", sans-serif;
     display: inline-block;
+    transition: 100ms ease-in-out;
 }
-
+.watch-other > a:hover{
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}
 .vid-container {
     padding: 10px 8%;
 }
@@ -1779,6 +1786,7 @@ td {
 
 .vid-playlist-main-title {
     font-weight: bold;
+    pointer-events: none;
 }
 
 video::cue {
