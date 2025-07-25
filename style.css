@@ -40,7 +40,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     height: 10px;
 }
 
@@ -54,10 +54,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #254941;
-}
-
-:root {
-    --plyr-color-main: #386e61;
 }
 
 body {
@@ -589,7 +585,7 @@ header {
 }
 
 .navigation::-webkit-scrollbar {
-    height: 7px;
+    height: 5px;
 }
 
 .navigation a {
@@ -1654,10 +1650,12 @@ td {
     display: inline-block;
     transition: 100ms ease-in-out;
 }
-.watch-other > a:hover{
+
+.watch-other>a:hover {
     transform: scale(0.95);
     filter: brightness(0.9);
 }
+
 .vid-container {
     padding: 10px 8%;
 }
@@ -1815,9 +1813,11 @@ video::cue {
 .active {
     background-color: rgb(167, 173, 179);
 }
-.plyr__menu__container{
+
+.plyr__menu__container {
     overflow-y: auto;
 }
+
 @media(max-width: 1400px) {
     .vid-container {
         padding: 10px;
