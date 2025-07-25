@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         watermark.className = 'vid-watermark';
         watermark.innerHTML = `
           <img src="/watermark.png" alt="vid-watermark" class="vid-main-watermark">
-          <p class="vid-age-watermark">T18</p>
+          <p class="vid-age-watermark"></p>
         `;
         plyrcontainer.appendChild(watermark);
         setTimeout(vidupdate, 100);
