@@ -1699,6 +1699,7 @@ td {
     bottom: 6%;
     right: 8%;
     width: 4%;
+    opacity: 0.7;
 }
 
 :root {
