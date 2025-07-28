@@ -234,7 +234,13 @@ document.addEventListener('keydown', function (e) {
     }
 });
 function createLoadingElements() {
-
+    document.body.insertAdjacentHTML('afterbegin', `
+        <div class="loading-area" ><img src="/Images/svg/spinner-solid-full.svg" width="100px"></div>
+        `)
+    window.onload = function(){
+        const fade = document.querySelector('.loading-area')
+        fade.classList.add('sfade')
+    }
     document.body.insertAdjacentHTML('beforeend', `
         <div class="pop-up-network">
             <div class="wifi-icon"></div>

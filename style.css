@@ -533,7 +533,9 @@ header {
     flex-direction: column;
     transition: opacity .50s, visibility 1s;
 }
-
+.loading-area > img {
+    animation: spin 1.5s linear infinite;
+}
 .sfade {
     opacity: 0;
     visibility: hidden;
