@@ -93,8 +93,6 @@ function navweb() {
     webnav.appendChild(menubtt);
     const sidebar = document.createElement('div');
     sidebar.className = 'sidebar';
-    sidebar.style.display = 'none';
-    sidebar.style.opacity = '0';
     const createul2 = document.createElement('ul');
     createul2.innerHTML = `
         <li><button onclick="closesidebar()" class="close-sb"><i class="fa-solid fa-xmark fa-lg" style="color: white;"></i></button></li>
@@ -111,17 +109,11 @@ function navweb() {
 }
 function opensidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'block';
-    sidebar.style.opacity = '1';
-    sidebar.style.right = '0';
-    sidebar.style.transition = 'right 0.3s ease, opacity 0.3s ease';
+    sidebar.classList.add('sidebartoleft')
 }
 function closesidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-    sidebar.style.opacity = '0';
-    sidebar.style.right = '-100%';
-    sidebar.style.transition = 'right 0.3s ease, opacity 0.3s ease';
+    sidebar.classList.remove('sidebartoleft')
 }
 function searchbtt() {
     const searchInput = document.getElementById('search-input');
@@ -226,7 +218,7 @@ function createLoadingElements() {
     setTimeout(()=>{
         const fade = document.querySelector('.loading-area')
         fade.classList.add('sfade')
-    }, 1500)
+    }, 1000)
     document.body.insertAdjacentHTML('beforeend', `
         <div class="pop-up-network">
             <div class="wifi-icon"></div>
