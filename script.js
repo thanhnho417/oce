@@ -212,7 +212,7 @@ document.addEventListener('keydown', function (e) {
     }
 });
 function createLoadingElements() {
-    document.body.insertAdjacentHTML('afterbegin', `
+    document.body.insertAdjacentHTML('beforebegin', `
         <div class="loading-area" ><img src="/Images/svg/spinner-solid-full.svg" width="100px"></div>
         `)
     setTimeout(()=>{
