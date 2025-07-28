@@ -1,20 +1,6 @@
 
-function initLoader() {
-    const loader = document.querySelector('.loading-area');
-    if (loader) {
-        const timeout = setTimeout(() => {
-            loader.classList.add('fade-out');
-        }, 1800);
-
-        window.addEventListener('load', function () {
-            clearTimeout(timeout);
-            loader.classList.add('sfade');
-        });
-    }
-}
 
 document.addEventListener('DOMContentLoaded', function () {
-
     navweb();
     createLoadingElements();
     initImagePreview();
@@ -237,10 +223,10 @@ function createLoadingElements() {
     document.body.insertAdjacentHTML('afterbegin', `
         <div class="loading-area" ><img src="/Images/svg/spinner-solid-full.svg" width="100px"></div>
         `)
-    window.onload = function(){
+    setTimeout(()=>{
         const fade = document.querySelector('.loading-area')
         fade.classList.add('sfade')
-    }
+    }, 1500)
     document.body.insertAdjacentHTML('beforeend', `
         <div class="pop-up-network">
             <div class="wifi-icon"></div>
