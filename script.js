@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initNetworkStatus();
     initPageTitle();
     initBackToTopButton();
+    
 });
 window.availableKeywords = []; // Biến toàn cục để lưu trữ từ khóa tìm 
 const cssicon = document.createElement('link');
@@ -95,7 +96,7 @@ function navweb() {
     sidebar.className = 'sidebar';
     const createul2 = document.createElement('ul');
     createul2.innerHTML = `
-        <li><button onclick="closesidebar()" class="close-sb"><i class="fa-solid fa-xmark fa-lg" style="color: white;"></i></button></li>
+        <li><button onclick="closesidebar()" class="close-sb" title="Đóng sidebar"><i class="fa-solid fa-xmark fa-lg" style="color: white;"></i></button></li>
         <li><a href="/introduce" title="Giới thiệu"><i class="fa-solid fa-circle-user" style="color: white;"></i></a></li>
         <li><a href="/game" title="Game"><i class="fa-solid fa-gamepad" style="color: white;"></i></a></li>
         <li><a href="/media" title="Đa phương tiện"><i class="fa-solid fa-photo-film" style="color: white; height: 100%; width: auto;"></i></a></li>
@@ -109,10 +110,12 @@ function navweb() {
 }
 function opensidebar() {
     const sidebar = document.querySelector('.sidebar');
+    sidebar.style.right = '0'
     sidebar.classList.add('sidebartoleft')
 }
 function closesidebar() {
     const sidebar = document.querySelector('.sidebar');
+    sidebar.style.right = '-100%'
     sidebar.classList.remove('sidebartoleft')
 }
 function searchbtt() {
@@ -155,6 +158,7 @@ document.addEventListener('click', function (event) {
     const sidebar = document.querySelector('.sidebar');
     if (!searchForm.contains(event.target) && !searchplace.contains(event.target) && searchInput.classList.contains('active-input')) {
         closeSearch();
+        sidebar.classList.remove('sidebartoleft')
     }
 });
 function searchengine() {
@@ -207,15 +211,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('keydown', function (e) {
     const sidebar = document.querySelector('.sidebar');
-    if (e.key === 'Escape' && sidebar.classList.contains('sidebar_load')) {
-        sidebar.classList.remove('sidebar_load');
+    if (e.key === 'Escape' && sidebar.classList.contains('sidebartoleft')) {
+        sidebar.classList.remove('sidebartoleft')
     }
 });
 function createLoadingElements() {
     document.body.insertAdjacentHTML('beforebegin', `
         <div class="loading-area" ><img src="/Images/svg/spinner-solid-full.svg" width="100px"></div>
         `)
-    setTimeout(()=>{
+    setTimeout(() => {
         const fade = document.querySelector('.loading-area')
         fade.classList.add('sfade')
     }, 1000)
@@ -314,7 +318,25 @@ function initNetworkStatus() {
 function initPageTitle() {
     document.title += " | oce";
 }
-
+function imgloading() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        if (img.complete) {
+            img.style.opacity = '1'
+            img.style.visibility = 'visible'
+        } else {
+            img.addEventListener('load', () => {
+                img.style.opacity = '1'
+                img.style.visibility = 'visible'
+            })
+            img.addEventListener('error', () => {
+                img.style.opacity = '0'
+                img.style.visibility = 'hidden'
+            })
+        }
+    })
+}
+imgloading()
 function initBackToTopButton() {
     const btt = document.createElement('button');
     btt.id = 'backtotopbtn';
