@@ -1,2 +1,119 @@
-<img src="../pages/anime/2022/winter/images/fantasy-bishoujo-juniku-ojisan-to-key-visual.webp" alt="">
-<a href="../pages/anime/2022/winter/lifewithanordinaryguywhoreincarnatedintoatotalfantasyknockout/"></a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube video check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="yt-dlp-container">
+        <h4 style="width: 100%; padding: 0 0 10px 0;">Tải video Youtube</h4>
+        <form class="ytcheck" method="POST" action="http://127.0.0.1:5000/ytcheck">
+            <label for="url">Điền URL Youtube vào đây: </label>
+            <input class="ytlink" type="text" name="url" placeholder="Nhập vào đây">
+            <button type="submit">Kiểm tra</button>
+        </form>
+        <div class="yt-return" onclick="ytreturn()">
+            Quay lại
+        </div>
+        <div class="ytresults">
+        </div>
+        <div id="progress" style="display: none;">
+        </div>
+
+
+    </div>
+    <script>
+        const mainlink = 'https://file-converter-api-ugp0.onrender.com'
+        function ytreturn() {
+            const ytlink = document.querySelector('.ytcheck')
+            const ytresult = document.querySelector('.ytresults')
+            const ytqualityselect = document.querySelector('.ytdlp')
+            ytlink.style.display = 'flex';
+            ytresult.innerHTML = ''
+            document.querySelector('.yt-return').style.display = 'none'
+            document.getElementById('progress').style.display = 'none'
+
+        }
+        const ytform = document.querySelector('.ytcheck')
+        const ytlink = document.querySelector('.ytlink');
+        const ytresult = document.querySelector('.ytresults')
+        ytform.addEventListener('submit', function (e) {
+            e.preventDefault()
+            const yturl = ytlink.value.trim()
+            if (!yturl) {
+                ytresult.innerHTML = '<p style="color:red">Vui lòng nhập URL.</p>'
+                return
+            }
+            ytresult.innerHTML = "<em>Đang kiểm tra...</em>";
+            ytform.style.display = 'none'
+            fetch(`${mainlink}/ytcheck`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `url=${encodeURIComponent(yturl)}`
+            })
+                .then(res => res.text())
+                .then(data => {
+                    ytresult.innerHTML = data;
+                    document.querySelector('.yt-return').style.display = 'block'
+                    ytform.style.display = 'none'
+                })
+                .catch(err => {
+                    ytresult.innerHTML = `<p style='color:red'>Lỗi: ${err}</p>`
+                    document.querySelector('.yt-return').style.display = 'block';
+                })
+        })
+        function ytdlpupdate() {
+            fetch(`${mainlink}/ytprogress`)
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('progress').innerHTML = ''
+                    document.getElementById('progress').textContent = 'Đang tải: ' + (data.percent || '0%') + ' , ' + 'Tốc độ:  ' + (data.speed || '') + ' , ' + 'Còn:  ' + (data.eta || '') 
+                })
+        }
+        document.addEventListener('click', function (e) {
+            if (e.target.closest('.ytdlp button[type="submit"]')) {
+                const ytdlpform = e.target.closest('.ytdlp')
+                const ytdlpformdata = new FormData(ytdlpform)
+                const ytdlpurl = ytdlpformdata.get('url')
+                const ytdlptitle = ytdlpformdata.get('title')
+                const ytdlpquality = ytdlpformdata.get('ytqualityselect')
+                if (!ytdlpquality) return
+                document.getElementById('progress').textContent = ''
+                document.getElementById('progress').style.display = 'block'
+                const interval = setInterval(ytdlpupdate, 1000)
+                fetch(`${mainlink}/ytdlp`, {
+                    method: 'POST',
+                    body: new URLSearchParams({
+                        url: ytdlpurl,
+                        ytqualityselect: ytdlpquality
+                    })
+                })
+                    .then(response => {
+                        if (!response.ok) throw new Error('Thất bại')
+                        return response.blob()
+                    })
+                    .then(blob => {
+                        clearInterval(interval)
+                        const yta = document.createElement('a')
+                        yta.href = URL.createObjectURL(blob)
+                        yta.download = `${ytdlptitle}.mp4`
+                        yta.click()
+                        document.getElementById('progress').style.display = 'none'
+                    })
+                    .catch(err => {
+                        clearInterval(interval)
+                        alert('Thất bại' + err.message)
+                    })
+                e.preventDefault()
+            }
+        })
+    </script>
+</body>
+
+</html>
