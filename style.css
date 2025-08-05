@@ -1090,12 +1090,12 @@ footer {
 
 .option-button a {
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     transition: all 0.2s ease-in-out
 }
 
-.option-button .button a button {
+.option-button > .button > a > button {
     font-family: "Quicksand Semibold", sans-serif;
     width: 210px;
     background: #386e61;
@@ -1117,8 +1117,9 @@ footer {
     margin-right: 10px;
 }
 
-.option-button .button a button:hover {
+.option-button > .button > a > button:hover {
     transition: all 0.2s ease-in-out;
+    transform: scale(0.95);
 }
 
 #muse {
@@ -1241,7 +1242,15 @@ footer {
     color: white;
     background: #1f87e2;
 }
-
+#tropics{
+    color: black;
+    background-color: white;
+}
+#tropics{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
 .masonry-grid.loaded {
     opacity: 1;
     transform: scale(1);
@@ -2100,7 +2109,6 @@ video::cue {
     .article-area {
         color: white;
     }
-
     .option-bar>.option-button>.detail {
         color: white;
     }
