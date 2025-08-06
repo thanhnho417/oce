@@ -1084,18 +1084,17 @@ footer {
     justify-content: center;
 }
 
-.option-button>.button:hover {
+.option-button .button:hover {
     transition: all 0.2s ease-in-out;
 }
 
 .option-button a {
     display: inline-block;
-    padding: 10px;
     text-decoration: none;
     transition: all 0.2s ease-in-out
 }
 
-.option-button > .button > a > button {
+.option-button .button a button {
     font-family: "Quicksand Semibold", sans-serif;
     width: 210px;
     background: #386e61;
@@ -1117,7 +1116,7 @@ footer {
     margin-right: 10px;
 }
 
-.option-button > .button > a > button:hover {
+.option-button .button a button:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(0.95);
 }
@@ -1422,23 +1421,26 @@ footer {
     align-items: start;
     flex: 2.5;
     text-align: center;
+    width: 100%;
 }
 
-.row .right .content {
+.row > .right > .content {
     padding: 5px;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
-.row .right .content p {
+.row > .right > .content > p {
     font-size: 17px;
     line-height: 26px;
     padding-bottom: 10px;
     text-align: justify;
     font-weight: 700;
+    width: 100%;
 }
 
-.row .right .content h3 {
+.row > .right > .content > h3 {
     font-size: 17px;
     line-height: 24px;
     padding: 20 0 20px 0;
@@ -1446,6 +1448,7 @@ footer {
     font-family: "Noto Sans", sans-serif;
     font-weight: bolder;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .row .right .content a {

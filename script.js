@@ -260,12 +260,16 @@ function initImagePreview() {
             imgpre.src = e.target.src;
             imgtitle.textContent = e.target.src.split('/').pop() || 'Không có tiêu đề';
             imgview.classList.add('active');
+            imgview.style.visibility = 'visible';
+            imgpre.style.visibility = 'visible'
         }
     });
 
     if (close) {
         close.addEventListener('click', function () {
             imgview.classList.remove('active');
+            imgview.style.visibility = 'hidden';
+            imgpre.style.visibility = 'hidden'
         });
     }
 
