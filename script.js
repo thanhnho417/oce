@@ -43,7 +43,7 @@ function navweb() {
     header.appendChild(webnav);
     const searchform = document.createElement('form');
     searchform.className = 'searchform';
-    searchform.action = '/results';
+    searchform.action = '/results/';
     const inputplace = document.createElement('div');
     inputplace.className = 'input-place';
     const searchinput = document.createElement('input');
