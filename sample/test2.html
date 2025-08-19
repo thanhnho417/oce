@@ -1,35 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videojs test</title>
-    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Plyr - Auto Next Video</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <style>
+    .player-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+    #next-popup {
+      position: absolute;
+      bottom: 70px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      display: none;
+      width: 250px;
+    }
+    #next-popup.show {
+      display: block;
+    }
+    #next-popup img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    #next-popup button {
+      background: #ff9800;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    #next-popup button:hover {
+      background: #e68900;
+    }
+  </style>
 </head>
 <body>
-    <div class="video-wrapper">
-        <video id="my-video" class="video-js" controls preload="auto" data-setuo='{"fluid": true}'>
-            <source id="videoSource" src="" type="">
-        </video>
+  <div class="player-container">
+    <video id="player" playsinline controls></video>
+
+    <div id="next-popup">
+      <img id="next-thumbnail" src="" alt="Next video">
+      <p id="next-title"></p>
+      <button id="play-next">Phát ngay</button>
     </div>
-    <script>
-        var player = videojs('my-video');
+  </div>
 
-// Bước 1: Đọc file JSON
-        fetch('videos.json')
-            .then(response => response.json()) // Chuyển đổi phản hồi thành JSON
-            .then(data => {
-                // Bước 2: Lấy đối tượng video đầu tiên trong file JSON
-                const video = data.videos[0];
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#player');
+    let videos = [];
+    let currentIndex = 0;
+    const popup = document.getElementById('next-popup');
+    const playNextBtn = document.getElementById('play-next');
+    const nextTitle = document.getElementById('next-title');
+    const nextThumb = document.getElementById('next-thumbnail');
 
-                // Bước 3: Thay đổi src và type của video
-                player.src({ src: video.src, type: video.type });
+    // Load file JSON
+    fetch('videos.json')
+      .then(res => res.json())
+      .then(data => {
+        videos = data;
+        playVideo(0); // phát video đầu tiên
+      });
 
-                // Bước 4: Phát video
-                player.play();
-            })
-            .catch(error => console.error('Error:', error));
+    // Hàm phát video
+    function playVideo(index) {
+      currentIndex = index;
+      const video = videos[index];
+      if (!video) return;
 
-    </script>
-    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+      player.source = {
+        type: 'video',
+        title: video.title,
+        sources: [{ src: video.src, type: 'application/x-mpegURL' }],
+        poster: video.thumbnail,
+        tracks: (video.subtitles || []).map(sub => ({
+          kind: 'subtitles',
+          label: sub.label,
+          srclang: sub.srclang,
+          src: sub.src,
+          default: sub.default || false
+        }))
+      };
+
+      popup.classList.remove('show');
+      player.play();
+    }
+
+    // Hiện pop-up khi còn <= 10s
+    player.on('timeupdate', () => {
+      const remaining = player.duration - player.currentTime;
+      if (remaining <= 10 && !popup.classList.contains('show')) {
+        const nextVideo = videos[currentIndex + 1];
+        if (nextVideo) {
+          nextTitle.textContent = "Tiếp theo: " + nextVideo.title;
+          nextThumb.src = nextVideo.thumbnail;
+          popup.classList.add('show');
+        }
+      }
+    });
+
+    // Khi video kết thúc -> auto next
+    player.on('ended', () => {
+      popup.classList.remove('show');
+      playVideo(currentIndex + 1);
+    });
+
+    // Nút phát ngay
+    playNextBtn.addEventListener('click', () => {
+      popup.classList.remove('show');
+      playVideo(currentIndex + 1);
+    });
+  </script>
+</body>
 </html>

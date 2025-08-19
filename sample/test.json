@@ -108,15 +108,15 @@
     {
         "title": "Video Test 2",
         "thumbnail": "",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/eill-finale/index.m3u8",
-        "age": "T18",
+        "src": "https://vtvgolive-ssaimh.vtvdigital.vn/giQY-u6YsjHwIbqup8x9Ug/1755627874/manifest/vtv3/master.m3u8",
+        "age": "",
         "description": "This is another test video for the new player layout.",
         "aspectratio": "16/9"
     },
     {
         "title": "Video Test 1",
         "thumbnail": "",
-        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/lotm/lodmop.m3u8",
+        "src": "https://pop6-ec3-ateme.tv360.vn/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzU1NjM5MjMwIiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy8xNTQvSExTX0NsZWFuX01ITF8ycy8iLCJzZXNzaW9uX2Nkbl9pZCI6IjcyNDQ0ZGI5Y2ZkYTA4ZjUiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzE3Mi4yNC4xNjguMTY0Iiwic2Vzc2lvbl90aW1lb3V0IjowLCJhdWQiOiI0NyIsInNvdXJjZXMiOlsyMDEsNDYyLDQ2NSw0NjldfQ==.DRc-08Rh_vwBSxAvcEn5_FoFD4m8LzxDpsS7VFrBWbzB2o5eTLGSBailUOk9mCraECOV1U2EgJFDNBzethx5ZQ==/live/eds/154/HLS_Clean_MHL_2s/154-avc1_5099968=10007-mp4a_196800_eng=20002.m3u8",
         "age": "T18",
         "description": "This is a test video for the new player layout.",
         "aspectratio": "16/9"
