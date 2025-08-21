@@ -1858,7 +1858,7 @@ video::cue {
 }
 
 .plyr__menu__container {
-    overflow-y: auto;
+    overflow: auto;
 }
 
 @media(max-width: 1400px) {

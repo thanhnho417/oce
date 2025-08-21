@@ -1,5 +1,21 @@
 [
     {
+        "title": "Demon Slayer - Hashira Training Arc - 08",
+        "thumbnail": "/media/video/08.png",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/Demon%20Slayer/Hashira%20Training/ep8/index.m3u8",
+        "age": "THANH GƯƠM DIỆT QUỶ - PHẦN ĐẠI TRỤ ĐẶC HUẤN - TẬP 8",
+        "description": "",
+        "aspectratio": "16/9",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "srclang": "vi",
+                "src": "08.vtt",
+                "default": true
+            }
+        ]
+    },
+    {
         "title": "Genshin Impact Cloud - 26/07/2025",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/genshin/gic-26072025/index.m3u8",
         "description": "",
