@@ -1259,6 +1259,15 @@ footer {
     background-color: white;
     border: 1px solid black;
 }
+#onedrive{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+#onedrive:hover {
+    background-color: #0064b5;
+    color: white;
+}
 .masonry-grid.loaded {
     opacity: 1;
     transform: scale(1);
@@ -1765,7 +1774,6 @@ td {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    pointer-events: none;
 }
 
 .plyr__captions {
@@ -1777,8 +1785,21 @@ td {
     border-radius: 10px;
     padding: 10px 15px;
     background-color: #f1eeee;
+    display: flex;
+    align-items: center;
 }
+.vid-description > a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 0 10px;
 
+
+}
 .vid-playlist {
     flex: 1;
     display: flex;

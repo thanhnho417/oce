@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
           <div class="vid-main-info">
             <h3 class="vid-title">Video Test</h3>
-            <p class="vid-description">A brief description of the video content goes here.</p>
+            <div class="vid-description">A brief description of the video content goes here.</div>
           </div>
         </div>
         <div class="vid-playlist"></div>
