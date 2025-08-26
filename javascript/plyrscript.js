@@ -46,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
   })
   window.addEventListener('resize', vidupdate)
   const player = new Plyr(vid, {
-    captions: { active: true, update: true, language: 'auto' }
+    captions: { active: true, update: true, language: 'auto' },
+    tooltips: { controls: true, seek: true },
+    seekTime: 10,
   });
   function vidaddwatermark() {
     const existing = document.querySelector('.vid-watermark')
