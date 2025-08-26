@@ -1706,6 +1706,16 @@ td {
     filter: brightness(0.9);
 }
 
+.vid-state{
+    margin: 10px;
+    border: 1px solid #2c5850;
+    padding: 5px 10px;
+    text-align: center;
+    overflow-x: auto;
+    font-style: italic;
+    color: red;
+}
+
 .vid-container {
     padding: 10px 8%;
 }
