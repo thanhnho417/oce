@@ -167,10 +167,30 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(response => response.json())
       .then(data => {
         vidplaylist.innerHTML = `<p class="vid-playlist-main-title">Danh sách phát</p><hr>`
+        const watchother = document.createElement('div')
+        watchother.className = 'watch-other'
+        vidplaylist.appendChild(watchother)
+        data.forEach(video => {
+          if (video.id){
+            const watchotherhref = document.createElement('a');
+            watchotherhref.href = `#${video.id}`;
+            watchotherhref.textContent = `${video.id}`;
+            watchother.appendChild(watchotherhref);
+          }
+        });
+        if (watchother.children.length === 0) {
+          watchother.style.display = 'none';
+        } else {
+          watchother.style.display = 'block';
+        }
         data.forEach((video, index) => {
           const item = document.createElement('div');
+          const watchother = document.createElement('div')
+          watchother.className = 'watch-other'
           item.title = `${video.title}`;
-          item.id = video.id
+          if (video.id){
+            item.id = video.id
+          }
           item.className = 'vid-playlist-item';
           item.innerHTML = `
             <div class="vid-playlist-thumbnail">
