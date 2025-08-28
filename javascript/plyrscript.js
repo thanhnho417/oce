@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     captions: { active: true, update: true, language: 'auto' },
     tooltips: { controls: true, seek: true },
     seekTime: 10,
+    ratio: '16:9'
   });
   function vidaddwatermark() {
     const existing = document.querySelector('.vid-watermark')

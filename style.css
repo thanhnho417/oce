@@ -203,11 +203,13 @@ header {
     width: 0;
     transition: width 0.3s ease, opacity 0.2s ease;
     opacity: 0;
+    visibility: hidden;
 }
 
 .searchform input.active-input {
     width: 120px;
     opacity: 1;
+    visibility: visible;
 }
 
 .searchform button {
@@ -1750,7 +1752,6 @@ td {
 }
 
 .plyr {
-    aspect-ratio: 16/9;
     border-radius: 10px;
 }
 
@@ -1794,12 +1795,15 @@ td {
     gap: 10px;
 }
 
-.vid-title {}
+.vid-title {pointer-events: none;}
 
 .plyr__captions {
     font-family: 'Quicksand Bold';
+    bottom: 1% !important;
 }
-
+.plyr.plyr--fullscreen .plyr__captions {
+  bottom: 1% !important; /* đẩy cao hơn khi fullscreen */
+}
 .vid-description {
     border: 1px solid gray;
     border-radius: 10px;
@@ -1884,6 +1888,12 @@ video::cue {
     width: 60%;
     margin-right: 10px;
     padding: 5px 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .plyr--fullscreen .vid-watermark {
