@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const markEl = document.querySelector('.vid-watermark');
       if (ageEl && markEl) {
         clearInterval(checker);
-        ageEl.textContent = video.age || '';
+        ageEl.textContent = video.age || video.title || '';
         ageEl.style.fontSize = `${vid.clientWidth / 80}px`;
         const ratiostr = video.aspectratio || '16/9'
         markEl.style.setProperty('aspect-ratio', ratiostr);

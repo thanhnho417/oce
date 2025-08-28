@@ -724,14 +724,6 @@
     "title": "ED 2",
     "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/kusuriya/ed-2/kusuriya-ed-2.m3u8",
     "description": "",
-    "subtitles": [
-      {
-        "label": "Không có sẵn",
-        "src": "abc.vtt",
-        "srclang": "vi",
-        "default": true
-      }
-    ],
     "thumbnail": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/The%20Apothecary%20Daries/images/ed-2.png"
   },
   {
