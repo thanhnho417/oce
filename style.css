@@ -58,6 +58,7 @@
 
 body {
     background-color: #f4f4f4;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
@@ -83,6 +84,10 @@ button#backtotopbtn:hover {
 
 html {
     height: 100%;
+}
+
+.dark {
+    background-color: rgb(22, 21, 21);
 }
 
 form,
@@ -185,6 +190,24 @@ header {
     background-color: #2c4f4a;
 }
 
+#websettings {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#websettings:hover {
+    filter: brightness(0.9);
+}
+
+#web_setting_exit {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#web_setting_exit:hover {
+    background-color: #214139;
+}
+
 .searchform {
     justify-content: center;
     align-items: center;
@@ -271,11 +294,11 @@ header {
     top: 60px;
     left: 75px;
     border: 1px solid rgb(89, 89, 89);
-    background-color: white;
     max-height: 400px;
     transition: opacity 0.3s ease;
     opacity: 0;
     z-index: 9999;
+    background-color: white;
 }
 
 .search-place>ul {
@@ -288,7 +311,6 @@ header {
 
 .search-place>ul>li {
     border-bottom: 1px solid #ccc;
-    background-color: white;
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -298,7 +320,6 @@ header {
 }
 
 .search-place>ul>li:hover {
-    background-color: #f0f0f0;
     cursor: pointer;
 }
 
@@ -1268,13 +1289,13 @@ footer {
     border: 1px solid black;
 }
 
-#onedrive {
+#onedrive-download {
     background-color: white;
     color: black;
     transition: 0.2s ease-in-out;
 }
 
-#onedrive:hover {
+#onedrive-download:hover {
     background-color: #0064b5;
     color: white;
 }
@@ -1388,6 +1409,7 @@ footer {
     display: grid;
     place-items: center;
     z-index: 2000;
+    color: black;
 }
 
 .article-area iframe {
@@ -1727,6 +1749,7 @@ td {
     font-family: 'Quicksand Bold';
     color: red;
 }
+
 .vid-container {
     padding: 10px 8%;
 }
@@ -1795,15 +1818,20 @@ td {
     gap: 10px;
 }
 
-.vid-title {pointer-events: none;}
+.vid-title {
+    pointer-events: none;
+}
 
 .plyr__captions {
     font-family: 'Quicksand Bold';
     bottom: 1% !important;
 }
+
 .plyr.plyr--fullscreen .plyr__captions {
-  bottom: 1% !important; /* đẩy cao hơn khi fullscreen */
+    bottom: 1% !important;
+    /* đẩy cao hơn khi fullscreen */
 }
+
 .vid-description {
     border: 1px solid gray;
     border-radius: 10px;
@@ -2084,134 +2112,34 @@ video::cue {
     }
 }
 
-@media(prefers-color-scheme: dark) {
-    ::-webkit-scrollbar-track {
-    background: #2b2b2b;
-}
-    .search-place>ul>li>a {
-        color: white;
-    }
-
-    .search-place {
-        background-color: rgb(46, 45, 45);
-    }
-
-    .search-place>ul>li {
-        background-color: rgb(45, 45, 45);
-        color: white;
-    }
-
-    .search-place>ul>li:hover {
-        background-color: rgb(63, 63, 63);
-        color: white;
-    }
-
-
-
-    body {
-        background-color: rgb(43, 43, 43);
-        color: white;
-    }
-
-    table {
-        background-color: #222;
-        color: white;
-        border-color: white;
-    }
-
-    th,
-    td {
-        border: 1px solid white;
-        color: white;
-    }
-
-    .notification {
-        background-color: rgb(43, 43, 43);
-        border: 1px solid rgb(43, 43, 43);
-    }
-
-    .container {
-        background-color: rgb(43, 43, 43);
-    }
-
-    .container>.main,
-    .container>.playlist {
-        border: 2px solid white;
-    }
-
-    .playlist>.playlist-video:hover {
-        background-color: #636363;
-    }
-
-    .container>.playlist>.playlist-hr {
-        border: 1px solid white;
-    }
-
-    .main>.conts>#description {
-        background-color: #4d4d4d;
-    }
-
-    #toggle-btn {
-        color: white;
-    }
-
-    .loading-area {
-        background-color: rgb(43, 43, 43);
-    }
-
-    .option-click>a>.text {
-        color: white;
-    }
-
-    #searchForm input {
-        background-color: rgb(100, 100, 100);
-        color: white;
-    }
-
-    #searchForm input::placeholder {
-        color: white;
-    }
-
-    .category-title {
-        background-color: rgb(100, 100, 100);
-    }
-
-    .result-item>a {
-        color: white;
-    }
-
-    .article-area {
-        color: white;
-    }
-
-    .option-bar>.option-button>.detail {
-        color: white;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #242424;
-    }
-
-    .vid-playlist-item:hover {
-        background-color: #6e6e6e;
-    }
-
-    .vid-playlist-item::after {
-        background-color: #575555;
-    }
-
-    .vid-description {
-        background-color: #494949;
-    }
-
-    .vid-state_strong {
-        color: white;
-    }
+.search-place a.search-content {
+    color: inherit
 }
 
-@media(prefers-color-scheme: light) {
-    .article-area {
-        color: black;
-    }
+body.dark .search-place, body.bold div.notification p {
+    background-color: #2b2b2b !important;
+}
+
+body.dark .search-place a.search-content {
+    color: white !important
+}
+
+body.dark .vid-description, body.dark .vid-playlist-item .active{background-color: #4d4d4d;}
+body.dark .cham-ngon,
+body.dark .web-welcome,
+body.dark .heading,
+body.dark .article-area,
+body.dark div.option-bar div.option-button div.detail,
+body.dark div.option-click a,
+body.dark div.vid-container,
+body.dark div.notification {
+    color: white !important;
+}
+
+body.dark div.option-click {
+    border: 1px solid white
+}
+
+body.dark #dataTable th td {
+    border: 1px solid white !important;
 }

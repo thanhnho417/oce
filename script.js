@@ -2,13 +2,14 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     navweb();
+    websetting()
     createLoadingElements();
     initImagePreview();
     initFooter();
     initNetworkStatus();
     initPageTitle();
     initBackToTopButton();
-    
+
 });
 window.availableKeywords = []; // Biến toàn cục để lưu trữ từ khóa tìm 
 const cssicon = document.createElement('link');
@@ -17,8 +18,8 @@ cssicon.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/
 document.head.appendChild(cssicon);
 function navweb() {
     const header = document.querySelector('header');
-    header.innerHTML = ''; // Xóa nội dung hiện tại của header
     if (!header) return;
+    header.innerHTML = ''; // Xóa nội dung hiện tại của header
     const weblink = document.createElement('a');
     weblink.href = '/';
     weblink.style.display = 'inline-flex';
@@ -182,7 +183,7 @@ function searchengine() {
             if (result.length > 0) {
                 result.forEach(item => {
                     const createli = document.createElement('li');
-                    createli.innerHTML = `<a href="${item.src}">${item.title}</a>`;
+                    createli.innerHTML = `<a class="search-content" href="${item.src}">${item.title}</a>`;
                     createli.addEventListener('click', function () {
                         inputbox.value = item.title;
                     });
@@ -215,9 +216,106 @@ document.addEventListener('keydown', function (e) {
         sidebar.classList.remove('sidebartoleft')
     }
 });
+
+function websetting() {
+    const websetting = document.createElement('div')
+    websetting.className = 'websettings'
+    websetting.style.position = 'fixed'
+    websetting.style.bottom = '10px'
+    websetting.style.left = '10px'
+    websetting.style.backgroundColor = '#386e61'
+
+    websetting.style.display = 'flex'
+    websetting.style.justifyContent = 'center'
+    websetting.style.alignItems = 'center'
+    websetting.style.borderRadius = '100%'
+    websetting.innerHTML = `<i id='websettings' title='Cài đặt' class="fa-solid fa-gear" style="color: white;"></i>`
+    websetting.style.height = 'auto'
+    document.body.appendChild(websetting)
+    const websettingcontainer = document.createElement('div')
+    websettingcontainer.className = 'websettings-container'
+    websettingcontainer.style.padding = '10px'
+    websettingcontainer.style.display = 'none'
+    const websettingfunc = document.createElement('div')
+    websettingfunc.style.display = 'flex'
+    websettingfunc.style.justifyContent = 'flex-end'
+    websettingfunc.style.alignItems = 'center'
+    websettingfunc.className = 'web_setting_func'
+    websettingfunc.innerHTML = `<div id="web_setting_exit" title="Đóng"><i  class="fa-solid fa-xmark" style="color: #ffffff;"></i></div>`
+    websettingcontainer.appendChild(websettingfunc)
+    const webtheme = document.createElement('div');
+    webtheme.className = 'change_theme'
+    webtheme.innerHTML = `
+        <label for='web_theme' style="margin-right: 10px; color: white">Chế độ</label>
+        <select id='web_theme' style="padding: 5px 10px; border-radius: 10px; font-family: inherit">
+            <option value='light' selected>Sáng</option>
+            <option value='dark'>Tối</option>
+        </select>
+    `
+    webtheme.style.padding = '10px'
+    websettingcontainer.appendChild(webtheme)
+    websetting.appendChild(websettingcontainer)
+    const settingexit = document.getElementById('web_setting_exit')
+    settingexit.style.cursor = 'pointer'
+    settingexit.style.padding = '5px 10px'
+    settingexit.style.borderRadius = '50%'
+    settingexit.addEventListener('click', function () {
+        websettingcontainer.style.display = 'none'
+        settingkey.style.display = 'block'
+        websetting.style.borderRadius = '50%'
+    })
+    const settingkey = document.getElementById('websettings')
+    settingkey.style.padding = '10px'
+    settingkey.addEventListener('click', function () {
+        websetting.style.borderRadius = '10px'
+        settingkey.style.display = 'none'
+        websettingcontainer.style.display = 'block'
+    })
+    const settheme = document.getElementById('web_theme')
+    if (settheme) {
+        console.log('Có sẵn')
+    } else {
+        console.log('Có thấy đâu')
+    }
+    function websetlighttheme(mode) {
+        const html = document.body
+        const navsearch = document.querySelector('.search-place')
+        const loadingareatool = document.querySelector('.loading-')
+        const resultcon = document.querySelectorAll('a.search-content')
+        if (!settheme) return
+        html.classList.remove('dark')
+        if (mode === 'dark') {
+            html.classList.add('dark')
+            localStorage.setItem('theme', 'dark')
+        } else {
+            navsearch.style.backgroundColor = 'white'
+            localStorage.setItem('theme', 'light')
+        }
+        settheme.value = mode
+    }
+    if (settheme) {
+        settheme.addEventListener('change', (e) => {
+            websetlighttheme(e.target.value)
+        })
+    }
+
+    (function initTheme() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        websetlighttheme(savedTheme);
+    })();
+}
+
+window.addEventListener('storage', (e) => {
+    if (e.key === 'theme'){
+        const newtheme = e.newValue || 'light';
+        websetlighttheme(newtheme)
+    }
+})
+
+localStorage.setItem('name', 'dep trai')
 function createLoadingElements() {
     document.body.insertAdjacentHTML('beforebegin', `
-        <div class="loading-area" ><img src="/Images/svg/spinner-solid-full.svg" width="100px"></div>
+        <div class="loading-area"><i class="fa-solid fa-spinner fa-spin-pulse"></i></div>
         `)
     setTimeout(() => {
         const fade = document.querySelector('.loading-area')
