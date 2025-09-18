@@ -223,7 +223,7 @@ function websetting() {
     websetting.style.position = 'fixed'
     websetting.style.bottom = '10px'
     websetting.style.left = '10px'
-    websetting.style.backgroundColor = '#386e61'
+    websetting.style.backgroundColor = '#525252ff'
 
     websetting.style.display = 'flex'
     websetting.style.justifyContent = 'center'
@@ -280,7 +280,7 @@ function websetting() {
     function websetlighttheme(mode) {
         const html = document.body
         const navsearch = document.querySelector('.search-place')
-        const loadingareatool = document.querySelector('.loading-')
+        const loadingareatool = document.querySelector('.loading-area')
         const resultcon = document.querySelectorAll('a.search-content')
         if (!settheme) return
         html.classList.remove('dark')
@@ -311,10 +311,18 @@ window.addEventListener('storage', (e) => {
         websetlighttheme(newtheme)
     }
 })
-
+function webthemeloading(){
+    const loadingweb = document.querySelector('.loading-area')
+    if (!loadingweb) return
+    if (document.body.classList.contains('dark')){
+        loadingweb.innerHTML = '<i class="fa-solid fa-spinner fa-spin-pulse" style="color: #ffffff;"></i>'
+    } else{
+        loadingweb.innerHTML = '<i class="fa-solid fa-spinner fa-spin-pulse"></i>'
+    }
+}
 localStorage.setItem('name', 'dep trai')
 function createLoadingElements() {
-    document.body.insertAdjacentHTML('beforebegin', `
+    document.body.insertAdjacentHTML('afterbegin', `
         <div class="loading-area"><i class="fa-solid fa-spinner fa-spin-pulse"></i></div>
         `)
     setTimeout(() => {

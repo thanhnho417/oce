@@ -202,8 +202,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <p class="vid-playlist-title">${video.title}</p>
           `;
           item.addEventListener('click', () => {
-            document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('active'));
-            item.classList.add('active');
+            document.querySelectorAll('.vid-playlist-item').forEach(el => el.classList.remove('vid-active'));
+            item.classList.add('vid-active');
             player.poster = video.thumbnail || '/sample/vna.png';
 
             loadMediaSource(video);
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
           });
           vidplaylist.appendChild(item);
           if (index === 0) {
-            item.classList.add('active');
+            item.classList.add('vid-active');
             player.poster = video.thumbnail || '/sample/vna.png';
             loadMediaSource(video);
             vidaddwatermark();
