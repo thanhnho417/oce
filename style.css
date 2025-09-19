@@ -67,20 +67,21 @@ button:hover {
 }
 
 button#backtotopbtn {
-    background-color: #34695d;
-    border: 1px solid #34695d;
+    background-color: #525252ff;
+    border: 1px solid #525252ff;
     visibility: hidden;
     transition: 200ms ease-in-out;
-    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
     padding: 4px 8px;
     position: fixed;
     right: 10px;
-    bottom: 120px;
+    bottom: 10px;
     z-index: 1000;
 }
 
 button#backtotopbtn:hover {
-    background-color: #2c5850;
+    background-color: #686767;
 }
 
 html {
@@ -809,7 +810,6 @@ footer {
 
 .notification {
     background-color: white;
-    border: 1px solid white;
     padding: 10px;
     white-space: nowrap;
     overflow: auto;
@@ -2113,28 +2113,50 @@ video::cue {
     }
 }
 
-.vid-active{ background-color: #b4b4b4;}
-body.dark div.vid-active {background-color: #727272;}
-body.dark div.vid-playlist-item:hover {background-color: #5f5f5f;}
+.vid-active {
+    background-color: #b4b4b4;
+}
+
+body.dark div.vid-active {
+    background-color: #727272;
+}
+
+body.dark div.vid-playlist-item:hover, body.dark div.search-place ul li:hover {
+    background-color: #5f5f5f;
+}
+
 .search-place a.search-content {
     color: inherit
 }
 
-body.dark .search-place, body.dark div.notification {
-    background-color: #2b2b2b !important;
+body.dark .search-place,
+body.dark div.notification {
+    background-color: #141414 !important;
 }
 
 body.dark .search-place a.search-content {
     color: white !important
 }
 
-body.dark .loading-area{background-color: #2b2b2b;}
+p.blog-status {
+    color: black;
+}
 
-body.dark .vid-description, body.dark .vid-playlist-item .active{background-color: #4d4d4d;}
+body.dark .loading-area {
+    background-color: #2b2b2b;
+}
+
+body.dark .vid-description,
+body.dark .vid-playlist-item .active {
+    background-color: #4d4d4d;
+}
+
 body.dark .cham-ngon,
 body.dark .web-welcome,
 body.dark .heading,
-body.dark .article-area,
+body.dark p#info,
+body.dark p.blog-status,
+body.dark div.option-button div.detail div.option-bar,
 body.dark div.option-bar div.option-button div.detail,
 body.dark div.option-click a,
 body.dark div.vid-container,
@@ -2146,7 +2168,9 @@ body.dark div.option-click {
     border: 1px solid white
 }
 
-body.dark table, body.dark th, body.dark td{
+body.dark table,
+body.dark th,
+body.dark td {
     border: 1px solid white !important;
     color: white;
 }
