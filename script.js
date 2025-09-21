@@ -16,6 +16,11 @@ const cssicon = document.createElement('link');
 cssicon.rel = 'stylesheet';
 cssicon.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
 document.head.appendChild(cssicon);
+const webads = document.createElement('script')
+webads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8378302758429160'
+webads.async = true
+webads.crossOrigin = 'anonymous'
+document.head.appendChild(webads)
 function navweb() {
     const header = document.querySelector('header');
     if (!header) return;
