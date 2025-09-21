@@ -76,7 +76,7 @@ button#backtotopbtn {
     padding: 4px 8px;
     position: fixed;
     right: 10px;
-    bottom: 10px;
+    bottom: 100px;
     z-index: 1000;
 }
 
