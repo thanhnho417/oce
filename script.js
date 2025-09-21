@@ -266,6 +266,7 @@ function websetting() {
     settingexit.style.borderRadius = '50%'
     settingexit.addEventListener('click', function () {
         websettingcontainer.style.display = 'none'
+        document.getElementById('backtotopbtn').style.bottom = '100px'
         settingkey.style.display = 'block'
         websetting.style.borderRadius = '50%'
     })
@@ -273,6 +274,7 @@ function websetting() {
     settingkey.style.padding = '10px'
     settingkey.addEventListener('click', function () {
         websetting.style.borderRadius = '10px'
+        document.getElementById('backtotopbtn').style.bottom = '165px'
         settingkey.style.display = 'none'
         websettingcontainer.style.display = 'block'
     })
@@ -456,7 +458,7 @@ function initBackToTopButton() {
     const btt = document.createElement('button');
     btt.id = 'backtotopbtn';
     btt.title = 'Trở lại đầu trang';
-    btt.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>';
+    btt.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>';
     document.body.appendChild(btt);
 
     window.onscroll = function () {
