@@ -226,8 +226,8 @@ function websetting() {
     const websetting = document.createElement('div')
     websetting.className = 'websettings'
     websetting.style.position = 'fixed'
-    websetting.style.bottom = '100px'
-    websetting.style.left = '10px'
+    websetting.style.bottom = '60px'
+    websetting.style.right = '10px'
     websetting.style.backgroundColor = '#525252ff'
 
     websetting.style.display = 'flex'
