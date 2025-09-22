@@ -1825,7 +1825,6 @@ td {
 
 .plyr__captions {
     font-family: 'Quicksand Bold';
-    bottom: 1% !important;
 }
 
 .plyr.plyr--fullscreen .plyr__captions {

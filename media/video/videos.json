@@ -1,5 +1,21 @@
 [
     {
+        "title": "Genshin Impact - Nod-Krai - Theme Song",
+        "thumbnail": "/media/video/gi-nk.png",
+        "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/Video/genshin/nod-krai/genshin-music.m3u8",
+        "age": "",
+        "description": "Nguồn: <a href='https://www.youtube.com/watch?v=RuXa_yxZMGI' alt='Link Youtube' style='text-decoration: none'>Youtube</a>",
+        "aspectratio": "16/9",
+        "subtitles": [
+            {
+                "label": "Tiếng Việt",
+                "srclang": "vi",
+                "src": "/media/video/gi-nk.vtt",
+                "default": true
+            }
+        ]
+    },
+    {
         "title": "Demon Slayer - Hashira Training Arc - 08",
         "thumbnail": "/media/video/08.png",
         "src": "https://raw.githubusercontent.com/thanhnho417/up/refs/heads/main/assets/Demon%20Slayer/Hashira%20Training/ep8/kny-s5-ep8.m3u8",

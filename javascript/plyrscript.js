@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const plyrtrack = setInterval(() => {
               if (document.querySelector('.plyr__captions')) {
                 clearInterval(plyrtrack)
-                document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 41}px`
+                document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 42}px`
               }
             }, 50)
             document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.65}px`;
@@ -247,7 +247,8 @@ document.addEventListener('DOMContentLoaded', function () {
       vidwatermark.style.height = `${size.height}px`;
       vidage.style.fontSize = `${size.width / 80}px`;
       vidwatermark.style.removeProperty('aspect-ratio');
-      document.querySelector('.plyr__captions').style.fontSize = `${(size.width) / 41}px`
+      document.querySelector('.plyr__captions').style.fontSize = `${(size.width) / 42}px`
+      document.querySelector('.plyr__captions').style.bottom = `${(size.height)*0.05}px`
       document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.65}px`;
       return;
     }
@@ -267,7 +268,8 @@ document.addEventListener('DOMContentLoaded', function () {
       vidwatermark.style.height = `${vid.clientHeight}px`;
       vidwatermark.style.width = 'auto';
     }
-    document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 41}px`
+    document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 42}px`
+    document.querySelector('.plyr__captions').style.bottom = `${(vid.clientHeight)*0.05}px`
   }
   window.addEventListener('resize', vidupdate);
   document.addEventListener('fullscreenchange', vidupdate);
