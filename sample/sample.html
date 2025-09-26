@@ -1,48 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Dark Mode đồng bộ giữa nhiều tab</title>
-  <style>
-    body.light {
-      background: white;
-      color: black;
-    }
-    body.dark {
-      background: #222;
-      color: white;
-    }
-    button {
-      margin-top: 20px;
-      padding: 8px 12px;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ví dụ tìm kiếm từ URL</title>
+<style>body{font-family:system-ui,Arial;margin:20px}#results{margin-top:16px}</style>
 </head>
 <body>
-  <h1>Chế độ Dark/Light</h1>
-  <button id="toggle">Chuyển chế độ</button>
+<h1>Tìm kiếm từ URL</h1>
+<p>URL ví dụ: <code>http://localhost:3000/?q=javascript</code></p>
 
-  <script>
-    const body = document.body;
-    const toggleBtn = document.getElementById("toggle");
 
-    // --- Khởi tạo theme từ localStorage ---
-    const savedTheme = localStorage.getItem("theme") || "light";
-    body.className = savedTheme;
+<div>
+<label>Từ khóa:</label>
+<input id="keyword" />
+<button id="btnSearch">Tìm</button>
+</div>
 
-    // --- Khi bấm nút thì đổi theme + lưu lại ---
-    toggleBtn.addEventListener("click", () => {
-      const newTheme = body.className === "light" ? "dark" : "light";
-      body.className = newTheme;
-      localStorage.setItem("theme", newTheme);
-    });
 
-    // --- Lắng nghe sự kiện storage (đồng bộ tab khác) ---
-    window.addEventListener("storage", (event) => {
-      if (event.key === "theme") {
-        body.className = event.newValue;
-      }
-    });
-  </script>
+<div id="results"></div>
+
+
+<script>
+// 1) Hàm lấy query param 'q'
+function getQueryParam(name){
+const params = new URLSearchParams(window.location.search);
+return params.get(name) || '';
+}
+
+
+// 2) Khi tải trang, tự fill input và tự gọi API nếu có q
+document.addEventListener('DOMContentLoaded', ()=>{
+const q = getQueryParam('q');
+const input = document.getElementById('keyword');
+input.value = q;
+if(q) searchAndShow(q);
+
+
+document.getElementById('btnSearch').addEventListener('click', ()=>{
+const kw = input.value.trim();
+if(!kw) return alert('Nhập từ khóa');
+// cập nhật URL (không reload) để người dùng có thể copy link
+const u = new URL(window.location);
+u.searchParams.set('q', kw);
+window.history.replaceState({}, '', u);
+searchAndShow(kw);
+});
+});
+
+
+// 3) Gọi API backend
+async function searchAndShow(keyword){
+const resultsDiv = document.getElementById('results');
+resultsDiv.innerHTML = 'Đang tải...';
+try{
+const res = await fetch('/api/search', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ q: keyword })
+});
+if(!res.ok) throw new Error(await res.text());
+const data = await res.json();
+// Hiển thị kết quả (tùy loại data)
+if(Array.isArray(data.items)){
+resultsDiv.innerHTML = '<ul>' + data.items.map(i=>`<li>${escapeHtml(i)}</li>`).join('') + '</ul>';
+} else {
+resultsDiv.innerText = JSON.stringify(data, null, 2);
+}
+}catch(err){
+resultsDiv.innerText = 'Lỗi: ' + err.message;
+}
+}
+
+
+function escapeHtml(s){
+return String(s)
+.replaceAll('&','&amp;')
+.replaceAll('<','&lt;')
+.replaceAll('>','&gt;')
+.replaceAll('"','&quot;');
+}
+</script>
 </body>
 </html>
