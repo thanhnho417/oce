@@ -7,13 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
             <video class="vid-player" controls playsinline crossorigin="anonymous"></video>
           </div>
           <div class="vid-main-info">
-            <h3 class="vid-title">Video Test</h3>
-            <div class="vid-description">A brief description of the video content goes here.</div>
+            <h3 class="vid-title">Đang tải nội dung...</h3>
+            <div class="vid-description"></div>
           </div>
         </div>
-        <div class="vid-playlist"></div>
+        <div class="vid-playlist">Chờ chút...</div>
       </div>
   `
+
   const vid = document.querySelector('.vid-player');
   const vidplaylist = document.querySelector('.vid-playlist');
   const vidmaintitle = document.querySelector('.vid-title');
@@ -165,16 +166,31 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, 200);
   }
+  const vidurl = window.location.href
+  const vidparams = new URLSearchParams(window.location.search)
+  const vidid = vidparams.get('id') || 'all'
+  const vidsendid = `http://localhost:5000/testmedia?id=${encodeURIComponent(vidid)}`
+  console.log(vidid)
   function loadPlaylist() {
-    fetch(viddatasrc)
-      .then(response => response.json())
+    fetch(vidsendid || viddatasrc)
+      .then(response => {
+        if (!response.ok) {
+          return fetch(viddatasrc)
+        }
+        return response.json()
+      })
+      .catch(() => {
+        // Nếu server tắt hẳn (connection refused) → nhảy vào đây
+        return fetch(viddatasrc).then(r => r.json());
+      })
       .then(data => {
+        
         vidplaylist.innerHTML = `<p class="vid-playlist-main-title">Danh sách phát</p><hr>`
         const watchother = document.createElement('div')
         watchother.className = 'watch-other'
         vidplaylist.appendChild(watchother)
         data.forEach(video => {
-          if (video.id){
+          if (video.id) {
             const watchotherhref = document.createElement('a');
             watchotherhref.href = `#${video.id}`;
             watchotherhref.textContent = `${video.id}`;
@@ -191,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const watchother = document.createElement('div')
           watchother.className = 'watch-other'
           item.title = `${video.title}`;
-          if (video.id){
+          if (video.id) {
             item.id = video.id
           }
           item.className = 'vid-playlist-item';
@@ -209,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
             loadMediaSource(video);
             window.scrollTo({ top: 0, behavior: 'smooth' });
             vidaddwatermark();
-            document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.65}px`;
+            document.querySelector('.plyr__menu__container').style.maxHeight = `${(vid.clientHeight) * 0.65}px`;
             applyVideoAttributes(video);
           });
           vidplaylist.appendChild(item);
@@ -225,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 42}px`
               }
             }, 50)
-            document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.65}px`;
+            document.querySelector('.plyr__menu__container').style.maxHeight = `${(vid.clientHeight) * 0.65}px`;
           }
         });
       })
@@ -248,14 +264,14 @@ document.addEventListener('DOMContentLoaded', function () {
       vidage.style.fontSize = `${size.width / 80}px`;
       vidwatermark.style.removeProperty('aspect-ratio');
       document.querySelector('.plyr__captions').style.fontSize = `${(size.width) / 42}px`
-      document.querySelector('.plyr__captions').style.bottom = `${(size.height)*0.05}px`
-      document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.65}px`;
+      document.querySelector('.plyr__captions').style.bottom = `${(size.height) * 0.05}px`
+      document.querySelector('.plyr__menu__container').style.maxHeight = `${(vid.clientHeight) * 0.65}px`;
       return;
     }
     vidwatermark.style.width = '100%';
     vidwatermark.style.height = 'auto';
     vidage.style.fontSize = `${vid.clientWidth / 80}px`;
-    document.querySelector('.plyr__menu__container').style.maxHeight  = `${(vid.clientHeight)*0.65}px`;
+    document.querySelector('.plyr__menu__container').style.maxHeight = `${(vid.clientHeight) * 0.65}px`;
     const ratiostr = currentVideo?.aspectratio || '16/9';
     const [w, h] = ratiostr.split('/').map(Number);
     if (!w || !h) return;
@@ -269,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
       vidwatermark.style.width = 'auto';
     }
     document.querySelector('.plyr__captions').style.fontSize = `${(vid.clientWidth) / 42}px`
-    document.querySelector('.plyr__captions').style.bottom = `${(vid.clientHeight)*0.05}px`
+    document.querySelector('.plyr__captions').style.bottom = `${(vid.clientHeight) * 0.05}px`
   }
   window.addEventListener('resize', vidupdate);
   document.addEventListener('fullscreenchange', vidupdate);
